@@ -4,9 +4,9 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 11
+Sheet 2 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-15"
+Date "2018-12-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "External reference clocks"

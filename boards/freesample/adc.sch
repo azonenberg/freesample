@@ -4,9 +4,9 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-15"
+Date "2018-12-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 ""
@@ -34,4 +34,15 @@ Text HLabel 5800 2550 0    50   Input ~ 0
 ADC_LE_P
 Text HLabel 5800 2650 0    50   Input ~ 0
 ADC_LE_N
+$Comp
+L analog-azonenberg:HMC675LP3E U?
+U 1 1 5C3D1D95
+P 6300 3050
+F 0 "U?" H 6725 4765 50  0000 C CNN
+F 1 "HMC675LP3E" H 6725 4674 50  0000 C CNN
+F 2 "" H 6300 3050 50  0001 C CNN
+F 3 "" H 6300 3050 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

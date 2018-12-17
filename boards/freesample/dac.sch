@@ -4,9 +4,9 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-15"
+Date "2018-12-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 ""
@@ -39,4 +39,20 @@ Text HLabel 8100 3700 0    50   Input ~ 0
 GND
 Text HLabel 8100 3800 0    50   Input ~ 0
 3V3
+Text HLabel 9650 4250 0    50   Output ~ 0
+DAC_MUXOUT
+Text HLabel 9650 4350 0    50   Input ~ 0
+LDAC_N
+Text HLabel 9650 4450 0    50   Input ~ 0
+CS_N
+Text HLabel 9650 4550 0    50   Input ~ 0
+SCK
+Text HLabel 9650 4650 0    50   Input ~ 0
+MOSI
+Text HLabel 9650 4750 0    50   Output ~ 0
+MISO
+Text HLabel 9650 4850 0    50   Input ~ 0
+CLR_N
+Text HLabel 8100 4050 0    50   Input ~ 0
+1V8
 $EndSCHEMATC
