@@ -9,7 +9,7 @@ Title "FREESAMPLE Oscilloscope"
 Date "2018-12-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
-Comment1 ""
+Comment1 "Digital one-shot and reset sync for ADC trigger"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -35,10 +35,10 @@ ONESHOT_TRIGGERED_P
 Text HLabel 8450 3250 0    50   Output ~ 0
 ONESHOT_TRIGGERED_N
 $Comp
-L special-azonenberg:PI6C59S6005 U?
+L special-azonenberg:PI6C59S6005 U7
 U 1 1 5C3E7E97
 P 3150 5400
-F 0 "U?" H 3600 7625 50  0000 C CNN
+F 0 "U7" H 3600 7625 50  0000 C CNN
 F 1 "PI6C59S6005" H 3600 7534 50  0000 C CNN
 F 2 "" H 3150 5100 50  0001 C CNN
 F 3 "" H 3150 5100 50  0001 C CNN

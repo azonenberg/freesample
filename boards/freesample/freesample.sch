@@ -119,10 +119,10 @@ F12 "ONESHOT_COARSEPHASE_P" I R 6650 4400 50
 F13 "ONESHOT_COARSEPHASE_N" I R 6650 4500 50 
 $EndSheet
 $Comp
-L conn:CONN_COAXIAL J?
+L freesample-rescue:CONN_COAXIAL-conn J1
 U 1 1 5C201EC1
 P 750 850
-F 0 "J?" H 703 1088 50  0000 C CNN
+F 0 "J1" H 703 1088 50  0000 C CNN
 F 1 "SMA" H 703 997 50  0000 C CNN
 F 2 "" H 750 850 50  0001 C CNN
 F 3 "" H 750 850 50  0001 C CNN
@@ -136,10 +136,10 @@ Wire Wire Line
 Text Label 900  850  0    50   ~ 0
 VIN
 $Comp
-L analog-azonenberg:SPLITTER_SUSUMU_PS R?
+L analog-azonenberg:SPLITTER_SUSUMU_PS R1
 U 1 1 5C20338C
 P 1350 1000
-F 0 "R?" H 1600 1375 50  0000 C CNN
+F 0 "R1" H 1600 1375 50  0000 C CNN
 F 1 "PS3216GT2-R50-T1‎" H 1600 1284 50  0000 C CNN
 F 2 "" H 1350 1000 50  0001 C CNN
 F 3 "" H 1350 1000 50  0001 C CNN
@@ -477,7 +477,7 @@ Text Label 7400 1400 0    50   ~ 0
 OSC_FS1
 Text Label 7400 1500 0    50   ~ 0
 OSC_FS0
-Text Label 5850 5500 0    50   ~ 0
+Text Label 2350 7500 0    50   ~ 0
 OSC_PWR_EN
 Text Label 2350 5600 0    50   ~ 0
 OSC_OE
@@ -803,8 +803,86 @@ Wire Wire Line
 	700  3350 800  3350
 Text Notes 3650 5400 0    50   ~ 0
 LVCMOS18
-Text Notes 5850 5400 0    50   ~ 0
-TBD
 Text Notes 3650 6800 0    50   ~ 0
 LVDS from FPGA\nNeed converter to CML
+Text Label 1800 2000 0    50   ~ 0
+5V0
+Wire Wire Line
+	1800 2000 1700 2000
+Text Label 1800 2100 0    50   ~ 0
+3V3
+Wire Wire Line
+	1800 2100 1700 2100
+Text Label 1800 2200 0    50   ~ 0
+1V8
+Wire Wire Line
+	1800 2200 1700 2200
+Text Label 1800 2300 0    50   ~ 0
+1V0
+Wire Wire Line
+	1800 2300 1700 2300
+Text Label 1800 2400 0    50   ~ 0
+3V0_N
+Wire Wire Line
+	1800 2400 1700 2400
+Text Label 1800 2500 0    50   ~ 0
+3V3_N
+Wire Wire Line
+	1800 2500 1700 2500
+Text Label 1800 2600 0    50   ~ 0
+5V0_N
+Wire Wire Line
+	1800 2600 1700 2600
+Text Label 750  2000 2    50   ~ 0
+12V0
+Wire Wire Line
+	750  2000 850  2000
+Text Label 750  2100 2    50   ~ 0
+GND
+Wire Wire Line
+	750  2100 850  2100
+NoConn ~ 13100 1000
+Text Label 13200 900  0    50   ~ 0
+GND
+Wire Wire Line
+	13200 900  13100 900 
+Text Label 13200 800  0    50   ~ 0
+12V0_RAW
+Wire Wire Line
+	13100 800  13700 800 
+$Comp
+L power-azonenberg:FUSE_PWROUT F1
+U 1 1 5C7169D1
+P 13950 800
+F 0 "F1" H 13950 1040 50  0000 C CNN
+F 1 "TBD" H 13950 949 50  0000 C CNN
+F 2 "" H 13950 800 60  0000 C CNN
+F 3 "" H 13950 800 60  0000 C CNN
+	1    13950 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power-azonenberg:CONN_3_PWROUT J2
+U 1 1 5C717AA0
+P 12750 900
+F 0 "J2" H 12617 1200 50  0000 C CNN
+F 1 "CONN_3_PWROUT" H 12617 1116 40  0000 C CNN
+F 2 "" H 12750 900 60  0000 C CNN
+F 3 "" H 12750 900 60  0000 C CNN
+	1    12750 900 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L passive-azonenberg:INDUCTOR_PWROUT FB1
+U 1 1 5C71964A
+P 14500 800
+F 0 "FB1" V 14342 800 40  0000 C CNN
+F 1 "TBD" V 14418 800 40  0000 C CNN
+F 2 "" H 14500 800 60  0000 C CNN
+F 3 "" H 14500 800 60  0000 C CNN
+	1    14500 800 
+	0    1    1    0   
+$EndComp
+Text Label 14800 800  0    50   ~ 0
+12V0
 $EndSCHEMATC

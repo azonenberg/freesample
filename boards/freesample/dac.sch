@@ -9,16 +9,16 @@ Title "FREESAMPLE Oscilloscope"
 Date "2018-12-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
-Comment1 ""
+Comment1 "DAC for setting sampling point Y position"
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L analog-azonenberg:LTC2664 U?
+L analog-azonenberg:LTC2664 U4
 U 1 1 5C15756D
 P 4150 4450
-F 0 "U?" H 4650 7025 50  0000 C CNN
+F 0 "U4" H 4650 7025 50  0000 C CNN
 F 1 "LTC2664" H 4650 6934 50  0000 C CNN
 F 2 "" H 4150 4450 50  0001 C CNN
 F 3 "" H 4150 4450 50  0001 C CNN
