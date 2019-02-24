@@ -18,25 +18,25 @@ Text HLabel 4850 2250 2    50   Output ~ 0
 FINEPHASE_P
 Text HLabel 4850 2350 2    50   Output ~ 0
 FINEPHASE_N
-Text HLabel 4600 6150 2    50   Output ~ 0
+Text HLabel 4650 6700 2    50   Output ~ 0
 COARSEPHASE_P
-Text HLabel 4600 6250 2    50   Output ~ 0
+Text HLabel 4650 6800 2    50   Output ~ 0
 COARSEPHASE_N
 Text HLabel 3600 2250 0    50   Input ~ 0
 CLKIN0_P
 Text HLabel 3600 2350 0    50   Input ~ 0
 CLKIN0_N
-Text HLabel 3350 4550 0    50   Input ~ 0
+Text HLabel 3400 5100 0    50   Input ~ 0
 3V3
 Text HLabel 4800 2550 2    50   Input ~ 0
 GND
-Text HLabel 4600 5650 2    50   Input ~ 0
+Text HLabel 4650 6200 2    50   Input ~ 0
 COARSE_EN
-Text HLabel 4600 5750 2    50   Input ~ 0
+Text HLabel 4650 6300 2    50   Input ~ 0
 COARSE_SLOAD
-Text HLabel 4600 5850 2    50   Input ~ 0
+Text HLabel 4650 6400 2    50   Input ~ 0
 COARSE_SDIN
-Text HLabel 4600 5950 2    50   Input ~ 0
+Text HLabel 4650 6500 2    50   Input ~ 0
 COARSE_SCLK
 Text HLabel 3500 1850 0    50   Input ~ 0
 3V3_N
@@ -278,187 +278,193 @@ Wire Wire Line
 $Comp
 L special-azonenberg:NB6L295 U17
 U 1 1 5CA9AC29
-P 3700 6600
-F 0 "U17" H 4100 8875 50  0000 C CNN
-F 1 "NB6L295" H 4100 8784 50  0000 C CNN
-F 2 "" H 3700 6600 50  0001 C CNN
-F 3 "" H 3700 6600 50  0001 C CNN
-	1    3700 6600
+P 3750 7150
+F 0 "U17" H 4150 9425 50  0000 C CNN
+F 1 "NB6L295" H 4150 9334 50  0000 C CNN
+F 2 "" H 3750 7150 50  0001 C CNN
+F 3 "" H 3750 7150 50  0001 C CNN
+	1    3750 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 4550 3600 4550
+	3400 5100 3650 5100
 Wire Wire Line
-	3600 4550 3600 4650
-Connection ~ 3600 4550
-Connection ~ 3600 4650
+	3650 5100 3650 5200
+Connection ~ 3650 5100
+Connection ~ 3650 5200
 Wire Wire Line
-	3600 4650 3600 4750
-Connection ~ 3600 4750
+	3650 5200 3650 5300
+Connection ~ 3650 5300
 Wire Wire Line
-	3600 4750 3600 4850
-Connection ~ 3600 4850
+	3650 5300 3650 5400
+Connection ~ 3650 5400
 Wire Wire Line
-	3600 4850 3600 4950
-Connection ~ 3600 4950
+	3650 5400 3650 5500
+Connection ~ 3650 5500
 Wire Wire Line
-	3600 4950 3600 5050
-Text Label 3350 5250 2    50   ~ 0
+	3650 5500 3650 5600
+Text Label 3400 5800 2    50   ~ 0
 GND
 Wire Wire Line
-	3350 5250 3600 5250
+	3400 5800 3650 5800
 Wire Wire Line
-	3600 5250 3600 5350
-Connection ~ 3600 5250
+	3650 5800 3650 5900
+Connection ~ 3650 5800
 Wire Wire Line
-	3600 5750 3600 5850
-Connection ~ 3600 5850
+	3650 6300 3650 6400
+Connection ~ 3650 6400
 Wire Wire Line
-	3600 5850 3600 5950
-NoConn ~ 4600 6450
-NoConn ~ 4600 6550
-Text Notes 5700 6150 0    50   ~ 0
+	3650 6400 3650 6500
+NoConn ~ 4650 7000
+NoConn ~ 4650 7100
+Text Notes 4700 6000 0    50   ~ 0
 LVPECL outputs need 50 ohm load resistors
 Wire Wire Line
-	3600 6250 3450 6250
+	3650 6800 3500 6800
 Wire Wire Line
-	3450 6150 3600 6150
-Text HLabel 3450 6250 0    50   Input ~ 0
+	3500 6700 3650 6700
+Text HLabel 3500 6800 0    50   Input ~ 0
 CLKIN1_N
-Text HLabel 3450 6150 0    50   Input ~ 0
+Text HLabel 3500 6700 0    50   Input ~ 0
 CLKIN1_P
 $Comp
 L device:C C163
 U 1 1 5CAAE7E5
-P 1150 4300
-F 0 "C163" H 1265 4346 50  0000 L CNN
-F 1 "4.7 uF" H 1265 4255 50  0000 L CNN
-F 2 "" H 1188 4150 50  0001 C CNN
-F 3 "" H 1150 4300 50  0001 C CNN
-	1    1150 4300
+P 1200 4850
+F 0 "C163" H 1315 4896 50  0000 L CNN
+F 1 "4.7 uF" H 1315 4805 50  0000 L CNN
+F 2 "" H 1238 4700 50  0001 C CNN
+F 3 "" H 1200 4850 50  0001 C CNN
+	1    1200 4850
 	1    0    0    -1  
 $EndComp
-Text Label 1000 4150 2    50   ~ 0
+Text Label 1050 4700 2    50   ~ 0
 3V3
-Text Label 1000 4450 2    50   ~ 0
+Text Label 1050 5000 2    50   ~ 0
 GND
 $Comp
 L device:C C166
 U 1 1 5CAAFCC4
-P 1700 4300
-F 0 "C166" H 1815 4346 50  0000 L CNN
-F 1 "0.47 uF" H 1815 4255 50  0000 L CNN
-F 2 "" H 1738 4150 50  0001 C CNN
-F 3 "" H 1700 4300 50  0001 C CNN
-	1    1700 4300
+P 1750 4850
+F 0 "C166" H 1865 4896 50  0000 L CNN
+F 1 "0.47 uF" H 1865 4805 50  0000 L CNN
+F 2 "" H 1788 4700 50  0001 C CNN
+F 3 "" H 1750 4850 50  0001 C CNN
+	1    1750 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:C C169
 U 1 1 5CAB0185
-P 2250 4300
-F 0 "C169" H 2365 4346 50  0000 L CNN
-F 1 "0.47 uF" H 2365 4255 50  0000 L CNN
-F 2 "" H 2288 4150 50  0001 C CNN
-F 3 "" H 2250 4300 50  0001 C CNN
-	1    2250 4300
+P 2300 4850
+F 0 "C169" H 2415 4896 50  0000 L CNN
+F 1 "0.47 uF" H 2415 4805 50  0000 L CNN
+F 2 "" H 2338 4700 50  0001 C CNN
+F 3 "" H 2300 4850 50  0001 C CNN
+	1    2300 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:C C171
 U 1 1 5CAB03B7
-P 2800 4300
-F 0 "C171" H 2915 4346 50  0000 L CNN
-F 1 "0.47 uF" H 2915 4255 50  0000 L CNN
-F 2 "" H 2838 4150 50  0001 C CNN
-F 3 "" H 2800 4300 50  0001 C CNN
-	1    2800 4300
+P 2850 4850
+F 0 "C171" H 2965 4896 50  0000 L CNN
+F 1 "0.47 uF" H 2965 4805 50  0000 L CNN
+F 2 "" H 2888 4700 50  0001 C CNN
+F 3 "" H 2850 4850 50  0001 C CNN
+	1    2850 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 4150 2250 4150
-Connection ~ 1150 4150
+	2850 4700 2300 4700
+Connection ~ 1200 4700
 Wire Wire Line
-	1150 4150 1000 4150
-Connection ~ 1700 4150
+	1200 4700 1050 4700
+Connection ~ 1750 4700
 Wire Wire Line
-	1700 4150 1150 4150
-Connection ~ 2250 4150
+	1750 4700 1200 4700
+Connection ~ 2300 4700
 Wire Wire Line
-	2250 4150 1700 4150
+	2300 4700 1750 4700
 Wire Wire Line
-	1000 4450 1150 4450
-Connection ~ 1150 4450
+	1050 5000 1200 5000
+Connection ~ 1200 5000
 Wire Wire Line
-	1150 4450 1700 4450
-Connection ~ 1700 4450
+	1200 5000 1750 5000
+Connection ~ 1750 5000
 Wire Wire Line
-	1700 4450 2250 4450
-Connection ~ 2250 4450
+	1750 5000 2300 5000
+Connection ~ 2300 5000
 Wire Wire Line
-	2250 4450 2800 4450
+	2300 5000 2850 5000
 $Comp
 L device:C C172
 U 1 1 5CAB20BA
-P 2800 4700
-F 0 "C172" H 2915 4746 50  0000 L CNN
-F 1 "0.47 uF" H 2915 4655 50  0000 L CNN
-F 2 "" H 2838 4550 50  0001 C CNN
-F 3 "" H 2800 4700 50  0001 C CNN
-	1    2800 4700
+P 2850 5250
+F 0 "C172" H 2965 5296 50  0000 L CNN
+F 1 "0.47 uF" H 2965 5205 50  0000 L CNN
+F 2 "" H 2888 5100 50  0001 C CNN
+F 3 "" H 2850 5250 50  0001 C CNN
+	1    2850 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:C C170
 U 1 1 5CAB26E8
-P 2250 4700
-F 0 "C170" H 2365 4746 50  0000 L CNN
-F 1 "0.47 uF" H 2365 4655 50  0000 L CNN
-F 2 "" H 2288 4550 50  0001 C CNN
-F 3 "" H 2250 4700 50  0001 C CNN
-	1    2250 4700
+P 2300 5250
+F 0 "C170" H 2415 5296 50  0000 L CNN
+F 1 "0.47 uF" H 2415 5205 50  0000 L CNN
+F 2 "" H 2338 5100 50  0001 C CNN
+F 3 "" H 2300 5250 50  0001 C CNN
+	1    2300 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:C C167
 U 1 1 5CAB2BEF
-P 1700 4700
-F 0 "C167" H 1815 4746 50  0000 L CNN
-F 1 "0.47 uF" H 1815 4655 50  0000 L CNN
-F 2 "" H 1738 4550 50  0001 C CNN
-F 3 "" H 1700 4700 50  0001 C CNN
-	1    1700 4700
+P 1750 5250
+F 0 "C167" H 1865 5296 50  0000 L CNN
+F 1 "0.47 uF" H 1865 5205 50  0000 L CNN
+F 2 "" H 1788 5100 50  0001 C CNN
+F 3 "" H 1750 5250 50  0001 C CNN
+	1    1750 5250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 4550 2250 4550
-Connection ~ 2250 4550
+	1750 5100 2300 5100
+Connection ~ 2300 5100
 Wire Wire Line
-	2250 4550 2800 4550
+	2300 5100 2850 5100
 Wire Wire Line
-	2800 4850 2250 4850
-Connection ~ 2250 4850
+	2850 5400 2300 5400
+Connection ~ 2300 5400
 Wire Wire Line
-	2250 4850 1700 4850
-Text Label 1700 4550 2    50   ~ 0
+	2300 5400 1750 5400
+Text Label 1750 5100 2    50   ~ 0
 3V3
-Text Label 1700 4850 2    50   ~ 0
+Text Label 1750 5400 2    50   ~ 0
 GND
-Text Label 3450 6450 2    50   ~ 0
+Text Label 3500 7000 2    50   ~ 0
 3V3
 Wire Wire Line
-	3450 6450 3600 6450
-NoConn ~ 3600 5450
-NoConn ~ 3600 5550
-Text Label 3350 5750 2    50   ~ 0
+	3500 7000 3650 7000
+NoConn ~ 3650 6000
+NoConn ~ 3650 6100
+Text Label 3400 6300 2    50   ~ 0
 GND
 Wire Wire Line
-	3350 5750 3600 5750
-Connection ~ 3600 5750
-Text Label 3450 6550 2    50   ~ 0
+	3400 6300 3650 6300
+Connection ~ 3650 6300
+Text Label 3500 7100 2    50   ~ 0
 GND
 Wire Wire Line
-	3450 6550 3600 6550
-Text Notes 3400 6800 0    50   ~ 0
+	3500 7100 3650 7100
+Text Notes 3450 7350 0    50   ~ 0
 Need nonzero differential per datasheet\nfootnote 1 on page 3
+Wire Notes Line width 20 style solid
+	500  4200 11200 4200
+Text Notes 550  4150 0    98   ~ 0
+Fine delay line for PLL/CDR mode (1 Tsps max when combined w/ LMK04806)
+Text Notes 550  7700 0    98   ~ 0
+Coarse delay line for non-repetitive triggers (90 GSa/s max)
 $EndSCHEMATC

@@ -80,7 +80,7 @@ Text HLabel 1050 1300 0    50   Input ~ 0
 CDR_DIN_N
 Text HLabel 13300 1800 0    50   Input ~ 0
 1V0
-Text HLabel 2250 8200 0    50   Input ~ 0
+Text HLabel 1950 9250 0    50   Input ~ 0
 GND
 Text HLabel 13300 3600 0    50   Input ~ 0
 1V8
@@ -106,29 +106,29 @@ $EndComp
 $Comp
 L special-azonenberg:LMK61PD0A2 U?
 U 1 1 5C335B5F
-P 2350 8750
+P 2050 9800
 AR Path="/5C158069/5C335B5F" Ref="U?"  Part="1" 
 AR Path="/5C15803C/5C335B5F" Ref="U6"  Part="1" 
-F 0 "U6" H 2650 9625 50  0000 C CNN
-F 1 "LMK61PD0A2" H 2650 9534 50  0000 C CNN
-F 2 "" H 2600 8700 50  0001 C CNN
-F 3 "" H 2600 8700 50  0001 C CNN
-	1    2350 8750
+F 0 "U6" H 2350 10675 50  0000 C CNN
+F 1 "LMK61PD0A2" H 2350 10584 50  0000 C CNN
+F 2 "" H 2300 9750 50  0001 C CNN
+F 3 "" H 2300 9750 50  0001 C CNN
+	1    2050 9800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2150 10000 0    50   Input ~ 0
+Text HLabel 1850 10750 0    50   Input ~ 0
 OSC_PWR_EN
-Text Notes 2350 8850 0    50   ~ 0
+Text Notes 2050 10900 0    50   ~ 0
 Need to power cycle osc to change frequency
-Text HLabel 2250 8400 0    50   Input ~ 0
+Text HLabel 1950 9450 0    50   Input ~ 0
 OSC_OE
-Text HLabel 2250 8500 0    50   Input ~ 0
+Text HLabel 1950 9550 0    50   Input ~ 0
 OSC_OS
-Text HLabel 2250 8600 0    50   Input ~ 0
+Text HLabel 1950 9650 0    50   Input ~ 0
 OSC_FS1
-Text HLabel 2250 8700 0    50   Input ~ 0
+Text HLabel 1950 9750 0    50   Input ~ 0
 OSC_FS0
-Text HLabel 1400 9500 0    50   Input ~ 0
+Text HLabel 1100 10250 0    50   Input ~ 0
 3V3
 $Comp
 L device:C C56
@@ -602,11 +602,11 @@ SERDES_TDO
 Text Label 5200 6000 2    50   ~ 0
 SERDES_TDI
 NoConn ~ 5200 6100
-Text Label 2250 8100 2    50   ~ 0
+Text Label 1950 9150 2    50   ~ 0
 OSC_VDD
-Text Label 3050 8400 0    50   ~ 0
+Text Label 2750 9450 0    50   ~ 0
 SERDES_REFCLK0_P
-Text Label 3050 8500 0    50   ~ 0
+Text Label 2750 9550 0    50   ~ 0
 SERDES_REFCLK0_N
 Text Label 14650 600  2    50   ~ 0
 GND
@@ -1508,74 +1508,80 @@ Connection ~ 11400 1500
 $Comp
 L device:C C59
 U 1 1 5C86CE31
-P 3250 9650
-F 0 "C59" H 3365 9696 50  0000 L CNN
-F 1 "4.7 uF" H 3365 9605 50  0000 L CNN
-F 2 "" H 3288 9500 50  0001 C CNN
-F 3 "" H 3250 9650 50  0001 C CNN
-	1    3250 9650
+P 2950 10400
+F 0 "C59" H 3065 10446 50  0000 L CNN
+F 1 "4.7 uF" H 3065 10355 50  0000 L CNN
+F 2 "" H 2988 10250 50  0001 C CNN
+F 3 "" H 2950 10400 50  0001 C CNN
+	1    2950 10400
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:C C60
 U 1 1 5C86D093
-P 3750 9650
-F 0 "C60" H 3865 9696 50  0000 L CNN
-F 1 "0.47 uF" H 3865 9605 50  0000 L CNN
-F 2 "" H 3788 9500 50  0001 C CNN
-F 3 "" H 3750 9650 50  0001 C CNN
-	1    3750 9650
+P 3450 10400
+F 0 "C60" H 3565 10446 50  0000 L CNN
+F 1 "0.47 uF" H 3565 10355 50  0000 L CNN
+F 2 "" H 3488 10250 50  0001 C CNN
+F 3 "" H 3450 10400 50  0001 C CNN
+	1    3450 10400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power-azonenberg:SIP32408 U13
 U 1 1 5C878F99
-P 2350 10050
-F 0 "U13" H 2650 10847 60  0000 C CNN
-F 1 "SIP32408" H 2650 10741 60  0000 C CNN
-F 2 "" H 2350 10050 60  0000 C CNN
-F 3 "" H 2350 10050 60  0000 C CNN
-	1    2350 10050
+P 2050 10800
+F 0 "U13" H 2350 11597 60  0000 C CNN
+F 1 "SIP32408" H 2350 11491 60  0000 C CNN
+F 2 "" H 2050 10800 60  0000 C CNN
+F 3 "" H 2050 10800 60  0000 C CNN
+	1    2050 10800
 	1    0    0    -1  
 $EndComp
-Text Label 1300 9800 2    50   ~ 0
+Text Label 1000 10550 2    50   ~ 0
 GND
 Wire Wire Line
-	2150 9700 2150 9800
-Text Label 4050 9500 0    50   ~ 0
+	1850 10450 1850 10550
+Text Label 3750 10250 0    50   ~ 0
 OSC_VDD
 Wire Wire Line
-	4050 9500 3750 9500
-Connection ~ 3250 9500
+	3750 10250 3450 10250
+Connection ~ 2950 10250
 Wire Wire Line
-	3250 9500 3150 9500
-Connection ~ 3750 9500
+	2950 10250 2850 10250
+Connection ~ 3450 10250
 Wire Wire Line
-	3750 9500 3250 9500
-Text Label 3150 9800 2    50   ~ 0
+	3450 10250 2950 10250
+Text Label 2850 10550 2    50   ~ 0
 GND
 Wire Wire Line
-	3150 9800 3250 9800
-Connection ~ 3250 9800
+	2850 10550 2950 10550
+Connection ~ 2950 10550
 Wire Wire Line
-	3250 9800 3750 9800
+	2950 10550 3450 10550
 $Comp
 L device:C C58
 U 1 1 5C8A7B27
-P 1400 9650
-F 0 "C58" H 1515 9696 50  0000 L CNN
-F 1 "0.47 uF" H 1515 9605 50  0000 L CNN
-F 2 "" H 1438 9500 50  0001 C CNN
-F 3 "" H 1400 9650 50  0001 C CNN
-	1    1400 9650
+P 1100 10400
+F 0 "C58" H 1215 10446 50  0000 L CNN
+F 1 "0.47 uF" H 1215 10355 50  0000 L CNN
+F 2 "" H 1138 10250 50  0001 C CNN
+F 3 "" H 1100 10400 50  0001 C CNN
+	1    1100 10400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 9500 2150 9500
+	1100 10250 1850 10250
 Wire Wire Line
-	2150 9800 1400 9800
-Connection ~ 2150 9800
+	1850 10550 1100 10550
+Connection ~ 1850 10550
 Wire Wire Line
-	1300 9800 1400 9800
-Connection ~ 1400 9800
+	1000 10550 1100 10550
+Connection ~ 1100 10550
+Wire Notes Line width 20 style solid
+	550  8800 4450 8800
+Wire Notes Line width 20 style solid
+	4450 8800 4450 11150
+Text Notes 550  11150 0    100  ~ 0
+CDR PLL reference clock
 $EndSCHEMATC
