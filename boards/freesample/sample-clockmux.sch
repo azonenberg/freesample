@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-17"
+Date "2019-02-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 ""
@@ -14,9 +14,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5450 3150 0    50   Input ~ 0
+Text HLabel 4400 3150 0    50   Input ~ 0
 PLL_SAMPCLK_P
-Text HLabel 5450 3250 0    50   Input ~ 0
+Text HLabel 4400 3250 0    50   Input ~ 0
 PLL_SAMPCLK_N
 Text HLabel 1350 3200 0    50   Input ~ 0
 EXT_SAMPCLK_N
@@ -509,4 +509,46 @@ Text Label 4900 2550 2    50   ~ 0
 Wire Wire Line
 	5200 2550 5500 2550
 Connection ~ 5500 2550
+$Comp
+L device:C C205
+U 1 1 5CB05D09
+P 4650 3100
+F 0 "C205" V 4700 3250 50  0000 C CNN
+F 1 "0.1 uF" V 4600 3300 50  0000 C CNN
+F 2 "" H 4688 2950 50  0001 C CNN
+F 3 "" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:C C206
+U 1 1 5CB05D13
+P 4650 3300
+F 0 "C206" V 4700 3450 50  0000 C CNN
+F 1 "0.1 uF" V 4600 3500 50  0000 C CNN
+F 2 "" H 4688 3150 50  0001 C CNN
+F 3 "" H 4650 3300 50  0001 C CNN
+	1    4650 3300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4400 3150 4500 3150
+Wire Wire Line
+	4500 3150 4500 3100
+Wire Wire Line
+	4400 3250 4500 3250
+Wire Wire Line
+	4500 3250 4500 3300
+Wire Wire Line
+	4800 3100 5600 3100
+Wire Wire Line
+	5600 3100 5600 3150
+Wire Wire Line
+	4800 3300 5600 3300
+Wire Wire Line
+	5600 3300 5600 3250
+Text Label 4950 3100 0    50   ~ 0
+MUXCLK1_AC_P
+Text Label 4950 3300 0    50   ~ 0
+MUXCLK1_AC_N
 $EndSCHEMATC

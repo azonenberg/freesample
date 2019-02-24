@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-17"
+Date "2019-02-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 ""
@@ -320,4 +320,6 @@ $EndComp
 NoConn ~ 6300 1350
 Text Label 6300 1550 0    50   ~ 0
 GND
+Text Notes 4100 2450 0    50   ~ 0
+TODO: VTP = 2V0
 $EndSCHEMATC

@@ -2,11 +2,11 @@ EESchema Schematic File Version 4
 LIBS:freesample-cache
 EELAYER 29 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 6 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-17"
+Date "2019-02-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Digital one-shot and reset sync for ADC trigger"
@@ -14,39 +14,1341 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8450 2450 0    50   Output ~ 0
+Text HLabel 12800 8850 2    50   Output ~ 0
 ADC_LE_P
-Text HLabel 8400 2750 0    50   Output ~ 0
+Text HLabel 12800 8750 2    50   Output ~ 0
 ADC_LE_N
-Text HLabel 6150 2650 0    50   Input ~ 0
+Text HLabel 1750 6550 0    50   Input ~ 0
 ONESHOT_RST_P
-Text HLabel 6150 2750 0    50   Input ~ 0
+Text HLabel 1750 6650 0    50   Input ~ 0
 ONESHOT_RST_N
-Text HLabel 6150 2150 0    50   Input ~ 0
+Text HLabel 1900 3200 0    50   Input ~ 0
 ONESHOT_FINEPHASE_P
-Text HLabel 6150 2250 0    50   Input ~ 0
+Text HLabel 1900 3300 0    50   Input ~ 0
 ONESHOT_FINEPHASE_N
-Text HLabel 6900 3200 0    50   Input ~ 0
-1V8
-Text HLabel 6750 3300 0    50   Input ~ 0
+Text HLabel 4550 5000 0    50   Input ~ 0
+2V5
+Text HLabel 2700 1900 0    50   Input ~ 0
 GND
-Text HLabel 8450 3150 0    50   Output ~ 0
+Text HLabel 14450 6700 2    50   Output ~ 0
 ONESHOT_TRIGGERED_P
-Text HLabel 8450 3250 0    50   Output ~ 0
+Text HLabel 14450 6800 2    50   Output ~ 0
 ONESHOT_TRIGGERED_N
 $Comp
 L special-azonenberg:PI6C59S6005 U7
 U 1 1 5C3E7E97
-P 3150 5400
-F 0 "U7" H 3600 7625 50  0000 C CNN
-F 1 "PI6C59S6005" H 3600 7534 50  0000 C CNN
-F 2 "" H 3150 5100 50  0001 C CNN
-F 3 "" H 3150 5100 50  0001 C CNN
-	1    3150 5400
+P 2950 3400
+F 0 "U7" H 3400 5625 50  0000 C CNN
+F 1 "PI6C59S6005" H 3400 5534 50  0000 C CNN
+F 2 "" H 2950 3100 50  0001 C CNN
+F 3 "" H 2950 3100 50  0001 C CNN
+	1    2950 3400
 	1    0    0    -1  
 $EndComp
-Text HLabel 6150 1600 0    50   Input ~ 0
+Text HLabel 1900 2900 0    50   Input ~ 0
 ONESHOT_COARSEPHASE_P
-Text HLabel 6150 1700 0    50   Input ~ 0
+Text HLabel 1900 3000 0    50   Input ~ 0
 ONESHOT_COARSEPHASE_N
+Text HLabel 2700 2300 0    50   Input ~ 0
+RANGE_SEL
+Text HLabel 2700 1400 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	2700 1400 2850 1400
+Wire Wire Line
+	2850 1400 2850 1500
+Connection ~ 2850 1400
+Connection ~ 2850 1500
+Wire Wire Line
+	2850 1500 2850 1600
+Connection ~ 2850 1600
+Wire Wire Line
+	2850 1600 2850 1700
+Wire Wire Line
+	2700 1900 2850 1900
+$Comp
+L device:C C?
+U 1 1 5CAC8F5C
+P 1900 850
+AR Path="/5C0E404A/5CAC8F5C" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAC8F5C" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAC8F5C" Ref="C176"  Part="1" 
+F 0 "C176" H 2015 896 50  0000 L CNN
+F 1 "4.7 uF" H 2015 805 50  0000 L CNN
+F 2 "" H 1938 700 50  0001 C CNN
+F 3 "" H 1900 850 50  0001 C CNN
+	1    1900 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAC8F62
+P 2400 850
+AR Path="/5C0E404A/5CAC8F62" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAC8F62" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAC8F62" Ref="C182"  Part="1" 
+F 0 "C182" H 2515 896 50  0000 L CNN
+F 1 "0.47 uF" H 2515 805 50  0000 L CNN
+F 2 "" H 2438 700 50  0001 C CNN
+F 3 "" H 2400 850 50  0001 C CNN
+	1    2400 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAC8F68
+P 3450 850
+AR Path="/5C0E404A/5CAC8F68" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAC8F68" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAC8F68" Ref="C184"  Part="1" 
+F 0 "C184" H 3565 896 50  0000 L CNN
+F 1 "0.47 uF" H 3565 805 50  0000 L CNN
+F 2 "" H 3488 700 50  0001 C CNN
+F 3 "" H 3450 850 50  0001 C CNN
+	1    3450 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 700 
+Wire Wire Line
+	2400 700  1900 700 
+Connection ~ 2400 1000
+Wire Wire Line
+	2400 1000 1900 1000
+Text Label 1700 700  2    50   ~ 0
+3V3
+Wire Wire Line
+	1700 700  1900 700 
+Connection ~ 1900 700 
+Text Label 1700 1000 2    50   ~ 0
+GND
+Wire Wire Line
+	1700 1000 1900 1000
+Connection ~ 1900 1000
+Wire Wire Line
+	2400 700  2950 700 
+Wire Wire Line
+	2400 1000 2950 1000
+$Comp
+L device:C C?
+U 1 1 5CAC8F7A
+P 2950 850
+AR Path="/5C0E404A/5CAC8F7A" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAC8F7A" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAC8F7A" Ref="C183"  Part="1" 
+F 0 "C183" H 3065 896 50  0000 L CNN
+F 1 "0.47 uF" H 3065 805 50  0000 L CNN
+F 2 "" H 2988 700 50  0001 C CNN
+F 3 "" H 2950 850 50  0001 C CNN
+	1    2950 850 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 700 
+Wire Wire Line
+	2950 700  3450 700 
+Connection ~ 2950 1000
+Wire Wire Line
+	2950 1000 3450 1000
+$Comp
+L device:C C?
+U 1 1 5CAC8F84
+P 4050 850
+AR Path="/5C0E404A/5CAC8F84" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAC8F84" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAC8F84" Ref="C185"  Part="1" 
+F 0 "C185" H 4165 896 50  0000 L CNN
+F 1 "0.47 uF" H 4165 805 50  0000 L CNN
+F 2 "" H 4088 700 50  0001 C CNN
+F 3 "" H 4050 850 50  0001 C CNN
+	1    4050 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 700  3450 700 
+Connection ~ 3450 700 
+Wire Wire Line
+	4050 1000 3450 1000
+Connection ~ 3450 1000
+Wire Wire Line
+	2850 2600 2750 2600
+Wire Wire Line
+	2750 2600 2750 2700
+Wire Wire Line
+	2750 2700 2850 2700
+$Comp
+L device:C C?
+U 1 1 5CACA8E5
+P 2300 2600
+AR Path="/5C267736/5CACA8E5" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CACA8E5" Ref="C181"  Part="1" 
+F 0 "C181" V 2350 2750 50  0000 C CNN
+F 1 "0.01 uF" V 2250 2800 50  0000 C CNN
+F 2 "" H 2338 2450 50  0001 C CNN
+F 3 "" H 2300 2600 50  0001 C CNN
+	1    2300 2600
+	0    1    -1   0   
+$EndComp
+Text Label 2150 2600 2    50   ~ 0
+3V3
+Wire Wire Line
+	2450 2600 2750 2600
+Connection ~ 2750 2600
+$Comp
+L special-azonenberg:JUMPER_0402_SPDT JP?
+U 1 1 5CACBE10
+P 3300 4100
+AR Path="/5C0E404A/5CACBE10" Ref="JP?"  Part="1" 
+AR Path="/5C267736/5CACBE10" Ref="JP?"  Part="1" 
+AR Path="/5C15809A/5CACBE10" Ref="JP4"  Part="1" 
+F 0 "JP4" H 3283 4687 60  0000 C CNN
+F 1 "JUMPER_0402" H 3283 4581 60  0000 C CNN
+F 2 "" H 3300 4100 60  0000 C CNN
+F 3 "" H 3300 4100 60  0000 C CNN
+	1    3300 4100
+	1    0    0    -1  
+$EndComp
+Text Label 3600 3900 0    50   ~ 0
+BUF4_IN_SEL
+Text Label 3600 3800 0    50   ~ 0
+3V3
+Text Label 3600 4000 0    50   ~ 0
+GND
+Text Label 2700 2200 2    50   ~ 0
+BUF4_IN_SEL
+Wire Wire Line
+	2700 2200 2850 2200
+Text Label 2700 2100 2    50   ~ 0
+3V3
+Wire Wire Line
+	2700 2100 2850 2100
+Wire Wire Line
+	2700 2300 2850 2300
+Text Label 2700 2400 2    50   ~ 0
+GND
+Wire Wire Line
+	2700 2400 2850 2400
+$Comp
+L device:C C?
+U 1 1 5CAD5C53
+P 2050 2900
+AR Path="/5C267736/5CAD5C53" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAD5C53" Ref="C177"  Part="1" 
+F 0 "C177" V 2100 3050 50  0000 C CNN
+F 1 "0.1 uF" V 2000 3100 50  0000 C CNN
+F 2 "" H 2088 2750 50  0001 C CNN
+F 3 "" H 2050 2900 50  0001 C CNN
+	1    2050 2900
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAD61FA
+P 2050 3000
+AR Path="/5C267736/5CAD61FA" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAD61FA" Ref="C178"  Part="1" 
+F 0 "C178" V 2100 3150 50  0000 C CNN
+F 1 "0.1 uF" V 2000 3200 50  0000 C CNN
+F 2 "" H 2088 2850 50  0001 C CNN
+F 3 "" H 2050 3000 50  0001 C CNN
+	1    2050 3000
+	0    1    -1   0   
+$EndComp
+Text Label 2850 2900 2    50   ~ 0
+CPHASE_P
+Text Label 2850 3000 2    50   ~ 0
+CPHASE_N
+Wire Wire Line
+	2200 2900 2850 2900
+Wire Wire Line
+	2200 3000 2850 3000
+$Comp
+L device:C C?
+U 1 1 5CAD95DF
+P 2050 3200
+AR Path="/5C267736/5CAD95DF" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAD95DF" Ref="C179"  Part="1" 
+F 0 "C179" V 2100 3350 50  0000 C CNN
+F 1 "0.1 uF" V 2000 3400 50  0000 C CNN
+F 2 "" H 2088 3050 50  0001 C CNN
+F 3 "" H 2050 3200 50  0001 C CNN
+	1    2050 3200
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAD95E9
+P 2050 3300
+AR Path="/5C267736/5CAD95E9" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAD95E9" Ref="C180"  Part="1" 
+F 0 "C180" V 2100 3450 50  0000 C CNN
+F 1 "0.1 uF" V 2000 3500 50  0000 C CNN
+F 2 "" H 2088 3150 50  0001 C CNN
+F 3 "" H 2050 3300 50  0001 C CNN
+	1    2050 3300
+	0    1    -1   0   
+$EndComp
+Text Label 2850 3200 2    50   ~ 0
+FPHASE_P
+Text Label 2850 3300 2    50   ~ 0
+FPHASE_N
+Wire Wire Line
+	2200 3200 2850 3200
+Wire Wire Line
+	2200 3300 2850 3300
+$Comp
+L special-azonenberg:NB7V52MMNG U23
+U 1 1 5CAE58D3
+P 11700 7150
+F 0 "U23" H 12100 9225 50  0000 C CNN
+F 1 "NB7V52MMNG" H 12100 9134 50  0000 C CNN
+F 2 "" H 11700 7150 50  0001 C CNN
+F 3 "" H 11700 7150 50  0001 C CNN
+	1    11700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:NB7V52MMNG U20
+U 1 1 5CAE60BB
+P 6500 6850
+F 0 "U20" H 6900 8925 50  0000 C CNN
+F 1 "NB7V52MMNG" H 6900 8834 50  0000 C CNN
+F 2 "" H 6500 6850 50  0001 C CNN
+F 3 "" H 6500 6850 50  0001 C CNN
+	1    6500 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5050 1750 5050
+Wire Wire Line
+	1600 5550 1750 5550
+$Comp
+L device:C C?
+U 1 1 5CAE95A5
+P 1900 4500
+AR Path="/5C0E404A/5CAE95A5" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAE95A5" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95A5" Ref="C186"  Part="1" 
+F 0 "C186" H 2015 4546 50  0000 L CNN
+F 1 "4.7 uF" H 2015 4455 50  0000 L CNN
+F 2 "" H 1938 4350 50  0001 C CNN
+F 3 "" H 1900 4500 50  0001 C CNN
+	1    1900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAE95AF
+P 2400 4500
+AR Path="/5C0E404A/5CAE95AF" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAE95AF" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95AF" Ref="C188"  Part="1" 
+F 0 "C188" H 2515 4546 50  0000 L CNN
+F 1 "0.47 uF" H 2515 4455 50  0000 L CNN
+F 2 "" H 2438 4350 50  0001 C CNN
+F 3 "" H 2400 4500 50  0001 C CNN
+	1    2400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CAE95B9
+P 3450 4500
+AR Path="/5C0E404A/5CAE95B9" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAE95B9" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95B9" Ref="C190"  Part="1" 
+F 0 "C190" H 3565 4546 50  0000 L CNN
+F 1 "0.47 uF" H 3565 4455 50  0000 L CNN
+F 2 "" H 3488 4350 50  0001 C CNN
+F 3 "" H 3450 4500 50  0001 C CNN
+	1    3450 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 4350
+Wire Wire Line
+	2400 4350 1900 4350
+Connection ~ 2400 4650
+Wire Wire Line
+	2400 4650 1900 4650
+Text Label 1700 4350 2    50   ~ 0
+3V3
+Wire Wire Line
+	1700 4350 1900 4350
+Connection ~ 1900 4350
+Text Label 1700 4650 2    50   ~ 0
+GND
+Wire Wire Line
+	1700 4650 1900 4650
+Connection ~ 1900 4650
+Wire Wire Line
+	2400 4350 2950 4350
+Wire Wire Line
+	2400 4650 2950 4650
+$Comp
+L device:C C?
+U 1 1 5CAE95CF
+P 2950 4500
+AR Path="/5C0E404A/5CAE95CF" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAE95CF" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95CF" Ref="C189"  Part="1" 
+F 0 "C189" H 3065 4546 50  0000 L CNN
+F 1 "0.47 uF" H 3065 4455 50  0000 L CNN
+F 2 "" H 2988 4350 50  0001 C CNN
+F 3 "" H 2950 4500 50  0001 C CNN
+	1    2950 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 4350
+Wire Wire Line
+	2950 4350 3450 4350
+Connection ~ 2950 4650
+Wire Wire Line
+	2950 4650 3450 4650
+$Comp
+L device:C C?
+U 1 1 5CAE95DD
+P 4050 4500
+AR Path="/5C0E404A/5CAE95DD" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CAE95DD" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95DD" Ref="C191"  Part="1" 
+F 0 "C191" H 4165 4546 50  0000 L CNN
+F 1 "0.47 uF" H 4165 4455 50  0000 L CNN
+F 2 "" H 4088 4350 50  0001 C CNN
+F 3 "" H 4050 4500 50  0001 C CNN
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4350 3450 4350
+Connection ~ 3450 4350
+Wire Wire Line
+	4050 4650 3450 4650
+Connection ~ 3450 4650
+Wire Wire Line
+	1750 6250 1650 6250
+Wire Wire Line
+	1650 6250 1650 6350
+Wire Wire Line
+	1650 6350 1750 6350
+$Comp
+L device:C C?
+U 1 1 5CAE95EE
+P 1200 6250
+AR Path="/5C267736/5CAE95EE" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CAE95EE" Ref="C187"  Part="1" 
+F 0 "C187" V 1250 6400 50  0000 C CNN
+F 1 "0.01 uF" V 1150 6450 50  0000 C CNN
+F 2 "" H 1238 6100 50  0001 C CNN
+F 3 "" H 1200 6250 50  0001 C CNN
+	1    1200 6250
+	0    1    -1   0   
+$EndComp
+Text Label 1050 6250 2    50   ~ 0
+3V3
+Wire Wire Line
+	1350 6250 1650 6250
+Connection ~ 1650 6250
+$Comp
+L special-azonenberg:JUMPER_0402_SPDT JP?
+U 1 1 5CAE95FB
+P 2200 7750
+AR Path="/5C0E404A/5CAE95FB" Ref="JP?"  Part="1" 
+AR Path="/5C267736/5CAE95FB" Ref="JP?"  Part="1" 
+AR Path="/5C15809A/5CAE95FB" Ref="JP5"  Part="1" 
+F 0 "JP5" H 2183 8337 60  0000 C CNN
+F 1 "JUMPER_0402" H 2183 8231 60  0000 C CNN
+F 2 "" H 2200 7750 60  0000 C CNN
+F 3 "" H 2200 7750 60  0000 C CNN
+	1    2200 7750
+	1    0    0    -1  
+$EndComp
+Text Label 2500 7550 0    50   ~ 0
+BUF5_IN_SEL
+Text Label 2500 7450 0    50   ~ 0
+3V3
+Text Label 2500 7650 0    50   ~ 0
+GND
+Text Label 1600 5850 2    50   ~ 0
+BUF4_IN_SEL
+Wire Wire Line
+	1600 5850 1750 5850
+Text Label 1600 5750 2    50   ~ 0
+3V3
+Wire Wire Line
+	1600 5750 1750 5750
+Text Label 1600 6050 2    50   ~ 0
+GND
+Wire Wire Line
+	1600 6050 1750 6050
+Wire Wire Line
+	1750 5250 1750 5350
+Connection ~ 1750 5250
+Connection ~ 1750 5150
+Connection ~ 1750 5050
+Wire Wire Line
+	1750 5150 1750 5250
+Wire Wire Line
+	1750 5050 1750 5150
+$Comp
+L special-azonenberg:PI6C59S6005 U18
+U 1 1 5CAE958F
+P 1850 7050
+F 0 "U18" H 2300 9275 50  0000 C CNN
+F 1 "PI6C59S6005" H 2300 9184 50  0000 C CNN
+F 2 "" H 1850 6750 50  0001 C CNN
+F 3 "" H 1850 6750 50  0001 C CNN
+	1    1850 7050
+	1    0    0    -1  
+$EndComp
+Text Label 1600 5050 2    50   ~ 0
+3V3
+Text Label 1600 5550 2    50   ~ 0
+GND
+$Comp
+L device:R R22
+U 1 1 5CAF98FD
+P 1050 5950
+F 0 "R22" V 950 5900 50  0000 C CNN
+F 1 "1K" V 1050 5950 50  0000 C CNN
+F 2 "" V 980 5950 50  0001 C CNN
+F 3 "" H 1050 5950 50  0001 C CNN
+	1    1050 5950
+	0    1    1    0   
+$EndComp
+Text Label 900  5950 2    50   ~ 0
+GND
+Wire Wire Line
+	1200 5950 1750 5950
+NoConn ~ 1750 6850
+NoConn ~ 1750 6950
+Text Label 2850 5750 0    50   ~ 0
+RST0_N
+Text Label 2850 5650 0    50   ~ 0
+RST0_P
+Text Label 2850 6050 0    50   ~ 0
+RST1_N
+Text Label 2850 5950 0    50   ~ 0
+RST1_P
+Text Label 2850 6350 0    50   ~ 0
+RST2_N
+Text Label 2850 6250 0    50   ~ 0
+RST2_P
+NoConn ~ 2850 6850
+NoConn ~ 2850 6950
+Text Label 2850 6650 0    50   ~ 0
+RST3_N
+Text Label 2850 6550 0    50   ~ 0
+RST3_P
+Wire Wire Line
+	4550 5000 4700 5000
+Text Label 4550 5100 2    50   ~ 0
+GND
+Wire Wire Line
+	4550 5100 4700 5100
+Wire Wire Line
+	4700 5100 4700 5200
+Text Label 4600 5400 2    50   ~ 0
+GND
+Wire Wire Line
+	4600 5400 4700 5400
+Text Label 4700 6700 2    50   ~ 0
+RST0_P
+Text Label 4700 6800 2    50   ~ 0
+RST0_N
+Text Label 6400 5000 2    50   ~ 0
+2V5
+Text Label 6400 5100 2    50   ~ 0
+GND
+Wire Wire Line
+	6400 5100 6400 5200
+Connection ~ 6400 5200
+Wire Wire Line
+	6400 5200 6400 5400
+Connection ~ 6400 5400
+Wire Wire Line
+	6400 5400 6400 5500
+Connection ~ 6400 5500
+Wire Wire Line
+	6400 5500 6400 5600
+Connection ~ 6400 5600
+Wire Wire Line
+	6400 5600 6400 5700
+Connection ~ 6400 5700
+Wire Wire Line
+	6400 5700 6400 5800
+Connection ~ 6400 5800
+Wire Wire Line
+	6400 5800 6400 5900
+Text Label 3950 2000 0    50   ~ 0
+CLK0_P
+Text Label 3950 2100 0    50   ~ 0
+CLK0_N
+Text Label 3950 2300 0    50   ~ 0
+CLK1_P
+Text Label 3950 2400 0    50   ~ 0
+CLK1_N
+Text Label 3950 2600 0    50   ~ 0
+CLK2_P
+Text Label 3950 2700 0    50   ~ 0
+CLK2_N
+Text Label 3950 2900 0    50   ~ 0
+CLK3_P
+Text Label 3950 3000 0    50   ~ 0
+CLK3_N
+NoConn ~ 3950 3200
+NoConn ~ 3950 3300
+Wire Wire Line
+	5700 6100 6400 6100
+Wire Wire Line
+	5700 6200 6400 6200
+Text Label 4700 6400 2    50   ~ 0
+CLK0_P
+Text Label 4700 6500 2    50   ~ 0
+CLK0_N
+Text Label 6400 6400 2    50   ~ 0
+CLK1_P
+Text Label 6400 6500 2    50   ~ 0
+CLK1_N
+Text Label 6400 6700 2    50   ~ 0
+RST1_P
+Text Label 6400 6800 2    50   ~ 0
+RST1_N
+Wire Wire Line
+	4700 5800 4700 5900
+Connection ~ 4700 5800
+Connection ~ 4700 5700
+Wire Wire Line
+	4700 5700 4700 5800
+Wire Wire Line
+	4700 5600 4700 5700
+Connection ~ 4700 5600
+Connection ~ 4700 5500
+Connection ~ 4700 5400
+Wire Wire Line
+	4700 5500 4700 5600
+Wire Wire Line
+	4700 5400 4700 5500
+Connection ~ 4700 5100
+$Comp
+L special-azonenberg:NB7V52MMNG U19
+U 1 1 5CAE4A17
+P 4800 6850
+F 0 "U19" H 5200 8925 50  0000 C CNN
+F 1 "NB7V52MMNG" H 5200 8834 50  0000 C CNN
+F 2 "" H 4800 6850 50  0001 C CNN
+F 3 "" H 4800 6850 50  0001 C CNN
+	1    4800 6850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 6100 8100 6100
+Wire Wire Line
+	7400 6200 8100 6200
+Text Label 8100 6400 2    50   ~ 0
+CLK2_P
+Text Label 8100 6500 2    50   ~ 0
+CLK2_N
+Text Label 8100 6700 2    50   ~ 0
+RST2_P
+Text Label 8100 6800 2    50   ~ 0
+RST2_N
+Text Label 11600 7000 2    50   ~ 0
+RST3_P
+Text Label 11600 7100 2    50   ~ 0
+RST3_N
+Text Label 11600 6700 2    50   ~ 0
+CLK3_P
+Text Label 11600 6800 2    50   ~ 0
+CLK3_N
+Text Label 5850 6100 0    50   ~ 0
+SHREG0_P
+Text Label 5850 6200 0    50   ~ 0
+SHREG0_N
+Text Label 7600 6100 0    50   ~ 0
+SHREG1_P
+Text Label 7600 6200 0    50   ~ 0
+SHREG1_N
+Text Label 9200 6100 0    50   ~ 0
+SHREG2_P
+Text Label 9200 6200 0    50   ~ 0
+SHREG2_N
+Wire Wire Line
+	11600 5400 11600 5500
+Connection ~ 11600 5500
+Wire Wire Line
+	11600 5500 11600 5700
+Connection ~ 11600 5700
+Wire Wire Line
+	11600 5700 11600 5800
+Connection ~ 11600 5800
+Wire Wire Line
+	11600 5800 11600 5900
+Connection ~ 11600 5900
+Wire Wire Line
+	11600 5900 11600 6000
+Connection ~ 11600 6000
+Wire Wire Line
+	11600 6000 11600 6100
+Connection ~ 11600 6100
+Wire Wire Line
+	11600 6100 11600 6200
+Text Label 11600 5400 2    50   ~ 0
+GND
+Text Label 8100 5100 2    50   ~ 0
+GND
+Text Label 8100 5000 2    50   ~ 0
+2V5
+Text Label 11600 5300 2    50   ~ 0
+2V5
+$Comp
+L device:C C192
+U 1 1 5CB584BC
+P 4900 4500
+F 0 "C192" H 5015 4546 50  0000 L CNN
+F 1 "0.47 uF" H 5015 4455 50  0000 L CNN
+F 2 "" H 4938 4350 50  0001 C CNN
+F 3 "" H 4900 4500 50  0001 C CNN
+	1    4900 4500
+	1    0    0    -1  
+$EndComp
+Text Label 4900 4350 2    50   ~ 0
+2V5
+Text Label 4900 4650 2    50   ~ 0
+GND
+$Comp
+L device:C C193
+U 1 1 5CB58F14
+P 5450 4500
+F 0 "C193" H 5565 4546 50  0000 L CNN
+F 1 "0.47 uF" H 5565 4455 50  0000 L CNN
+F 2 "" H 5488 4350 50  0001 C CNN
+F 3 "" H 5450 4500 50  0001 C CNN
+	1    5450 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C194
+U 1 1 5CB593FB
+P 6000 4500
+F 0 "C194" H 6115 4546 50  0000 L CNN
+F 1 "0.47 uF" H 6115 4455 50  0000 L CNN
+F 2 "" H 6038 4350 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C195
+U 1 1 5CB59830
+P 6550 4500
+F 0 "C195" H 6665 4546 50  0000 L CNN
+F 1 "0.47 uF" H 6665 4455 50  0000 L CNN
+F 2 "" H 6588 4350 50  0001 C CNN
+F 3 "" H 6550 4500 50  0001 C CNN
+	1    6550 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4350 6000 4350
+Connection ~ 5450 4350
+Wire Wire Line
+	5450 4350 4900 4350
+Connection ~ 6000 4350
+Wire Wire Line
+	6000 4350 5450 4350
+Wire Wire Line
+	4900 4650 5450 4650
+Connection ~ 5450 4650
+Wire Wire Line
+	5450 4650 6000 4650
+Connection ~ 6000 4650
+Wire Wire Line
+	6000 4650 6550 4650
+Text Label 12700 6400 0    50   ~ 0
+SHREG3_P
+Wire Wire Line
+	12600 6400 13200 6400
+Text Label 12700 6500 0    50   ~ 0
+SHREG3_N
+Wire Wire Line
+	12600 6500 13200 6500
+Wire Wire Line
+	9100 6100 9650 6100
+Wire Wire Line
+	9100 6200 9650 6200
+Wire Wire Line
+	10750 6400 11600 6400
+Wire Wire Line
+	11600 6500 10750 6500
+Text Label 10950 6400 0    50   ~ 0
+SHREG2B_P
+Text Label 10950 6500 0    50   ~ 0
+SHREG2B_N
+Wire Wire Line
+	14450 6700 14300 6700
+Wire Wire Line
+	14300 6800 14450 6800
+Text Label 14450 6400 0    50   ~ 0
+SHREG3A_P
+Wire Wire Line
+	14450 6400 14300 6400
+Text Label 14450 6500 0    50   ~ 0
+SHREG3A_N
+Wire Wire Line
+	14450 6500 14300 6500
+Text Label 10950 6100 0    50   ~ 0
+SHREG2A_P
+Text Label 10950 6200 0    50   ~ 0
+SHREG2A_N
+Wire Wire Line
+	10950 6200 10750 6200
+Wire Wire Line
+	10750 6100 10950 6100
+$Comp
+L device:C C?
+U 1 1 5CBB4ACD
+P 7050 4500
+AR Path="/5C0E404A/5CBB4ACD" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBB4ACD" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBB4ACD" Ref="C196"  Part="1" 
+F 0 "C196" H 7165 4546 50  0000 L CNN
+F 1 "4.7 uF" H 7165 4455 50  0000 L CNN
+F 2 "" H 7088 4350 50  0001 C CNN
+F 3 "" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 4350 6550 4350
+Connection ~ 6550 4350
+Wire Wire Line
+	6550 4650 7050 4650
+Connection ~ 6550 4650
+Text Notes 4950 4350 0    50   ~ 0
+FF decoupling
+Text Notes 11700 9600 0    50   ~ 0
+Logic function: LE = SHREG2 & !SHREG3
+Wire Wire Line
+	8100 5100 8100 5200
+Connection ~ 8100 5200
+Connection ~ 8100 5600
+Wire Wire Line
+	8100 5600 8100 5700
+Connection ~ 8100 5700
+Wire Wire Line
+	8100 5800 8100 5900
+Wire Wire Line
+	8100 5700 8100 5800
+Connection ~ 8100 5800
+Wire Wire Line
+	8100 5200 8100 5400
+Connection ~ 8100 5400
+Wire Wire Line
+	8100 5500 8100 5600
+Wire Wire Line
+	8100 5400 8100 5500
+Connection ~ 8100 5500
+$Comp
+L special-azonenberg:NB7V52MMNG U21
+U 1 1 5CAE55CF
+P 8200 6850
+F 0 "U21" H 8600 8925 50  0000 C CNN
+F 1 "NB7V52MMNG" H 8600 8834 50  0000 C CNN
+F 2 "" H 8200 6850 50  0001 C CNN
+F 3 "" H 8200 6850 50  0001 C CNN
+	1    8200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:PI6C59S6005 U22
+U 1 1 5CBF032C
+P 9750 6600
+F 0 "U22" H 10200 8825 50  0000 C CNN
+F 1 "PI6C59S6005" H 10200 8734 50  0000 C CNN
+F 2 "" H 9750 6300 50  0001 C CNN
+F 3 "" H 9750 6300 50  0001 C CNN
+	1    9750 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CBFE2A9
+P 9750 4050
+AR Path="/5C0E404A/5CBFE2A9" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBFE2A9" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBFE2A9" Ref="C197"  Part="1" 
+F 0 "C197" H 9865 4096 50  0000 L CNN
+F 1 "4.7 uF" H 9865 4005 50  0000 L CNN
+F 2 "" H 9788 3900 50  0001 C CNN
+F 3 "" H 9750 4050 50  0001 C CNN
+	1    9750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CBFE2AF
+P 10250 4050
+AR Path="/5C0E404A/5CBFE2AF" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBFE2AF" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBFE2AF" Ref="C198"  Part="1" 
+F 0 "C198" H 10365 4096 50  0000 L CNN
+F 1 "0.47 uF" H 10365 4005 50  0000 L CNN
+F 2 "" H 10288 3900 50  0001 C CNN
+F 3 "" H 10250 4050 50  0001 C CNN
+	1    10250 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CBFE2B5
+P 11300 4050
+AR Path="/5C0E404A/5CBFE2B5" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBFE2B5" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBFE2B5" Ref="C200"  Part="1" 
+F 0 "C200" H 11415 4096 50  0000 L CNN
+F 1 "0.47 uF" H 11415 4005 50  0000 L CNN
+F 2 "" H 11338 3900 50  0001 C CNN
+F 3 "" H 11300 4050 50  0001 C CNN
+	1    11300 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10250 3900
+Wire Wire Line
+	10250 3900 9750 3900
+Connection ~ 10250 4200
+Wire Wire Line
+	10250 4200 9750 4200
+Text Label 9550 3900 2    50   ~ 0
+3V3
+Wire Wire Line
+	9550 3900 9750 3900
+Connection ~ 9750 3900
+Text Label 9550 4200 2    50   ~ 0
+GND
+Wire Wire Line
+	9550 4200 9750 4200
+Connection ~ 9750 4200
+Wire Wire Line
+	10250 3900 10800 3900
+Wire Wire Line
+	10250 4200 10800 4200
+$Comp
+L device:C C?
+U 1 1 5CBFE2C7
+P 10800 4050
+AR Path="/5C0E404A/5CBFE2C7" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBFE2C7" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBFE2C7" Ref="C199"  Part="1" 
+F 0 "C199" H 10915 4096 50  0000 L CNN
+F 1 "0.47 uF" H 10915 4005 50  0000 L CNN
+F 2 "" H 10838 3900 50  0001 C CNN
+F 3 "" H 10800 4050 50  0001 C CNN
+	1    10800 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10800 3900
+Wire Wire Line
+	10800 3900 11300 3900
+Connection ~ 10800 4200
+Wire Wire Line
+	10800 4200 11300 4200
+$Comp
+L device:C C?
+U 1 1 5CBFE2D1
+P 11900 4050
+AR Path="/5C0E404A/5CBFE2D1" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CBFE2D1" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CBFE2D1" Ref="C201"  Part="1" 
+F 0 "C201" H 12015 4096 50  0000 L CNN
+F 1 "0.47 uF" H 12015 4005 50  0000 L CNN
+F 2 "" H 11938 3900 50  0001 C CNN
+F 3 "" H 11900 4050 50  0001 C CNN
+	1    11900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11900 3900 11300 3900
+Connection ~ 11300 3900
+Wire Wire Line
+	11900 4200 11300 4200
+Connection ~ 11300 4200
+Text Label 9550 4600 2    50   ~ 0
+3V3
+Wire Wire Line
+	9550 4600 9650 4600
+Wire Wire Line
+	9650 4900 9650 4800
+Connection ~ 9650 4600
+Connection ~ 9650 4700
+Wire Wire Line
+	9650 4700 9650 4600
+Connection ~ 9650 4800
+Wire Wire Line
+	9650 4800 9650 4700
+Text Label 9550 5100 2    50   ~ 0
+GND
+Wire Wire Line
+	9550 5100 9650 5100
+Text Label 9550 5300 2    50   ~ 0
+3V3
+Wire Wire Line
+	9550 5300 9650 5300
+$Comp
+L special-azonenberg:JUMPER_0402_SPDT JP?
+U 1 1 5CC11C4B
+P 5250 4150
+AR Path="/5C0E404A/5CC11C4B" Ref="JP?"  Part="1" 
+AR Path="/5C267736/5CC11C4B" Ref="JP?"  Part="1" 
+AR Path="/5C15809A/5CC11C4B" Ref="JP6"  Part="1" 
+F 0 "JP6" H 5233 4737 60  0000 C CNN
+F 1 "JUMPER_0402" H 5233 4631 60  0000 C CNN
+F 2 "" H 5250 4150 60  0000 C CNN
+F 3 "" H 5250 4150 60  0000 C CNN
+	1    5250 4150
+	1    0    0    -1  
+$EndComp
+Text Label 5550 3950 0    50   ~ 0
+BUF6_IN_SEL
+Text Label 5550 3850 0    50   ~ 0
+3V3
+Text Label 5550 4050 0    50   ~ 0
+GND
+Text Label 9650 5400 2    50   ~ 0
+BUF6_IN_SEL
+Text Label 9550 5500 2    50   ~ 0
+GND
+Wire Wire Line
+	9550 5500 9650 5500
+Text Label 9550 5600 2    50   ~ 0
+GND
+Wire Wire Line
+	9550 5600 9650 5600
+NoConn ~ 9650 5800
+NoConn ~ 9650 6400
+NoConn ~ 9650 6500
+NoConn ~ 10750 5200
+NoConn ~ 10750 5300
+NoConn ~ 10750 5500
+NoConn ~ 10750 5600
+NoConn ~ 10750 5800
+NoConn ~ 10750 5900
+$Comp
+L special-azonenberg:PI6C59S6005 U24
+U 1 1 5CC4A08A
+P 13300 6900
+F 0 "U24" H 13750 9125 50  0000 C CNN
+F 1 "PI6C59S6005" H 13750 9034 50  0000 C CNN
+F 2 "" H 13300 6600 50  0001 C CNN
+F 3 "" H 13300 6600 50  0001 C CNN
+	1    13300 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L special-azonenberg:JUMPER_0402_SPDT JP?
+U 1 1 5CC63722
+P 12050 3700
+AR Path="/5C0E404A/5CC63722" Ref="JP?"  Part="1" 
+AR Path="/5C267736/5CC63722" Ref="JP?"  Part="1" 
+AR Path="/5C15809A/5CC63722" Ref="JP7"  Part="1" 
+F 0 "JP7" H 12033 4287 60  0000 C CNN
+F 1 "JUMPER_0402" H 12033 4181 60  0000 C CNN
+F 2 "" H 12050 3700 60  0000 C CNN
+F 3 "" H 12050 3700 60  0000 C CNN
+	1    12050 3700
+	1    0    0    -1  
+$EndComp
+Text Label 12350 3500 0    50   ~ 0
+BUF7_IN_SEL
+Text Label 12350 3400 0    50   ~ 0
+3V3
+Text Label 12350 3600 0    50   ~ 0
+GND
+Text Label 13200 5700 2    50   ~ 0
+BUF7_IN_SEL
+Text Label 13050 4900 2    50   ~ 0
+3V3
+Wire Wire Line
+	13050 4900 13200 4900
+Wire Wire Line
+	13200 4900 13200 5000
+Connection ~ 13200 4900
+Connection ~ 13200 5000
+Wire Wire Line
+	13200 5000 13200 5100
+Connection ~ 13200 5100
+Wire Wire Line
+	13200 5100 13200 5200
+Text Label 13200 5400 2    50   ~ 0
+GND
+Text Label 13200 5600 2    50   ~ 0
+3V3
+Text Label 13200 5800 2    50   ~ 0
+GND
+Text Label 13200 5900 2    50   ~ 0
+GND
+NoConn ~ 13200 6100
+Text Label 13200 6200 2    50   ~ 0
+2V5
+Text Label 9650 5900 2    50   ~ 0
+2V5
+$Comp
+L device:C C?
+U 1 1 5CC77841
+P 13050 4050
+AR Path="/5C0E404A/5CC77841" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CC77841" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CC77841" Ref="C202"  Part="1" 
+F 0 "C202" H 13165 4096 50  0000 L CNN
+F 1 "4.7 uF" H 13165 4005 50  0000 L CNN
+F 2 "" H 13088 3900 50  0001 C CNN
+F 3 "" H 13050 4050 50  0001 C CNN
+	1    13050 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CC7784B
+P 13550 4050
+AR Path="/5C0E404A/5CC7784B" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CC7784B" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CC7784B" Ref="C203"  Part="1" 
+F 0 "C203" H 13665 4096 50  0000 L CNN
+F 1 "0.47 uF" H 13665 4005 50  0000 L CNN
+F 2 "" H 13588 3900 50  0001 C CNN
+F 3 "" H 13550 4050 50  0001 C CNN
+	1    13550 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CC77855
+P 14600 4050
+AR Path="/5C0E404A/5CC77855" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CC77855" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CC77855" Ref="C207"  Part="1" 
+F 0 "C207" H 14715 4096 50  0000 L CNN
+F 1 "0.47 uF" H 14715 4005 50  0000 L CNN
+F 2 "" H 14638 3900 50  0001 C CNN
+F 3 "" H 14600 4050 50  0001 C CNN
+	1    14600 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 13550 3900
+Wire Wire Line
+	13550 3900 13050 3900
+Connection ~ 13550 4200
+Wire Wire Line
+	13550 4200 13050 4200
+Text Label 12850 3900 2    50   ~ 0
+3V3
+Wire Wire Line
+	12850 3900 13050 3900
+Connection ~ 13050 3900
+Text Label 12850 4200 2    50   ~ 0
+GND
+Wire Wire Line
+	12850 4200 13050 4200
+Connection ~ 13050 4200
+Wire Wire Line
+	13550 3900 14100 3900
+Wire Wire Line
+	13550 4200 14100 4200
+$Comp
+L device:C C?
+U 1 1 5CC7786B
+P 14100 4050
+AR Path="/5C0E404A/5CC7786B" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CC7786B" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CC7786B" Ref="C204"  Part="1" 
+F 0 "C204" H 14215 4096 50  0000 L CNN
+F 1 "0.47 uF" H 14215 4005 50  0000 L CNN
+F 2 "" H 14138 3900 50  0001 C CNN
+F 3 "" H 14100 4050 50  0001 C CNN
+	1    14100 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 14100 3900
+Wire Wire Line
+	14100 3900 14600 3900
+Connection ~ 14100 4200
+Wire Wire Line
+	14100 4200 14600 4200
+$Comp
+L device:C C?
+U 1 1 5CC77879
+P 15200 4050
+AR Path="/5C0E404A/5CC77879" Ref="C?"  Part="1" 
+AR Path="/5C267736/5CC77879" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5CC77879" Ref="C208"  Part="1" 
+F 0 "C208" H 15315 4096 50  0000 L CNN
+F 1 "0.47 uF" H 15315 4005 50  0000 L CNN
+F 2 "" H 15238 3900 50  0001 C CNN
+F 3 "" H 15200 4050 50  0001 C CNN
+	1    15200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15200 3900 14600 3900
+Connection ~ 14600 3900
+Wire Wire Line
+	15200 4200 14600 4200
+Connection ~ 14600 4200
+NoConn ~ 14300 5500
+NoConn ~ 14300 5600
+NoConn ~ 14300 5800
+NoConn ~ 14300 5900
+NoConn ~ 14300 6100
+NoConn ~ 14300 6200
+$Comp
+L special-azonenberg:SY58051AU U25
+U 1 1 5CCAE598
+P 11700 9500
+F 0 "U25" H 12200 11675 50  0000 C CNN
+F 1 "SY58051AU" H 12200 11584 50  0000 C CNN
+F 2 "" H 11700 9500 50  0001 C CNN
+F 3 "" H 11700 9500 50  0001 C CNN
+	1    11700 9500
+	1    0    0    -1  
+$EndComp
+Text Label 11600 9050 2    50   ~ 0
+SHREG2A_P
+Text Label 11600 9150 2    50   ~ 0
+SHREG2A_N
+Text Label 11450 7550 2    50   ~ 0
+3V3
+Wire Wire Line
+	11450 7550 11600 7550
+Wire Wire Line
+	11600 7550 11600 7650
+Connection ~ 11600 7550
+Text Label 11450 7850 2    50   ~ 0
+GND
+Wire Wire Line
+	11450 7850 11600 7850
+Wire Wire Line
+	11600 7850 11600 7950
+Connection ~ 11600 7850
+Connection ~ 11600 7950
+Wire Wire Line
+	11600 7950 11600 8050
+Connection ~ 11600 8050
+Wire Wire Line
+	11600 8050 11600 8150
+Text Label 11600 9450 2    50   ~ 0
+SHREG3A_P
+Text Label 11600 9350 2    50   ~ 0
+SHREG3A_N
+Text Notes 11600 9550 2    50   ~ 0
+polarity flip = invert
+Text Label 11600 8850 2    50   ~ 0
+3V3
+$Comp
+L device:R R23
+U 1 1 5CCED7BB
+P 11250 8750
+F 0 "R23" V 11200 8600 50  0000 C CNN
+F 1 "1K" V 11250 8750 50  0000 C CNN
+F 2 "" V 11180 8750 50  0001 C CNN
+F 3 "" H 11250 8750 50  0001 C CNN
+	1    11250 8750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11400 8750 11600 8750
+Text Label 11000 8750 2    50   ~ 0
+GND
+Wire Wire Line
+	11000 8750 11100 8750
+NoConn ~ 11600 8450
+Text Label 11600 8350 2    50   ~ 0
+3V3
+Text Label 11600 8550 2    50   ~ 0
+3V3
+$Comp
+L device:C C210
+U 1 1 5CCFF0AF
+P 9000 7650
+F 0 "C210" H 9115 7696 50  0000 L CNN
+F 1 "0.1 uF" H 9115 7605 50  0000 L CNN
+F 2 "" H 9038 7500 50  0001 C CNN
+F 3 "" H 9000 7650 50  0001 C CNN
+	1    9000 7650
+	1    0    0    -1  
+$EndComp
+Text Label 8350 7500 2    50   ~ 0
+3V3
+$Comp
+L device:C C211
+U 1 1 5CCFFC9E
+P 9500 7650
+F 0 "C211" H 9615 7696 50  0000 L CNN
+F 1 "0.01 uF" H 9615 7605 50  0000 L CNN
+F 2 "" H 9538 7500 50  0001 C CNN
+F 3 "" H 9500 7650 50  0001 C CNN
+	1    9500 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C212
+U 1 1 5CD0B0DC
+P 10050 7650
+F 0 "C212" H 10165 7696 50  0000 L CNN
+F 1 "0.1 uF" H 10165 7605 50  0000 L CNN
+F 2 "" H 10088 7500 50  0001 C CNN
+F 3 "" H 10050 7650 50  0001 C CNN
+	1    10050 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C213
+U 1 1 5CD0B0E6
+P 10550 7650
+F 0 "C213" H 10665 7696 50  0000 L CNN
+F 1 "0.01 uF" H 10665 7605 50  0000 L CNN
+F 2 "" H 10588 7500 50  0001 C CNN
+F 3 "" H 10550 7650 50  0001 C CNN
+	1    10550 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C209
+U 1 1 5CD10AEF
+P 8500 7650
+F 0 "C209" H 8615 7696 50  0000 L CNN
+F 1 "4.7 uF" H 8615 7605 50  0000 L CNN
+F 2 "" H 8538 7500 50  0001 C CNN
+F 3 "" H 8500 7650 50  0001 C CNN
+	1    8500 7650
+	1    0    0    -1  
+$EndComp
+Text Label 8350 7800 2    50   ~ 0
+GND
+Wire Wire Line
+	8350 7800 8500 7800
+Connection ~ 8500 7800
+Wire Wire Line
+	8500 7800 9000 7800
+Connection ~ 9000 7800
+Wire Wire Line
+	9000 7800 9500 7800
+Connection ~ 9500 7800
+Wire Wire Line
+	9500 7800 10050 7800
+Connection ~ 10050 7800
+Wire Wire Line
+	10050 7800 10550 7800
+Wire Wire Line
+	10550 7500 10050 7500
+Connection ~ 8500 7500
+Wire Wire Line
+	8500 7500 8350 7500
+Connection ~ 9000 7500
+Wire Wire Line
+	9000 7500 8500 7500
+Connection ~ 9500 7500
+Wire Wire Line
+	9500 7500 9000 7500
+Connection ~ 10050 7500
+Wire Wire Line
+	10050 7500 9500 7500
+Text Notes 12800 8600 0    50   ~ 0
+Comparator:\nLE low: track\nLE high: hold\n\nSHRE2 & !SHREG3 is the desired track period\nSo we need to invert Q
 $EndSCHEMATC

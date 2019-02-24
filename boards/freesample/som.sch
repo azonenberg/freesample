@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 12
 Title "FREESAMPLE Oscilloscope"
-Date "2018-12-17"
+Date "2019-02-23"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "INTEGRALSTICK SoM connection"
@@ -627,4 +627,12 @@ Wire Wire Line
 Connection ~ 1100 7550
 Wire Wire Line
 	1100 7550 1100 7450
+Text HLabel 1100 4250 0    50   Output ~ 0
+D3V3
+Text HLabel 1000 2550 0    50   Output ~ 0
+D2V5
+Text HLabel 1000 1450 0    50   Output ~ 0
+D1V8
+Text Label 2350 1650 0    50   ~ 0
+D3V3
 $EndSCHEMATC
