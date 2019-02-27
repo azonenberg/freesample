@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-23"
+Date "2019-02-26"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "External reference clocks"
@@ -666,8 +666,6 @@ Wire Wire Line
 Connection ~ 6650 3050
 Wire Wire Line
 	6650 3050 6150 3050
-Text Label 5950 2750 2    50   ~ 0
-3V3
 Wire Wire Line
 	5950 2750 6150 2750
 Connection ~ 6150 2750
@@ -763,8 +761,6 @@ Text Label 6200 5500 0    50   ~ 0
 REFCLK1_AC_P
 Text Label 6300 5800 0    50   ~ 0
 REFCLK1_AC_N
-Text Label 6600 3700 2    50   ~ 0
-3V3
 Wire Wire Line
 	6600 3700 6700 3700
 Wire Wire Line
@@ -903,4 +899,8 @@ Text HLabel 7900 4900 2    50   Output ~ 0
 CDR_EXTCLK_P
 Text HLabel 7900 5000 2    50   Output ~ 0
 CDR_EXTCLK_N
+Text HLabel 5950 2750 0    50   Input ~ 0
+3V3_CLKBUF
+Text Label 6600 3700 2    50   ~ 0
+3V3_CLKBUF
 $EndSCHEMATC

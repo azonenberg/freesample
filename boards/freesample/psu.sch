@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 10 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-23"
+Date "2019-02-26"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 ""

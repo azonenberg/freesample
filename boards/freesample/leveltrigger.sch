@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-23"
+Date "2019-02-26"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Level triggering"
@@ -348,7 +348,7 @@ Connection ~ 8600 950
 Wire Wire Line
 	8600 950  8100 950 
 Text Label 7900 650  2    50   ~ 0
-3V3
+3V3_CLKBUF
 Wire Wire Line
 	7900 650  8100 650 
 Connection ~ 8100 650 
@@ -448,8 +448,6 @@ Wire Wire Line
 	6150 2850 6150 2950
 Wire Wire Line
 	6150 2950 7550 2950
-Text Label 7400 1450 2    50   ~ 0
-3V3
 Wire Wire Line
 	7400 1450 7450 1450
 Wire Wire Line
@@ -491,4 +489,6 @@ Text Notes 2000 2850 0    50   ~ 0
 TODO: terminate LTRIG_DIN to 2V0?
 Text Notes 4950 2600 0    50   ~ 0
 Common mode is VCCO-0.15 = 1.65V\nVout = 1.8 to 1.5, 300 mV differential
+Text HLabel 7400 1450 0    50   Input ~ 0
+3V3_CLKBUF
 $EndSCHEMATC

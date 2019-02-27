@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-23"
+Date "2019-02-26"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Top Level"
@@ -15,42 +15,43 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 5650 2300 1650 800 
+S 5650 2300 1650 850 
 U 5C0E404A
 F0 "External reference clocks" 50
 F1 "ext-clocks.sch" 50
 F2 "3V3" I L 5650 2350 50 
-F3 "GND" I L 5650 2550 50 
-F4 "3V0_N" I L 5650 2650 50 
-F5 "1V8" I L 5650 2450 50 
-F6 "REFCLK_SINGLE_VT" I L 5650 2850 50 
-F7 "EXT_CLK_SEL" I L 5650 2950 50 
+F3 "GND" I L 5650 2650 50 
+F4 "3V0_N" I L 5650 2750 50 
+F5 "1V8" I L 5650 2550 50 
+F6 "REFCLK_SINGLE_VT" I L 5650 2950 50 
+F7 "EXT_CLK_SEL" I L 5650 3050 50 
 F8 "PLL_EXTCLK_P" O R 7300 2650 50 
 F9 "PLL_EXTCLK_N" O R 7300 2750 50 
 F10 "SAMPLE_EXTCLK_P" O R 7300 2950 50 
 F11 "SAMPLE_EXTCLK_N" O R 7300 3050 50 
 F12 "CDR_EXTCLK_P" O R 7300 2350 50 
 F13 "CDR_EXTCLK_N" O R 7300 2450 50 
+F14 "3V3_CLKBUF" I L 5650 2450 50 
 $EndSheet
 $Sheet
-S 800  3100 1100 1300
+S 850  3450 1100 1300
 U 5C157454
 F0 "DAC" 50
 F1 "dac.sch" 50
-F2 "LTRIG_VT" O R 1900 3350 50 
-F3 "REFCLK_SINGLE_VT" O R 1900 3150 50 
-F4 "ADC_VT" O R 1900 3250 50 
-F5 "5V0_N" I L 800 3550 50 
-F6 "GND" I L 800 3450 50 
-F7 "DAC_MUXOUT" O R 1900 3550 50 
-F8 "LDAC_N" I R 1900 3650 50 
-F9 "CS_N" I R 1900 3750 50 
-F10 "SCK" I R 1900 3850 50 
-F11 "MOSI" I R 1900 3950 50 
-F12 "MISO" O R 1900 4050 50 
-F13 "1V8" I L 800 3350 50 
-F14 "RST_N" I R 1900 4150 50 
-F15 "A5V0" I L 800 3150 50 
+F2 "LTRIG_VT" O R 1950 3700 50 
+F3 "REFCLK_SINGLE_VT" O R 1950 3500 50 
+F4 "ADC_VT" O R 1950 3600 50 
+F5 "5V0_N" I L 850 3900 50 
+F6 "GND" I L 850 3800 50 
+F7 "DAC_MUXOUT" O R 1950 3900 50 
+F8 "LDAC_N" I R 1950 4000 50 
+F9 "CS_N" I R 1950 4100 50 
+F10 "SCK" I R 1950 4200 50 
+F11 "MOSI" I R 1950 4300 50 
+F12 "MISO" O R 1950 4400 50 
+F13 "1V8" I L 850 3700 50 
+F14 "RST_N" I R 1950 4500 50 
+F15 "A5V0" I L 850 3500 50 
 $EndSheet
 $Sheet
 S 5650 750  1600 1300
@@ -175,15 +176,16 @@ U 5C23AE1C
 F0 "Level triggering" 50
 F1 "leveltrigger.sch" 50
 F2 "LTRIG_DIN" I L 2750 850 50 
-F3 "3V3" I L 2750 1200 50 
-F4 "3V0_N" I L 2750 1500 50 
-F5 "GND" I L 2750 1400 50 
-F6 "1V8" I L 2750 1300 50 
+F3 "3V3" I L 2750 1250 50 
+F4 "3V0_N" I L 2750 1550 50 
+F5 "GND" I L 2750 1450 50 
+F6 "1V8" I L 2750 1350 50 
 F7 "LTRIG_VT" I L 2750 950 50 
 F8 "LTRIG_CDROUT_P" O R 4300 850 50 
 F9 "LTRIG_CDROUT_N" O R 4300 950 50 
-F10 "LTRIG_SAMPOUT_P" O R 4300 1400 50 
-F11 "LTRIG_SAMPOUT_N" O R 4300 1500 50 
+F10 "LTRIG_SAMPOUT_P" O R 4300 1450 50 
+F11 "LTRIG_SAMPOUT_N" O R 4300 1550 50 
+F12 "3V3_CLKBUF" I L 2750 1150 50 
 $EndSheet
 Text Label 5550 1250 2    50   ~ 0
 1V8
@@ -199,22 +201,22 @@ Wire Wire Line
 	5550 1450 5650 1450
 Wire Wire Line
 	1950 850  2750 850 
-Text Label 2650 1200 2    50   ~ 0
+Text Label 2650 1250 2    50   ~ 0
 3V3
 Wire Wire Line
-	2650 1200 2750 1200
-Text Label 2650 1300 2    50   ~ 0
+	2650 1250 2750 1250
+Text Label 2650 1350 2    50   ~ 0
 1V8
-Text Label 2650 1400 2    50   ~ 0
+Text Label 2650 1450 2    50   ~ 0
 GND
-Text Label 2650 1500 2    50   ~ 0
+Text Label 2650 1550 2    50   ~ 0
 3V0_N
 Wire Wire Line
-	2650 1500 2750 1500
+	2650 1550 2750 1550
 Wire Wire Line
-	2750 1400 2650 1400
+	2750 1450 2650 1450
 Wire Wire Line
-	2650 1300 2750 1300
+	2650 1350 2750 1350
 Text Label 2050 850  0    50   ~ 0
 VIN_0
 Text Label 2050 950  0    50   ~ 0
@@ -254,26 +256,32 @@ S 800  5050 850  1600
 U 5C24BB3B
 F0 "SoM connectors" 50
 F1 "som.sch" 50
+F2 "5V0" I L 800 5100 50 
+F3 "GND" I L 800 5300 50 
+F4 "D3V3" O L 800 5200 50 
 $EndSheet
 $Sheet
-S 850  1950 850  950 
+S 850  1950 850  1300
 U 5C204CCA
 F0 "Power supply" 50
 F1 "psu.sch" 50
 F2 "5V0" I R 1700 2100 50 
 F3 "3V3" O R 1700 2200 50 
-F4 "3V0_N" O R 1700 2600 50 
-F5 "1V8" O R 1700 2400 50 
-F6 "GND" I L 850 2100 50 
-F7 "1V0" O R 1700 2500 50 
-F8 "5V0_N" O R 1700 2800 50 
+F4 "3V0_N" O R 1700 2800 50 
+F5 "1V8" O R 1700 2600 50 
+F6 "GND" I L 850 2200 50 
+F7 "1V0" O R 1700 2700 50 
+F8 "5V0_N" O R 1700 3000 50 
 F9 "12V0" I L 850 2000 50 
-F10 "3V3_N" O R 1700 2700 50 
-F11 "2V5" O R 1700 2300 50 
+F10 "3V3_N" O R 1700 2900 50 
+F11 "2V5" O R 1700 2500 50 
 F12 "A5V0" O R 1700 2000 50 
+F13 "D3V3" I L 850 2100 50 
+F14 "3V3_PLL" O R 1700 2400 50 
+F15 "3V3_CLKBUF" O R 1700 2300 50 
 $EndSheet
 Text Label 8300 1100 2    50   ~ 0
-3V3
+3V3_PLL
 Wire Wire Line
 	8300 1100 8400 1100
 Text Label 8300 1200 2    50   ~ 0
@@ -288,54 +296,54 @@ Text Label 4000 2000 0    50   ~ 0
 ADC_OUT_N
 Wire Wire Line
 	4000 2000 3850 2000
-Text Label 2050 3250 0    50   ~ 0
+Text Label 2100 3600 0    50   ~ 0
 ADC_VT
 Wire Wire Line
-	2050 3250 1900 3250
-Text Label 2050 3150 0    50   ~ 0
+	2100 3600 1950 3600
+Text Label 2100 3500 0    50   ~ 0
 REFCLK_SINGLE_VT
 Wire Wire Line
-	2050 3150 1900 3150
-Text Label 2050 3350 0    50   ~ 0
+	2100 3500 1950 3500
+Text Label 2100 3700 0    50   ~ 0
 LTRIG_VT
 Wire Wire Line
-	2050 3350 1900 3350
-Text Label 700  3150 2    50   ~ 0
+	2100 3700 1950 3700
+Text Label 750  3500 2    50   ~ 0
 A5V0
 Wire Wire Line
-	700  3150 800  3150
-Text Label 700  3450 2    50   ~ 0
+	750  3500 850  3500
+Text Label 750  3800 2    50   ~ 0
 GND
 Wire Wire Line
-	700  3450 800  3450
-Text Label 700  3550 2    50   ~ 0
+	750  3800 850  3800
+Text Label 750  3900 2    50   ~ 0
 5V0_N
 Wire Wire Line
-	700  3550 800  3550
+	750  3900 850  3900
 Text Label 5550 2350 2    50   ~ 0
 3V3
 Wire Wire Line
 	5650 2350 5550 2350
-Text Label 5550 2450 2    50   ~ 0
-1V8
-Wire Wire Line
-	5550 2450 5650 2450
 Text Label 5550 2550 2    50   ~ 0
-GND
+1V8
 Wire Wire Line
 	5550 2550 5650 2550
 Text Label 5550 2650 2    50   ~ 0
-3V0_N
+GND
 Wire Wire Line
 	5550 2650 5650 2650
-Text Label 5550 2850 2    50   ~ 0
+Text Label 5550 2750 2    50   ~ 0
+3V0_N
+Wire Wire Line
+	5550 2750 5650 2750
+Text Label 5550 2950 2    50   ~ 0
 REFCLK_SINGLE_VT
 Wire Wire Line
-	5550 2850 5650 2850
-Text Label 5550 2950 2    50   ~ 0
+	5550 2950 5650 2950
+Text Label 5550 3050 2    50   ~ 0
 EXT_CLK_SEL
 Wire Wire Line
-	5550 2950 5650 2950
+	5550 3050 5650 3050
 $Sheet
 S 10450 750  1900 2700
 U 5C267736
@@ -412,34 +420,34 @@ Text Label 3650 5900 0    50   ~ 0
 DAC_MISO
 Text Label 3650 6000 0    50   ~ 0
 DAC_RST_N
-Text Label 2050 3550 0    50   ~ 0
+Text Label 2100 3900 0    50   ~ 0
 DAC_MUXOUT
-Text Label 2050 3650 0    50   ~ 0
+Text Label 2100 4000 0    50   ~ 0
 LDAC_N
-Text Label 2050 3750 0    50   ~ 0
+Text Label 2100 4100 0    50   ~ 0
 DAC_CS_N
-Text Label 2050 3850 0    50   ~ 0
+Text Label 2100 4200 0    50   ~ 0
 DAC_SCK
-Text Label 2050 3950 0    50   ~ 0
+Text Label 2100 4300 0    50   ~ 0
 DAC_MOSI
-Text Label 2050 4050 0    50   ~ 0
+Text Label 2100 4400 0    50   ~ 0
 DAC_MISO
-Text Label 2050 4150 0    50   ~ 0
+Text Label 2100 4500 0    50   ~ 0
 DAC_RST_N
 Wire Wire Line
-	2050 3550 1900 3550
+	2100 3900 1950 3900
 Wire Wire Line
-	1900 3650 2050 3650
+	1950 4000 2100 4000
 Wire Wire Line
-	2050 3750 1900 3750
+	2100 4100 1950 4100
 Wire Wire Line
-	1900 3850 2050 3850
+	1950 4200 2100 4200
 Wire Wire Line
-	2050 3950 1900 3950
+	2100 4300 1950 4300
 Wire Wire Line
-	1900 4050 2050 4050
+	1950 4400 2100 4400
 Wire Wire Line
-	2050 4150 1900 4150
+	2100 4500 1950 4500
 Text Label 5550 1650 2    50   ~ 0
 SERDES_MODE_SEL
 Wire Wire Line
@@ -485,7 +493,7 @@ OSC_FS0
 Text Label 7400 1200 0    50   ~ 0
 OSC_OE
 Text Label 5550 1150 2    50   ~ 0
-3V3
+3V3_PLL
 Wire Wire Line
 	5550 1150 5650 1150
 Wire Wire Line
@@ -583,15 +591,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 950  5650 950 
 Wire Wire Line
-	4300 1500 4550 1500
-Wire Wire Line
-	4550 1500 4550 3350
-Wire Wire Line
 	4550 3350 10450 3350
-Wire Wire Line
-	4300 1400 4650 1400
-Wire Wire Line
-	4650 1400 4650 3250
 Wire Wire Line
 	4650 3250 10450 3250
 Text Label 10400 1100 2    50   ~ 0
@@ -674,7 +674,7 @@ Wire Wire Line
 Wire Wire Line
 	13000 4500 9450 4500
 Text Label 10400 1400 2    50   ~ 0
-3V3
+3V3_CLKBUF
 Wire Wire Line
 	10400 1400 10450 1400
 Text Label 10400 1500 2    50   ~ 0
@@ -787,10 +787,10 @@ Text Notes 4850 5400 0    50   ~ 0
 LVDS from FPGA
 Text Notes 4850 6000 0    50   ~ 0
 Analog sensors
-Text Label 700  3350 2    50   ~ 0
+Text Label 750  3700 2    50   ~ 0
 1V8
 Wire Wire Line
-	700  3350 800  3350
+	750  3700 850  3700
 Text Notes 3650 5400 0    50   ~ 0
 LVCMOS18
 Text Notes 3650 6800 0    50   ~ 0
@@ -803,34 +803,34 @@ Text Label 1800 2200 0    50   ~ 0
 3V3
 Wire Wire Line
 	1800 2200 1700 2200
-Text Label 1800 2400 0    50   ~ 0
-1V8
-Wire Wire Line
-	1800 2400 1700 2400
-Text Label 1800 2500 0    50   ~ 0
-1V0
-Wire Wire Line
-	1800 2500 1700 2500
 Text Label 1800 2600 0    50   ~ 0
-3V0_N
+1V8
 Wire Wire Line
 	1800 2600 1700 2600
 Text Label 1800 2700 0    50   ~ 0
-3V3_N
+1V0
 Wire Wire Line
 	1800 2700 1700 2700
 Text Label 1800 2800 0    50   ~ 0
-5V0_N
+3V0_N
 Wire Wire Line
 	1800 2800 1700 2800
+Text Label 1800 2900 0    50   ~ 0
+3V3_N
+Wire Wire Line
+	1800 2900 1700 2900
+Text Label 1800 3000 0    50   ~ 0
+5V0_N
+Wire Wire Line
+	1800 3000 1700 3000
 Text Label 750  2000 2    50   ~ 0
 12V0
 Wire Wire Line
 	750  2000 850  2000
-Text Label 750  2100 2    50   ~ 0
+Text Label 750  2200 2    50   ~ 0
 GND
 Wire Wire Line
-	750  2100 850  2100
+	750  2200 850  2200
 NoConn ~ 13100 1000
 Text Label 13200 900  0    50   ~ 0
 GND
@@ -887,14 +887,54 @@ Text Label 4750 4800 2    50   ~ 0
 2V5
 Wire Wire Line
 	4750 4800 4850 4800
-Text Label 1800 2300 0    50   ~ 0
+Text Label 1800 2500 0    50   ~ 0
 2V5
 Wire Wire Line
-	1800 2300 1700 2300
+	1800 2500 1700 2500
 Text Notes 10450 5700 0    50   ~ 0
 TODO:\n* Design PSU\n* Figure out what power rails may need filtering\n* Figure out compatibility of all of the differential I/O standards
 Text Label 1800 2000 0    50   ~ 0
 A5V0
 Wire Wire Line
 	1800 2000 1700 2000
+Text Label 750  2100 2    50   ~ 0
+D3V3
+Wire Wire Line
+	750  2100 850  2100
+Text Label 700  5100 2    50   ~ 0
+5V0
+Wire Wire Line
+	700  5100 800  5100
+Text Label 700  5200 2    50   ~ 0
+D3V3
+Wire Wire Line
+	700  5200 800  5200
+Text Label 700  5300 2    50   ~ 0
+GND
+Wire Wire Line
+	700  5300 800  5300
+Text Label 1800 2300 0    50   ~ 0
+3V3_CLKBUF
+Wire Wire Line
+	1800 2300 1700 2300
+Text Label 1800 2400 0    50   ~ 0
+3V3_PLL
+Wire Wire Line
+	1800 2400 1700 2400
+Text Label 5550 2450 2    50   ~ 0
+3V3_CLKBUF
+Wire Wire Line
+	5550 2450 5650 2450
+Text Label 2650 1150 2    50   ~ 0
+3V3_CLKBUF
+Wire Wire Line
+	2650 1150 2750 1150
+Wire Wire Line
+	4300 1550 4550 1550
+Wire Wire Line
+	4550 1550 4550 3350
+Wire Wire Line
+	4300 1450 4650 1450
+Wire Wire Line
+	4650 1450 4650 3250
 $EndSCHEMATC
