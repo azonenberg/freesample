@@ -892,7 +892,7 @@ Text Label 1800 2500 0    50   ~ 0
 Wire Wire Line
 	1800 2500 1700 2500
 Text Notes 10450 5700 0    50   ~ 0
-TODO:\n* Design PSU\n* Figure out what power rails may need filtering\n* Figure out compatibility of all of the differential I/O standards
+TODO:\n* Finish PSU\n* Figure out compatibility of all of the differential I/O standards\n  and add level shifters/buffers as needed
 Text Label 1800 2000 0    50   ~ 0
 A5V0
 Wire Wire Line
