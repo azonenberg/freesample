@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "DAC for setting sampling point Y position"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -205,7 +205,7 @@ $EndComp
 Wire Wire Line
 	5550 2900 5750 2900
 Text Label 5750 2800 0    50   ~ 0
-5V0
+A5V0
 $Comp
 L device:R R25
 U 1 1 5CD38A49
@@ -221,4 +221,5 @@ Wire Wire Line
 	5550 2800 5750 2800
 Text Notes 6000 2700 0    50   ~ 0
 +/- 2.5V, start up at zero
+NoConn ~ 5250 3900
 $EndSCHEMATC

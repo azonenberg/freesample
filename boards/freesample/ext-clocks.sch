@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "External reference clocks"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -81,7 +81,7 @@ L device:C C16
 U 1 1 5C0ECAAE
 P 1750 2700
 F 0 "C16" V 1498 2700 50  0000 C CNN
-F 1 "C" V 1589 2700 50  0000 C CNN
+F 1 "0.1 uF" V 1589 2700 50  0000 C CNN
 F 2 "" H 1788 2550 50  0001 C CNN
 F 3 "" H 1750 2700 50  0001 C CNN
 	1    1750 2700
@@ -98,7 +98,7 @@ L device:C C17
 U 1 1 5C0ED600
 P 1750 3250
 F 0 "C17" V 1498 3250 50  0000 C CNN
-F 1 "C" V 1589 3250 50  0000 C CNN
+F 1 "0.1 uF" V 1589 3250 50  0000 C CNN
 F 2 "" H 1788 3100 50  0001 C CNN
 F 3 "" H 1750 3250 50  0001 C CNN
 	1    1750 3250
@@ -115,9 +115,9 @@ REFCLK_DIFF_P_AC
 Text Label 1900 3000 0    50   ~ 0
 REFCLK_DIFF_N_AC
 Text Label 3750 2850 0    50   ~ 0
-REFCLK1_P
+REFCLK0_P
 Text Label 3750 2950 0    50   ~ 0
-REFCLK1_N
+REFCLK0_N
 Text HLabel 2450 1700 0    50   Input ~ 0
 3V3
 Wire Wire Line
@@ -368,9 +368,9 @@ F 3 "" H 2800 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3750 6300 0    50   ~ 0
-REFCLK2_P
+REFCLK1_P
 Text Label 3750 6400 0    50   ~ 0
-REFCLK2_N
+REFCLK1_N
 Text HLabel 2450 5150 0    50   Input ~ 0
 3V3
 Wire Wire Line

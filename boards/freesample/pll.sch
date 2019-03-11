@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "PLL for clock synthesis and coarse phasing for X sampling point position"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -514,8 +514,6 @@ Wire Wire Line
 	7050 5550 7600 5550
 NoConn ~ 10250 1250
 NoConn ~ 10250 1350
-NoConn ~ 10250 1550
-NoConn ~ 10250 1650
 NoConn ~ 10250 1850
 NoConn ~ 10250 1950
 NoConn ~ 10250 2150
@@ -538,17 +536,6 @@ NoConn ~ 10250 4550
 NoConn ~ 10250 4650
 NoConn ~ 10250 4850
 NoConn ~ 10250 4950
-$Comp
-L device:C C114
-U 1 1 5C93D973
-P 3550 3250
-F 0 "C114" H 3665 3296 50  0000 L CNN
-F 1 "LF1_C1_TBD" H 3665 3205 50  0000 L CNN
-F 2 "" H 3588 3100 50  0001 C CNN
-F 3 "" H 3550 3250 50  0001 C CNN
-	1    3550 3250
-	1    0    0    -1  
-$EndComp
 Text Label 3100 2650 0    50   ~ 0
 PLL_CP1
 Wire Wire Line
@@ -562,7 +549,7 @@ L device:C C116
 U 1 1 5C942A86
 P 4250 3250
 F 0 "C116" H 4365 3296 50  0000 L CNN
-F 1 "LF1_C2_TBD" H 4365 3205 50  0000 L CNN
+F 1 "47 uF" H 4365 3205 50  0000 L CNN
 F 2 "" H 4288 3100 50  0001 C CNN
 F 3 "" H 4250 3250 50  0001 C CNN
 	1    4250 3250
@@ -573,7 +560,7 @@ L device:R R14
 U 1 1 5C942F76
 P 4250 3550
 F 0 "R14" H 4320 3596 50  0000 L CNN
-F 1 "LF1_R2_TBD" H 4320 3505 50  0000 L CNN
+F 1 "150" H 4320 3505 50  0000 L CNN
 F 2 "" V 4180 3550 50  0001 C CNN
 F 3 "" H 4250 3550 50  0001 C CNN
 	1    4250 3550
@@ -585,14 +572,14 @@ Wire Wire Line
 	3550 3700 3550 3400
 Wire Wire Line
 	3550 3100 4250 3100
-Text Notes 3550 3900 0    50   ~ 0
-PLL1 loop filter\nNeed to calculate values
+Text Notes 3550 3800 0    50   ~ 0
+PLL1 loop filter
 $Comp
 L device:C C119
 U 1 1 5C948463
 P 5150 3250
 F 0 "C119" H 5265 3296 50  0000 L CNN
-F 1 "LF2_C1_TBD" H 5265 3205 50  0000 L CNN
+F 1 "27 pF" H 5265 3205 50  0000 L CNN
 F 2 "" H 5188 3100 50  0001 C CNN
 F 3 "" H 5150 3250 50  0001 C CNN
 	1    5150 3250
@@ -607,7 +594,7 @@ L device:C C121
 U 1 1 5C94846F
 P 5850 3250
 F 0 "C121" H 5965 3296 50  0000 L CNN
-F 1 "LF2_C2_TBD" H 5965 3205 50  0000 L CNN
+F 1 "2700 pF" H 5965 3205 50  0000 L CNN
 F 2 "" H 5888 3100 50  0001 C CNN
 F 3 "" H 5850 3250 50  0001 C CNN
 	1    5850 3250
@@ -618,7 +605,7 @@ L device:R R15
 U 1 1 5C948479
 P 5850 3550
 F 0 "R15" H 5920 3596 50  0000 L CNN
-F 1 "LF2_R2_TBD" H 5920 3505 50  0000 L CNN
+F 1 "1K 1%" H 5920 3505 50  0000 L CNN
 F 2 "" V 5780 3550 50  0001 C CNN
 F 3 "" H 5850 3550 50  0001 C CNN
 	1    5850 3550
@@ -630,8 +617,8 @@ Wire Wire Line
 	5150 3700 5150 3400
 Wire Wire Line
 	5150 3100 5850 3100
-Text Notes 5150 3900 0    50   ~ 0
-PLL2 loop filter\nNeed to calculate values
+Text Notes 5150 3800 0    50   ~ 0
+PLL2 loop filter
 $Comp
 L osc-azonenberg:OSC_LVDS_VCXO U15
 U 1 1 5C94EDE7
@@ -720,4 +707,21 @@ Wire Wire Line
 	3100 2050 3600 2050
 Wire Wire Line
 	3600 2050 3600 2150
+Text Notes 4650 1650 0    50   ~ 0
+PLL CONFIGURATION\nLoop 1\n  1.6 mA charge pump gain\n  25 MHz phase det\nLoop 2\n  3.2 mA charge pump gain\n  2.5 GHz Fvco\n  50 MHz PFD\n  C3/C4 = 0.01 nF\n  R3/R4 = 0.2K
+$Comp
+L device:C C114
+U 1 1 5C93D973
+P 3550 3250
+F 0 "C114" H 3665 3296 50  0000 L CNN
+F 1 "1 uF" H 3665 3205 50  0000 L CNN
+F 2 "" H 3588 3100 50  0001 C CNN
+F 3 "" H 3550 3250 50  0001 C CNN
+	1    3550 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 10250 1550 2    50   Output ~ 0
+FPGACLK_P
+Text HLabel 10250 1650 2    50   Output ~ 0
+FPGACLK_N
 $EndSCHEMATC

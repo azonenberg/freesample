@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Level triggering"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -485,10 +485,59 @@ Wire Wire Line
 	8850 2350 8650 2350
 Wire Wire Line
 	8650 2450 8850 2450
-Text Notes 2000 2850 0    50   ~ 0
-TODO: terminate LTRIG_DIN to 2V0?
 Text Notes 4950 2600 0    50   ~ 0
 Common mode is VCCO-0.15 = 1.65V\nVout = 1.8 to 1.5, 300 mV differential
 Text HLabel 7400 1450 0    50   Input ~ 0
 3V3_CLKBUF
+Text Label 7550 2150 2    50   ~ 0
+3V3_CLKBUF
+NoConn ~ 7550 3250
+NoConn ~ 7550 3350
+Text Label 7550 2350 2    50   ~ 0
+GND
+Text Label 7550 2450 2    50   ~ 0
+GND
+Wire Wire Line
+	7550 2650 7450 2650
+Wire Wire Line
+	7450 2650 7450 2750
+Wire Wire Line
+	7450 2750 7550 2750
+$Comp
+L device:C C262
+U 1 1 5D47E4DD
+P 7150 2650
+F 0 "C262" V 6898 2650 50  0000 C CNN
+F 1 "0.01 uF" V 6989 2650 50  0000 C CNN
+F 2 "" H 7188 2500 50  0001 C CNN
+F 3 "" H 7150 2650 50  0001 C CNN
+	1    7150 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7300 2650 7450 2650
+Connection ~ 7450 2650
+Text Label 7000 2650 2    50   ~ 0
+3V3_CLKBUF
+$Comp
+L special-azonenberg:JUMPER_0402_SPDT JP?
+U 1 1 5D486796
+P 8000 4100
+AR Path="/5C0E404A/5D486796" Ref="JP?"  Part="1" 
+AR Path="/5C23AE1C/5D486796" Ref="JP8"  Part="1" 
+F 0 "JP8" H 7983 4687 60  0000 C CNN
+F 1 "JUMPER_0402" H 7983 4581 60  0000 C CNN
+F 2 "" H 8000 4100 60  0000 C CNN
+F 3 "" H 8000 4100 60  0000 C CNN
+	1    8000 4100
+	1    0    0    -1  
+$EndComp
+Text Label 8300 3900 0    50   ~ 0
+BUF8_IN_SEL
+Text Label 8300 3800 0    50   ~ 0
+3V3_CLKBUF
+Text Label 8300 4000 0    50   ~ 0
+GND
+Text Label 7550 2250 2    50   ~ 0
+BUF8_IN_SEL
 $EndSCHEMATC

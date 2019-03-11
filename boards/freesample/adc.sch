@@ -6,10 +6,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
-Comment1 ""
+Comment1 "Ready for review"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -30,9 +30,9 @@ Text HLabel 6300 2500 2    50   Output ~ 0
 ADC_OUT_P
 Text HLabel 6300 2600 2    50   Output ~ 0
 ADC_OUT_N
-Text HLabel 5250 2250 0    50   Input ~ 0
+Text HLabel 3450 2250 0    50   Input ~ 0
 ADC_LE_P
-Text HLabel 5250 2150 0    50   Input ~ 0
+Text HLabel 3450 2150 0    50   Input ~ 0
 ADC_LE_N
 $Comp
 L analog-azonenberg:HMC675LP3E U8
@@ -320,6 +320,72 @@ $EndComp
 NoConn ~ 6300 1350
 Text Label 6300 1550 0    50   ~ 0
 GND
-Text Notes 4100 2450 0    50   ~ 0
-TODO: VTP = 2V0
+$Comp
+L device:C C?
+U 1 1 5CB77A5B
+P 3600 2150
+AR Path="/5C0E404A/5CB77A5B" Ref="C?"  Part="1" 
+AR Path="/5C23AE1C/5CB77A5B" Ref="C?"  Part="1" 
+AR Path="/5C20498F/5CB77A5B" Ref="C309"  Part="1" 
+F 0 "C309" V 3500 2200 50  0000 L CNN
+F 1 "0.1 uF" V 3500 1850 50  0000 L CNN
+F 2 "" H 3638 2000 50  0001 C CNN
+F 3 "" H 3600 2150 50  0001 C CNN
+	1    3600 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5CB785A9
+P 3600 2250
+AR Path="/5C0E404A/5CB785A9" Ref="C?"  Part="1" 
+AR Path="/5C23AE1C/5CB785A9" Ref="C?"  Part="1" 
+AR Path="/5C20498F/5CB785A9" Ref="C310"  Part="1" 
+F 0 "C310" V 3715 2296 50  0000 L CNN
+F 1 "0.1 uF" V 3750 2000 50  0000 L CNN
+F 2 "" H 3638 2100 50  0001 C CNN
+F 3 "" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 2150 3750 2150
+Text Label 3850 2150 0    50   ~ 0
+ADC_LE_AC_N
+Text Label 3850 2250 0    50   ~ 0
+ADC_LE_AC_P
+$Comp
+L device:R R85
+U 1 1 5CB822E8
+P 4550 2000
+F 0 "R85" H 4620 2046 50  0000 L CNN
+F 1 "49.9" H 4620 1955 50  0000 L CNN
+F 2 "" V 4480 2000 50  0001 C CNN
+F 3 "" H 4550 2000 50  0001 C CNN
+	1    4550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2150 5250 2150
+Connection ~ 4550 2150
+Wire Wire Line
+	3750 2250 4550 2250
+Text Label 4550 1850 2    50   ~ 0
+GND
+$Comp
+L device:R R86
+U 1 1 5CB83E21
+P 4550 2400
+F 0 "R86" H 4620 2446 50  0000 L CNN
+F 1 "49.9" H 4620 2355 50  0000 L CNN
+F 2 "" V 4480 2400 50  0001 C CNN
+F 3 "" H 4550 2400 50  0001 C CNN
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4550 2250
+Wire Wire Line
+	4550 2250 5250 2250
+Text Label 4550 2550 2    50   ~ 0
+GND
 $EndSCHEMATC

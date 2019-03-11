@@ -6,11 +6,11 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-02-26"
+Date "2019-03-10"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "CDR SERDES"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -1584,4 +1584,58 @@ Wire Notes Line width 20 style solid
 	4450 8800 4450 11150
 Text Notes 550  11150 0    100  ~ 0
 CDR PLL reference clock
+Text HLabel 5300 1150 0    50   Input ~ 0
+CDR_POWER_EN
+NoConn ~ 6950 1550
+$Comp
+L device:R R74
+U 1 1 5D4BF0FF
+P 7250 1650
+F 0 "R74" V 7200 1850 50  0000 C CNN
+F 1 "10K" V 7250 1650 50  0000 C CNN
+F 2 "" V 7180 1650 50  0001 C CNN
+F 3 "" H 7250 1650 50  0001 C CNN
+	1    7250 1650
+	0    1    1    0   
+$EndComp
+Text Label 7600 1650 0    50   ~ 0
+GND
+Wire Wire Line
+	7600 1650 7400 1650
+Wire Wire Line
+	7100 1650 6950 1650
+$Comp
+L device:R R75
+U 1 1 5D4D8BAB
+P 7250 1750
+F 0 "R75" V 7200 1950 50  0000 C CNN
+F 1 "10K" V 7250 1750 50  0000 C CNN
+F 2 "" V 7180 1750 50  0001 C CNN
+F 3 "" H 7250 1750 50  0001 C CNN
+	1    7250 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 1750 6950 1750
+Wire Wire Line
+	7600 1650 7600 1750
+Wire Wire Line
+	7600 1750 7400 1750
+Wire Wire Line
+	6950 1250 6950 1150
+Connection ~ 6950 950 
+Wire Wire Line
+	6950 950  6950 850 
+Connection ~ 6950 1050
+Wire Wire Line
+	6950 1050 6950 950 
+Connection ~ 6950 1150
+Wire Wire Line
+	6950 1150 6950 1050
+Text Label 7100 850  0    50   ~ 0
+GND
+Connection ~ 6950 850 
+Wire Wire Line
+	6950 850  7100 850 
+NoConn ~ 6950 1450
 $EndSCHEMATC
