@@ -26,9 +26,9 @@ Text HLabel 5100 1950 0    50   Input ~ 0
 GND
 Text HLabel 5100 1550 0    50   Input ~ 0
 1V8
-Text HLabel 6300 2500 2    50   Output ~ 0
+Text HLabel 8500 2500 2    50   Output ~ 0
 ADC_OUT_P
-Text HLabel 6300 2600 2    50   Output ~ 0
+Text HLabel 8500 2600 2    50   Output ~ 0
 ADC_OUT_N
 Text HLabel 3450 2250 0    50   Input ~ 0
 ADC_LE_P
@@ -388,4 +388,46 @@ Wire Wire Line
 	4550 2250 5250 2250
 Text Label 4550 2550 2    50   ~ 0
 GND
+$Comp
+L special-azonenberg:DS25BR150 U?
+U 1 1 5D17E9C8
+P 7300 2750
+AR Path="/5C15809A/5D17E9C8" Ref="U?"  Part="1" 
+AR Path="/5C20498F/5D17E9C8" Ref="U41"  Part="1" 
+F 0 "U41" H 7750 3547 60  0000 C CNN
+F 1 "DS25BR150" H 7750 3441 60  0000 C CNN
+F 2 "" H 7300 2750 60  0001 C CNN
+F 3 "" H 7300 2750 60  0001 C CNN
+	1    7300 2750
+	1    0    0    -1  
+$EndComp
+Text Label 6800 2200 2    50   ~ 0
+3V3
+Text Label 7000 2300 2    50   ~ 0
+GND
+$Comp
+L device:C C?
+U 1 1 5D17E9D2
+P 6800 2050
+AR Path="/5C15809A/5D17E9D2" Ref="C?"  Part="1" 
+AR Path="/5C20498F/5D17E9D2" Ref="C312"  Part="1" 
+F 0 "C312" H 6915 2096 50  0000 L CNN
+F 1 "0.47 uF" H 6915 2005 50  0000 L CNN
+F 2 "" H 6838 1900 50  0001 C CNN
+F 3 "" H 6800 2050 50  0001 C CNN
+	1    6800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2200 7000 2200
+Text Label 6800 1900 2    50   ~ 0
+GND
+Wire Wire Line
+	6300 2500 7000 2500
+Wire Wire Line
+	7000 2600 6300 2600
+Text Label 6450 2500 0    50   ~ 0
+ADC_CML_P
+Text Label 6450 2600 0    50   ~ 0
+ADC_CML_N
 $EndSCHEMATC

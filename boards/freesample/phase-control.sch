@@ -263,8 +263,6 @@ F 3 "" H 4950 3550 50  0001 C CNN
 	1    4950 3550
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4800 3550 4700 3550
 Text Label 5100 3550 0    50   ~ 0
 GND
 Wire Wire Line
@@ -820,4 +818,6 @@ Wire Wire Line
 	5950 5500 5950 5300
 Text Notes 5500 5100 0    50   ~ 0
 LVPECL Thevenin load resistors
+Wire Wire Line
+	4800 3550 4700 3550
 $EndSCHEMATC

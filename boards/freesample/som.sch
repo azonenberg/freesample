@@ -302,7 +302,7 @@ ETH_D_P
 Text Label 13800 2400 0    50   ~ 0
 ETH_D_N
 Text HLabel 800  750  0    50   Input ~ 0
-5V0
+5V25
 Wire Wire Line
 	800  750  1000 750 
 Wire Wire Line

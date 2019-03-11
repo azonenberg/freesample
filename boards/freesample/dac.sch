@@ -222,4 +222,6 @@ Wire Wire Line
 Text Notes 6000 2700 0    50   ~ 0
 +/- 2.5V, start up at zero
 NoConn ~ 5250 3900
+Text Label 4050 4100 2    50   ~ 0
+GND
 $EndSCHEMATC

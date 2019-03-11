@@ -333,7 +333,7 @@ Connection ~ 1700 7100
 Wire Wire Line
 	1000 6800 1700 6800
 Text Label 1700 6900 2    50   ~ 0
-5V0
+1V15_INT
 $Comp
 L device:C C228
 U 1 1 5CDD50E0
@@ -406,8 +406,6 @@ Text Label 1700 8700 2    50   ~ 0
 GND
 Wire Wire Line
 	1700 8700 1700 8800
-Text Label 1700 8500 2    50   ~ 0
-5V0
 $Comp
 L device:C C232
 U 1 1 5CDD9473
@@ -756,7 +754,7 @@ F 3 "" H 4850 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5450 3250 2    50   ~ 0
-3V5_INT
+3V5_INT1
 Wire Wire Line
 	5450 3150 4850 3150
 Wire Wire Line
@@ -940,7 +938,7 @@ F 3 "" H 4850 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5450 5300 2    50   ~ 0
-3V5_INT
+3V5_INT1
 Wire Wire Line
 	5450 5200 4850 5200
 Wire Wire Line
@@ -1105,7 +1103,7 @@ F 3 "" H 4900 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5500 7250 2    50   ~ 0
-3V5_INT
+3V5_INT1
 Wire Wire Line
 	5500 7150 4900 7150
 Wire Wire Line
@@ -1416,8 +1414,6 @@ F 3 "" H 3550 4300 50  0001 C CNN
 	1    3550 4300
 	0    1    1    0   
 $EndComp
-Text Label 3700 4300 0    50   ~ 0
-D3V3
 Text Label 2900 4300 0    50   ~ 0
 1V1_PGOOD
 Wire Wire Line
@@ -2024,4 +2020,8 @@ Wire Notes Line width 20 style solid
 	8250 2650 12000 2650
 Wire Notes Line width 20 style solid
 	8250 4800 12000 4800
+Text HLabel 3700 4300 2    50   Input ~ 0
+D3V3
+Text Label 1700 8500 2    50   ~ 0
+1V15_INT
 $EndSCHEMATC

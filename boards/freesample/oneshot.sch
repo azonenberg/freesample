@@ -30,9 +30,9 @@ Text HLabel 1850 2150 0    50   Input ~ 0
 2V5
 Text HLabel 2550 6750 0    50   Input ~ 0
 GND
-Text HLabel 14850 3550 2    50   Output ~ 0
+Text HLabel 2750 10050 2    50   Output ~ 0
 ONESHOT_TRIGGERED_P
-Text HLabel 14850 3650 2    50   Output ~ 0
+Text HLabel 2750 10150 2    50   Output ~ 0
 ONESHOT_TRIGGERED_N
 $Comp
 L special-azonenberg:PI6C59S6005 U7
@@ -452,7 +452,7 @@ Text Label 5800 6450 0    50   ~ 0
 Text Label 5800 6650 0    50   ~ 0
 GND
 Text Label 6350 7050 2    50   ~ 0
-BUF4_IN_SEL
+BUF5_IN_SEL
 Wire Wire Line
 	6350 7050 6500 7050
 Text Label 6350 6950 2    50   ~ 0
@@ -1982,4 +1982,44 @@ F 3 "" H 4150 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3650 3350 4050 3350
+$Comp
+L special-azonenberg:DS25BR150 U40
+U 1 1 5D0E82CB
+P 1550 10300
+F 0 "U40" H 2000 11097 60  0000 C CNN
+F 1 "DS25BR150" H 2000 10991 60  0000 C CNN
+F 2 "" H 1550 10300 60  0001 C CNN
+F 3 "" H 1550 10300 60  0001 C CNN
+	1    1550 10300
+	1    0    0    -1  
+$EndComp
+Text Label 14850 3550 0    50   ~ 0
+TRIG_P
+Text Label 14850 3650 0    50   ~ 0
+TRIG_N
+Text Label 1250 10050 2    50   ~ 0
+TRIG_P
+Text Label 1250 10150 2    50   ~ 0
+TRIG_N
+Text Notes 550  11100 0    98   ~ 0
+CML-to-LVDS buffer for FPGA input
+Text Label 1050 9750 2    50   ~ 0
+3V3_CLKBUF
+Text Label 1250 9850 2    50   ~ 0
+GND
+$Comp
+L device:C C311
+U 1 1 5D14811F
+P 1050 9600
+F 0 "C311" H 1165 9646 50  0000 L CNN
+F 1 "0.47 uF" H 1165 9555 50  0000 L CNN
+F 2 "" H 1088 9450 50  0001 C CNN
+F 3 "" H 1050 9600 50  0001 C CNN
+	1    1050 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 9750 1250 9750
+Text Label 1050 9450 2    50   ~ 0
+GND
 $EndSCHEMATC
