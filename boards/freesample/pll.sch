@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "PLL for clock synthesis and coarse phasing for X sampling point position"
@@ -516,8 +516,6 @@ NoConn ~ 10250 1250
 NoConn ~ 10250 1350
 NoConn ~ 10250 1850
 NoConn ~ 10250 1950
-NoConn ~ 10250 2150
-NoConn ~ 10250 2250
 NoConn ~ 10250 2450
 NoConn ~ 10250 2550
 NoConn ~ 10250 2750
@@ -724,4 +722,44 @@ Text HLabel 10250 1550 2    50   Output ~ 0
 FPGACLK_P
 Text HLabel 10250 1650 2    50   Output ~ 0
 FPGACLK_N
+$Comp
+L Connector:Conn_Coaxial J14
+U 1 1 5D284EDA
+P 10900 2300
+F 0 "J14" H 11000 2275 50  0000 L CNN
+F 1 "SMA" H 11000 2184 50  0000 L CNN
+F 2 "" H 10900 2300 50  0001 C CNN
+F 3 "" H 10900 2300 50  0001 C CNN
+	1    10900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J13
+U 1 1 5D286A97
+P 10900 2100
+F 0 "J13" H 11000 1982 50  0000 L CNN
+F 1 "SMA" H 11000 2073 50  0000 L CNN
+F 2 "" H 10900 2100 50  0001 C CNN
+F 3 "" H 10900 2100 50  0001 C CNN
+	1    10900 2100
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10250 2150 10750 2150
+Wire Wire Line
+	10750 2150 10750 2100
+Wire Wire Line
+	10250 2250 10750 2250
+Wire Wire Line
+	10750 2250 10750 2300
+Text Label 10900 1900 0    50   ~ 0
+GND
+Text Label 10900 2500 0    50   ~ 0
+GND
+Text Label 10250 2150 0    50   ~ 0
+PLLOUT_P
+Text Label 10250 2250 0    50   ~ 0
+PLLOUT_N
+Text Notes 10600 2700 0    50   ~ 0
+PLL clock out\nfor debugging
 $EndSCHEMATC

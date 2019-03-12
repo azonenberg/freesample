@@ -6,11 +6,11 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "INTEGRALSTICK SoM connection"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -135,10 +135,6 @@ F 3 "" H 15100 2700 60  0000 C CNN
 	1    15100 2700
 	1    0    0    -1  
 $EndComp
-Text Label 14350 700  2    50   ~ 0
-ETH_LED1_P
-Text Label 14350 900  2    50   ~ 0
-ETH_LED2_P
 $Comp
 L device:R R16
 U 1 1 5C9B866D
@@ -165,10 +161,6 @@ F 3 "" H 14500 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14650 900  14800 900 
-Text Label 14800 800  2    50   ~ 0
-GND
-Text Label 14800 1000 2    50   ~ 0
-GND
 Text Label 14800 1300 2    50   ~ 0
 ETH_A_TAP
 Text Label 14800 1700 2    50   ~ 0
@@ -733,8 +725,6 @@ NoConn ~ 7250 2350
 NoConn ~ 7250 2250
 NoConn ~ 7250 2150
 NoConn ~ 7250 2050
-NoConn ~ 7250 1950
-NoConn ~ 7250 1850
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J7
 U 2 1 5C982A6A
@@ -868,4 +858,129 @@ F 3 "" H 9550 5350 50  0001 C CNN
 $EndComp
 Text HLabel 7250 1750 0    50   Output ~ 0
 SERDES_POWER_EN
+Text Label 14150 800  2    50   ~ 0
+ETH_LED1_N
+Text Label 14150 1000 2    50   ~ 0
+ETH_LED2_N
+Text Label 14350 700  2    50   ~ 0
+D3V3
+Wire Wire Line
+	14150 800  14800 800 
+Wire Wire Line
+	14150 1000 14800 1000
+Text Label 14350 900  2    50   ~ 0
+D3V3
+Text Label 14950 4500 0    50   ~ 0
+ETH_LED2_N
+$Comp
+L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
+U 1 1 5D3977B1
+P 14850 4700
+F 0 "Q1" H 14994 4806 60  0000 L CNN
+F 1 "SSM6N58NU" H 14994 4700 60  0000 L CNN
+F 2 "" H 14850 4700 60  0000 C CNN
+F 3 "transistors/mos/*.*" H 14994 4594 60  0000 L CNN
+	1    14850 4700
+	1    0    0    -1  
+$EndComp
+Text Label 14950 5000 0    50   ~ 0
+GND
+Wire Wire Line
+	14950 5000 14950 4900
+Text Label 14650 4700 2    50   ~ 0
+ETH_LED2_EN
+Text Label 14950 5200 0    50   ~ 0
+ETH_LED1_N
+$Comp
+L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
+U 2 1 5D3A6403
+P 14850 5400
+F 0 "Q1" H 14994 5506 60  0000 L CNN
+F 1 "SSM6N58NU" H 14994 5400 60  0000 L CNN
+F 2 "" H 14850 5400 60  0000 C CNN
+F 3 "transistors/mos/*.*" H 14994 5294 60  0000 L CNN
+	2    14850 5400
+	1    0    0    -1  
+$EndComp
+Text Label 14950 5700 0    50   ~ 0
+GND
+Wire Wire Line
+	14950 5700 14950 5600
+Text Label 14650 5400 2    50   ~ 0
+ETH_LED1_EN
+Text Label 7250 1850 2    50   ~ 0
+ETH_LED2_EN
+Text Label 7250 1950 2    50   ~ 0
+ETH_LED1_EN
+$Comp
+L device:C C321
+U 1 1 5D3C9944
+P 14100 2800
+F 0 "C321" V 13950 2800 50  0000 C CNN
+F 1 "0.1 uF" V 14050 3000 50  0000 C CNN
+F 2 "" H 14138 2650 50  0001 C CNN
+F 3 "" H 14100 2800 50  0001 C CNN
+	1    14100 2800
+	0    1    1    0   
+$EndComp
+Text Label 14450 2800 0    50   ~ 0
+ETH_GND
+Wire Wire Line
+	14250 2800 14800 2800
+Text Label 13850 2800 2    50   ~ 0
+GND
+Wire Wire Line
+	13850 2800 13950 2800
+NoConn ~ 9450 5200
+$Comp
+L Connector:Conn_01x02 J19
+U 1 1 5D3FC4FF
+P 10050 5650
+F 0 "J19" H 10130 5642 50  0000 L CNN
+F 1 "JUMPER" H 10130 5551 50  0000 L CNN
+F 2 "" H 10050 5650 50  0001 C CNN
+F 3 "~" H 10050 5650 50  0001 C CNN
+	1    10050 5650
+	1    0    0    -1  
+$EndComp
+Text Label 9450 5000 2    50   ~ 0
+MCU_RST_N
+Text Label 9450 5100 2    50   ~ 0
+FPGA_RST_N
+Text Label 9850 5650 2    50   ~ 0
+FPGA_RST_N
+Text Label 9850 5750 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x02 J20
+U 1 1 5D3FF7C4
+P 10050 6000
+F 0 "J20" H 10130 5992 50  0000 L CNN
+F 1 "JUMPER" H 10130 5901 50  0000 L CNN
+F 2 "" H 10050 6000 50  0001 C CNN
+F 3 "~" H 10050 6000 50  0001 C CNN
+	1    10050 6000
+	1    0    0    -1  
+$EndComp
+Text Label 9850 6000 2    50   ~ 0
+MCU_RST_N
+Text Label 9850 6100 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x02 J21
+U 1 1 5D406CE8
+P 10050 6300
+F 0 "J21" H 10130 6292 50  0000 L CNN
+F 1 "JUMPER" H 10130 6201 50  0000 L CNN
+F 2 "" H 10050 6300 50  0001 C CNN
+F 3 "~" H 10050 6300 50  0001 C CNN
+	1    10050 6300
+	1    0    0    -1  
+$EndComp
+Text Label 9850 6300 2    50   ~ 0
+MCU_BOOT0
+Text Label 9850 6400 2    50   ~ 0
+D3V3
+Text Label 9450 5300 2    50   ~ 0
+MCU_BOOT0
 $EndSCHEMATC

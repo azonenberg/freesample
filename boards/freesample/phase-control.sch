@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Fine phase shifting for sampling point X position"

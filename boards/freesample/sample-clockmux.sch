@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -423,8 +423,6 @@ Text Label 2150 4550 0    50   ~ 0
 GND
 Text Label 5600 2350 2    50   ~ 0
 GND
-NoConn ~ 6700 2550
-NoConn ~ 6700 2650
 NoConn ~ 6700 2850
 NoConn ~ 6700 2950
 NoConn ~ 6700 3150
@@ -551,4 +549,44 @@ Text Label 4950 3100 0    50   ~ 0
 MUXCLK1_AC_P
 Text Label 4950 3300 0    50   ~ 0
 MUXCLK1_AC_N
+$Comp
+L Connector:Conn_Coaxial J16
+U 1 1 5D26866A
+P 7650 2700
+F 0 "J16" H 7750 2675 50  0000 L CNN
+F 1 "SMA" H 7750 2584 50  0000 L CNN
+F 2 "" H 7650 2700 50  0001 C CNN
+F 3 "" H 7650 2700 50  0001 C CNN
+	1    7650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J15
+U 1 1 5D268D26
+P 7650 2500
+F 0 "J15" H 7750 2382 50  0000 L CNN
+F 1 "SMA" H 7750 2473 50  0000 L CNN
+F 2 "" H 7650 2500 50  0001 C CNN
+F 3 "" H 7650 2500 50  0001 C CNN
+	1    7650 2500
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6700 2550 7500 2550
+Wire Wire Line
+	7500 2550 7500 2500
+Wire Wire Line
+	6700 2650 7500 2650
+Wire Wire Line
+	7500 2650 7500 2700
+Text Label 7650 2300 0    50   ~ 0
+GND
+Text Label 7650 2900 0    50   ~ 0
+GND
+Text Label 6750 2550 0    50   ~ 0
+CLKOUT2_P
+Text Label 6750 2650 0    50   ~ 0
+CLKOUT2_N
+Text Notes 8000 2650 0    50   ~ 0
+Muxed clock/trigger signal for debugging\nor external DAQ hardware
 $EndSCHEMATC

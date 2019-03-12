@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Top Level"
@@ -104,7 +104,7 @@ F18 "FPGACLK_P" O R 9800 2300 50
 F19 "FPGACLK_N" O R 9800 2400 50 
 $EndSheet
 $Sheet
-S 4850 4050 1800 1050
+S 4850 4050 1800 1400
 U 5C15809A
 F0 "One-Shot" 50
 F1 "oneshot.sch" 50
@@ -122,6 +122,8 @@ F12 "ONESHOT_COARSEPHASE_N" I R 6650 4500 50
 F13 "RANGE_SEL" I R 6650 5000 50 
 F14 "2V5" I L 4850 4800 50 
 F15 "3V3_CLKBUF" I L 4850 4700 50 
+F16 "CLKOUT_P" I L 4850 5050 50 
+F17 "CLKOUT_N" I L 4850 5200 50 
 $EndSheet
 $Comp
 L freesample-rescue:CONN_COAXIAL-conn J1
@@ -1003,4 +1005,36 @@ Text Label 750  2100 2    50   ~ 0
 D3V3
 Wire Wire Line
 	750  2100 850  2100
+$Comp
+L Connector:Conn_Coaxial J12
+U 1 1 5D23CAB3
+P 4100 5200
+F 0 "J12" H 4000 5000 50  0000 C CNN
+F 1 "SMA" H 4000 5100 50  0000 C CNN
+F 2 "" H 4100 5200 50  0001 C CNN
+F 3 "" H 4100 5200 50  0001 C CNN
+	1    4100 5200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J11
+U 1 1 5D23D75B
+P 4100 5050
+F 0 "J11" H 4000 4850 50  0000 C CNN
+F 1 "SMA" H 4000 4950 50  0000 C CNN
+F 2 "" H 4100 5050 50  0001 C CNN
+F 3 "" H 4100 5050 50  0001 C CNN
+	1    4100 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 5200 4250 5200
+Text Label 4100 4850 2    50   ~ 0
+GND
+Text Label 4100 5400 2    50   ~ 0
+GND
+Wire Wire Line
+	4250 5050 4850 5050
+Text Notes 4100 5750 0    50   ~ 0
+Phase shifted sampling clock out\nfor debugging or external logic
 $EndSCHEMATC

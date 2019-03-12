@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-10"
+Date "2019-03-11"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Digital one-shot and reset sync for ADC trigger"
@@ -546,8 +546,6 @@ Text Label 4600 6850 0    50   ~ 0
 CLK0_P
 Text Label 4600 6950 0    50   ~ 0
 CLK0_N
-NoConn ~ 3800 8050
-NoConn ~ 3800 8150
 Text Label 2000 3550 2    50   ~ 0
 CLK0_P
 Text Label 2000 3650 2    50   ~ 0
@@ -1120,8 +1118,6 @@ Wire Wire Line
 Connection ~ 14000 1050
 NoConn ~ 14700 2350
 NoConn ~ 14700 2450
-NoConn ~ 14700 2650
-NoConn ~ 14700 2750
 NoConn ~ 14700 2950
 NoConn ~ 14700 3050
 $Comp
@@ -2022,4 +2018,84 @@ Wire Wire Line
 	1050 9750 1250 9750
 Text Label 1050 9450 2    50   ~ 0
 GND
+Text Label 3800 8050 0    50   ~ 0
+CLKOUT_AC_P
+Text Label 3800 8150 0    50   ~ 0
+CLKOUT_AC_N
+$Comp
+L device:C C?
+U 1 1 5D201188
+P 4350 8050
+AR Path="/5C267736/5D201188" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5D201188" Ref="C313"  Part="1" 
+F 0 "C313" V 4400 8200 50  0000 C CNN
+F 1 "0.01 uF" V 4300 8250 50  0000 C CNN
+F 2 "" H 4388 7900 50  0001 C CNN
+F 3 "" H 4350 8050 50  0001 C CNN
+	1    4350 8050
+	0    1    -1   0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5D20195B
+P 4350 8150
+AR Path="/5C267736/5D20195B" Ref="C?"  Part="1" 
+AR Path="/5C15809A/5D20195B" Ref="C314"  Part="1" 
+F 0 "C314" V 4400 8300 50  0000 C CNN
+F 1 "0.01 uF" V 4300 8350 50  0000 C CNN
+F 2 "" H 4388 8000 50  0001 C CNN
+F 3 "" H 4350 8150 50  0001 C CNN
+	1    4350 8150
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	3800 8050 4200 8050
+Wire Wire Line
+	4200 8150 3800 8150
+Text HLabel 4750 8050 2    50   Input ~ 0
+CLKOUT_P
+Wire Wire Line
+	4750 8050 4500 8050
+Text HLabel 4750 8150 2    50   Input ~ 0
+CLKOUT_N
+Wire Wire Line
+	4750 8150 4500 8150
+$Comp
+L Connector:Conn_Coaxial J18
+U 1 1 5D291477
+P 15100 2800
+F 0 "J18" H 15200 2775 50  0000 L CNN
+F 1 "SMA" H 15200 2684 50  0000 L CNN
+F 2 "" H 15100 2800 50  0001 C CNN
+F 3 "" H 15100 2800 50  0001 C CNN
+	1    15100 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J17
+U 1 1 5D2924E4
+P 15100 2600
+F 0 "J17" H 15200 2482 50  0000 L CNN
+F 1 "SMA" H 15200 2573 50  0000 L CNN
+F 2 "" H 15100 2600 50  0001 C CNN
+F 3 "" H 15100 2600 50  0001 C CNN
+	1    15100 2600
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	14700 2750 14950 2750
+Wire Wire Line
+	14950 2750 14950 2800
+Wire Wire Line
+	14700 2650 14950 2650
+Wire Wire Line
+	14950 2650 14950 2600
+Text Label 15100 2400 0    50   ~ 0
+GND
+Text Label 15100 3000 0    50   ~ 0
+GND
+Text Label 14700 2650 0    50   ~ 0
+TRG_P
+Text Label 14700 2750 0    50   ~ 0
+TRG_N
 $EndSCHEMATC
