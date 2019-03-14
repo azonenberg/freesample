@@ -86,11 +86,11 @@ Text HLabel 13300 3600 0    50   Input ~ 0
 1V8
 Text HLabel 5150 3450 0    50   Input ~ 0
 SERDES_MODE_SEL
-Text HLabel 5150 3650 0    50   Input ~ 0
+Text HLabel 4200 3650 0    50   Input ~ 0
 SERDES_RST_N
 Text HLabel 5150 3850 0    50   Input ~ 0
 SERDES_MDC
-Text HLabel 5150 3950 0    50   BiDi ~ 0
+Text HLabel 4200 3950 0    50   BiDi ~ 0
 SERDES_MDIO
 $Comp
 L xilinx-azonenberg:XILINX_JTAG J6
@@ -530,11 +530,7 @@ Text Label 4850 3350 2    50   ~ 0
 Wire Wire Line
 	5150 3450 5300 3450
 Wire Wire Line
-	5150 3650 5300 3650
-Wire Wire Line
 	5150 3850 5300 3850
-Wire Wire Line
-	5300 3950 5150 3950
 Text Label 5150 4150 2    50   ~ 0
 SERDES_TDI
 Wire Wire Line
@@ -567,7 +563,7 @@ L device:R R13
 U 1 1 5C799504
 P 5000 4550
 F 0 "R13" V 4950 4750 50  0000 C CNN
-F 1 "10K" V 5000 4550 50  0000 C CNN
+F 1 "DNP" V 5000 4550 50  0000 C CNN
 F 2 "" V 4930 4550 50  0001 C CNN
 F 3 "" H 5000 4550 50  0001 C CNN
 	1    5000 4550
@@ -1638,4 +1634,124 @@ Connection ~ 6950 850
 Wire Wire Line
 	6950 850  7100 850 
 NoConn ~ 6950 1450
+$Comp
+L device:R R97
+U 1 1 5D45DADB
+P 4200 3500
+F 0 "R97" V 4100 3500 50  0000 C CNN
+F 1 "10K" V 4200 3500 50  0000 C CNN
+F 2 "" V 4130 3500 50  0001 C CNN
+F 3 "" H 4200 3500 50  0001 C CNN
+	1    4200 3500
+	-1   0    0    1   
+$EndComp
+Text Label 4200 3350 2    50   ~ 0
+GND
+Wire Wire Line
+	4200 3650 5300 3650
+$Comp
+L device:R R98
+U 1 1 5D47EFA0
+P 4200 4100
+F 0 "R98" V 4100 4100 50  0000 C CNN
+F 1 "2K" V 4200 4100 50  0000 C CNN
+F 2 "" V 4130 4100 50  0001 C CNN
+F 3 "" H 4200 4100 50  0001 C CNN
+	1    4200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3950 5300 3950
+Text Label 4200 4350 2    50   ~ 0
+1V8
+Wire Wire Line
+	4200 4250 4200 4350
+$Comp
+L device:R R99
+U 1 1 5D4AE34A
+P 5000 4650
+F 0 "R99" V 4950 4850 50  0000 C CNN
+F 1 "10K" V 5000 4650 50  0000 C CNN
+F 2 "" V 4930 4650 50  0001 C CNN
+F 3 "" H 5000 4650 50  0001 C CNN
+	1    5000 4650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 4650 5150 4550
+Connection ~ 5150 4550
+Text Label 4850 4650 2    50   ~ 0
+GND
+$Comp
+L device:R R101
+U 1 1 5D4C05EA
+P 7250 1850
+F 0 "R101" V 7200 2050 50  0000 C CNN
+F 1 "DNP" V 7250 1850 50  0000 C CNN
+F 2 "" V 7180 1850 50  0001 C CNN
+F 3 "" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 1750 7100 1850
+Connection ~ 7100 1750
+Text Label 7600 1850 0    50   ~ 0
+1V8
+Wire Wire Line
+	7600 1850 7400 1850
+$Comp
+L device:R R100
+U 1 1 5D4DE30F
+P 7250 1500
+F 0 "R100" V 7200 1700 50  0000 C CNN
+F 1 "DNP" V 7250 1500 50  0000 C CNN
+F 2 "" V 7180 1500 50  0001 C CNN
+F 3 "" H 7250 1500 50  0001 C CNN
+	1    7250 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 1500 7100 1650
+Connection ~ 7100 1650
+Text Label 7600 1500 0    50   ~ 0
+1V8
+Wire Wire Line
+	7600 1500 7400 1500
+Text Notes 2850 9250 0    50   ~ 0
+DO NOT use external pull resistors\non OSC_FS* since they are 3-level\nstraps. Default with FS0/FS1 floating\nis 156.25 MHz.
+Text Notes 2850 9750 0    50   ~ 0
+OS floating = LVDS output\nOE pulled high = output active
+$Comp
+L device:R R102
+U 1 1 5D5022AC
+P 1100 9100
+F 0 "R102" H 1170 9146 50  0000 L CNN
+F 1 "10K" H 1170 9055 50  0000 L CNN
+F 2 "" V 1030 9100 50  0001 C CNN
+F 3 "" H 1100 9100 50  0001 C CNN
+	1    1100 9100
+	1    0    0    -1  
+$EndComp
+Text Label 950  9250 2    50   ~ 0
+GND
+Wire Wire Line
+	950  9250 1100 9250
+Text Label 1100 8950 2    50   ~ 0
+OSC_PWR_EN
+$Comp
+L device:R R103
+U 1 1 5D523003
+P 1100 9600
+F 0 "R103" H 1170 9646 50  0000 L CNN
+F 1 "10K" H 1170 9555 50  0000 L CNN
+F 2 "" V 1030 9600 50  0001 C CNN
+F 3 "" H 1100 9600 50  0001 C CNN
+	1    1100 9600
+	1    0    0    -1  
+$EndComp
+Text Label 1100 9750 2    50   ~ 0
+OSC_VDD
+Text Label 1100 9450 2    50   ~ 0
+OSC_OE
 $EndSCHEMATC

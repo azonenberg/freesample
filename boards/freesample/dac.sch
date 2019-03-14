@@ -19,17 +19,17 @@ L analog-azonenberg:LTC2664 U4
 U 1 1 5C15756D
 P 4150 4450
 F 0 "U4" H 4650 7025 50  0000 C CNN
-F 1 "LTC2664" H 4650 6934 50  0000 C CNN
+F 1 "LTC2664CUH-16#PBF" H 4650 6934 50  0000 C CNN
 F 2 "" H 4150 4450 50  0001 C CNN
 F 3 "" H 4150 4450 50  0001 C CNN
 	1    4150 4450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5250 3600 2    50   Output ~ 0
+Text HLabel 5950 3450 2    50   Output ~ 0
 LTRIG_VT
-Text HLabel 5250 3700 2    50   Output ~ 0
+Text HLabel 6100 3900 2    50   Output ~ 0
 REFCLK_SINGLE_VT
-Text HLabel 5250 3800 2    50   Output ~ 0
+Text HLabel 5950 4000 2    50   Output ~ 0
 ADC_VT
 Text HLabel 4050 2200 0    50   Input ~ 0
 A5V0
@@ -221,7 +221,146 @@ Wire Wire Line
 	5550 2800 5750 2800
 Text Notes 6000 2700 0    50   ~ 0
 +/- 2.5V, start up at zero
-NoConn ~ 5250 3900
 Text Label 4050 4100 2    50   ~ 0
 GND
+Text Notes 6250 3400 0    50   ~ 0
+HMC675 has -2 to +2V absolute max\nDAC has 2.5V range so we need to attenuate by 0.8x\nto safely use the full dynamic range.
+$Comp
+L device:R R106
+U 1 1 5D54B293
+P 5700 3600
+F 0 "R106" V 5700 3600 50  0000 C CNN
+F 1 "5K 0.1%" V 6000 3600 50  0000 C CNN
+F 2 "" V 5630 3600 50  0001 C CNN
+F 3 "" H 5700 3600 50  0001 C CNN
+	1    5700 3600
+	0    1    1    0   
+$EndComp
+Text Label 5250 3600 0    50   ~ 0
+VOUT0
+Text Label 5250 3700 0    50   ~ 0
+VOUT1
+Text Label 5250 3800 0    50   ~ 0
+VOUT2
+Wire Wire Line
+	5550 3600 5250 3600
+$Comp
+L device:R R107
+U 1 1 5D54CE28
+P 5700 3700
+F 0 "R107" V 5700 3700 50  0000 C CNN
+F 1 "5K 0.1%" V 6000 3700 50  0000 C CNN
+F 2 "" V 5630 3700 50  0001 C CNN
+F 3 "" H 5700 3700 50  0001 C CNN
+	1    5700 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3700 5250 3700
+$Comp
+L device:R R108
+U 1 1 5D54D3FD
+P 5700 3800
+F 0 "R108" V 5700 3800 50  0000 C CNN
+F 1 "5K 0.1%" V 6000 3800 50  0000 C CNN
+F 2 "" V 5630 3800 50  0001 C CNN
+F 3 "" H 5700 3800 50  0001 C CNN
+	1    5700 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5550 3800 5250 3800
+$Comp
+L device:R R109
+U 1 1 5D54DAE7
+P 6350 3600
+F 0 "R109" V 6350 3600 50  0000 C CNN
+F 1 "20K 0.1%" V 6350 4100 50  0000 C CNN
+F 2 "" V 6280 3600 50  0001 C CNN
+F 3 "" H 6350 3600 50  0001 C CNN
+	1    6350 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R110
+U 1 1 5D54E03C
+P 6350 3700
+F 0 "R110" V 6350 3700 50  0000 C CNN
+F 1 "20K 0.1%" V 6350 4200 50  0000 C CNN
+F 2 "" V 6280 3700 50  0001 C CNN
+F 3 "" H 6350 3700 50  0001 C CNN
+	1    6350 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R111
+U 1 1 5D54E474
+P 6350 3800
+F 0 "R111" V 6350 3800 50  0000 C CNN
+F 1 "20K 0.1%" V 6350 4300 50  0000 C CNN
+F 2 "" V 6280 3800 50  0001 C CNN
+F 3 "" H 6350 3800 50  0001 C CNN
+	1    6350 3800
+	0    1    1    0   
+$EndComp
+Text Label 6500 3600 0    50   ~ 0
+GND
+Wire Wire Line
+	6500 3600 6500 3700
+Connection ~ 6500 3700
+Wire Wire Line
+	6500 3700 6500 3800
+Wire Wire Line
+	5850 3600 5950 3600
+Wire Wire Line
+	5850 3800 5950 3800
+Wire Wire Line
+	5950 3450 5950 3600
+Connection ~ 5950 3600
+Wire Wire Line
+	5950 3600 6200 3600
+Wire Wire Line
+	6100 3700 6100 3900
+Connection ~ 6100 3700
+Wire Wire Line
+	6100 3700 6200 3700
+Wire Wire Line
+	5850 3700 6100 3700
+Wire Wire Line
+	5950 3800 5950 4000
+Connection ~ 5950 3800
+Wire Wire Line
+	5950 3800 6200 3800
+Text Label 5250 3900 0    50   ~ 0
+VOUT3
+$Comp
+L Connector:Conn_01x02 TP2
+U 1 1 5D553AFD
+P 5750 4250
+F 0 "TP2" H 5830 4242 50  0000 L CNN
+F 1 "HEADER" H 5830 4151 50  0000 L CNN
+F 2 "" H 5750 4250 50  0001 C CNN
+F 3 "~" H 5750 4250 50  0001 C CNN
+	1    5750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4250 5550 4250
+Text Label 5550 4350 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 TP1
+U 1 1 5D559F77
+P 5450 3250
+F 0 "TP1" H 5530 3292 50  0000 L CNN
+F 1 "TESTPOINT" H 5530 3201 50  0000 L CNN
+F 2 "" H 5450 3250 50  0001 C CNN
+F 3 "~" H 5450 3250 50  0001 C CNN
+	1    5450 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3250 5250 3100
+Wire Wire Line
+	5250 3900 5250 4250
 $EndSCHEMATC

@@ -532,8 +532,6 @@ NoConn ~ 10250 4250
 NoConn ~ 10250 4350
 NoConn ~ 10250 4550
 NoConn ~ 10250 4650
-NoConn ~ 10250 4850
-NoConn ~ 10250 4950
 Text Label 3100 2650 0    50   ~ 0
 PLL_CP1
 Wire Wire Line
@@ -640,10 +638,6 @@ Text Label 6800 1450 2    50   ~ 0
 GND
 Wire Wire Line
 	6800 1450 6900 1450
-Wire Wire Line
-	6800 1450 6800 1550
-Wire Wire Line
-	6800 1550 6900 1550
 Text Label 6800 1750 2    50   ~ 0
 PLL_CP1
 Wire Wire Line
@@ -659,7 +653,7 @@ L device:C C124
 U 1 1 5C95E168
 P 6800 1200
 F 0 "C124" H 6915 1246 50  0000 L CNN
-F 1 "C" H 6915 1155 50  0000 L CNN
+F 1 "0.47 uF" H 6915 1155 50  0000 L CNN
 F 2 "" H 6838 1050 50  0001 C CNN
 F 3 "" H 6800 1200 50  0001 C CNN
 	1    6800 1200
@@ -762,4 +756,44 @@ Text Label 10250 2250 0    50   ~ 0
 PLLOUT_N
 Text Notes 10600 2700 0    50   ~ 0
 PLL clock out\nfor debugging
+$Comp
+L Connector:Conn_Coaxial J23
+U 1 1 5D52905E
+P 10900 5000
+F 0 "J23" H 11000 4975 50  0000 L CNN
+F 1 "SMA" H 11000 4884 50  0000 L CNN
+F 2 "" H 10900 5000 50  0001 C CNN
+F 3 "" H 10900 5000 50  0001 C CNN
+	1    10900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J22
+U 1 1 5D529068
+P 10900 4800
+F 0 "J22" H 11000 4682 50  0000 L CNN
+F 1 "SMA" H 11000 4773 50  0000 L CNN
+F 2 "" H 10900 4800 50  0001 C CNN
+F 3 "" H 10900 4800 50  0001 C CNN
+	1    10900 4800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10250 4850 10750 4850
+Wire Wire Line
+	10750 4850 10750 4800
+Wire Wire Line
+	10250 4950 10750 4950
+Wire Wire Line
+	10750 4950 10750 5000
+Text Label 10900 4600 0    50   ~ 0
+GND
+Text Label 10900 5200 0    50   ~ 0
+GND
+Text Label 10250 4850 0    50   ~ 0
+OSCOUT_P
+Text Label 10250 4950 0    50   ~ 0
+OSCOUT_N
+Text Notes 10350 5300 0    50   ~ 0
+Debug test point
 $EndSCHEMATC
