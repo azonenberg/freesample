@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-11"
+Date "2019-03-13"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
-Comment2 ""
+Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -328,7 +328,7 @@ AR Path="/5C0E404A/5CB77A5B" Ref="C?"  Part="1"
 AR Path="/5C23AE1C/5CB77A5B" Ref="C?"  Part="1" 
 AR Path="/5C20498F/5CB77A5B" Ref="C309"  Part="1" 
 F 0 "C309" V 3500 2200 50  0000 L CNN
-F 1 "0.1 uF" V 3500 1850 50  0000 L CNN
+F 1 "530Z104KT10T" V 3500 1500 50  0000 L CNN
 F 2 "" H 3638 2000 50  0001 C CNN
 F 3 "" H 3600 2150 50  0001 C CNN
 	1    3600 2150
@@ -342,7 +342,7 @@ AR Path="/5C0E404A/5CB785A9" Ref="C?"  Part="1"
 AR Path="/5C23AE1C/5CB785A9" Ref="C?"  Part="1" 
 AR Path="/5C20498F/5CB785A9" Ref="C310"  Part="1" 
 F 0 "C310" V 3715 2296 50  0000 L CNN
-F 1 "0.1 uF" V 3750 2000 50  0000 L CNN
+F 1 "530Z104KT10T" V 3750 1650 50  0000 L CNN
 F 2 "" H 3638 2100 50  0001 C CNN
 F 3 "" H 3600 2250 50  0001 C CNN
 	1    3600 2250
