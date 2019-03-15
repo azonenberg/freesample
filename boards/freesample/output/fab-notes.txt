@@ -13,6 +13,7 @@ General fabrication notes
 
 Impedances (control to within 10%)
 
+	RECALCULATE ALL OF THESE!
 	Layer 1 (ref layer 2)
 		Controlled impedance traces have no solder mask.
 		115 μm trace / 250 μm space = 100 ohm differential
@@ -33,19 +34,22 @@ Impedances (control to within 10%)
 
 Stackup
 	1	35 μm (1 oz) copper			Signal
-		101 μm RO4350B
+		101 μm RO4350B core (Er=3.66)
 	2	35 μm (1 oz) copper			Ground
-		101 μm RO4350B
+		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F prepreg (Er=3.52)
 	3	35 μm (1 oz) copper			Signal
-		338 μm RO4350B
+		254 μm RO4350B core (Er=3.66)
 	4	35 μm (1 oz) copper			Power
-		101 μm RO4350B
+		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F prepreg (Er=3.52)
 	5	35 μm (1 oz) copper			Power
-		338 μm RO4350B
+		254 μm RO4350B core (Er=3.66)
 	6	35 μm (1 oz) copper			Signal
-		101 μm RO4350B
+		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F prepreg (Er=3.52)
 	7	35 μm (1 oz) copper			Ground
-		101 μm RO4350B
+		101 μm RO4350B core (Er=3.66)
 	8	35 μm (1 oz) copper			Signal
 
 File naming
