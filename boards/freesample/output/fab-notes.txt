@@ -14,7 +14,6 @@ General fabrication notes
 Impedances
 
 	Control to within 10%.
-	RO4530B Er = 3.66
 
 	Layer 1 (ref layer 2)
 		115 μm trace / 250 μm space = 100 ohm differential
