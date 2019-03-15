@@ -1,0 +1,70 @@
+Part number:		FREESAMPLE v0.1
+
+General fabrication notes
+
+	* Boards are be individually routed.
+	* Lot number / date codes should be placed at the location marked in the "F.Fab" layer.
+	* Blue LPI solder mask on both sides of board.
+	* White LPI legend on both sides of board.
+	* All vias to be filled and plated over.
+	* Surface finish is immersion silver
+	* Finished board thickness is 1.6 mm.
+	* Soldermask apertures over traces are test points, to be left intact
+
+Impedances
+
+	Control to within 10%.
+	RO4530B Er = 3.66
+
+	Layer 1 (ref layer 2)
+		180 μm trace / 100 μm space = 100 ohm differential
+		200 μm trace = 50 ohm single ended
+
+	Layer 3 (ref layer 2)
+		FIXME μm trace / FIXME μm space = 100 ohm differential
+		170 μm trace  = 50 ohm single ended
+
+	Layer 6 (ref layer 7)
+		FIXME μm trace / FIXME μm space = 100 ohm differential
+		FIXME μm trace  = 50 ohm single ended
+
+	Layer 8 (ref layer 7)
+		180 μm trace / 100 μm space = 100 ohm differential
+		200 μm trace  = 50 ohm single ended
+
+Suggested stackup
+	1	35 μm (1 oz) copper			Signal
+		101 μm RO4350B
+	2	35 μm (1 oz) copper			Ground
+		101 μm RO4350B
+	3	35 μm (1 oz) copper			Signal
+		338 μm RO4350B
+	4	35 μm (1 oz) copper			Power
+		101 μm RO4350B
+	5	35 μm (1 oz) copper			Power
+		338 μm RO4350B
+	6	35 μm (1 oz) copper			Signal
+		101 μm RO4350B
+	7	35 μm (1 oz) copper			Ground
+		101 μm RO4350B
+	8	35 μm (1 oz) copper			Signal
+
+File naming
+	freesample-Edge_Cuts.gbr		Board outline
+	freesample.drl					Through-board plated holes
+	freesample-NPTH.drl				Through-board unplated holes
+	freesample-F_Paste.gbr			Front solder paste
+	freesample-F_SilkS.gbr			Front silkscreen
+	freesample-F_Mask.gbr			Front solder mask
+	freesample-F_Cu.gbr				Layer 1 copper
+	freesample-In1_Cu.gbr			Layer 2 copper
+	freesample-In2_Cu.gbr			Layer 3 copper
+	freesample-In3_Cu.gbr			Layer 4 copper
+	freesample-In4_Cu.gbr			Layer 5 copper
+	freesample-In5_Cu.gbr			Layer 6 copper
+	freesample-In6_Cu.gbr			Layer 7 copper
+	freesample-B_Cu.gbr				Layer 8 copper
+	freesample-B_Mask.gbr			Back solder mask
+	freesample-B_SilkS.gbr			Back silkscreen
+	freesample-B_Paste.gbr			Back solder paste
+
