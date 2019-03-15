@@ -9,13 +9,12 @@ General fabrication notes
 	* All vias to be filled and plated over.
 	* Surface finish is immersion silver
 	* Finished board thickness is 1.6 mm.
-	* Soldermask apertures over traces are test points, to be left intact
+	* Soldermask apertures over masked traces are test points, to be left intact
 
-Impedances
-
-	Control to within 10%.
+Impedances (control to within 10%)
 
 	Layer 1 (ref layer 2)
+		Controlled impedance traces have no solder mask.
 		115 μm trace / 250 μm space = 100 ohm differential
 		185 μm trace = 50 ohm single ended
 
@@ -28,10 +27,11 @@ Impedances
 		114 μm trace  = 50 ohm single ended
 
 	Layer 8 (ref layer 7)
+		Controlled impedance traces have no solder mask.
 		115 μm trace / 250 μm space = 100 ohm differential
 		185 μm trace  = 50 ohm single ended
 
-Suggested stackup
+Stackup
 	1	35 μm (1 oz) copper			Signal
 		101 μm RO4350B
 	2	35 μm (1 oz) copper			Ground
@@ -52,6 +52,7 @@ File naming
 	freesample-Edge_Cuts.gbr		Board outline
 	freesample.drl					Through-board plated holes
 	freesample-NPTH.drl				Through-board unplated holes
+	freesample-F_Fab.gbr			Location of UL marking and date code
 	freesample-F_Paste.gbr			Front solder paste
 	freesample-F_SilkS.gbr			Front silkscreen
 	freesample-F_Mask.gbr			Front solder mask
