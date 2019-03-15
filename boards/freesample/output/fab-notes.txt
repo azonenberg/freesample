@@ -20,12 +20,12 @@ Impedances (control to within 10%)
 		185 μm trace = 50 ohm single ended
 
 	Layer 3 (ref layer 2)
-		100 μm trace / 250 μm space = 100 ohm differential
-		114 μm trace  = 50 ohm single ended
+		125 μm trace / 150 μm space = 100 ohm differential
+		225 μm trace  = 50 ohm single ended
 
 	Layer 6 (ref layer 7)
-		100 μm trace / 250 μm space = 100 ohm differential
-		114 μm trace  = 50 ohm single ended
+		125 μm trace / 150 μm space = 100 ohm differential
+		225 μm trace  = 50 ohm single ended
 
 	Layer 8 (ref layer 7)
 		Controlled impedance traces have no solder mask.
