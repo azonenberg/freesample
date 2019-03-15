@@ -13,7 +13,6 @@ General fabrication notes
 
 Impedances (control to within 10%)
 
-	RECALCULATE ALL OF THESE!
 	Layer 1 (ref layer 2)
 		Controlled impedance traces have no solder mask.
 		115 μm trace / 250 μm space = 100 ohm differential
