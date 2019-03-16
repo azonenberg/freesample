@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-15"
+Date "2019-03-16"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Top Level"
@@ -1037,4 +1037,88 @@ Wire Wire Line
 	4250 5050 4850 5050
 Text Notes 4100 5750 0    50   ~ 6
 Phase shifted sampling clock out\nfor debugging or external logic
+$Comp
+L Connector:Conn_01x01 M1
+U 1 1 5CAB1898
+P 15150 1500
+F 0 "M1" H 15068 1275 50  0000 C CNN
+F 1 "TRACEPAD" H 15068 1366 50  0000 C CNN
+F 2 "azonenberg_pcb:SERIALNUM_MOLEX_0916580020" H 15150 1500 50  0001 C CNN
+F 3 "~" H 15150 1500 50  0001 C CNN
+	1    15150 1500
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 1500
+$Comp
+L Connector:Conn_01x01 M2
+U 1 1 5CABDA7C
+P 15150 1850
+F 0 "M2" H 15068 1625 50  0000 C CNN
+F 1 "LOGO1" H 15068 1716 50  0000 C CNN
+F 2 "azonenberg_pcb:LONGTHING-1200DPI" H 15150 1850 50  0001 C CNN
+F 3 "~" H 15150 1850 50  0001 C CNN
+	1    15150 1850
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 1850
+$Comp
+L Connector:Conn_01x01 M3
+U 1 1 5CAC9CF3
+P 15150 2200
+F 0 "M3" H 15068 1975 50  0000 C CNN
+F 1 "LOGO2" H 15068 2066 50  0000 C CNN
+F 2 "w_logo:Logo_silk_OSHW_6x6mm" H 15150 2200 50  0001 C CNN
+F 3 "~" H 15150 2200 50  0001 C CNN
+	1    15150 2200
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 2200
+$Comp
+L Connector:Conn_01x01 M4
+U 1 1 5CADB0C0
+P 15150 2550
+F 0 "M4" H 15068 2325 50  0000 C CNN
+F 1 "LOGO3" H 15068 2416 50  0000 C CNN
+F 2 "w_logo:Logo_silk_polarity_center_5x1.4mm" H 15150 2550 50  0001 C CNN
+F 3 "~" H 15150 2550 50  0001 C CNN
+	1    15150 2550
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 2550
+$Comp
+L Connector:Conn_01x01 M5
+U 1 1 5CADB0CB
+P 15150 2900
+F 0 "M5" H 15068 2675 50  0000 C CNN
+F 1 "LOGO4" H 15068 2766 50  0000 C CNN
+F 2 "w_logo:Logo_silk_ROHS_5x2.8mm" H 15150 2900 50  0001 C CNN
+F 3 "~" H 15150 2900 50  0001 C CNN
+	1    15150 2900
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 2900
+$Comp
+L Connector:Conn_01x01 M6
+U 1 1 5CAED480
+P 15150 3250
+F 0 "M6" H 15068 3025 50  0000 C CNN
+F 1 "LOGO5" H 15068 3116 50  0000 C CNN
+F 2 "w_logo:Logo_silk_warning_5x4.2mm" H 15150 3250 50  0001 C CNN
+F 3 "~" H 15150 3250 50  0001 C CNN
+	1    15150 3250
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 3250
+$Comp
+L Connector:Conn_01x01 M7
+U 1 1 5CAED48B
+P 15150 3600
+F 0 "M7" H 15068 3375 50  0000 C CNN
+F 1 "LOGO6" H 15068 3466 50  0000 C CNN
+F 2 "w_logo:Logo_silk_WEEE_3.4x5mm" H 15150 3600 50  0001 C CNN
+F 3 "~" H 15150 3600 50  0001 C CNN
+	1    15150 3600
+	-1   0    0    1   
+$EndComp
+NoConn ~ 15350 3600
 $EndSCHEMATC

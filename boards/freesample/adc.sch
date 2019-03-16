@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-15"
+Date "2019-03-16"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -360,7 +360,7 @@ U 1 1 5CB822E8
 P 4550 2000
 F 0 "R85" H 4620 2046 50  0000 L CNN
 F 1 "49.9" H 4620 1955 50  0000 L CNN
-F 2 "" V 4480 2000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4480 2000 50  0001 C CNN
 F 3 "" H 4550 2000 50  0001 C CNN
 	1    4550 2000
 	1    0    0    -1  
@@ -378,7 +378,7 @@ U 1 1 5CB83E21
 P 4550 2400
 F 0 "R86" H 4620 2446 50  0000 L CNN
 F 1 "49.9" H 4620 2355 50  0000 L CNN
-F 2 "" V 4480 2400 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4480 2400 50  0001 C CNN
 F 3 "" H 4550 2400 50  0001 C CNN
 	1    4550 2400
 	1    0    0    -1  

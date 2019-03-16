@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-15"
+Date "2019-03-16"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Digital one-shot and reset sync for ADC trigger"
@@ -1299,7 +1299,7 @@ U 1 1 5CFC9B78
 P 1200 3500
 F 0 "R36" V 1300 3450 50  0000 L CNN
 F 1 "33K" V 1200 3450 50  0000 L CNN
-F 2 "" V 1130 3500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 1130 3500 50  0001 C CNN
 F 3 "" H 1200 3500 50  0001 C CNN
 	1    1200 3500
 	1    0    0    -1  
