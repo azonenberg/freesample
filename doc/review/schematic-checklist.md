@@ -13,7 +13,7 @@ together on the SoM and are safe to connect on the host as well*
 ## Passive components
 * [ ] Power/voltage/tolerance ratings specified as required
 * [ ] Ceramic capacitors appropriately de-rated for C/V curve
-* [ ] Polarized components specified in schematic if using electrolytic caps etc
+* [x] Polarized components specified in schematic if using electrolytic caps etc *N/A, all capacitors are ceramic*
 
 ## Power supply
 
@@ -53,7 +53,7 @@ together on the SoM and are safe to connect on the host as well*
 * [ ] TX/RX paired correctly for UART, SPI, MGT, etc
 * [ ] Differential pair polarity / pairing correct
 * [ ] Active high/low enable signal polarity correct
-* [ ] I/O banking rules met on FPGAs etc
+* [x] I/O banking rules met on FPGAs etc
 
 ### Analog
 
@@ -64,16 +64,16 @@ same gain across the whole range.
 ### Clocks
 
 * [ ] All oscillators meet required jitter / frequency tolerance. Be extra cautious with MEMS oscillators as these tend to have higher jitter.
-* [ ] Correct load caps provided for discrete crystals
-* [ ] Crystals only used if IC has an integrated crystal driver
+* [x] Correct load caps provided for discrete crystals * N/A *
+* [x] Crystals only used if IC has an integrated crystal driver
 * [ ] Banking / clock capable input rules met for clocks going to FPGAs
 
 ### Strap/init pins
 
 * [ ] Pullup/pulldowns on all signals that need defined state at boot
 * [ ] Strap pins connected to correct rail for desired state
-* [ ] JTAG/ICSP connector provided for all programmable devices
-* [ ] Config/boot flash provided for all FPGAs or MPUs without internal flash
+* [x] JTAG/ICSP connector provided for all programmable devices
+* [x] Config/boot flash provided for all FPGAs or MPUs without internal flash
 * [ ] Reference resistors correct value and reference rail
 
 ### External interface protection
