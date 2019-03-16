@@ -131,16 +131,16 @@ U 1 1 5C201EC1
 P 750 850
 F 0 "J1" H 703 1088 50  0000 C CNN
 F 1 "SMA" H 703 997 50  0000 C CNN
-F 2 "" H 750 850 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 750 850 50  0001 C CNN
 F 3 "" H 750 850 50  0001 C CNN
 	1    750  850 
 	-1   0    0    -1  
 $EndComp
-Text Label 750  1200 0    50   ~ 0
+Text Label 750  1200 0    50   ~ 6
 GND
 Wire Wire Line
 	750  1200 750  1050
-Text Label 900  850  0    50   ~ 0
+Text Label 900  850  0    50   ~ 6
 VIN
 $Comp
 L analog-azonenberg:SPLITTER_SUSUMU_PS R1
@@ -192,29 +192,29 @@ F10 "LTRIG_SAMPOUT_P" O R 4300 1450 50
 F11 "LTRIG_SAMPOUT_N" O R 4300 1550 50 
 F12 "3V3_CLKBUF" I L 2750 1150 50 
 $EndSheet
-Text Label 5550 1250 2    50   ~ 0
+Text Label 5550 1250 2    50   ~ 6
 1V8
 Wire Wire Line
 	5550 1250 5650 1250
-Text Label 5550 1350 2    50   ~ 0
+Text Label 5550 1350 2    50   ~ 6
 1V0
 Wire Wire Line
 	5550 1350 5650 1350
-Text Label 5550 1450 2    50   ~ 0
+Text Label 5550 1450 2    50   ~ 6
 GND
 Wire Wire Line
 	5550 1450 5650 1450
 Wire Wire Line
 	1950 850  2750 850 
-Text Label 2650 1250 2    50   ~ 0
+Text Label 2650 1250 2    50   ~ 6
 3V3
 Wire Wire Line
 	2650 1250 2750 1250
-Text Label 2650 1350 2    50   ~ 0
+Text Label 2650 1350 2    50   ~ 6
 1V8
-Text Label 2650 1450 2    50   ~ 0
+Text Label 2650 1450 2    50   ~ 6
 GND
-Text Label 2650 1550 2    50   ~ 0
+Text Label 2650 1550 2    50   ~ 6
 3V0_N
 Wire Wire Line
 	2650 1550 2750 1550
@@ -222,9 +222,9 @@ Wire Wire Line
 	2750 1450 2650 1450
 Wire Wire Line
 	2650 1350 2750 1350
-Text Label 2050 850  0    50   ~ 0
+Text Label 2050 850  0    50   ~ 6
 VIN_0
-Text Label 2050 950  0    50   ~ 0
+Text Label 2050 950  0    50   ~ 6
 VIN_1
 Wire Wire Line
 	1950 950  2050 950 
@@ -232,13 +232,13 @@ Wire Wire Line
 	2050 950  2050 1900
 Wire Wire Line
 	2050 1900 2750 1900
-Text Label 2650 2200 2    50   ~ 0
+Text Label 2650 2200 2    50   ~ 6
 3V3
-Text Label 2650 2400 2    50   ~ 0
+Text Label 2650 2400 2    50   ~ 6
 GND
-Text Label 2650 2500 2    50   ~ 0
+Text Label 2650 2500 2    50   ~ 6
 3V0_N
-Text Label 2650 2300 2    50   ~ 0
+Text Label 2650 2300 2    50   ~ 6
 1V8
 Wire Wire Line
 	2650 2200 2750 2200
@@ -248,9 +248,9 @@ Wire Wire Line
 	2650 2400 2750 2400
 Wire Wire Line
 	2750 2500 2650 2500
-Text Label 2650 950  2    50   ~ 0
+Text Label 2650 950  2    50   ~ 6
 LTRIG_VT
-Text Label 2650 2000 2    50   ~ 0
+Text Label 2650 2000 2    50   ~ 6
 ADC_VT
 Wire Wire Line
 	2650 2000 2750 2000
@@ -338,67 +338,67 @@ F13 "3V3_CLKBUF" O R 1700 2300 50
 F14 "5V25" O R 1700 2100 50 
 F15 "D3V3" I L 850 2100 50 
 $EndSheet
-Text Label 8300 1100 2    50   ~ 0
+Text Label 8300 1100 2    50   ~ 6
 3V3_PLL
 Wire Wire Line
 	8300 1100 8400 1100
-Text Label 8300 1200 2    50   ~ 0
+Text Label 8300 1200 2    50   ~ 6
 GND
 Wire Wire Line
 	8300 1200 8400 1200
-Text Label 4000 1900 0    50   ~ 0
+Text Label 4000 1900 0    50   ~ 6
 ADC_OUT_P
 Wire Wire Line
 	4000 1900 3850 1900
-Text Label 4000 2000 0    50   ~ 0
+Text Label 4000 2000 0    50   ~ 6
 ADC_OUT_N
 Wire Wire Line
 	4000 2000 3850 2000
-Text Label 2100 3600 0    50   ~ 0
+Text Label 2100 3600 0    50   ~ 6
 ADC_VT
 Wire Wire Line
 	2100 3600 1950 3600
-Text Label 2100 3500 0    50   ~ 0
+Text Label 2100 3500 0    50   ~ 6
 REFCLK_SINGLE_VT
 Wire Wire Line
 	2100 3500 1950 3500
-Text Label 2100 3700 0    50   ~ 0
+Text Label 2100 3700 0    50   ~ 6
 LTRIG_VT
 Wire Wire Line
 	2100 3700 1950 3700
-Text Label 750  3500 2    50   ~ 0
+Text Label 750  3500 2    50   ~ 6
 A5V0
 Wire Wire Line
 	750  3500 850  3500
-Text Label 750  3800 2    50   ~ 0
+Text Label 750  3800 2    50   ~ 6
 GND
 Wire Wire Line
 	750  3800 850  3800
-Text Label 750  3900 2    50   ~ 0
+Text Label 750  3900 2    50   ~ 6
 5V0_N
 Wire Wire Line
 	750  3900 850  3900
-Text Label 5550 2350 2    50   ~ 0
+Text Label 5550 2350 2    50   ~ 6
 3V3
 Wire Wire Line
 	5650 2350 5550 2350
-Text Label 5550 2550 2    50   ~ 0
+Text Label 5550 2550 2    50   ~ 6
 1V8
 Wire Wire Line
 	5550 2550 5650 2550
-Text Label 5550 2650 2    50   ~ 0
+Text Label 5550 2650 2    50   ~ 6
 GND
 Wire Wire Line
 	5550 2650 5650 2650
-Text Label 5550 2750 2    50   ~ 0
+Text Label 5550 2750 2    50   ~ 6
 3V0_N
 Wire Wire Line
 	5550 2750 5650 2750
-Text Label 5550 2950 2    50   ~ 0
+Text Label 5550 2950 2    50   ~ 6
 REFCLK_SINGLE_VT
 Wire Wire Line
 	5550 2950 5650 2950
-Text Label 5550 3050 2    50   ~ 0
+Text Label 5550 3050 2    50   ~ 6
 EXT_CLK_SEL
 Wire Wire Line
 	5550 3050 5650 3050
@@ -424,33 +424,33 @@ F15 "GND" I L 10450 1500 50
 $EndSheet
 Wire Wire Line
 	7300 2950 10450 2950
-Text Label 4750 4100 2    50   ~ 0
+Text Label 4750 4100 2    50   ~ 6
 ONESHOT_RST_P
-Text Label 4750 4200 2    50   ~ 0
+Text Label 4750 4200 2    50   ~ 6
 ONESHOT_RST_N
 Wire Wire Line
 	4850 4200 4750 4200
-Text Label 6800 4700 0    50   ~ 0
+Text Label 6800 4700 0    50   ~ 6
 TRIGGERED_P
 Wire Wire Line
 	6800 4700 6650 4700
-Text Label 6800 4800 0    50   ~ 0
+Text Label 6800 4800 0    50   ~ 6
 TRIGGERED_N
 Wire Wire Line
 	6800 4800 6650 4800
-Text Label 1950 8700 0    50   ~ 0
+Text Label 1950 8700 0    50   ~ 6
 TRIGGERED_P
-Text Label 1950 8800 0    50   ~ 0
+Text Label 1950 8800 0    50   ~ 6
 TRIGGERED_N
-Text Label 1950 8900 0    50   ~ 0
+Text Label 1950 8900 0    50   ~ 6
 ADC_OUT_P
-Text Label 1950 9000 0    50   ~ 0
+Text Label 1950 9000 0    50   ~ 6
 ADC_OUT_N
-Text Label 1950 5100 0    50   ~ 0
+Text Label 1950 5100 0    50   ~ 6
 EXT_CLK_SEL
-Text Label 1950 8500 0    50   ~ 0
+Text Label 1950 8500 0    50   ~ 6
 ONESHOT_RST_P
-Text Label 1950 8600 0    50   ~ 0
+Text Label 1950 8600 0    50   ~ 6
 ONESHOT_RST_N
 Wire Wire Line
 	4750 4100 4850 4100
@@ -460,33 +460,33 @@ Wire Wire Line
 	9800 800  10450 800 
 Wire Wire Line
 	9800 900  10450 900 
-Text Label 1950 9200 0    50   ~ 0
+Text Label 1950 9200 0    50   ~ 6
 DAC_MUXOUT
-Text Label 1950 9450 0    50   ~ 0
+Text Label 1950 9450 0    50   ~ 6
 LDAC_N
-Text Label 1950 9550 0    50   ~ 0
+Text Label 1950 9550 0    50   ~ 6
 DAC_CS_N
-Text Label 1950 9650 0    50   ~ 0
+Text Label 1950 9650 0    50   ~ 6
 DAC_SCK
-Text Label 1950 9750 0    50   ~ 0
+Text Label 1950 9750 0    50   ~ 6
 DAC_MOSI
-Text Label 1950 9850 0    50   ~ 0
+Text Label 1950 9850 0    50   ~ 6
 DAC_MISO
-Text Label 1950 9950 0    50   ~ 0
+Text Label 1950 9950 0    50   ~ 6
 DAC_RST_N
-Text Label 2100 3900 0    50   ~ 0
+Text Label 2100 3900 0    50   ~ 6
 DAC_MUXOUT
-Text Label 2100 4000 0    50   ~ 0
+Text Label 2100 4000 0    50   ~ 6
 LDAC_N
-Text Label 2100 4100 0    50   ~ 0
+Text Label 2100 4100 0    50   ~ 6
 DAC_CS_N
-Text Label 2100 4200 0    50   ~ 0
+Text Label 2100 4200 0    50   ~ 6
 DAC_SCK
-Text Label 2100 4300 0    50   ~ 0
+Text Label 2100 4300 0    50   ~ 6
 DAC_MOSI
-Text Label 2100 4400 0    50   ~ 0
+Text Label 2100 4400 0    50   ~ 6
 DAC_MISO
-Text Label 2100 4500 0    50   ~ 0
+Text Label 2100 4500 0    50   ~ 6
 DAC_RST_N
 Wire Wire Line
 	2100 3900 1950 3900
@@ -502,51 +502,51 @@ Wire Wire Line
 	1950 4400 2100 4400
 Wire Wire Line
 	2100 4500 1950 4500
-Text Label 5550 1750 2    50   ~ 0
+Text Label 5550 1750 2    50   ~ 6
 SERDES_MODE_SEL
 Wire Wire Line
 	5550 1750 5650 1750
-Text Label 5550 1850 2    50   ~ 0
+Text Label 5550 1850 2    50   ~ 6
 SERDES_RST_N
 Wire Wire Line
 	5550 1850 5650 1850
-Text Label 5550 1950 2    50   ~ 0
+Text Label 5550 1950 2    50   ~ 6
 SERDES_MDC
 Wire Wire Line
 	5550 1950 5650 1950
-Text Label 5550 2050 2    50   ~ 0
+Text Label 5550 2050 2    50   ~ 6
 SERDES_MDIO
 Wire Wire Line
 	5550 2050 5650 2050
-Text Label 1950 10050 0    50   ~ 0
+Text Label 1950 10050 0    50   ~ 6
 SERDES_MODE_SEL
-Text Label 1950 10150 0    50   ~ 0
+Text Label 1950 10150 0    50   ~ 6
 SERDES_RST_N
-Text Label 1950 10250 0    50   ~ 0
+Text Label 1950 10250 0    50   ~ 6
 SERDES_MDC
-Text Label 1950 10350 0    50   ~ 0
+Text Label 1950 10350 0    50   ~ 6
 SERDES_MDIO
-Text Label 7400 1100 0    50   ~ 0
+Text Label 7400 1100 0    50   ~ 6
 OSC_PWR_EN
-Text Label 7400 1300 0    50   ~ 0
+Text Label 7400 1300 0    50   ~ 6
 OSC_OS
-Text Label 7400 1400 0    50   ~ 0
+Text Label 7400 1400 0    50   ~ 6
 OSC_FS1
-Text Label 7400 1500 0    50   ~ 0
+Text Label 7400 1500 0    50   ~ 6
 OSC_FS0
-Text Label 1950 7100 0    50   ~ 0
+Text Label 1950 7100 0    50   ~ 6
 OSC_PWR_EN
-Text Label 1950 5200 0    50   ~ 0
+Text Label 1950 5200 0    50   ~ 6
 OSC_OE
-Text Label 1950 5300 0    50   ~ 0
+Text Label 1950 5300 0    50   ~ 6
 OSC_OS
-Text Label 1950 5400 0    50   ~ 0
+Text Label 1950 5400 0    50   ~ 6
 OSC_FS1
-Text Label 1950 5500 0    50   ~ 0
+Text Label 1950 5500 0    50   ~ 6
 OSC_FS0
-Text Label 7400 1200 0    50   ~ 0
+Text Label 7400 1200 0    50   ~ 6
 OSC_OE
-Text Label 5550 1150 2    50   ~ 0
+Text Label 5550 1150 2    50   ~ 6
 3V3_PLL
 Wire Wire Line
 	5550 1150 5650 1150
@@ -572,37 +572,37 @@ Wire Wire Line
 	7250 900  8400 900 
 Wire Wire Line
 	7250 800  8400 800 
-Text Label 8300 1400 2    50   ~ 0
+Text Label 8300 1400 2    50   ~ 6
 PLL_SYNC
-Text Label 8300 1500 2    50   ~ 0
+Text Label 8300 1500 2    50   ~ 6
 PLL_HOLDOVER
-Text Label 8300 1600 2    50   ~ 0
+Text Label 8300 1600 2    50   ~ 6
 PLL_LD
-Text Label 8300 1700 2    50   ~ 0
+Text Label 8300 1700 2    50   ~ 6
 PLL_LE
-Text Label 8300 1800 2    50   ~ 0
+Text Label 8300 1800 2    50   ~ 6
 PLL_CLK
-Text Label 8300 1900 2    50   ~ 0
+Text Label 8300 1900 2    50   ~ 6
 PLL_DATA
-Text Label 8300 2000 2    50   ~ 0
+Text Label 8300 2000 2    50   ~ 6
 PLL_CLKIN0
-Text Label 8300 2100 2    50   ~ 0
+Text Label 8300 2100 2    50   ~ 6
 PLL_CLKIN1
-Text Label 1950 5600 0    50   ~ 0
+Text Label 1950 5600 0    50   ~ 6
 PLL_SYNC
-Text Label 1950 5700 0    50   ~ 0
+Text Label 1950 5700 0    50   ~ 6
 PLL_HOLDOVER
-Text Label 1950 5800 0    50   ~ 0
+Text Label 1950 5800 0    50   ~ 6
 PLL_LD
-Text Label 1950 5900 0    50   ~ 0
+Text Label 1950 5900 0    50   ~ 6
 PLL_LE
-Text Label 1950 6000 0    50   ~ 0
+Text Label 1950 6000 0    50   ~ 6
 PLL_CLK
-Text Label 1950 6100 0    50   ~ 0
+Text Label 1950 6100 0    50   ~ 6
 PLL_DATA
-Text Label 1950 6200 0    50   ~ 0
+Text Label 1950 6200 0    50   ~ 6
 PLL_CLKIN0
-Text Label 1950 6300 0    50   ~ 0
+Text Label 1950 6300 0    50   ~ 6
 PLL_CLKIN1
 Wire Wire Line
 	7300 2650 7850 2650
@@ -648,17 +648,17 @@ Wire Wire Line
 	4550 3350 10450 3350
 Wire Wire Line
 	4650 3250 10450 3250
-Text Label 10400 1100 2    50   ~ 0
+Text Label 10400 1100 2    50   ~ 6
 SAMP_MUXSEL0
 Wire Wire Line
 	10400 1100 10450 1100
-Text Label 10400 1200 2    50   ~ 0
+Text Label 10400 1200 2    50   ~ 6
 SAMP_MUXSEL1
 Wire Wire Line
 	10400 1200 10450 1200
-Text Label 1950 6400 0    50   ~ 0
+Text Label 1950 6400 0    50   ~ 6
 SAMP_MUXSEL0
-Text Label 1950 6500 0    50   ~ 0
+Text Label 1950 6500 0    50   ~ 6
 SAMP_MUXSEL1
 Wire Wire Line
 	4050 4400 4850 4400
@@ -727,160 +727,160 @@ Wire Wire Line
 	13000 2950 13000 4500
 Wire Wire Line
 	13000 4500 9450 4500
-Text Label 10400 1400 2    50   ~ 0
+Text Label 10400 1400 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	10400 1400 10450 1400
-Text Label 10400 1500 2    50   ~ 0
+Text Label 10400 1500 2    50   ~ 6
 GND
 Wire Wire Line
 	10400 1500 10450 1500
-Text Label 7850 4700 2    50   ~ 0
+Text Label 7850 4700 2    50   ~ 6
 3V3
 Wire Wire Line
 	7850 4700 7950 4700
-Text Label 7850 4800 2    50   ~ 0
+Text Label 7850 4800 2    50   ~ 6
 GND
 Wire Wire Line
 	7850 4800 7950 4800
-Text Label 7850 4900 2    50   ~ 0
+Text Label 7850 4900 2    50   ~ 6
 3V3_N
 Wire Wire Line
 	7850 4900 7950 4900
-Text Label 7850 5300 2    50   ~ 0
+Text Label 7850 5300 2    50   ~ 6
 COARSE_EN
 Wire Wire Line
 	7850 5300 7950 5300
-Text Label 7850 5400 2    50   ~ 0
+Text Label 7850 5400 2    50   ~ 6
 COARSE_SLOAD
 Wire Wire Line
 	7850 5400 7950 5400
-Text Label 7850 5500 2    50   ~ 0
+Text Label 7850 5500 2    50   ~ 6
 COARSE_SDIN
 Wire Wire Line
 	7850 5500 7950 5500
-Text Label 7850 5600 2    50   ~ 0
+Text Label 7850 5600 2    50   ~ 6
 COARSE_SCLK
 Wire Wire Line
 	7850 5600 7950 5600
-Text Label 7850 5800 2    50   ~ 0
+Text Label 7850 5800 2    50   ~ 6
 FINE_SEL0_P
 Wire Wire Line
 	7850 5800 7950 5800
-Text Label 7850 5900 2    50   ~ 0
+Text Label 7850 5900 2    50   ~ 6
 FINE_SEL0_N
 Wire Wire Line
 	7850 5900 7950 5900
-Text Label 7850 6100 2    50   ~ 0
+Text Label 7850 6100 2    50   ~ 6
 FINE_SEL1_P
 Wire Wire Line
 	7850 6100 7950 6100
-Text Label 7850 6200 2    50   ~ 0
+Text Label 7850 6200 2    50   ~ 6
 FINE_SEL1_N
 Wire Wire Line
 	7850 6200 7950 6200
-Text Label 7850 6400 2    50   ~ 0
+Text Label 7850 6400 2    50   ~ 6
 FINE_SEL2_P
 Wire Wire Line
 	7850 6400 7950 6400
-Text Label 7850 6500 2    50   ~ 0
+Text Label 7850 6500 2    50   ~ 6
 FINE_SEL2_N
 Wire Wire Line
 	7850 6500 7950 6500
-Text Label 7850 6700 2    50   ~ 0
+Text Label 7850 6700 2    50   ~ 6
 FINE_SEL3_P
 Wire Wire Line
 	7850 6700 7950 6700
-Text Label 7850 6800 2    50   ~ 0
+Text Label 7850 6800 2    50   ~ 6
 FINE_SEL3_N
 Wire Wire Line
 	7850 6800 7950 6800
-Text Label 7850 7000 2    50   ~ 0
+Text Label 7850 7000 2    50   ~ 6
 FINE_SEL4_P
 Wire Wire Line
 	7850 7000 7950 7000
-Text Label 7850 7100 2    50   ~ 0
+Text Label 7850 7100 2    50   ~ 6
 FINE_SEL4_N
 Wire Wire Line
 	7850 7100 7950 7100
-Text Label 1950 6600 0    50   ~ 0
+Text Label 1950 6600 0    50   ~ 6
 RANGE_SEL
-Text Label 1950 6700 0    50   ~ 0
+Text Label 1950 6700 0    50   ~ 6
 COARSE_EN
-Text Label 1950 6800 0    50   ~ 0
+Text Label 1950 6800 0    50   ~ 6
 COARSE_SLOAD
-Text Label 1950 6900 0    50   ~ 0
+Text Label 1950 6900 0    50   ~ 6
 COARSE_SDIN
-Text Label 1950 7000 0    50   ~ 0
+Text Label 1950 7000 0    50   ~ 6
 COARSE_SCLK
-Text Label 1950 7500 0    50   ~ 0
+Text Label 1950 7500 0    50   ~ 6
 FINE_SEL0_P
-Text Label 1950 7600 0    50   ~ 0
+Text Label 1950 7600 0    50   ~ 6
 FINE_SEL0_N
-Text Label 1950 7700 0    50   ~ 0
+Text Label 1950 7700 0    50   ~ 6
 FINE_SEL1_P
-Text Label 1950 7800 0    50   ~ 0
+Text Label 1950 7800 0    50   ~ 6
 FINE_SEL1_N
-Text Label 1950 7900 0    50   ~ 0
+Text Label 1950 7900 0    50   ~ 6
 FINE_SEL2_P
-Text Label 1950 8000 0    50   ~ 0
+Text Label 1950 8000 0    50   ~ 6
 FINE_SEL2_N
-Text Label 1950 8100 0    50   ~ 0
+Text Label 1950 8100 0    50   ~ 6
 FINE_SEL3_P
-Text Label 1950 8200 0    50   ~ 0
+Text Label 1950 8200 0    50   ~ 6
 FINE_SEL3_N
-Text Label 1950 8300 0    50   ~ 0
+Text Label 1950 8300 0    50   ~ 6
 FINE_SEL4_P
-Text Label 1950 8400 0    50   ~ 0
+Text Label 1950 8400 0    50   ~ 6
 FINE_SEL4_N
-Text Notes 1950 5000 0    50   ~ 0
+Text Notes 1950 5000 0    50   ~ 6
 LVCMOS33
-Text Notes 1950 9100 0    50   ~ 0
+Text Notes 1950 9100 0    50   ~ 6
 Analog sensors
-Text Label 750  3700 2    50   ~ 0
+Text Label 750  3700 2    50   ~ 6
 1V8
 Wire Wire Line
 	750  3700 850  3700
-Text Notes 1950 9350 0    50   ~ 0
+Text Notes 1950 9350 0    50   ~ 6
 LVCMOS18
-Text Label 1800 2200 0    50   ~ 0
+Text Label 1800 2200 0    50   ~ 6
 3V3
 Wire Wire Line
 	1800 2200 1700 2200
-Text Label 1800 2600 0    50   ~ 0
+Text Label 1800 2600 0    50   ~ 6
 1V8
 Wire Wire Line
 	1800 2600 1700 2600
-Text Label 1800 2700 0    50   ~ 0
+Text Label 1800 2700 0    50   ~ 6
 1V0
 Wire Wire Line
 	1800 2700 1700 2700
-Text Label 1800 2800 0    50   ~ 0
+Text Label 1800 2800 0    50   ~ 6
 3V0_N
 Wire Wire Line
 	1800 2800 1700 2800
-Text Label 1800 2900 0    50   ~ 0
+Text Label 1800 2900 0    50   ~ 6
 3V3_N
 Wire Wire Line
 	1800 2900 1700 2900
-Text Label 1800 3000 0    50   ~ 0
+Text Label 1800 3000 0    50   ~ 6
 5V0_N
 Wire Wire Line
 	1800 3000 1700 3000
-Text Label 750  2000 2    50   ~ 0
+Text Label 750  2000 2    50   ~ 6
 12V0
 Wire Wire Line
 	750  2000 850  2000
-Text Label 750  2200 2    50   ~ 0
+Text Label 750  2200 2    50   ~ 6
 GND
 Wire Wire Line
 	750  2200 850  2200
 NoConn ~ 13100 1000
-Text Label 13200 900  0    50   ~ 0
+Text Label 13200 900  0    50   ~ 6
 GND
 Wire Wire Line
 	13200 900  13100 900 
-Text Label 13200 800  0    50   ~ 0
+Text Label 13200 800  0    50   ~ 6
 12V0_RAW
 Wire Wire Line
 	13100 800  13700 800 
@@ -890,7 +890,7 @@ U 1 1 5C7169D1
 P 13950 800
 F 0 "F1" H 13950 1040 50  0000 C CNN
 F 1 "3A" H 13950 949 50  0000 C CNN
-F 2 "" H 13950 800 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0603_RES_NOSILK" H 13950 800 60  0001 C CNN
 F 3 "" H 13950 800 60  0000 C CNN
 	1    13950 800 
 	1    0    0    -1  
@@ -900,8 +900,8 @@ L power-azonenberg:CONN_3_PWROUT J2
 U 1 1 5C717AA0
 P 12750 900
 F 0 "J2" H 12617 1200 50  0000 C CNN
-F 1 "CONN_3_PWROUT" H 12617 1116 40  0000 C CNN
-F 2 "" H 12750 900 60  0000 C CNN
+F 1 "BARREL" H 12617 1116 40  0000 C CNN
+F 2 "azonenberg_pcb:CONN_CUI_PJ-058BH_HIPWR_BARREL_NOSLOT" H 12750 900 60  0001 C CNN
 F 3 "" H 12750 900 60  0000 C CNN
 	1    12750 900 
 	-1   0    0    -1  
@@ -912,54 +912,54 @@ U 1 1 5C71964A
 P 14500 800
 F 0 "FB1" V 14342 800 40  0000 C CNN
 F 1 "MPZ2012S101AT000" V 14418 800 40  0000 C CNN
-F 2 "" H 14500 800 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0805_CAP_NOSILK" H 14500 800 60  0001 C CNN
 F 3 "" H 14500 800 60  0000 C CNN
 	1    14500 800 
 	0    1    1    0   
 $EndComp
-Text Label 14800 800  0    50   ~ 0
+Text Label 14800 800  0    50   ~ 6
 12V0
-Text Label 6800 5000 0    50   ~ 0
+Text Label 6800 5000 0    50   ~ 6
 RANGE_SEL
 Wire Wire Line
 	6800 5000 6650 5000
 Wire Wire Line
 	4750 4900 4850 4900
-Text Label 4750 4900 2    50   ~ 0
+Text Label 4750 4900 2    50   ~ 6
 GND
-Text Label 4750 4800 2    50   ~ 0
+Text Label 4750 4800 2    50   ~ 6
 2V5
 Wire Wire Line
 	4750 4800 4850 4800
-Text Label 1800 2500 0    50   ~ 0
+Text Label 1800 2500 0    50   ~ 6
 2V5
 Wire Wire Line
 	1800 2500 1700 2500
-Text Label 1800 2000 0    50   ~ 0
+Text Label 1800 2000 0    50   ~ 6
 A5V0
 Wire Wire Line
 	1800 2000 1700 2000
-Text Label 700  5100 2    50   ~ 0
+Text Label 700  5100 2    50   ~ 6
 5V25
 Wire Wire Line
 	700  5100 800  5100
-Text Label 700  5300 2    50   ~ 0
+Text Label 700  5300 2    50   ~ 6
 GND
 Wire Wire Line
 	700  5300 800  5300
-Text Label 1800 2300 0    50   ~ 0
+Text Label 1800 2300 0    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	1800 2300 1700 2300
-Text Label 1800 2400 0    50   ~ 0
+Text Label 1800 2400 0    50   ~ 6
 3V3_PLL
 Wire Wire Line
 	1800 2400 1700 2400
-Text Label 5550 2450 2    50   ~ 0
+Text Label 5550 2450 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	5550 2450 5650 2450
-Text Label 2650 1150 2    50   ~ 0
+Text Label 2650 1150 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	2650 1150 2750 1150
@@ -971,37 +971,37 @@ Wire Wire Line
 	4300 1450 4650 1450
 Wire Wire Line
 	4650 1450 4650 3250
-Text Label 5550 1650 2    50   ~ 0
+Text Label 5550 1650 2    50   ~ 6
 SERDES_POWER_EN
 Wire Wire Line
 	5550 1650 5650 1650
-Text Notes 600  1350 0    50   ~ 0
+Text Notes 600  1350 0    50   ~ 6
 MAX -2V to +2V INPUT
-Text Label 9800 2300 0    50   ~ 0
+Text Label 9800 2300 0    50   ~ 6
 FPGACLK_P
-Text Label 9800 2400 0    50   ~ 0
+Text Label 9800 2400 0    50   ~ 6
 FPGACLK_N
-Text Label 1950 7300 0    50   ~ 0
+Text Label 1950 7300 0    50   ~ 6
 FPGACLK_P
-Text Label 1950 7400 0    50   ~ 0
+Text Label 1950 7400 0    50   ~ 6
 FPGACLK_N
-Text Notes 1950 7250 0    50   ~ 0
+Text Notes 1950 7250 0    50   ~ 6
 LVDS
-Text Label 1950 10450 0    50   ~ 0
+Text Label 1950 10450 0    50   ~ 6
 SERDES_POWER_EN
-Text Label 4750 4700 2    50   ~ 0
+Text Label 4750 4700 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	4750 4700 4850 4700
-Text Label 1800 2100 0    50   ~ 0
+Text Label 1800 2100 0    50   ~ 6
 5V25
 Wire Wire Line
 	1800 2100 1700 2100
-Text Label 700  5200 2    50   ~ 0
+Text Label 700  5200 2    50   ~ 6
 D3V3
 Wire Wire Line
 	700  5200 800  5200
-Text Label 750  2100 2    50   ~ 0
+Text Label 750  2100 2    50   ~ 6
 D3V3
 Wire Wire Line
 	750  2100 850  2100
@@ -1011,7 +1011,7 @@ U 1 1 5D23CAB3
 P 4100 5200
 F 0 "J12" H 4000 5000 50  0000 C CNN
 F 1 "SMA" H 4000 5100 50  0000 C CNN
-F 2 "" H 4100 5200 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4100 5200 50  0001 C CNN
 F 3 "" H 4100 5200 50  0001 C CNN
 	1    4100 5200
 	-1   0    0    -1  
@@ -1022,19 +1022,19 @@ U 1 1 5D23D75B
 P 4100 5050
 F 0 "J11" H 4000 4850 50  0000 C CNN
 F 1 "SMA" H 4000 4950 50  0000 C CNN
-F 2 "" H 4100 5050 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4100 5050 50  0001 C CNN
 F 3 "" H 4100 5050 50  0001 C CNN
 	1    4100 5050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4850 5200 4250 5200
-Text Label 4100 4850 2    50   ~ 0
+Text Label 4100 4850 2    50   ~ 6
 GND
-Text Label 4100 5400 2    50   ~ 0
+Text Label 4100 5400 2    50   ~ 6
 GND
 Wire Wire Line
 	4250 5050 4850 5050
-Text Notes 4100 5750 0    50   ~ 0
+Text Notes 4100 5750 0    50   ~ 6
 Phase shifted sampling clock out\nfor debugging or external logic
 $EndSCHEMATC

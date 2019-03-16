@@ -20,38 +20,38 @@ U 1 1 5C15756D
 P 4150 4450
 F 0 "U4" H 4650 7025 50  0000 C CNN
 F 1 "LTC2664CUH-16#PBF" H 4650 6934 50  0000 C CNN
-F 2 "" H 4150 4450 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_32_0.5MM_5x5MM" H 4150 4450 50  0001 C CNN
 F 3 "" H 4150 4450 50  0001 C CNN
 	1    4150 4450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5950 3450 2    50   Output ~ 0
+Text HLabel 5950 3450 2    50   Output ~ 6
 LTRIG_VT
-Text HLabel 6100 3900 2    50   Output ~ 0
+Text HLabel 6100 3900 2    50   Output ~ 6
 REFCLK_SINGLE_VT
-Text HLabel 5950 4000 2    50   Output ~ 0
+Text HLabel 5950 4000 2    50   Output ~ 6
 ADC_VT
-Text HLabel 4050 2200 0    50   Input ~ 0
+Text HLabel 4050 2200 0    50   Input ~ 6
 A5V0
-Text HLabel 4050 2400 0    50   Input ~ 0
+Text HLabel 4050 2400 0    50   Input ~ 6
 5V0_N
-Text HLabel 4050 2600 0    50   Input ~ 0
+Text HLabel 4050 2600 0    50   Input ~ 6
 GND
-Text HLabel 5250 3100 2    50   Output ~ 0
+Text HLabel 5250 3100 2    50   Output ~ 6
 DAC_MUXOUT
-Text HLabel 4050 3600 0    50   Input ~ 0
+Text HLabel 4050 3600 0    50   Input ~ 6
 LDAC_N
-Text HLabel 4050 3700 0    50   Input ~ 0
+Text HLabel 4050 3700 0    50   Input ~ 6
 CS_N
-Text HLabel 4050 3800 0    50   Input ~ 0
+Text HLabel 4050 3800 0    50   Input ~ 6
 SCK
-Text HLabel 4050 4000 0    50   Input ~ 0
+Text HLabel 4050 4000 0    50   Input ~ 6
 MOSI
-Text HLabel 4050 3900 0    50   Output ~ 0
+Text HLabel 4050 3900 0    50   Output ~ 6
 MISO
-Text HLabel 4050 4300 0    50   Input ~ 0
+Text HLabel 4050 4300 0    50   Input ~ 6
 RST_N
-Text HLabel 4050 2100 0    50   Input ~ 0
+Text HLabel 4050 2100 0    50   Input ~ 6
 1V8
 Wire Wire Line
 	4050 2200 4050 2300
@@ -65,7 +65,7 @@ Wire Wire Line
 Connection ~ 4050 2800
 Wire Wire Line
 	4050 2800 4050 2900
-Text Label 4050 3100 2    50   ~ 0
+Text Label 4050 3100 2    50   ~ 6
 GND
 Wire Wire Line
 	4050 3100 4050 3200
@@ -81,14 +81,14 @@ U 1 1 5CD2E85E
 P 2050 2500
 F 0 "C214" H 2165 2546 50  0000 L CNN
 F 1 "1 uF" H 2165 2455 50  0000 L CNN
-F 2 "" H 2088 2350 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 2088 2350 50  0001 C CNN
 F 3 "" H 2050 2500 50  0001 C CNN
 	1    2050 2500
 	1    0    0    -1  
 $EndComp
-Text Label 1950 2350 2    50   ~ 0
+Text Label 1950 2350 2    50   ~ 6
 A5V0
-Text Label 1950 2650 2    50   ~ 0
+Text Label 1950 2650 2    50   ~ 6
 GND
 Wire Wire Line
 	1950 2350 2050 2350
@@ -100,12 +100,12 @@ U 1 1 5CD2EFF8
 P 2950 2500
 F 0 "C216" H 3065 2546 50  0000 L CNN
 F 1 "0.1 uF" H 3065 2455 50  0000 L CNN
-F 2 "" H 2988 2350 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 2988 2350 50  0001 C CNN
 F 3 "" H 2950 2500 50  0001 C CNN
 	1    2950 2500
 	1    0    0    -1  
 $EndComp
-Text Label 2950 2350 2    50   ~ 0
+Text Label 2950 2350 2    50   ~ 6
 1V8
 Wire Wire Line
 	2050 2650 2500 2650
@@ -116,14 +116,14 @@ U 1 1 5CD321D9
 P 5400 1950
 F 0 "C217" H 5515 1996 50  0000 L CNN
 F 1 "0.01 uF" H 5515 1905 50  0000 L CNN
-F 2 "" H 5438 1800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 5438 1800 50  0001 C CNN
 F 3 "" H 5400 1950 50  0001 C CNN
 	1    5400 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5400 2100 5250 2100
-Text Label 5250 1800 2    50   ~ 0
+Text Label 5250 1800 2    50   ~ 6
 GND
 Wire Wire Line
 	5250 1800 5400 1800
@@ -133,14 +133,14 @@ U 1 1 5CD32B01
 P 5850 2050
 F 0 "C218" H 5965 2096 50  0000 L CNN
 F 1 "0.1 uF" H 5965 2005 50  0000 L CNN
-F 2 "" H 5888 1900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 5888 1900 50  0001 C CNN
 F 3 "" H 5850 2050 50  0001 C CNN
 	1    5850 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5250 2200 5850 2200
-Text Label 5850 1900 0    50   ~ 0
+Text Label 5850 1900 0    50   ~ 6
 GND
 $Comp
 L device:C C215
@@ -148,7 +148,7 @@ U 1 1 5CD336A9
 P 2500 2500
 F 0 "C215" H 2615 2546 50  0000 L CNN
 F 1 "1 uF" H 2615 2455 50  0000 L CNN
-F 2 "" H 2538 2350 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 2538 2350 50  0001 C CNN
 F 3 "" H 2500 2500 50  0001 C CNN
 	1    2500 2500
 	1    0    0    -1  
@@ -165,16 +165,16 @@ U 1 1 5CD357FE
 P 5500 2400
 F 0 "R27" V 5400 2400 50  0000 C CNN
 F 1 "10K" V 5500 2400 50  0000 C CNN
-F 2 "" V 5430 2400 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5430 2400 50  0001 C CNN
 F 3 "" H 5500 2400 50  0001 C CNN
 	1    5500 2400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5350 2400 5250 2400
-Text Label 5650 2400 0    50   ~ 0
+Text Label 5650 2400 0    50   ~ 6
 1V8
-Text Label 5750 2700 0    50   ~ 0
+Text Label 5750 2700 0    50   ~ 6
 GND
 $Comp
 L device:R R24
@@ -182,14 +182,14 @@ U 1 1 5CD379F3
 P 5400 2700
 F 0 "R24" V 5350 2850 50  0000 C CNN
 F 1 "10K" V 5400 2700 50  0000 C CNN
-F 2 "" V 5330 2700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5330 2700 50  0001 C CNN
 F 3 "" H 5400 2700 50  0001 C CNN
 	1    5400 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5550 2700 5750 2700
-Text Label 5750 2900 0    50   ~ 0
+Text Label 5750 2900 0    50   ~ 6
 GND
 $Comp
 L device:R R26
@@ -197,14 +197,14 @@ U 1 1 5CD38388
 P 5400 2900
 F 0 "R26" V 5350 3050 50  0000 C CNN
 F 1 "10K" V 5400 2900 50  0000 C CNN
-F 2 "" V 5330 2900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5330 2900 50  0001 C CNN
 F 3 "" H 5400 2900 50  0001 C CNN
 	1    5400 2900
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5550 2900 5750 2900
-Text Label 5750 2800 0    50   ~ 0
+Text Label 5750 2800 0    50   ~ 6
 A5V0
 $Comp
 L device:R R25
@@ -212,18 +212,18 @@ U 1 1 5CD38A49
 P 5400 2800
 F 0 "R25" V 5350 2950 50  0000 C CNN
 F 1 "10K" V 5400 2800 50  0000 C CNN
-F 2 "" V 5330 2800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5330 2800 50  0001 C CNN
 F 3 "" H 5400 2800 50  0001 C CNN
 	1    5400 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5550 2800 5750 2800
-Text Notes 6000 2700 0    50   ~ 0
+Text Notes 6000 2700 0    50   ~ 6
 +/- 2.5V, start up at zero
-Text Label 4050 4100 2    50   ~ 0
+Text Label 4050 4100 2    50   ~ 6
 GND
-Text Notes 6250 3400 0    50   ~ 0
+Text Notes 6250 3400 0    50   ~ 6
 HMC675 has -2 to +2V absolute max\nDAC has 2.5V range so we need to attenuate by 0.8x\nto safely use the full dynamic range.
 $Comp
 L device:R R106
@@ -236,11 +236,11 @@ F 3 "" H 5700 3600 50  0001 C CNN
 	1    5700 3600
 	0    1    1    0   
 $EndComp
-Text Label 5250 3600 0    50   ~ 0
+Text Label 5250 3600 0    50   ~ 6
 VOUT0
-Text Label 5250 3700 0    50   ~ 0
+Text Label 5250 3700 0    50   ~ 6
 VOUT1
-Text Label 5250 3800 0    50   ~ 0
+Text Label 5250 3800 0    50   ~ 6
 VOUT2
 Wire Wire Line
 	5550 3600 5250 3600
@@ -303,7 +303,7 @@ F 3 "" H 6350 3800 50  0001 C CNN
 	1    6350 3800
 	0    1    1    0   
 $EndComp
-Text Label 6500 3600 0    50   ~ 0
+Text Label 6500 3600 0    50   ~ 6
 GND
 Wire Wire Line
 	6500 3600 6500 3700
@@ -331,7 +331,7 @@ Wire Wire Line
 Connection ~ 5950 3800
 Wire Wire Line
 	5950 3800 6200 3800
-Text Label 5250 3900 0    50   ~ 0
+Text Label 5250 3900 0    50   ~ 6
 VOUT3
 $Comp
 L Connector:Conn_01x02 TP2
@@ -339,14 +339,14 @@ U 1 1 5D553AFD
 P 5750 4250
 F 0 "TP2" H 5830 4242 50  0000 L CNN
 F 1 "HEADER" H 5830 4151 50  0000 L CNN
-F 2 "" H 5750 4250 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_1x2" H 5750 4250 50  0001 C CNN
 F 3 "~" H 5750 4250 50  0001 C CNN
 	1    5750 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5250 4250 5550 4250
-Text Label 5550 4350 2    50   ~ 0
+Text Label 5550 4350 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x01 TP1
@@ -354,7 +354,7 @@ U 1 1 5D559F77
 P 5450 3250
 F 0 "TP1" H 5530 3292 50  0000 L CNN
 F 1 "TESTPOINT" H 5530 3201 50  0000 L CNN
-F 2 "" H 5450 3250 50  0001 C CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_KEYSTONE_5016" H 5450 3250 50  0001 C CNN
 F 3 "~" H 5450 3250 50  0001 C CNN
 	1    5450 3250
 	1    0    0    -1  

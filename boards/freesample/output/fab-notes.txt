@@ -2,7 +2,7 @@ Part number:		FREESAMPLE v0.1
 
 General fabrication notes
 
-	* Boards are be individually routed.
+	* Boards are to be individually routed.
 	* Lot number / date codes should be placed at the location marked in the "F.Fab" layer.
 	* Blue LPI solder mask on both sides of board.
 	* White LPI legend on both sides of board.

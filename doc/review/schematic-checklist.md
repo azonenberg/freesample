@@ -8,7 +8,7 @@ together on the SoM and are safe to connect on the host as well*
 * [x] Verify pin numbers of all schematic symbols against datasheet (if not yet board proven).
 * [ ] Schematic symbol matches chosen component package
 * [ ] Thermal pads are connected to correct power rail (may not always be ground)
-* [ ] Debug interfaces are not power gated in sleep mode
+* [x] Debug interfaces are not power gated in sleep mode *N/A, no sleep mode implemented*
 
 ## Passive components
 * [ ] Power/voltage/tolerance ratings specified as required
@@ -19,22 +19,22 @@ together on the SoM and are safe to connect on the host as well*
 
 ### System power input
 
-* [ ] Fusing and/or reverse voltage protection at system power inlet
-* [ ] Check total input capacitance and add inrush limiter if needed
+* [x] Fusing and/or reverse voltage protection at system power inlet
+* [x] Check total input capacitance and add inrush limiter if needed
 
 ### Regulators
 
-* [ ] Under/overvoltage protection configured correctly if used
-* [ ] Verify estimated power usage per rail against regulator rating
-* [ ] Current-sense resistors on power rails after regulator output caps, not in switching loop
-* [ ] Remote sense used on low voltage or high current rails
+* [x] Under/overvoltage protection configured correctly if used *N/A, not implemented*
+* [x] Verify estimated power usage per rail against regulator rating
+* [x] Current-sense resistors on power rails after regulator output caps, not in switching loop
+* [x] Remote sense used on low voltage or high current rails
 * [ ] Linear regulators are stable with selected output cap ESR
 * [ ] Confirm power rail sequencing against device datasheets
 
 ### Decoupling
 * [ ] Decoupling present for all ICs
 * [ ] Decoupling meets/exceeds vendor recommendations if specified
-* [ ] Bulk decoupling present at PSU
+* [x] Bulk decoupling present at PSU
 
 ### General
 * [ ] All power inputs fed by correct voltage
@@ -57,7 +57,7 @@ together on the SoM and are safe to connect on the host as well*
 
 ### Analog
 
-* [ ] RC time constant for attenuators sane given ADC sampling frequency
+* [x] RC time constant for attenuators sane given ADC sampling frequency *N/A*
 * [ ] Verify frequency response of RF components across entire operating range. Don't assume a "1-100 MHz" amplifier has the
 same gain across the whole range.
 
@@ -69,6 +69,7 @@ same gain across the whole range.
 * [ ] Banking / clock capable input rules met for clocks going to FPGAs
 
 ### Strap/init pins
+
 * [ ] Pullup/pulldowns on all signals that need defined state at boot
 * [ ] Strap pins connected to correct rail for desired state
 * [ ] JTAG/ICSP connector provided for all programmable devices
@@ -77,8 +78,8 @@ same gain across the whole range.
 
 ### External interface protection
 
-* [ ] Power outputs (USB etc) current limited
-* [ ] ESD protection on data lines going off board
+* [x] Power outputs (USB etc) current limited *N/A, no power output provided*
+* [x] ESD protection on data lines going off board *Not possible on RF ports, no other I/O*
 
 ### Debugging / reworkability
 

@@ -20,7 +20,7 @@ U 1 1 5C980A0B
 P 1200 3700
 F 0 "J7" H 1200 3550 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 1200 3650 50  0000 L CNN
-F 2 "" H 1200 3700 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1200 3700 50  0001 C CNN
 F 3 "" H 1200 3700 50  0001 C CNN
 	1    1200 3700
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 3 1 5C9848DB
 P 5750 3600
 F 0 "J7" H 5750 3550 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 5750 3450 50  0000 L CNN
-F 2 "" H 5750 3600 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 5750 3600 50  0001 C CNN
 F 3 "" H 5750 3600 50  0001 C CNN
 	3    5750 3600
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5C98834E
 P 1200 7800
 F 0 "J8" H 1200 11550 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 1200 11450 50  0000 L CNN
-F 2 "" H 1200 7800 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 1200 7800 50  0001 C CNN
 F 3 "" H 1200 7800 50  0001 C CNN
 	1    1200 7800
 	1    0    0    -1  
@@ -53,7 +53,7 @@ U 3 1 5C98C557
 P 5750 5250
 F 0 "J8" H 5750 5200 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 5750 5100 50  0000 L CNN
-F 2 "" H 5750 5250 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 5750 5250 50  0001 C CNN
 F 3 "" H 5750 5250 50  0001 C CNN
 	3    5750 5250
 	1    0    0    -1  
@@ -64,7 +64,7 @@ U 4 1 5C98DDC9
 P 5750 6400
 F 0 "J8" H 5750 6350 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 5750 6250 50  0000 L CNN
-F 2 "" H 5750 6400 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 5750 6400 50  0001 C CNN
 F 3 "" H 5750 6400 50  0001 C CNN
 	4    5750 6400
 	1    0    0    -1  
@@ -75,7 +75,7 @@ U 5 1 5C98F480
 P 5750 7300
 F 0 "J8" H 5750 7250 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 5750 7150 50  0000 L CNN
-F 2 "" H 5750 7300 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 5750 7300 50  0001 C CNN
 F 3 "" H 5750 7300 50  0001 C CNN
 	5    5750 7300
 	1    0    0    -1  
@@ -86,7 +86,7 @@ U 6 1 5C990DCA
 P 4100 6050
 F 0 "J8" H 4100 6000 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 4100 5900 50  0000 L CNN
-F 2 "" H 4100 6050 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 4100 6050 50  0001 C CNN
 F 3 "" H 4100 6050 50  0001 C CNN
 	6    4100 6050
 	1    0    0    -1  
@@ -97,7 +97,7 @@ U 7 1 5C994D6B
 P 4100 9250
 F 0 "J8" H 4100 9200 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 4100 9100 50  0000 L CNN
-F 2 "" H 4100 9250 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 4100 9250 50  0001 C CNN
 F 3 "" H 4100 9250 50  0001 C CNN
 	7    4100 9250
 	1    0    0    -1  
@@ -108,7 +108,7 @@ U 8 1 5C99740D
 P 13600 2450
 F 0 "J8" H 13817 3725 50  0000 C CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 13817 3634 50  0000 C CNN
-F 2 "" H 13600 2450 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 13600 2450 50  0001 C CNN
 F 3 "" H 13600 2450 50  0001 C CNN
 	8    13600 2450
 	-1   0    0    -1  
@@ -119,7 +119,7 @@ U 9 1 5C999766
 P 4100 7350
 F 0 "J8" H 4100 7300 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 4100 7200 50  0000 L CNN
-F 2 "" H 4100 7350 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 4100 7350 50  0001 C CNN
 F 3 "" H 4100 7350 50  0001 C CNN
 	9    4100 7350
 	1    0    0    -1  
@@ -130,7 +130,7 @@ U 1 1 5C9B0A54
 P 15100 2700
 F 0 "J9" H 15100 2500 60  0000 L CNN
 F 1 "0826-1G1T-23-F" H 15100 2400 60  0000 L CNN
-F 2 "" H 15100 2700 60  0000 C CNN
+F 2 "azonenberg_pcb:CONN_BELFUSE_0826_1G1T_23_F" H 15100 2700 60  0001 C CNN
 F 3 "" H 15100 2700 60  0000 C CNN
 	1    15100 2700
 	1    0    0    -1  
@@ -141,7 +141,7 @@ U 1 1 5C9B866D
 P 14500 700
 F 0 "R16" V 14450 850 50  0000 C CNN
 F 1 "470" V 14500 700 50  0000 C CNN
-F 2 "" V 14430 700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 14430 700 50  0001 C CNN
 F 3 "" H 14500 700 50  0001 C CNN
 	1    14500 700 
 	0    1    1    0   
@@ -154,28 +154,28 @@ U 1 1 5C9B8F60
 P 14500 900
 F 0 "R17" V 14450 1050 50  0000 C CNN
 F 1 "470" V 14500 900 50  0000 C CNN
-F 2 "" V 14430 900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 14430 900 50  0001 C CNN
 F 3 "" H 14500 900 50  0001 C CNN
 	1    14500 900 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	14650 900  14800 900 
-Text Label 14800 1300 2    50   ~ 0
+Text Label 14800 1300 2    50   ~ 6
 ETH_A_TAP
-Text Label 14800 1700 2    50   ~ 0
+Text Label 14800 1700 2    50   ~ 6
 ETH_B_TAP
-Text Label 14800 2100 2    50   ~ 0
+Text Label 14800 2100 2    50   ~ 6
 ETH_C_TAP
-Text Label 14800 2500 2    50   ~ 0
+Text Label 14800 2500 2    50   ~ 6
 ETH_D_TAP
-Text Label 15300 3250 2    50   ~ 0
+Text Label 15300 3250 2    50   ~ 6
 ETH_A_TAP
-Text Label 15300 3550 2    50   ~ 0
+Text Label 15300 3550 2    50   ~ 6
 ETH_B_TAP
-Text Label 15300 3850 2    50   ~ 0
+Text Label 15300 3850 2    50   ~ 6
 ETH_C_TAP
-Text Label 15300 4150 2    50   ~ 0
+Text Label 15300 4150 2    50   ~ 6
 ETH_D_TAP
 $Comp
 L device:C C129
@@ -183,7 +183,7 @@ U 1 1 5C9BBCC7
 P 15450 3250
 F 0 "C129" V 15300 3250 50  0000 C CNN
 F 1 "0.1 uF" V 15400 3450 50  0000 C CNN
-F 2 "" H 15488 3100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15488 3100 50  0001 C CNN
 F 3 "" H 15450 3250 50  0001 C CNN
 	1    15450 3250
 	0    1    1    0   
@@ -194,7 +194,7 @@ U 1 1 5C9BC7E1
 P 15450 3550
 F 0 "C130" V 15300 3550 50  0000 C CNN
 F 1 "0.1 uF" V 15400 3750 50  0000 C CNN
-F 2 "" H 15488 3400 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15488 3400 50  0001 C CNN
 F 3 "" H 15450 3550 50  0001 C CNN
 	1    15450 3550
 	0    1    1    0   
@@ -205,7 +205,7 @@ U 1 1 5C9BD09E
 P 15450 3850
 F 0 "C131" V 15300 3850 50  0000 C CNN
 F 1 "0.1 uF" V 15400 4050 50  0000 C CNN
-F 2 "" H 15488 3700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15488 3700 50  0001 C CNN
 F 3 "" H 15450 3850 50  0001 C CNN
 	1    15450 3850
 	0    1    1    0   
@@ -216,7 +216,7 @@ U 1 1 5C9BD7A2
 P 15450 4150
 F 0 "C132" V 15300 4150 50  0000 C CNN
 F 1 "0.1 uF" V 15400 4350 50  0000 C CNN
-F 2 "" H 15488 4000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 15488 4000 50  0001 C CNN
 F 3 "" H 15450 4150 50  0001 C CNN
 	1    15450 4150
 	0    1    1    0   
@@ -237,7 +237,7 @@ Wire Wire Line
 Connection ~ 15900 3850
 Wire Wire Line
 	15900 3850 15900 3550
-Text Label 15900 3250 0    50   ~ 0
+Text Label 15900 3250 0    50   ~ 6
 GND
 Wire Wire Line
 	13700 1800 14800 1800
@@ -277,23 +277,23 @@ Wire Wire Line
 	14400 2400 14400 2600
 Wire Wire Line
 	14400 2600 14800 2600
-Text Label 13800 1400 0    50   ~ 0
+Text Label 13800 1400 0    50   ~ 6
 ETH_A_P
-Text Label 13800 1500 0    50   ~ 0
+Text Label 13800 1500 0    50   ~ 6
 ETH_A_N
-Text Label 13800 1700 0    50   ~ 0
+Text Label 13800 1700 0    50   ~ 6
 ETH_B_P
-Text Label 13800 1800 0    50   ~ 0
+Text Label 13800 1800 0    50   ~ 6
 ETH_B_N
-Text Label 13800 2000 0    50   ~ 0
+Text Label 13800 2000 0    50   ~ 6
 ETH_C_P
-Text Label 13800 2100 0    50   ~ 0
+Text Label 13800 2100 0    50   ~ 6
 ETH_C_N
-Text Label 13800 2300 0    50   ~ 0
+Text Label 13800 2300 0    50   ~ 6
 ETH_D_P
-Text Label 13800 2400 0    50   ~ 0
+Text Label 13800 2400 0    50   ~ 6
 ETH_D_N
-Text HLabel 800  750  0    50   Input ~ 0
+Text HLabel 800  750  0    50   Input ~ 6
 5V25
 Wire Wire Line
 	800  750  1000 750 
@@ -312,7 +312,7 @@ Wire Wire Line
 Connection ~ 1000 1150
 Wire Wire Line
 	1000 1150 1000 1250
-Text HLabel 2450 750  2    50   Input ~ 0
+Text HLabel 2450 750  2    50   Input ~ 6
 GND
 Wire Wire Line
 	2450 750  2350 750 
@@ -465,7 +465,7 @@ Wire Wire Line
 Connection ~ 2200 4850
 Wire Wire Line
 	2200 4850 2200 4950
-Text Label 2300 4250 0    50   ~ 0
+Text Label 2300 4250 0    50   ~ 6
 GND
 Wire Wire Line
 	2300 4250 2200 4250
@@ -586,55 +586,55 @@ Wire Wire Line
 Connection ~ 1100 7550
 Wire Wire Line
 	1100 7550 1100 7450
-Text HLabel 1100 4250 0    50   Output ~ 0
+Text HLabel 1100 4250 0    50   Output ~ 6
 D3V3
-Text HLabel 1000 2550 0    50   Output ~ 0
+Text HLabel 1000 2550 0    50   Output ~ 6
 D2V5
-Text HLabel 1000 1450 0    50   Output ~ 0
+Text HLabel 1000 1450 0    50   Output ~ 6
 D1V8
-Text HLabel 2350 1650 2    50   Output ~ 0
+Text HLabel 2350 1650 2    50   Output ~ 6
 D3V3
-Text HLabel 3800 950  0    50   Output ~ 0
+Text HLabel 3800 950  0    50   Output ~ 6
 EXT_CLK_SEL
-Text HLabel 3800 1050 0    50   Output ~ 0
+Text HLabel 3800 1050 0    50   Output ~ 6
 OSC_OE
-Text HLabel 3800 1150 0    50   Output ~ 0
+Text HLabel 3800 1150 0    50   Output ~ 6
 OSC_OS
-Text HLabel 3800 1250 0    50   Output ~ 0
+Text HLabel 3800 1250 0    50   Output ~ 6
 OSC_FS1
-Text HLabel 3800 1350 0    50   Output ~ 0
+Text HLabel 3800 1350 0    50   Output ~ 6
 OSC_FS0
-Text HLabel 3800 1450 0    50   Output ~ 0
+Text HLabel 3800 1450 0    50   Output ~ 6
 PLL_SYNC
-Text HLabel 3800 1550 0    50   Input ~ 0
+Text HLabel 3800 1550 0    50   Input ~ 6
 PLL_HOLDOVER
-Text HLabel 3800 1650 0    50   Input ~ 0
+Text HLabel 3800 1650 0    50   Input ~ 6
 PLL_LD
-Text HLabel 3800 1750 0    50   Output ~ 0
+Text HLabel 3800 1750 0    50   Output ~ 6
 PLL_LE
-Text HLabel 3800 1850 0    50   Output ~ 0
+Text HLabel 3800 1850 0    50   Output ~ 6
 PLL_CLK
-Text HLabel 3800 1950 0    50   BiDi ~ 0
+Text HLabel 3800 1950 0    50   BiDi ~ 6
 PLL_DATA
-Text HLabel 3800 2050 0    50   Output ~ 0
+Text HLabel 3800 2050 0    50   Output ~ 6
 PLL_CLKIN0
-Text HLabel 3800 2150 0    50   Output ~ 0
+Text HLabel 3800 2150 0    50   Output ~ 6
 PLL_CLKIN1
-Text HLabel 3800 2250 0    50   Output ~ 0
+Text HLabel 3800 2250 0    50   Output ~ 6
 SAMP_MUXSEL0
-Text HLabel 3800 2350 0    50   Output ~ 0
+Text HLabel 3800 2350 0    50   Output ~ 6
 SAMP_MUXSEL1
-Text HLabel 3800 2450 0    50   Output ~ 0
+Text HLabel 3800 2450 0    50   Output ~ 6
 RANGE_SEL
-Text HLabel 3800 2550 0    50   Output ~ 0
+Text HLabel 3800 2550 0    50   Output ~ 6
 COARSE_EN
-Text HLabel 3800 2650 0    50   Output ~ 0
+Text HLabel 3800 2650 0    50   Output ~ 6
 COARSE_SLOAD
-Text HLabel 3800 2750 0    50   Output ~ 0
+Text HLabel 3800 2750 0    50   Output ~ 6
 COARSE_SDIN
-Text HLabel 3800 2850 0    50   Output ~ 0
+Text HLabel 3800 2850 0    50   Output ~ 6
 COARSE_SCLK
-Text HLabel 3800 2950 0    50   Output ~ 0
+Text HLabel 3800 2950 0    50   Output ~ 6
 OSC_PWR_EN
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J7
@@ -642,7 +642,7 @@ U 4 1 5C9868D1
 P 4000 4100
 F 0 "J7" H 4000 4050 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 4000 3950 50  0000 L CNN
-F 2 "" H 4000 4100 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 4000 4100 50  0001 C CNN
 F 3 "" H 4000 4100 50  0001 C CNN
 	4    4000 4100
 	1    0    0    -1  
@@ -656,67 +656,65 @@ NoConn ~ 3800 3750
 NoConn ~ 3800 3850
 NoConn ~ 3800 3950
 NoConn ~ 3800 4050
-Text HLabel 3800 3350 0    50   Input ~ 0
+Text HLabel 3800 3350 0    50   Input ~ 6
 FPGA_CLK_P
-Text HLabel 3800 3150 0    50   Input ~ 0
+Text HLabel 3800 3150 0    50   Input ~ 6
 FPGA_CLK_N
 NoConn ~ 3800 850 
 NoConn ~ 3800 750 
-Text HLabel 5550 750  0    50   Output ~ 0
+Text HLabel 5550 750  0    50   Output ~ 6
 FINE_SEL_0_P
-Text HLabel 5550 850  0    50   Output ~ 0
+Text HLabel 5550 850  0    50   Output ~ 6
 FINE_SEL_0_N
 NoConn ~ 5550 3450
 NoConn ~ 5550 3550
-Text HLabel 5550 1050 0    50   Output ~ 0
+Text HLabel 5550 1050 0    50   Output ~ 6
 FINE_SEL_1_P
-Text HLabel 5550 1150 0    50   Output ~ 0
+Text HLabel 5550 1150 0    50   Output ~ 6
 FINE_SEL_1_N
-Text HLabel 5550 1350 0    50   Output ~ 0
+Text HLabel 5550 1350 0    50   Output ~ 6
 FINE_SEL_2_P
-Text HLabel 5550 1450 0    50   Output ~ 0
+Text HLabel 5550 1450 0    50   Output ~ 6
 FINE_SEL_2_N
-Text HLabel 5550 1650 0    50   Output ~ 0
+Text HLabel 5550 1650 0    50   Output ~ 6
 FINE_SEL_3_P
-Text HLabel 5550 1750 0    50   Output ~ 0
+Text HLabel 5550 1750 0    50   Output ~ 6
 FINE_SEL_3_N
-Text HLabel 5550 1950 0    50   Output ~ 0
+Text HLabel 5550 1950 0    50   Output ~ 6
 FINE_SEL_4_P
-Text HLabel 5550 2050 0    50   Output ~ 0
+Text HLabel 5550 2050 0    50   Output ~ 6
 FINE_SEL_4_N
-Text HLabel 5550 2250 0    50   Output ~ 0
+Text HLabel 5550 2250 0    50   Output ~ 6
 ONESHOT_RST_P
-Text HLabel 5550 2350 0    50   Output ~ 0
+Text HLabel 5550 2350 0    50   Output ~ 6
 ONESHOT_RST_N
-NoConn ~ 5550 3150
-NoConn ~ 5550 3250
-Text HLabel 5550 2550 0    50   Output ~ 0
+Text HLabel 5550 2550 0    50   Output ~ 6
 ADC_OUT_P
-Text HLabel 5550 2650 0    50   Output ~ 0
+Text HLabel 5550 2650 0    50   Output ~ 6
 ADC_OUT_N
-Text HLabel 5550 2850 0    50   Output ~ 0
+Text HLabel 5550 2850 0    50   Output ~ 6
 TRIGGERED_P
-Text HLabel 5550 2950 0    50   Output ~ 0
+Text HLabel 5550 2950 0    50   Output ~ 6
 TRIGGERED_N
-Text HLabel 7250 750  0    50   Output ~ 0
+Text HLabel 7250 750  0    50   Output ~ 6
 LDAC_N
-Text HLabel 7250 850  0    50   Output ~ 0
+Text HLabel 7250 850  0    50   Output ~ 6
 DAC_CS_N
-Text HLabel 7250 950  0    50   Output ~ 0
+Text HLabel 7250 950  0    50   Output ~ 6
 DAC_SCK
-Text HLabel 7250 1050 0    50   Output ~ 0
+Text HLabel 7250 1050 0    50   Output ~ 6
 DAC_MOSI
-Text HLabel 7250 1150 0    50   Input ~ 0
+Text HLabel 7250 1150 0    50   Input ~ 6
 DAC_MISO
-Text HLabel 7250 1250 0    50   Output ~ 0
+Text HLabel 7250 1250 0    50   Output ~ 6
 DAC_RST_N
-Text HLabel 7250 1350 0    50   Output ~ 0
+Text HLabel 7250 1350 0    50   Output ~ 6
 SERDES_MODE_SEL
-Text HLabel 7250 1450 0    50   Output ~ 0
+Text HLabel 7250 1450 0    50   Output ~ 6
 SERDES_RST_N
-Text HLabel 7250 1550 0    50   Output ~ 0
+Text HLabel 7250 1550 0    50   Output ~ 6
 SERDES_MDC
-Text HLabel 7250 1650 0    50   BiDi ~ 0
+Text HLabel 7250 1650 0    50   BiDi ~ 6
 SERDES_MDIO
 NoConn ~ 7250 2650
 NoConn ~ 7250 2550
@@ -731,12 +729,12 @@ U 2 1 5C982A6A
 P 7450 2700
 F 0 "J7" H 7450 2650 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_FPGA_HOST" H 7450 2550 50  0000 L CNN
-F 2 "" H 7450 2700 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 7450 2700 50  0001 C CNN
 F 3 "" H 7450 2700 50  0001 C CNN
 	2    7450 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 4000 6700 0    50   Input ~ 0
+Text HLabel 4000 6700 0    50   Input ~ 6
 DAC_MUXOUT
 NoConn ~ 4000 6000
 NoConn ~ 4000 5900
@@ -807,12 +805,12 @@ U 1 1 5D01C59A
 P 8300 5800
 F 0 "J10" H 8638 7347 60  0000 C CNN
 F 1 "XILINX_JTAG" H 8638 7241 60  0000 C CNN
-F 2 "" H 8300 5800 60  0000 C CNN
+F 2 "azonenberg_pcb:XILINX_JTAG_PTH_MOLEX_0878311420" H 8300 5800 60  0001 C CNN
 F 3 "" H 8300 5800 60  0000 C CNN
 	1    8300 5800
 	-1   0    0    -1  
 $EndComp
-Text Label 8300 4700 0    50   ~ 0
+Text Label 8300 4700 0    50   ~ 6
 D3V3
 Wire Wire Line
 	8300 4800 8300 4900
@@ -826,24 +824,24 @@ Connection ~ 8300 5100
 Wire Wire Line
 	8300 5100 8300 5200
 NoConn ~ 8300 5300
-Text Label 8300 4800 0    50   ~ 0
+Text Label 8300 4800 0    50   ~ 6
 GND
-Text Label 8300 5400 0    50   ~ 0
+Text Label 8300 5400 0    50   ~ 6
 JTAG_TMS
-Text Label 8300 5500 0    50   ~ 0
+Text Label 8300 5500 0    50   ~ 6
 JTAG_TCK
-Text Label 8300 5600 0    50   ~ 0
+Text Label 8300 5600 0    50   ~ 6
 JTAG_TDO
-Text Label 8300 5700 0    50   ~ 0
+Text Label 8300 5700 0    50   ~ 6
 JTAG_TDI
 NoConn ~ 8300 5800
-Text Label 9450 4500 2    50   ~ 0
+Text Label 9450 4500 2    50   ~ 6
 JTAG_TDI
-Text Label 9450 4600 2    50   ~ 0
+Text Label 9450 4600 2    50   ~ 6
 JTAG_TMS
-Text Label 9450 4700 2    50   ~ 0
+Text Label 9450 4700 2    50   ~ 6
 JTAG_TCK
-Text Label 9450 4800 2    50   ~ 0
+Text Label 9450 4800 2    50   ~ 6
 JTAG_TDO
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J8
@@ -851,26 +849,26 @@ U 2 1 5C98B925
 P 9550 5350
 F 0 "J8" H 10128 5851 50  0000 L CNN
 F 1 "CONN_INTEGRALSTICK_MCU_HOST" H 10128 5760 50  0000 L CNN
-F 2 "" H 9550 5350 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SAMTEC_QSH-060-01-L-D-A" H 9550 5350 50  0001 C CNN
 F 3 "" H 9550 5350 50  0001 C CNN
 	2    9550 5350
 	1    0    0    -1  
 $EndComp
-Text HLabel 7250 1750 0    50   Output ~ 0
+Text HLabel 7250 1750 0    50   Output ~ 6
 SERDES_POWER_EN
-Text Label 14150 800  2    50   ~ 0
+Text Label 14150 800  2    50   ~ 6
 ETH_LED1_N
-Text Label 14150 1000 2    50   ~ 0
+Text Label 14150 1000 2    50   ~ 6
 ETH_LED2_N
-Text Label 14350 700  2    50   ~ 0
+Text Label 14350 700  2    50   ~ 6
 D3V3
 Wire Wire Line
 	14150 800  14800 800 
 Wire Wire Line
 	14150 1000 14800 1000
-Text Label 14350 900  2    50   ~ 0
+Text Label 14350 900  2    50   ~ 6
 D3V3
-Text Label 14950 4500 0    50   ~ 0
+Text Label 14950 4500 0    50   ~ 6
 ETH_LED2_N
 $Comp
 L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
@@ -878,18 +876,18 @@ U 1 1 5D3977B1
 P 14850 4700
 F 0 "Q1" H 14994 4806 60  0000 L CNN
 F 1 "SSM6N58NU" H 14994 4700 60  0000 L CNN
-F 2 "" H 14850 4700 60  0000 C CNN
+F 2 "azonenberg_pcb:DFN_6_0.65MM_2x2MM_GDS" H 14850 4700 60  0001 C CNN
 F 3 "transistors/mos/*.*" H 14994 4594 60  0000 L CNN
 	1    14850 4700
 	1    0    0    -1  
 $EndComp
-Text Label 14950 5000 0    50   ~ 0
+Text Label 14950 5000 0    50   ~ 6
 GND
 Wire Wire Line
 	14950 5000 14950 4900
-Text Label 14650 4700 2    50   ~ 0
+Text Label 14650 4700 2    50   ~ 6
 ETH_LED2_EN
-Text Label 14950 5200 0    50   ~ 0
+Text Label 14950 5200 0    50   ~ 6
 ETH_LED1_N
 $Comp
 L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
@@ -897,20 +895,20 @@ U 2 1 5D3A6403
 P 14850 5400
 F 0 "Q1" H 14994 5506 60  0000 L CNN
 F 1 "SSM6N58NU" H 14994 5400 60  0000 L CNN
-F 2 "" H 14850 5400 60  0000 C CNN
+F 2 "azonenberg_pcb:DFN_6_0.65MM_2x2MM_GDS" H 14850 5400 60  0001 C CNN
 F 3 "transistors/mos/*.*" H 14994 5294 60  0000 L CNN
 	2    14850 5400
 	1    0    0    -1  
 $EndComp
-Text Label 14950 5700 0    50   ~ 0
+Text Label 14950 5700 0    50   ~ 6
 GND
 Wire Wire Line
 	14950 5700 14950 5600
-Text Label 14650 5400 2    50   ~ 0
+Text Label 14650 5400 2    50   ~ 6
 ETH_LED1_EN
-Text Label 7250 1850 2    50   ~ 0
+Text Label 7250 1850 2    50   ~ 6
 ETH_LED2_EN
-Text Label 7250 1950 2    50   ~ 0
+Text Label 7250 1950 2    50   ~ 6
 ETH_LED1_EN
 $Comp
 L device:C C321
@@ -918,16 +916,16 @@ U 1 1 5D3C9944
 P 14100 2800
 F 0 "C321" V 13950 2800 50  0000 C CNN
 F 1 "0.1 uF" V 14050 3000 50  0000 C CNN
-F 2 "" H 14138 2650 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14138 2650 50  0001 C CNN
 F 3 "" H 14100 2800 50  0001 C CNN
 	1    14100 2800
 	0    1    1    0   
 $EndComp
-Text Label 14450 2800 0    50   ~ 0
+Text Label 14450 2800 0    50   ~ 6
 ETH_GND
 Wire Wire Line
 	14250 2800 14800 2800
-Text Label 13850 2800 2    50   ~ 0
+Text Label 13850 2800 2    50   ~ 6
 GND
 Wire Wire Line
 	13850 2800 13950 2800
@@ -943,13 +941,13 @@ F 3 "~" H 10050 5650 50  0001 C CNN
 	1    10050 5650
 	1    0    0    -1  
 $EndComp
-Text Label 9450 5000 2    50   ~ 0
+Text Label 9450 5000 2    50   ~ 6
 MCU_RST_N
-Text Label 9450 5100 2    50   ~ 0
+Text Label 9450 5100 2    50   ~ 6
 FPGA_RST_N
-Text Label 9850 5650 2    50   ~ 0
+Text Label 9850 5650 2    50   ~ 6
 FPGA_RST_N
-Text Label 9850 5750 2    50   ~ 0
+Text Label 9850 5750 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x02 J20
@@ -962,9 +960,9 @@ F 3 "~" H 10050 6000 50  0001 C CNN
 	1    10050 6000
 	1    0    0    -1  
 $EndComp
-Text Label 9850 6000 2    50   ~ 0
+Text Label 9850 6000 2    50   ~ 6
 MCU_RST_N
-Text Label 9850 6100 2    50   ~ 0
+Text Label 9850 6100 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x02 J21
@@ -977,10 +975,48 @@ F 3 "~" H 10050 6300 50  0001 C CNN
 	1    10050 6300
 	1    0    0    -1  
 $EndComp
-Text Label 9850 6300 2    50   ~ 0
+Text Label 9850 6300 2    50   ~ 6
 MCU_BOOT0
-Text Label 9850 6400 2    50   ~ 0
+Text Label 9850 6400 2    50   ~ 6
 D3V3
-Text Label 9450 5300 2    50   ~ 0
+Text Label 9450 5300 2    50   ~ 6
 MCU_BOOT0
+Text Label 5550 3150 2    50   ~ 0
+SMA_GPIO_P
+Text Label 5550 3250 2    50   ~ 0
+SMA_GPIO_N
+Text Label 14800 6100 2    50   ~ 0
+SMA_GPIO_P
+Text Label 14800 6350 2    50   ~ 0
+SMA_GPIO_N
+$Comp
+L Connector:Conn_Coaxial J24
+U 1 1 5C9EDCC4
+P 14950 6100
+F 0 "J24" H 15050 5982 50  0000 L CNN
+F 1 "SMA" H 15050 6073 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 14950 6100 50  0001 C CNN
+F 3 "" H 14950 6100 50  0001 C CNN
+	1    14950 6100
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J25
+U 1 1 5C9F51E7
+P 14950 6350
+F 0 "J25" H 15050 6325 50  0000 L CNN
+F 1 "SMA" H 15050 6234 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 14950 6350 50  0001 C CNN
+F 3 "" H 14950 6350 50  0001 C CNN
+	1    14950 6350
+	1    0    0    -1  
+$EndComp
+Text Label 14850 6550 2    50   ~ 0
+GND
+Wire Wire Line
+	14850 6550 14950 6550
+Text Label 14850 5900 2    50   ~ 0
+GND
+Wire Wire Line
+	14850 5900 14950 5900
 $EndSCHEMATC

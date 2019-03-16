@@ -14,25 +14,25 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 13250 7800 2    50   Output ~ 0
+Text HLabel 13250 7800 2    50   Output ~ 6
 ADC_LE_P
-Text HLabel 13250 7700 2    50   Output ~ 0
+Text HLabel 13250 7700 2    50   Output ~ 6
 ADC_LE_N
-Text HLabel 5550 7750 0    50   Input ~ 0
+Text HLabel 5550 7750 0    50   Input ~ 6
 ONESHOT_RST_P
-Text HLabel 5550 7850 0    50   Input ~ 0
+Text HLabel 5550 7850 0    50   Input ~ 6
 ONESHOT_RST_N
-Text HLabel 1750 8050 0    50   Input ~ 0
+Text HLabel 1750 8050 0    50   Input ~ 6
 ONESHOT_FINEPHASE_P
-Text HLabel 1750 8150 0    50   Input ~ 0
+Text HLabel 1750 8150 0    50   Input ~ 6
 ONESHOT_FINEPHASE_N
-Text HLabel 1850 2150 0    50   Input ~ 0
+Text HLabel 1850 2150 0    50   Input ~ 6
 2V5
-Text HLabel 2550 6750 0    50   Input ~ 0
+Text HLabel 2550 6750 0    50   Input ~ 6
 GND
-Text HLabel 2750 10050 2    50   Output ~ 0
+Text HLabel 2750 10050 2    50   Output ~ 6
 ONESHOT_TRIGGERED_P
-Text HLabel 2750 10150 2    50   Output ~ 0
+Text HLabel 2750 10150 2    50   Output ~ 6
 ONESHOT_TRIGGERED_N
 $Comp
 L special-azonenberg:PI6C59S6005 U7
@@ -40,14 +40,14 @@ U 1 1 5C3E7E97
 P 2800 8250
 F 0 "U7" H 3250 10475 50  0000 C CNN
 F 1 "PI6C59S6005" H 3250 10384 50  0000 C CNN
-F 2 "" H 2800 7950 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_24_0.5MM_4x4MM" H 2800 7950 50  0001 C CNN
 F 3 "" H 2800 7950 50  0001 C CNN
 	1    2800 8250
 	1    0    0    -1  
 $EndComp
-Text HLabel 2550 7150 0    50   Input ~ 0
+Text HLabel 2550 7150 0    50   Input ~ 6
 RANGE_SEL
-Text HLabel 2550 6250 0    50   Input ~ 0
+Text HLabel 2550 6250 0    50   Input ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	2550 6250 2700 6250
@@ -71,7 +71,7 @@ AR Path="/5C267736/5CAC8F5C" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAC8F5C" Ref="C176"  Part="1" 
 F 0 "C176" H 1865 5746 50  0000 L CNN
 F 1 "4.7 uF" H 1865 5655 50  0000 L CNN
-F 2 "" H 1788 5550 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 1788 5550 50  0001 C CNN
 F 3 "" H 1750 5700 50  0001 C CNN
 	1    1750 5700
 	1    0    0    -1  
@@ -85,7 +85,7 @@ AR Path="/5C267736/5CAC8F62" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAC8F62" Ref="C182"  Part="1" 
 F 0 "C182" H 2365 5746 50  0000 L CNN
 F 1 "0.47 uF" H 2365 5655 50  0000 L CNN
-F 2 "" H 2288 5550 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 2288 5550 50  0001 C CNN
 F 3 "" H 2250 5700 50  0001 C CNN
 	1    2250 5700
 	1    0    0    -1  
@@ -99,7 +99,7 @@ AR Path="/5C267736/5CAC8F68" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAC8F68" Ref="C184"  Part="1" 
 F 0 "C184" H 3415 5746 50  0000 L CNN
 F 1 "0.47 uF" H 3415 5655 50  0000 L CNN
-F 2 "" H 3338 5550 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 3338 5550 50  0001 C CNN
 F 3 "" H 3300 5700 50  0001 C CNN
 	1    3300 5700
 	1    0    0    -1  
@@ -110,12 +110,12 @@ Wire Wire Line
 Connection ~ 2250 5850
 Wire Wire Line
 	2250 5850 1750 5850
-Text Label 1550 5550 2    50   ~ 0
+Text Label 1550 5550 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	1550 5550 1750 5550
 Connection ~ 1750 5550
-Text Label 1550 5850 2    50   ~ 0
+Text Label 1550 5850 2    50   ~ 6
 GND
 Wire Wire Line
 	1550 5850 1750 5850
@@ -133,7 +133,7 @@ AR Path="/5C267736/5CAC8F7A" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAC8F7A" Ref="C183"  Part="1" 
 F 0 "C183" H 2915 5746 50  0000 L CNN
 F 1 "0.47 uF" H 2915 5655 50  0000 L CNN
-F 2 "" H 2838 5550 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 2838 5550 50  0001 C CNN
 F 3 "" H 2800 5700 50  0001 C CNN
 	1    2800 5700
 	1    0    0    -1  
@@ -153,7 +153,7 @@ AR Path="/5C267736/5CAC8F84" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAC8F84" Ref="C185"  Part="1" 
 F 0 "C185" H 4015 5746 50  0000 L CNN
 F 1 "0.47 uF" H 4015 5655 50  0000 L CNN
-F 2 "" H 3938 5550 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 3938 5550 50  0001 C CNN
 F 3 "" H 3900 5700 50  0001 C CNN
 	1    3900 5700
 	1    0    0    -1  
@@ -178,12 +178,12 @@ AR Path="/5C267736/5CACA8E5" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CACA8E5" Ref="C181"  Part="1" 
 F 0 "C181" V 2200 7600 50  0000 C CNN
 F 1 "0.01 uF" V 2100 7650 50  0000 C CNN
-F 2 "" H 2188 7300 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 2188 7300 50  0001 C CNN
 F 3 "" H 2150 7450 50  0001 C CNN
 	1    2150 7450
 	0    1    -1   0   
 $EndComp
-Text Label 2000 7450 2    50   ~ 0
+Text Label 2000 7450 2    50   ~ 6
 3V3
 Wire Wire Line
 	2300 7450 2600 7450
@@ -197,28 +197,28 @@ AR Path="/5C267736/5CACBE10" Ref="JP?"  Part="1"
 AR Path="/5C15809A/5CACBE10" Ref="JP4"  Part="1" 
 F 0 "JP4" H 1183 7437 60  0000 C CNN
 F 1 "JUMPER_0402" H 1183 7331 60  0000 C CNN
-F 2 "" H 1200 6850 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_JUMPER" H 1200 6850 60  0001 C CNN
 F 3 "" H 1200 6850 60  0000 C CNN
 	1    1200 6850
 	1    0    0    -1  
 $EndComp
-Text Label 1500 6650 0    50   ~ 0
+Text Label 1500 6650 0    50   ~ 6
 BUF4_IN_SEL
-Text Label 1500 6550 0    50   ~ 0
+Text Label 1500 6550 0    50   ~ 6
 3V3
-Text Label 1500 6750 0    50   ~ 0
+Text Label 1500 6750 0    50   ~ 6
 GND
-Text Label 2550 7050 2    50   ~ 0
+Text Label 2550 7050 2    50   ~ 6
 BUF4_IN_SEL
 Wire Wire Line
 	2550 7050 2700 7050
-Text Label 2550 6950 2    50   ~ 0
+Text Label 2550 6950 2    50   ~ 6
 3V3
 Wire Wire Line
 	2550 6950 2700 6950
 Wire Wire Line
 	2550 7150 2700 7150
-Text Label 2550 7250 2    50   ~ 0
+Text Label 2550 7250 2    50   ~ 6
 GND
 Wire Wire Line
 	2550 7250 2700 7250
@@ -230,7 +230,7 @@ AR Path="/5C267736/5CAD5C53" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAD5C53" Ref="C177"  Part="1" 
 F 0 "C177" V 1950 7900 50  0000 C CNN
 F 1 "530Z104KT10T" V 2100 7400 50  0000 C CNN
-F 2 "" H 1938 7600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 1938 7600 50  0001 C CNN
 F 3 "" H 1900 7750 50  0001 C CNN
 	1    1900 7750
 	0    1    -1   0   
@@ -243,14 +243,14 @@ AR Path="/5C267736/5CAD61FA" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAD61FA" Ref="C178"  Part="1" 
 F 0 "C178" V 1950 8000 50  0000 C CNN
 F 1 "530Z104KT10T" V 2100 7500 50  0000 C CNN
-F 2 "" H 1938 7700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 1938 7700 50  0001 C CNN
 F 3 "" H 1900 7850 50  0001 C CNN
 	1    1900 7850
 	0    1    -1   0   
 $EndComp
-Text Label 2700 7750 2    50   ~ 0
+Text Label 2700 7750 2    50   ~ 6
 CPHASE_P
-Text Label 2700 7850 2    50   ~ 0
+Text Label 2700 7850 2    50   ~ 6
 CPHASE_N
 Wire Wire Line
 	2050 7750 2700 7750
@@ -264,7 +264,7 @@ AR Path="/5C267736/5CAD95DF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAD95DF" Ref="C179"  Part="1" 
 F 0 "C179" V 1950 8200 50  0000 C CNN
 F 1 "530Z104KT10T" V 1650 8050 50  0000 C CNN
-F 2 "" H 1938 7900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 1938 7900 50  0001 C CNN
 F 3 "" H 1900 8050 50  0001 C CNN
 	1    1900 8050
 	0    1    -1   0   
@@ -277,14 +277,14 @@ AR Path="/5C267736/5CAD95E9" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAD95E9" Ref="C180"  Part="1" 
 F 0 "C180" V 1950 8300 50  0000 C CNN
 F 1 "530Z104KT10T" V 1650 8150 50  0000 C CNN
-F 2 "" H 1938 8000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 1938 8000 50  0001 C CNN
 F 3 "" H 1900 8150 50  0001 C CNN
 	1    1900 8150
 	0    1    -1   0   
 $EndComp
-Text Label 2700 8050 2    50   ~ 0
+Text Label 2700 8050 2    50   ~ 6
 FPHASE_P
-Text Label 2700 8150 2    50   ~ 0
+Text Label 2700 8150 2    50   ~ 6
 FPHASE_N
 Wire Wire Line
 	2050 8050 2700 8050
@@ -296,7 +296,7 @@ U 1 1 5CAE58D3
 P 11550 4000
 F 0 "U23" H 11950 6075 50  0000 C CNN
 F 1 "NB7V52MMNG" H 11950 5984 50  0000 C CNN
-F 2 "" H 11550 4000 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_16_0.5MM_3x3MM" H 11550 4000 50  0001 C CNN
 F 3 "" H 11550 4000 50  0001 C CNN
 	1    11550 4000
 	1    0    0    -1  
@@ -314,7 +314,7 @@ AR Path="/5C267736/5CAE95A5" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95A5" Ref="C186"  Part="1" 
 F 0 "C186" H 5915 5796 50  0000 L CNN
 F 1 "4.7 uF" H 5915 5705 50  0000 L CNN
-F 2 "" H 5838 5600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 5838 5600 50  0001 C CNN
 F 3 "" H 5800 5750 50  0001 C CNN
 	1    5800 5750
 	1    0    0    -1  
@@ -328,7 +328,7 @@ AR Path="/5C267736/5CAE95AF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95AF" Ref="C188"  Part="1" 
 F 0 "C188" H 6415 5796 50  0000 L CNN
 F 1 "0.47 uF" H 6415 5705 50  0000 L CNN
-F 2 "" H 6338 5600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6338 5600 50  0001 C CNN
 F 3 "" H 6300 5750 50  0001 C CNN
 	1    6300 5750
 	1    0    0    -1  
@@ -342,7 +342,7 @@ AR Path="/5C267736/5CAE95B9" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95B9" Ref="C190"  Part="1" 
 F 0 "C190" H 7465 5796 50  0000 L CNN
 F 1 "0.47 uF" H 7465 5705 50  0000 L CNN
-F 2 "" H 7388 5600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 7388 5600 50  0001 C CNN
 F 3 "" H 7350 5750 50  0001 C CNN
 	1    7350 5750
 	1    0    0    -1  
@@ -353,12 +353,12 @@ Wire Wire Line
 Connection ~ 6300 5900
 Wire Wire Line
 	6300 5900 5800 5900
-Text Label 5600 5600 2    50   ~ 0
+Text Label 5600 5600 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	5600 5600 5800 5600
 Connection ~ 5800 5600
-Text Label 5600 5900 2    50   ~ 0
+Text Label 5600 5900 2    50   ~ 6
 GND
 Wire Wire Line
 	5600 5900 5800 5900
@@ -376,7 +376,7 @@ AR Path="/5C267736/5CAE95CF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95CF" Ref="C189"  Part="1" 
 F 0 "C189" H 6965 5796 50  0000 L CNN
 F 1 "0.47 uF" H 6965 5705 50  0000 L CNN
-F 2 "" H 6888 5600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 6888 5600 50  0001 C CNN
 F 3 "" H 6850 5750 50  0001 C CNN
 	1    6850 5750
 	1    0    0    -1  
@@ -396,7 +396,7 @@ AR Path="/5C267736/5CAE95DD" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95DD" Ref="C191"  Part="1" 
 F 0 "C191" H 8065 5796 50  0000 L CNN
 F 1 "0.47 uF" H 8065 5705 50  0000 L CNN
-F 2 "" H 7988 5600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 7988 5600 50  0001 C CNN
 F 3 "" H 7950 5750 50  0001 C CNN
 	1    7950 5750
 	1    0    0    -1  
@@ -413,7 +413,7 @@ Wire Wire Line
 	6400 7450 6400 7550
 Wire Wire Line
 	6400 7550 6500 7550
-Text Label 5800 7450 2    50   ~ 0
+Text Label 5800 7450 2    50   ~ 6
 3V3
 Wire Wire Line
 	6100 7450 6400 7450
@@ -427,26 +427,26 @@ AR Path="/5C267736/5CAE95FB" Ref="JP?"  Part="1"
 AR Path="/5C15809A/5CAE95FB" Ref="JP5"  Part="1" 
 F 0 "JP5" H 5483 7337 60  0000 C CNN
 F 1 "JUMPER_0402" H 5483 7231 60  0000 C CNN
-F 2 "" H 5500 6750 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_JUMPER" H 5500 6750 60  0001 C CNN
 F 3 "" H 5500 6750 60  0000 C CNN
 	1    5500 6750
 	1    0    0    -1  
 $EndComp
-Text Label 5800 6550 0    50   ~ 0
+Text Label 5800 6550 0    50   ~ 6
 BUF5_IN_SEL
-Text Label 5800 6450 0    50   ~ 0
+Text Label 5800 6450 0    50   ~ 6
 3V3
-Text Label 5800 6650 0    50   ~ 0
+Text Label 5800 6650 0    50   ~ 6
 GND
-Text Label 6350 7050 2    50   ~ 0
+Text Label 6350 7050 2    50   ~ 6
 BUF5_IN_SEL
 Wire Wire Line
 	6350 7050 6500 7050
-Text Label 6350 6950 2    50   ~ 0
+Text Label 6350 6950 2    50   ~ 6
 3V3
 Wire Wire Line
 	6350 6950 6500 6950
-Text Label 6350 7250 2    50   ~ 0
+Text Label 6350 7250 2    50   ~ 6
 GND
 Wire Wire Line
 	6350 7250 6500 7250
@@ -465,14 +465,14 @@ U 1 1 5CAE958F
 P 6600 8250
 F 0 "U18" H 7050 10475 50  0000 C CNN
 F 1 "PI6C59S6005" H 7050 10384 50  0000 C CNN
-F 2 "" H 6600 7950 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_24_0.5MM_4x4MM" H 6600 7950 50  0001 C CNN
 F 3 "" H 6600 7950 50  0001 C CNN
 	1    6600 8250
 	1    0    0    -1  
 $EndComp
-Text Label 6350 6250 2    50   ~ 0
+Text Label 6350 6250 2    50   ~ 6
 3V3_CLKBUF
-Text Label 6350 6750 2    50   ~ 0
+Text Label 6350 6750 2    50   ~ 6
 GND
 $Comp
 L device:R R22
@@ -480,70 +480,70 @@ U 1 1 5CAF98FD
 P 5800 7150
 F 0 "R22" V 5700 7100 50  0000 C CNN
 F 1 "1K" V 5800 7150 50  0000 C CNN
-F 2 "" V 5730 7150 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 5730 7150 50  0001 C CNN
 F 3 "" H 5800 7150 50  0001 C CNN
 	1    5800 7150
 	0    1    1    0   
 $EndComp
-Text Label 5650 7150 2    50   ~ 0
+Text Label 5650 7150 2    50   ~ 6
 GND
 Wire Wire Line
 	5950 7150 6500 7150
 NoConn ~ 6500 8050
 NoConn ~ 6500 8150
-Text Label 8400 6950 0    50   ~ 0
+Text Label 8400 6950 0    50   ~ 6
 RST0_N
-Text Label 8400 6850 0    50   ~ 0
+Text Label 8400 6850 0    50   ~ 6
 RST0_P
-Text Label 8400 7250 0    50   ~ 0
+Text Label 8400 7250 0    50   ~ 6
 RST1_N
-Text Label 8400 7150 0    50   ~ 0
+Text Label 8400 7150 0    50   ~ 6
 RST1_P
-Text Label 8400 7550 0    50   ~ 0
+Text Label 8400 7550 0    50   ~ 6
 RST2_N
-Text Label 8400 7450 0    50   ~ 0
+Text Label 8400 7450 0    50   ~ 6
 RST2_P
 NoConn ~ 7600 8050
 NoConn ~ 7600 8150
-Text Label 8400 7850 0    50   ~ 0
+Text Label 8400 7850 0    50   ~ 6
 RST3_N
-Text Label 8400 7750 0    50   ~ 0
+Text Label 8400 7750 0    50   ~ 6
 RST3_P
 Wire Wire Line
 	1850 2150 2000 2150
-Text Label 1850 2250 2    50   ~ 0
+Text Label 1850 2250 2    50   ~ 6
 GND
 Wire Wire Line
 	1850 2250 2000 2250
 Wire Wire Line
 	2000 2250 2000 2350
-Text Label 1900 2550 2    50   ~ 0
+Text Label 1900 2550 2    50   ~ 6
 GND
 Wire Wire Line
 	1900 2550 2000 2550
-Text Label 2000 3850 2    50   ~ 0
+Text Label 2000 3850 2    50   ~ 6
 RST0_P
-Text Label 2000 3950 2    50   ~ 0
+Text Label 2000 3950 2    50   ~ 6
 RST0_N
-Text Label 4050 2150 2    50   ~ 0
+Text Label 4050 2150 2    50   ~ 6
 2V5
-Text Label 4050 2250 2    50   ~ 0
+Text Label 4050 2250 2    50   ~ 6
 GND
-Text Label 4600 6850 0    50   ~ 0
+Text Label 4600 6850 0    50   ~ 6
 CLK0_P
-Text Label 4600 6950 0    50   ~ 0
+Text Label 4600 6950 0    50   ~ 6
 CLK0_N
-Text Label 2000 3550 2    50   ~ 0
+Text Label 2000 3550 2    50   ~ 6
 CLK0_P
-Text Label 2000 3650 2    50   ~ 0
+Text Label 2000 3650 2    50   ~ 6
 CLK0_N
-Text Label 4050 3550 2    50   ~ 0
+Text Label 4050 3550 2    50   ~ 6
 CLK1_P
-Text Label 4050 3650 2    50   ~ 0
+Text Label 4050 3650 2    50   ~ 6
 CLK1_N
-Text Label 4050 3850 2    50   ~ 0
+Text Label 4050 3850 2    50   ~ 6
 RST1_P
-Text Label 4050 3950 2    50   ~ 0
+Text Label 4050 3950 2    50   ~ 6
 RST1_N
 Wire Wire Line
 	2000 2750 2000 2850
@@ -561,38 +561,38 @@ U 1 1 5CAE4A17
 P 2100 4000
 F 0 "U19" H 2500 6075 50  0000 C CNN
 F 1 "NB7V52MMNG" H 2500 5984 50  0000 C CNN
-F 2 "" H 2100 4000 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_16_0.5MM_3x3MM" H 2100 4000 50  0001 C CNN
 F 3 "" H 2100 4000 50  0001 C CNN
 	1    2100 4000
 	1    0    0    -1  
 $EndComp
-Text Label 7100 3250 2    50   ~ 0
+Text Label 7100 3250 2    50   ~ 6
 CLK2_P
-Text Label 7100 3350 2    50   ~ 0
+Text Label 7100 3350 2    50   ~ 6
 CLK2_N
-Text Label 7100 3550 2    50   ~ 0
+Text Label 7100 3550 2    50   ~ 6
 RST2_P
-Text Label 7100 3650 2    50   ~ 0
+Text Label 7100 3650 2    50   ~ 6
 RST2_N
-Text Label 11450 3850 2    50   ~ 0
+Text Label 11450 3850 2    50   ~ 6
 RST3_P
-Text Label 11450 3950 2    50   ~ 0
+Text Label 11450 3950 2    50   ~ 6
 RST3_N
-Text Label 11450 3550 2    50   ~ 0
+Text Label 11450 3550 2    50   ~ 6
 CLK3_P
-Text Label 11450 3650 2    50   ~ 0
+Text Label 11450 3650 2    50   ~ 6
 CLK3_N
-Text Label 3000 3250 0    50   ~ 0
+Text Label 3000 3250 0    50   ~ 6
 SHREG0_P
-Text Label 3000 3350 0    50   ~ 0
+Text Label 3000 3350 0    50   ~ 6
 SHREG0_N
-Text Label 5050 3250 0    50   ~ 0
+Text Label 5050 3250 0    50   ~ 6
 SHREG1_P
-Text Label 5050 3350 0    50   ~ 0
+Text Label 5050 3350 0    50   ~ 6
 SHREG1_N
-Text Label 8100 2950 0    50   ~ 0
+Text Label 8100 2950 0    50   ~ 6
 SHREG2_P
-Text Label 8100 3050 0    50   ~ 0
+Text Label 8100 3050 0    50   ~ 6
 SHREG2_N
 Wire Wire Line
 	11450 2250 11450 2350
@@ -614,13 +614,13 @@ Wire Wire Line
 Connection ~ 11450 2950
 Wire Wire Line
 	11450 2950 11450 3050
-Text Label 11450 2250 2    50   ~ 0
+Text Label 11450 2250 2    50   ~ 6
 GND
-Text Label 7100 1950 2    50   ~ 0
+Text Label 7100 1950 2    50   ~ 6
 GND
-Text Label 7100 1850 2    50   ~ 0
+Text Label 7100 1850 2    50   ~ 6
 2V5
-Text Label 11450 2150 2    50   ~ 0
+Text Label 11450 2150 2    50   ~ 6
 2V5
 $Comp
 L device:C C192
@@ -628,14 +628,14 @@ U 1 1 5CB584BC
 P 2550 1650
 F 0 "C192" H 2665 1696 50  0000 L CNN
 F 1 "0.47 uF" H 2665 1605 50  0000 L CNN
-F 2 "" H 2588 1500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 2588 1500 50  0001 C CNN
 F 3 "" H 2550 1650 50  0001 C CNN
 	1    2550 1650
 	1    0    0    -1  
 $EndComp
-Text Label 2550 1500 2    50   ~ 0
+Text Label 2550 1500 2    50   ~ 6
 2V5
-Text Label 2550 1800 2    50   ~ 0
+Text Label 2550 1800 2    50   ~ 6
 GND
 $Comp
 L device:C C193
@@ -643,7 +643,7 @@ U 1 1 5CB58F14
 P 3100 1650
 F 0 "C193" H 3215 1696 50  0000 L CNN
 F 1 "0.47 uF" H 3215 1605 50  0000 L CNN
-F 2 "" H 3138 1500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 3138 1500 50  0001 C CNN
 F 3 "" H 3100 1650 50  0001 C CNN
 	1    3100 1650
 	1    0    0    -1  
@@ -654,7 +654,7 @@ U 1 1 5CB593FB
 P 3650 1650
 F 0 "C194" H 3765 1696 50  0000 L CNN
 F 1 "0.47 uF" H 3765 1605 50  0000 L CNN
-F 2 "" H 3688 1500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 3688 1500 50  0001 C CNN
 F 3 "" H 3650 1650 50  0001 C CNN
 	1    3650 1650
 	1    0    0    -1  
@@ -665,7 +665,7 @@ U 1 1 5CB59830
 P 4200 1650
 F 0 "C195" H 4315 1696 50  0000 L CNN
 F 1 "0.47 uF" H 4315 1605 50  0000 L CNN
-F 2 "" H 4238 1500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 4238 1500 50  0001 C CNN
 F 3 "" H 4200 1650 50  0001 C CNN
 	1    4200 1650
 	1    0    0    -1  
@@ -686,29 +686,29 @@ Wire Wire Line
 Connection ~ 3650 1800
 Wire Wire Line
 	3650 1800 4200 1800
-Text Label 12450 3250 0    50   ~ 0
+Text Label 12450 3250 0    50   ~ 6
 SHREG3_P
-Text Label 12450 3350 0    50   ~ 0
+Text Label 12450 3350 0    50   ~ 6
 SHREG3_N
-Text Label 10150 3250 0    50   ~ 0
+Text Label 10150 3250 0    50   ~ 6
 SHREG2B_P
-Text Label 10150 3350 0    50   ~ 0
+Text Label 10150 3350 0    50   ~ 6
 SHREG2B_N
 Wire Wire Line
 	14850 3550 14700 3550
 Wire Wire Line
 	14700 3650 14850 3650
-Text Label 14850 3250 0    50   ~ 0
+Text Label 14850 3250 0    50   ~ 6
 SHREG3A_P
 Wire Wire Line
 	14850 3250 14700 3250
-Text Label 14850 3350 0    50   ~ 0
+Text Label 14850 3350 0    50   ~ 6
 SHREG3A_N
 Wire Wire Line
 	14850 3350 14700 3350
-Text Label 10350 2950 0    50   ~ 0
+Text Label 10350 2950 0    50   ~ 6
 SHREG2A_P
-Text Label 10350 3050 0    50   ~ 0
+Text Label 10350 3050 0    50   ~ 6
 SHREG2A_N
 Wire Wire Line
 	10350 3050 10150 3050
@@ -723,7 +723,7 @@ AR Path="/5C267736/5CBB4ACD" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBB4ACD" Ref="C196"  Part="1" 
 F 0 "C196" H 4815 1696 50  0000 L CNN
 F 1 "4.7 uF" H 4815 1605 50  0000 L CNN
-F 2 "" H 4738 1500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 4738 1500 50  0001 C CNN
 F 3 "" H 4700 1650 50  0001 C CNN
 	1    4700 1650
 	1    0    0    -1  
@@ -734,9 +734,9 @@ Connection ~ 4200 1500
 Wire Wire Line
 	4200 1800 4700 1800
 Connection ~ 4200 1800
-Text Notes 2600 1500 0    50   ~ 0
+Text Notes 2600 1500 0    50   ~ 6
 FF decoupling
-Text Notes 12150 8550 0    50   ~ 0
+Text Notes 12150 8550 0    50   ~ 6
 Logic function: LE = SHREG2 & !SHREG3
 Wire Wire Line
 	7100 1950 7100 2050
@@ -764,7 +764,7 @@ U 1 1 5CAE55CF
 P 7200 3700
 F 0 "U21" H 7600 5775 50  0000 C CNN
 F 1 "NB7V52MMNG" H 7600 5684 50  0000 C CNN
-F 2 "" H 7200 3700 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_16_0.5MM_3x3MM" H 7200 3700 50  0001 C CNN
 F 3 "" H 7200 3700 50  0001 C CNN
 	1    7200 3700
 	1    0    0    -1  
@@ -775,7 +775,7 @@ U 1 1 5CBF032C
 P 9150 3450
 F 0 "U22" H 9600 5675 50  0000 C CNN
 F 1 "PI6C59S6005" H 9600 5584 50  0000 C CNN
-F 2 "" H 9150 3150 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_24_0.5MM_4x4MM" H 9150 3150 50  0001 C CNN
 F 3 "" H 9150 3150 50  0001 C CNN
 	1    9150 3450
 	1    0    0    -1  
@@ -789,7 +789,7 @@ AR Path="/5C267736/5CBFE2A9" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBFE2A9" Ref="C197"  Part="1" 
 F 0 "C197" H 9265 946 50  0000 L CNN
 F 1 "4.7 uF" H 9265 855 50  0000 L CNN
-F 2 "" H 9188 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 9188 750 50  0001 C CNN
 F 3 "" H 9150 900 50  0001 C CNN
 	1    9150 900 
 	1    0    0    -1  
@@ -803,7 +803,7 @@ AR Path="/5C267736/5CBFE2AF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBFE2AF" Ref="C198"  Part="1" 
 F 0 "C198" H 9765 946 50  0000 L CNN
 F 1 "0.47 uF" H 9765 855 50  0000 L CNN
-F 2 "" H 9688 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 9688 750 50  0001 C CNN
 F 3 "" H 9650 900 50  0001 C CNN
 	1    9650 900 
 	1    0    0    -1  
@@ -817,7 +817,7 @@ AR Path="/5C267736/5CBFE2B5" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBFE2B5" Ref="C200"  Part="1" 
 F 0 "C200" H 10815 946 50  0000 L CNN
 F 1 "0.47 uF" H 10815 855 50  0000 L CNN
-F 2 "" H 10738 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 10738 750 50  0001 C CNN
 F 3 "" H 10700 900 50  0001 C CNN
 	1    10700 900 
 	1    0    0    -1  
@@ -828,12 +828,12 @@ Wire Wire Line
 Connection ~ 9650 1050
 Wire Wire Line
 	9650 1050 9150 1050
-Text Label 8950 750  2    50   ~ 0
+Text Label 8950 750  2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	8950 750  9150 750 
 Connection ~ 9150 750 
-Text Label 8950 1050 2    50   ~ 0
+Text Label 8950 1050 2    50   ~ 6
 GND
 Wire Wire Line
 	8950 1050 9150 1050
@@ -851,7 +851,7 @@ AR Path="/5C267736/5CBFE2C7" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBFE2C7" Ref="C199"  Part="1" 
 F 0 "C199" H 10315 946 50  0000 L CNN
 F 1 "0.47 uF" H 10315 855 50  0000 L CNN
-F 2 "" H 10238 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 10238 750 50  0001 C CNN
 F 3 "" H 10200 900 50  0001 C CNN
 	1    10200 900 
 	1    0    0    -1  
@@ -871,7 +871,7 @@ AR Path="/5C267736/5CBFE2D1" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CBFE2D1" Ref="C201"  Part="1" 
 F 0 "C201" H 11415 946 50  0000 L CNN
 F 1 "0.47 uF" H 11415 855 50  0000 L CNN
-F 2 "" H 11338 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 11338 750 50  0001 C CNN
 F 3 "" H 11300 900 50  0001 C CNN
 	1    11300 900 
 	1    0    0    -1  
@@ -882,7 +882,7 @@ Connection ~ 10700 750
 Wire Wire Line
 	11300 1050 10700 1050
 Connection ~ 10700 1050
-Text Label 8950 1450 2    50   ~ 0
+Text Label 8950 1450 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	8950 1450 9050 1450
@@ -895,11 +895,11 @@ Wire Wire Line
 Connection ~ 9050 1650
 Wire Wire Line
 	9050 1650 9050 1550
-Text Label 8950 1950 2    50   ~ 0
+Text Label 8950 1950 2    50   ~ 6
 GND
 Wire Wire Line
 	8950 1950 9050 1950
-Text Label 8950 2150 2    50   ~ 0
+Text Label 8950 2150 2    50   ~ 6
 3V3
 Wire Wire Line
 	8950 2150 9050 2150
@@ -912,24 +912,24 @@ AR Path="/5C267736/5CC11C4B" Ref="JP?"  Part="1"
 AR Path="/5C15809A/5CC11C4B" Ref="JP6"  Part="1" 
 F 0 "JP6" H 2883 1887 60  0000 C CNN
 F 1 "JUMPER_0402" H 2883 1781 60  0000 C CNN
-F 2 "" H 2900 1300 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_JUMPER" H 2900 1300 60  0001 C CNN
 F 3 "" H 2900 1300 60  0000 C CNN
 	1    2900 1300
 	1    0    0    -1  
 $EndComp
-Text Label 3200 1100 0    50   ~ 0
+Text Label 3200 1100 0    50   ~ 6
 BUF6_IN_SEL
-Text Label 3200 1000 0    50   ~ 0
+Text Label 3200 1000 0    50   ~ 6
 3V3
-Text Label 3200 1200 0    50   ~ 0
+Text Label 3200 1200 0    50   ~ 6
 GND
-Text Label 9050 2250 2    50   ~ 0
+Text Label 9050 2250 2    50   ~ 6
 BUF6_IN_SEL
-Text Label 8950 2350 2    50   ~ 0
+Text Label 8950 2350 2    50   ~ 6
 GND
 Wire Wire Line
 	8950 2350 9050 2350
-Text Label 8950 2450 2    50   ~ 0
+Text Label 8950 2450 2    50   ~ 6
 GND
 Wire Wire Line
 	8950 2450 9050 2450
@@ -948,7 +948,7 @@ U 1 1 5CC4A08A
 P 13700 3750
 F 0 "U24" H 14150 5975 50  0000 C CNN
 F 1 "PI6C59S6005" H 14150 5884 50  0000 C CNN
-F 2 "" H 13700 3450 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_24_0.5MM_4x4MM" H 13700 3450 50  0001 C CNN
 F 3 "" H 13700 3450 50  0001 C CNN
 	1    13700 3750
 	1    0    0    -1  
@@ -962,20 +962,20 @@ AR Path="/5C267736/5CC63722" Ref="JP?"  Part="1"
 AR Path="/5C15809A/5CC63722" Ref="JP7"  Part="1" 
 F 0 "JP7" H 11883 2387 60  0000 C CNN
 F 1 "JUMPER_0402" H 11883 2281 60  0000 C CNN
-F 2 "" H 11900 1800 60  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_JUMPER" H 11900 1800 60  0001 C CNN
 F 3 "" H 11900 1800 60  0000 C CNN
 	1    11900 1800
 	1    0    0    -1  
 $EndComp
-Text Label 12200 1600 0    50   ~ 0
+Text Label 12200 1600 0    50   ~ 6
 BUF7_IN_SEL
-Text Label 12200 1500 0    50   ~ 0
+Text Label 12200 1500 0    50   ~ 6
 3V3
-Text Label 12200 1700 0    50   ~ 0
+Text Label 12200 1700 0    50   ~ 6
 GND
-Text Label 13600 2550 2    50   ~ 0
+Text Label 13600 2550 2    50   ~ 6
 BUF7_IN_SEL
-Text Label 13450 1750 2    50   ~ 0
+Text Label 13450 1750 2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	13450 1750 13600 1750
@@ -988,18 +988,18 @@ Wire Wire Line
 Connection ~ 13600 1950
 Wire Wire Line
 	13600 1950 13600 2050
-Text Label 13600 2250 2    50   ~ 0
+Text Label 13600 2250 2    50   ~ 6
 GND
-Text Label 13600 2450 2    50   ~ 0
+Text Label 13600 2450 2    50   ~ 6
 3V3
-Text Label 13600 2650 2    50   ~ 0
+Text Label 13600 2650 2    50   ~ 6
 GND
-Text Label 13600 2750 2    50   ~ 0
+Text Label 13600 2750 2    50   ~ 6
 GND
 NoConn ~ 13600 2950
-Text Label 13600 3050 2    50   ~ 0
+Text Label 13600 3050 2    50   ~ 6
 2V5
-Text Label 9050 2750 2    50   ~ 0
+Text Label 9050 2750 2    50   ~ 6
 2V5
 $Comp
 L device:C C?
@@ -1010,7 +1010,7 @@ AR Path="/5C267736/5CC77841" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CC77841" Ref="C202"  Part="1" 
 F 0 "C202" H 12565 946 50  0000 L CNN
 F 1 "4.7 uF" H 12565 855 50  0000 L CNN
-F 2 "" H 12488 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 12488 750 50  0001 C CNN
 F 3 "" H 12450 900 50  0001 C CNN
 	1    12450 900 
 	1    0    0    -1  
@@ -1024,7 +1024,7 @@ AR Path="/5C267736/5CC7784B" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CC7784B" Ref="C203"  Part="1" 
 F 0 "C203" H 13065 946 50  0000 L CNN
 F 1 "0.47 uF" H 13065 855 50  0000 L CNN
-F 2 "" H 12988 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12988 750 50  0001 C CNN
 F 3 "" H 12950 900 50  0001 C CNN
 	1    12950 900 
 	1    0    0    -1  
@@ -1038,7 +1038,7 @@ AR Path="/5C267736/5CC77855" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CC77855" Ref="C207"  Part="1" 
 F 0 "C207" H 14115 946 50  0000 L CNN
 F 1 "0.47 uF" H 14115 855 50  0000 L CNN
-F 2 "" H 14038 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14038 750 50  0001 C CNN
 F 3 "" H 14000 900 50  0001 C CNN
 	1    14000 900 
 	1    0    0    -1  
@@ -1049,12 +1049,12 @@ Wire Wire Line
 Connection ~ 12950 1050
 Wire Wire Line
 	12950 1050 12450 1050
-Text Label 12250 750  2    50   ~ 0
+Text Label 12250 750  2    50   ~ 6
 3V3_CLKBUF
 Wire Wire Line
 	12250 750  12450 750 
 Connection ~ 12450 750 
-Text Label 12250 1050 2    50   ~ 0
+Text Label 12250 1050 2    50   ~ 6
 GND
 Wire Wire Line
 	12250 1050 12450 1050
@@ -1072,7 +1072,7 @@ AR Path="/5C267736/5CC7786B" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CC7786B" Ref="C204"  Part="1" 
 F 0 "C204" H 13615 946 50  0000 L CNN
 F 1 "0.47 uF" H 13615 855 50  0000 L CNN
-F 2 "" H 13538 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 13538 750 50  0001 C CNN
 F 3 "" H 13500 900 50  0001 C CNN
 	1    13500 900 
 	1    0    0    -1  
@@ -1092,7 +1092,7 @@ AR Path="/5C267736/5CC77879" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CC77879" Ref="C208"  Part="1" 
 F 0 "C208" H 14715 946 50  0000 L CNN
 F 1 "0.47 uF" H 14715 855 50  0000 L CNN
-F 2 "" H 14638 750 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14638 750 50  0001 C CNN
 F 3 "" H 14600 900 50  0001 C CNN
 	1    14600 900 
 	1    0    0    -1  
@@ -1113,21 +1113,21 @@ U 1 1 5CCAE598
 P 12150 8450
 F 0 "U25" H 12650 10625 50  0000 C CNN
 F 1 "SY58051AU" H 12650 10534 50  0000 C CNN
-F 2 "" H 12150 8450 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_16_0.5MM_3x3MM" H 12150 8450 50  0001 C CNN
 F 3 "" H 12150 8450 50  0001 C CNN
 	1    12150 8450
 	1    0    0    -1  
 $EndComp
-Text Label 11200 8000 2    50   ~ 0
+Text Label 11200 8000 2    50   ~ 6
 SHREG2A_P
-Text Label 11200 8100 2    50   ~ 0
+Text Label 11200 8100 2    50   ~ 6
 SHREG2A_N
 Wire Wire Line
 	11900 6500 12050 6500
 Wire Wire Line
 	12050 6500 12050 6600
 Connection ~ 12050 6500
-Text Label 11900 6800 2    50   ~ 0
+Text Label 11900 6800 2    50   ~ 6
 GND
 Wire Wire Line
 	11900 6800 12050 6800
@@ -1140,13 +1140,13 @@ Wire Wire Line
 Connection ~ 12050 7000
 Wire Wire Line
 	12050 7000 12050 7100
-Text Label 11200 8400 2    50   ~ 0
+Text Label 11200 8400 2    50   ~ 6
 SHREG3A_P
-Text Label 11200 8300 2    50   ~ 0
+Text Label 11200 8300 2    50   ~ 6
 SHREG3A_N
-Text Notes 11200 8500 2    50   ~ 0
+Text Notes 11200 8500 2    50   ~ 6
 polarity flip = invert
-Text Label 12050 7800 2    50   ~ 0
+Text Label 12050 7800 2    50   ~ 6
 3V3
 $Comp
 L device:R R23
@@ -1154,21 +1154,21 @@ U 1 1 5CCED7BB
 P 11700 7700
 F 0 "R23" V 11650 7550 50  0000 C CNN
 F 1 "1K" V 11700 7700 50  0000 C CNN
-F 2 "" V 11630 7700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 11630 7700 50  0001 C CNN
 F 3 "" H 11700 7700 50  0001 C CNN
 	1    11700 7700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	11850 7700 12050 7700
-Text Label 11450 7700 2    50   ~ 0
+Text Label 11450 7700 2    50   ~ 6
 GND
 Wire Wire Line
 	11450 7700 11550 7700
 NoConn ~ 12050 7400
-Text Label 12050 7300 2    50   ~ 0
+Text Label 12050 7300 2    50   ~ 6
 3V3
-Text Label 12050 7500 2    50   ~ 0
+Text Label 12050 7500 2    50   ~ 6
 3V3
 $Comp
 L device:C C210
@@ -1176,7 +1176,7 @@ U 1 1 5CCFF0AF
 P 12700 6000
 F 0 "C210" H 12815 6046 50  0000 L CNN
 F 1 "0.1 uF" H 12815 5955 50  0000 L CNN
-F 2 "" H 12738 5850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 12738 5850 50  0001 C CNN
 F 3 "" H 12700 6000 50  0001 C CNN
 	1    12700 6000
 	1    0    0    -1  
@@ -1187,7 +1187,7 @@ U 1 1 5CCFFC9E
 P 13200 6000
 F 0 "C211" H 13315 6046 50  0000 L CNN
 F 1 "0.01 uF" H 13315 5955 50  0000 L CNN
-F 2 "" H 13238 5850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 13238 5850 50  0001 C CNN
 F 3 "" H 13200 6000 50  0001 C CNN
 	1    13200 6000
 	1    0    0    -1  
@@ -1198,7 +1198,7 @@ U 1 1 5CD0B0DC
 P 13750 6000
 F 0 "C212" H 13865 6046 50  0000 L CNN
 F 1 "0.1 uF" H 13865 5955 50  0000 L CNN
-F 2 "" H 13788 5850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 13788 5850 50  0001 C CNN
 F 3 "" H 13750 6000 50  0001 C CNN
 	1    13750 6000
 	1    0    0    -1  
@@ -1209,7 +1209,7 @@ U 1 1 5CD0B0E6
 P 14250 6000
 F 0 "C213" H 14365 6046 50  0000 L CNN
 F 1 "0.01 uF" H 14365 5955 50  0000 L CNN
-F 2 "" H 14288 5850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 14288 5850 50  0001 C CNN
 F 3 "" H 14250 6000 50  0001 C CNN
 	1    14250 6000
 	1    0    0    -1  
@@ -1220,12 +1220,12 @@ U 1 1 5CD10AEF
 P 12200 6000
 F 0 "C209" H 12315 6046 50  0000 L CNN
 F 1 "4.7 uF" H 12315 5955 50  0000 L CNN
-F 2 "" H 12238 5850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0603_CAP_NOSILK" H 12238 5850 50  0001 C CNN
 F 3 "" H 12200 6000 50  0001 C CNN
 	1    12200 6000
 	1    0    0    -1  
 $EndComp
-Text Label 12050 6150 2    50   ~ 0
+Text Label 12050 6150 2    50   ~ 6
 GND
 Wire Wire Line
 	12050 6150 12200 6150
@@ -1255,9 +1255,9 @@ Wire Wire Line
 Connection ~ 13750 5850
 Wire Wire Line
 	13750 5850 13200 5850
-Text Notes 13250 7550 0    50   ~ 0
+Text Notes 13250 7550 0    50   ~ 6
 Comparator:\nLE low: track\nLE high: hold\n\nSHRE2 & !SHREG3 is the desired track period\nSo we need to invert Q
-Text Notes 700  8650 0    98   ~ 0
+Text Notes 700  8650 0    98   ~ 6
 Fanout buffers for shift register clock/reset signals
 Wire Wire Line
 	4050 2250 4050 2350
@@ -1279,15 +1279,15 @@ Wire Wire Line
 	4050 2850 4050 2950
 Wire Wire Line
 	4050 2950 4050 3050
-Text Label 6400 2950 2    50   ~ 0
+Text Label 6400 2950 2    50   ~ 6
 SHREG1_P
-Text Label 6400 3050 2    50   ~ 0
+Text Label 6400 3050 2    50   ~ 6
 SHREG1_N
-Text Notes 550  4350 0    98   ~ 0
+Text Notes 550  4350 0    98   ~ 6
 Synchronize one-shot reset to line clock
 Wire Notes Line width 20 style solid
 	550  4450 16050 4450
-Text Notes 6050 4300 0    98   ~ 0
+Text Notes 6050 4300 0    98   ~ 6
 Shift register for digital one-shot
 NoConn ~ 2000 2950
 NoConn ~ 2000 3050
@@ -1310,7 +1310,7 @@ U 1 1 5CFCB162
 P 1000 3500
 F 0 "R32" V 1100 3450 50  0000 L CNN
 F 1 "10K" V 1000 3450 50  0000 L CNN
-F 2 "" V 930 3500 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 930 3500 50  0001 C CNN
 F 3 "" H 1000 3500 50  0001 C CNN
 	1    1000 3500
 	1    0    0    -1  
@@ -1320,29 +1320,29 @@ Wire Wire Line
 Connection ~ 1200 3350
 Wire Wire Line
 	1200 3350 2000 3350
-Text Label 1350 3650 0    50   ~ 0
+Text Label 1350 3650 0    50   ~ 6
 GND
 Wire Wire Line
 	1350 3650 1200 3650
-Text Label 800  3650 2    50   ~ 0
+Text Label 800  3650 2    50   ~ 6
 2V5
 Wire Wire Line
 	800  3650 1000 3650
-Text Label 2000 3350 2    50   ~ 0
+Text Label 2000 3350 2    50   ~ 6
 RST_1V9
-Text Label 2000 3250 2    50   ~ 0
+Text Label 2000 3250 2    50   ~ 6
 2V5
-Text Notes 550  3250 0    50   ~ 0
+Text Notes 550  3250 0    50   ~ 6
 Can't tie D_N to ground to\nget differential 1! Max\nD_P - D_N is 1200 mV
-Text Notes 9900 8850 0    98   ~ 0
+Text Notes 9900 8850 0    98   ~ 6
 Single-cycle pulse output for digital one-shot
 Wire Notes Line width 20 style solid
 	16050 8950 500  8950
 Wire Notes Line width 20 style solid
 	9550 8950 9550 4450
-Text HLabel 1750 7850 0    50   Input ~ 0
+Text HLabel 1750 7850 0    50   Input ~ 6
 ONESHOT_COARSEPHASE_N
-Text HLabel 1750 7750 0    50   Input ~ 0
+Text HLabel 1750 7750 0    50   Input ~ 6
 ONESHOT_COARSEPHASE_P
 $Comp
 L device:C C?
@@ -1352,7 +1352,7 @@ AR Path="/5C267736/5C88BA6B" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C88BA6B" Ref="C275"  Part="1" 
 F 0 "C275" V 4400 7000 50  0000 C CNN
 F 1 "530Z104KT10T" V 4600 6850 50  0000 C CNN
-F 2 "" H 4388 6700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 6700 50  0001 C CNN
 F 3 "" H 4350 6850 50  0001 C CNN
 	1    4350 6850
 	0    1    -1   0   
@@ -1365,7 +1365,7 @@ AR Path="/5C267736/5C89343E" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C89343E" Ref="C276"  Part="1" 
 F 0 "C276" V 4400 7100 50  0000 C CNN
 F 1 "530Z104KT10T" V 4600 6950 50  0000 C CNN
-F 2 "" H 4388 6800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 6800 50  0001 C CNN
 F 3 "" H 4350 6950 50  0001 C CNN
 	1    4350 6950
 	0    1    -1   0   
@@ -1374,17 +1374,17 @@ Wire Wire Line
 	4600 6850 4500 6850
 Wire Wire Line
 	4600 6950 4500 6950
-Text Label 3800 6850 0    50   ~ 0
+Text Label 3800 6850 0    50   ~ 6
 CLK0_AC_P
 Wire Wire Line
 	3800 6850 4200 6850
 Wire Wire Line
 	4200 6950 3800 6950
-Text Label 3800 6950 0    50   ~ 0
+Text Label 3800 6950 0    50   ~ 6
 CLK0_AC_N
-Text Label 4600 7150 0    50   ~ 0
+Text Label 4600 7150 0    50   ~ 6
 CLK1_P
-Text Label 4600 7250 0    50   ~ 0
+Text Label 4600 7250 0    50   ~ 6
 CLK1_N
 $Comp
 L device:C C?
@@ -1394,7 +1394,7 @@ AR Path="/5C267736/5C8BC511" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8BC511" Ref="C277"  Part="1" 
 F 0 "C277" V 4400 7300 50  0000 C CNN
 F 1 "530Z104KT10T" V 4400 8000 50  0000 C CNN
-F 2 "" H 4388 7000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7000 50  0001 C CNN
 F 3 "" H 4350 7150 50  0001 C CNN
 	1    4350 7150
 	0    1    -1   0   
@@ -1407,7 +1407,7 @@ AR Path="/5C267736/5C8BC51B" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8BC51B" Ref="C278"  Part="1" 
 F 0 "C278" V 4400 7400 50  0000 C CNN
 F 1 "530Z104KT10T" V 4400 8100 50  0000 C CNN
-F 2 "" H 4388 7100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7100 50  0001 C CNN
 F 3 "" H 4350 7250 50  0001 C CNN
 	1    4350 7250
 	0    1    -1   0   
@@ -1416,17 +1416,17 @@ Wire Wire Line
 	4600 7150 4500 7150
 Wire Wire Line
 	4600 7250 4500 7250
-Text Label 3800 7150 0    50   ~ 0
+Text Label 3800 7150 0    50   ~ 6
 CLK1_AC_P
 Wire Wire Line
 	3800 7150 4200 7150
 Wire Wire Line
 	4200 7250 3800 7250
-Text Label 3800 7250 0    50   ~ 0
+Text Label 3800 7250 0    50   ~ 6
 CLK1_AC_N
-Text Label 4600 7450 0    50   ~ 0
+Text Label 4600 7450 0    50   ~ 6
 CLK2_P
-Text Label 4600 7550 0    50   ~ 0
+Text Label 4600 7550 0    50   ~ 6
 CLK2_N
 $Comp
 L device:C C?
@@ -1436,7 +1436,7 @@ AR Path="/5C267736/5C8C4D9A" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8C4D9A" Ref="C279"  Part="1" 
 F 0 "C279" V 4400 7600 50  0000 C CNN
 F 1 "530Z104KT10T" V 4400 8300 50  0000 C CNN
-F 2 "" H 4388 7300 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7300 50  0001 C CNN
 F 3 "" H 4350 7450 50  0001 C CNN
 	1    4350 7450
 	0    1    -1   0   
@@ -1449,7 +1449,7 @@ AR Path="/5C267736/5C8C4DA4" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8C4DA4" Ref="C280"  Part="1" 
 F 0 "C280" V 4400 7700 50  0000 C CNN
 F 1 "530Z104KT10T" V 4400 8400 50  0000 C CNN
-F 2 "" H 4388 7400 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7400 50  0001 C CNN
 F 3 "" H 4350 7550 50  0001 C CNN
 	1    4350 7550
 	0    1    -1   0   
@@ -1458,17 +1458,17 @@ Wire Wire Line
 	4600 7450 4500 7450
 Wire Wire Line
 	4600 7550 4500 7550
-Text Label 3800 7450 0    50   ~ 0
+Text Label 3800 7450 0    50   ~ 6
 CLK2_AC_P
 Wire Wire Line
 	3800 7450 4200 7450
 Wire Wire Line
 	4200 7550 3800 7550
-Text Label 3800 7550 0    50   ~ 0
+Text Label 3800 7550 0    50   ~ 6
 CLK2_AC_N
-Text Label 4600 7750 0    50   ~ 0
+Text Label 4600 7750 0    50   ~ 6
 CLK3_P
-Text Label 4600 7850 0    50   ~ 0
+Text Label 4600 7850 0    50   ~ 6
 CLK3_N
 $Comp
 L device:C C?
@@ -1478,7 +1478,7 @@ AR Path="/5C267736/5C8CDA89" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8CDA89" Ref="C281"  Part="1" 
 F 0 "C281" V 4400 7900 50  0000 C CNN
 F 1 "530Z104KT10T" V 3700 8550 50  0000 C CNN
-F 2 "" H 4388 7600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7600 50  0001 C CNN
 F 3 "" H 4350 7750 50  0001 C CNN
 	1    4350 7750
 	0    1    -1   0   
@@ -1491,7 +1491,7 @@ AR Path="/5C267736/5C8CDA93" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8CDA93" Ref="C282"  Part="1" 
 F 0 "C282" V 4400 8000 50  0000 C CNN
 F 1 "530Z104KT10T" V 3900 8650 50  0000 C CNN
-F 2 "" H 4388 7700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7700 50  0001 C CNN
 F 3 "" H 4350 7850 50  0001 C CNN
 	1    4350 7850
 	0    1    -1   0   
@@ -1500,13 +1500,13 @@ Wire Wire Line
 	4600 7750 4500 7750
 Wire Wire Line
 	4600 7850 4500 7850
-Text Label 3800 7750 0    50   ~ 0
+Text Label 3800 7750 0    50   ~ 6
 CLK3_AC_P
 Wire Wire Line
 	3800 7750 4200 7750
 Wire Wire Line
 	4200 7850 3800 7850
-Text Label 3800 7850 0    50   ~ 0
+Text Label 3800 7850 0    50   ~ 6
 CLK3_AC_N
 $Comp
 L device:C C?
@@ -1516,7 +1516,7 @@ AR Path="/5C267736/5C8EDDA1" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8EDDA1" Ref="C283"  Part="1" 
 F 0 "C283" V 8200 7000 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 7700 50  0000 C CNN
-F 2 "" H 8188 6700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 6700 50  0001 C CNN
 F 3 "" H 8150 6850 50  0001 C CNN
 	1    8150 6850
 	0    1    -1   0   
@@ -1529,7 +1529,7 @@ AR Path="/5C267736/5C8EDDAB" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C8EDDAB" Ref="C284"  Part="1" 
 F 0 "C284" V 8200 7100 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 7800 50  0000 C CNN
-F 2 "" H 8188 6800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 6800 50  0001 C CNN
 F 3 "" H 8150 6950 50  0001 C CNN
 	1    8150 6950
 	0    1    -1   0   
@@ -1538,13 +1538,13 @@ Wire Wire Line
 	8400 6850 8300 6850
 Wire Wire Line
 	8400 6950 8300 6950
-Text Label 7600 6850 0    50   ~ 0
+Text Label 7600 6850 0    50   ~ 6
 RST0_AC_P
 Wire Wire Line
 	7600 6850 8000 6850
 Wire Wire Line
 	8000 6950 7600 6950
-Text Label 7600 6950 0    50   ~ 0
+Text Label 7600 6950 0    50   ~ 6
 RST0_AC_N
 $Comp
 L device:C C?
@@ -1554,7 +1554,7 @@ AR Path="/5C267736/5C9108F6" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9108F6" Ref="C285"  Part="1" 
 F 0 "C285" V 8200 7300 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8000 50  0000 C CNN
-F 2 "" H 8188 7000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7000 50  0001 C CNN
 F 3 "" H 8150 7150 50  0001 C CNN
 	1    8150 7150
 	0    1    -1   0   
@@ -1567,7 +1567,7 @@ AR Path="/5C267736/5C910900" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C910900" Ref="C286"  Part="1" 
 F 0 "C286" V 8200 7400 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8100 50  0000 C CNN
-F 2 "" H 8188 7100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7100 50  0001 C CNN
 F 3 "" H 8150 7250 50  0001 C CNN
 	1    8150 7250
 	0    1    -1   0   
@@ -1576,13 +1576,13 @@ Wire Wire Line
 	8400 7150 8300 7150
 Wire Wire Line
 	8400 7250 8300 7250
-Text Label 7600 7150 0    50   ~ 0
+Text Label 7600 7150 0    50   ~ 6
 RST1_AC_P
 Wire Wire Line
 	7600 7150 8000 7150
 Wire Wire Line
 	8000 7250 7600 7250
-Text Label 7600 7250 0    50   ~ 0
+Text Label 7600 7250 0    50   ~ 6
 RST1_AC_N
 $Comp
 L device:C C?
@@ -1592,7 +1592,7 @@ AR Path="/5C267736/5C91AEEF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C91AEEF" Ref="C287"  Part="1" 
 F 0 "C287" V 8200 7600 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8300 50  0000 C CNN
-F 2 "" H 8188 7300 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7300 50  0001 C CNN
 F 3 "" H 8150 7450 50  0001 C CNN
 	1    8150 7450
 	0    1    -1   0   
@@ -1605,7 +1605,7 @@ AR Path="/5C267736/5C91AEF9" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C91AEF9" Ref="C288"  Part="1" 
 F 0 "C288" V 8200 7700 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8400 50  0000 C CNN
-F 2 "" H 8188 7400 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7400 50  0001 C CNN
 F 3 "" H 8150 7550 50  0001 C CNN
 	1    8150 7550
 	0    1    -1   0   
@@ -1614,13 +1614,13 @@ Wire Wire Line
 	8400 7450 8300 7450
 Wire Wire Line
 	8400 7550 8300 7550
-Text Label 7600 7450 0    50   ~ 0
+Text Label 7600 7450 0    50   ~ 6
 RST2_AC_P
 Wire Wire Line
 	7600 7450 8000 7450
 Wire Wire Line
 	8000 7550 7600 7550
-Text Label 7600 7550 0    50   ~ 0
+Text Label 7600 7550 0    50   ~ 6
 RST2_AC_N
 $Comp
 L device:C C?
@@ -1630,7 +1630,7 @@ AR Path="/5C267736/5C91AF09" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C91AF09" Ref="C289"  Part="1" 
 F 0 "C289" V 8200 7900 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8600 50  0000 C CNN
-F 2 "" H 8188 7600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7600 50  0001 C CNN
 F 3 "" H 8150 7750 50  0001 C CNN
 	1    8150 7750
 	0    1    -1   0   
@@ -1643,7 +1643,7 @@ AR Path="/5C267736/5C91AF13" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C91AF13" Ref="C290"  Part="1" 
 F 0 "C290" V 8200 8000 50  0000 C CNN
 F 1 "530Z104KT10T" V 8150 8700 50  0000 C CNN
-F 2 "" H 8188 7700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8188 7700 50  0001 C CNN
 F 3 "" H 8150 7850 50  0001 C CNN
 	1    8150 7850
 	0    1    -1   0   
@@ -1652,13 +1652,13 @@ Wire Wire Line
 	8400 7750 8300 7750
 Wire Wire Line
 	8400 7850 8300 7850
-Text Label 7600 7750 0    50   ~ 0
+Text Label 7600 7750 0    50   ~ 6
 RST3_AC_P
 Wire Wire Line
 	7600 7750 8000 7750
 Wire Wire Line
 	8000 7850 7600 7850
-Text Label 7600 7850 0    50   ~ 0
+Text Label 7600 7850 0    50   ~ 6
 RST3_AC_N
 $Comp
 L device:C C?
@@ -1668,7 +1668,7 @@ AR Path="/5C267736/5C9489E1" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9489E1" Ref="C293"  Part="1" 
 F 0 "C293" V 3550 3400 50  0000 C CNN
 F 1 "530Z104KT10T" V 3650 3250 50  0000 C CNN
-F 2 "" H 3538 3100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 3538 3100 50  0001 C CNN
 F 3 "" H 3500 3250 50  0001 C CNN
 	1    3500 3250
 	0    1    -1   0   
@@ -1681,7 +1681,7 @@ AR Path="/5C267736/5C9498B2" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9498B2" Ref="C294"  Part="1" 
 F 0 "C294" V 3550 3500 50  0000 C CNN
 F 1 "530Z104KT10T" V 3350 3350 50  0000 C CNN
-F 2 "" H 3538 3200 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 3538 3200 50  0001 C CNN
 F 3 "" H 3500 3350 50  0001 C CNN
 	1    3500 3350
 	0    1    -1   0   
@@ -1692,9 +1692,9 @@ Wire Wire Line
 	3350 3350 3000 3350
 Wire Wire Line
 	3650 3250 4050 3250
-Text Label 3650 3250 0    50   ~ 0
+Text Label 3650 3250 0    50   ~ 6
 SH0_AC_P
-Text Label 3650 3350 0    50   ~ 0
+Text Label 3650 3350 0    50   ~ 6
 SH0_AC_N
 $Comp
 L device:C C?
@@ -1704,7 +1704,7 @@ AR Path="/5C267736/5C9835F8" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9835F8" Ref="C295"  Part="1" 
 F 0 "C295" V 6600 3100 50  0000 C CNN
 F 1 "530Z104KT10T" V 6700 2950 50  0000 C CNN
-F 2 "" H 6588 2800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 6588 2800 50  0001 C CNN
 F 3 "" H 6550 2950 50  0001 C CNN
 	1    6550 2950
 	0    1    -1   0   
@@ -1717,14 +1717,14 @@ AR Path="/5C267736/5C983F86" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C983F86" Ref="C296"  Part="1" 
 F 0 "C296" V 6600 3200 50  0000 C CNN
 F 1 "530Z104KT10T" V 6400 3050 50  0000 C CNN
-F 2 "" H 6588 2900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 6588 2900 50  0001 C CNN
 F 3 "" H 6550 3050 50  0001 C CNN
 	1    6550 3050
 	0    1    -1   0   
 $EndComp
-Text Label 6700 2950 0    50   ~ 0
+Text Label 6700 2950 0    50   ~ 6
 SH1_AC_P
-Text Label 6700 3050 0    50   ~ 0
+Text Label 6700 3050 0    50   ~ 6
 SH1_AC_N
 Wire Wire Line
 	6700 2950 7100 2950
@@ -1738,7 +1738,7 @@ AR Path="/5C267736/5C9AD8CC" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9AD8CC" Ref="C297"  Part="1" 
 F 0 "C297" V 8600 3100 50  0000 C CNN
 F 1 "530Z104KT10T" V 8700 2950 50  0000 C CNN
-F 2 "" H 8588 2800 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8588 2800 50  0001 C CNN
 F 3 "" H 8550 2950 50  0001 C CNN
 	1    8550 2950
 	0    1    -1   0   
@@ -1751,7 +1751,7 @@ AR Path="/5C267736/5C9ADF4A" Ref="C?"  Part="1"
 AR Path="/5C15809A/5C9ADF4A" Ref="C298"  Part="1" 
 F 0 "C298" V 8600 3200 50  0000 C CNN
 F 1 "530Z104KT10T" V 8400 3050 50  0000 C CNN
-F 2 "" H 8588 2900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 8588 2900 50  0001 C CNN
 F 3 "" H 8550 3050 50  0001 C CNN
 	1    8550 3050
 	0    1    -1   0   
@@ -1760,11 +1760,11 @@ Wire Wire Line
 	8100 2950 8400 2950
 Wire Wire Line
 	8400 3050 8100 3050
-Text Label 8700 2950 0    50   ~ 0
+Text Label 8700 2950 0    50   ~ 6
 SH2_AC_P
 Wire Wire Line
 	8700 2950 9050 2950
-Text Label 8700 3050 0    50   ~ 0
+Text Label 8700 3050 0    50   ~ 6
 SH2_AC_N
 Wire Wire Line
 	8700 3050 9050 3050
@@ -1776,7 +1776,7 @@ AR Path="/5C267736/5CA04CFE" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CA04CFE" Ref="C299"  Part="1" 
 F 0 "C299" V 10750 3400 50  0000 C CNN
 F 1 "530Z104KT10T" V 10450 3250 50  0000 C CNN
-F 2 "" H 10738 3100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 10738 3100 50  0001 C CNN
 F 3 "" H 10700 3250 50  0001 C CNN
 	1    10700 3250
 	0    1    -1   0   
@@ -1789,7 +1789,7 @@ AR Path="/5C267736/5CA055AB" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CA055AB" Ref="C300"  Part="1" 
 F 0 "C300" V 10750 3500 50  0000 C CNN
 F 1 "530Z104KT10T" V 10450 3350 50  0000 C CNN
-F 2 "" H 10738 3200 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 10738 3200 50  0001 C CNN
 F 3 "" H 10700 3350 50  0001 C CNN
 	1    10700 3350
 	0    1    -1   0   
@@ -1802,9 +1802,9 @@ Wire Wire Line
 	10850 3250 11450 3250
 Wire Wire Line
 	11450 3350 10850 3350
-Text Label 11050 3250 0    50   ~ 0
+Text Label 11050 3250 0    50   ~ 6
 SH2B_AC_P
-Text Label 11050 3350 0    50   ~ 0
+Text Label 11050 3350 0    50   ~ 6
 SH2B_AC_N
 $Comp
 L device:C C?
@@ -1814,7 +1814,7 @@ AR Path="/5C267736/5CA45C49" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CA45C49" Ref="C305"  Part="1" 
 F 0 "C305" V 12950 3400 50  0000 C CNN
 F 1 "530Z104KT10T" V 12650 3250 50  0000 C CNN
-F 2 "" H 12938 3100 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 12938 3100 50  0001 C CNN
 F 3 "" H 12900 3250 50  0001 C CNN
 	1    12900 3250
 	0    1    -1   0   
@@ -1827,7 +1827,7 @@ AR Path="/5C267736/5CA46721" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CA46721" Ref="C306"  Part="1" 
 F 0 "C306" V 12950 3500 50  0000 C CNN
 F 1 "530Z104KT10T" V 12650 3350 50  0000 C CNN
-F 2 "" H 12938 3200 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 12938 3200 50  0001 C CNN
 F 3 "" H 12900 3350 50  0001 C CNN
 	1    12900 3350
 	0    1    -1   0   
@@ -1842,9 +1842,9 @@ Wire Wire Line
 	13600 3350 13050 3350
 NoConn ~ 13600 3550
 NoConn ~ 13600 3650
-Text Label 13100 3250 0    50   ~ 0
+Text Label 13100 3250 0    50   ~ 6
 SH3_AC_P
-Text Label 13100 3350 0    50   ~ 0
+Text Label 13100 3350 0    50   ~ 6
 SH3_AC_N
 $Comp
 L device:C C?
@@ -1854,7 +1854,7 @@ AR Path="/5C267736/5CAAD9C9" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAAD9C9" Ref="C301"  Part="1" 
 F 0 "C301" V 11400 8150 50  0000 C CNN
 F 1 "530Z104KT10T" V 11350 7100 50  0000 C CNN
-F 2 "" H 11388 7850 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 11388 7850 50  0001 C CNN
 F 3 "" H 11350 8000 50  0001 C CNN
 	1    11350 8000
 	0    1    -1   0   
@@ -1867,14 +1867,14 @@ AR Path="/5C267736/5CAAE60E" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAAE60E" Ref="C302"  Part="1" 
 F 0 "C302" V 11400 8250 50  0000 C CNN
 F 1 "530Z104KT10T" V 11350 7200 50  0000 C CNN
-F 2 "" H 11388 7950 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 11388 7950 50  0001 C CNN
 F 3 "" H 11350 8100 50  0001 C CNN
 	1    11350 8100
 	0    1    -1   0   
 $EndComp
-Text Label 11600 8000 0    50   ~ 0
+Text Label 11600 8000 0    50   ~ 6
 SH2A_AC_P
-Text Label 11600 8100 0    50   ~ 0
+Text Label 11600 8100 0    50   ~ 6
 SH2A_AC_N
 Wire Wire Line
 	11500 8000 12050 8000
@@ -1888,7 +1888,7 @@ AR Path="/5C267736/5CAE2E9A" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE2E9A" Ref="C303"  Part="1" 
 F 0 "C303" V 11400 8450 50  0000 C CNN
 F 1 "530Z104KT10T" V 11400 7400 50  0000 C CNN
-F 2 "" H 11388 8150 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 11388 8150 50  0001 C CNN
 F 3 "" H 11350 8300 50  0001 C CNN
 	1    11350 8300
 	0    1    -1   0   
@@ -1901,7 +1901,7 @@ AR Path="/5C267736/5CAE3149" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE3149" Ref="C304"  Part="1" 
 F 0 "C304" V 11400 8550 50  0000 C CNN
 F 1 "530Z104KT10T" V 11400 7500 50  0000 C CNN
-F 2 "" H 11388 8250 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 11388 8250 50  0001 C CNN
 F 3 "" H 11350 8400 50  0001 C CNN
 	1    11350 8400
 	0    1    -1   0   
@@ -1910,9 +1910,9 @@ Wire Wire Line
 	11500 8300 12050 8300
 Wire Wire Line
 	12050 8400 11500 8400
-Text Label 11600 8300 0    50   ~ 0
+Text Label 11600 8300 0    50   ~ 6
 SH3A_AC_P
-Text Label 11600 8400 0    50   ~ 0
+Text Label 11600 8400 0    50   ~ 6
 SH3A_AC_N
 $Comp
 L device:C C?
@@ -1922,7 +1922,7 @@ AR Path="/5C267736/5CB0F495" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CB0F495" Ref="C307"  Part="1" 
 F 0 "C307" V 5750 7900 50  0000 C CNN
 F 1 "530Z104KT10T" V 5450 7950 50  0000 C CNN
-F 2 "" H 5738 7600 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 5738 7600 50  0001 C CNN
 F 3 "" H 5700 7750 50  0001 C CNN
 	1    5700 7750
 	0    1    -1   0   
@@ -1935,7 +1935,7 @@ AR Path="/5C267736/5CB0FACF" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CB0FACF" Ref="C308"  Part="1" 
 F 0 "C308" V 5750 8000 50  0000 C CNN
 F 1 "530Z104KT10T" V 5450 8050 50  0000 C CNN
-F 2 "" H 5738 7700 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 5738 7700 50  0001 C CNN
 F 3 "" H 5700 7850 50  0001 C CNN
 	1    5700 7850
 	0    1    -1   0   
@@ -1944,13 +1944,13 @@ Wire Wire Line
 	5850 7750 6500 7750
 Wire Wire Line
 	6500 7850 5850 7850
-Text Label 6050 7750 0    50   ~ 0
+Text Label 6050 7750 0    50   ~ 6
 ORST_AC_P
-Text Label 6050 7850 0    50   ~ 0
+Text Label 6050 7850 0    50   ~ 6
 ORST_AC_N
-Text Label 12050 5850 2    50   ~ 0
+Text Label 12050 5850 2    50   ~ 6
 3V3_CLKBUF
-Text Label 11900 6500 2    50   ~ 0
+Text Label 11900 6500 2    50   ~ 6
 3V3_CLKBUF
 $Comp
 L special-azonenberg:NB7V52MMNG U20
@@ -1958,7 +1958,7 @@ U 1 1 5CAE60BB
 P 4150 4000
 F 0 "U20" H 4550 6075 50  0000 C CNN
 F 1 "NB7V52MMNG" H 4550 5984 50  0000 C CNN
-F 2 "" H 4150 4000 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_16_0.5MM_3x3MM" H 4150 4000 50  0001 C CNN
 F 3 "" H 4150 4000 50  0001 C CNN
 	1    4150 4000
 	1    0    0    -1  
@@ -1971,24 +1971,24 @@ U 1 1 5D0E82CB
 P 1550 10300
 F 0 "U40" H 2000 11097 60  0000 C CNN
 F 1 "DS25BR150" H 2000 10991 60  0000 C CNN
-F 2 "" H 1550 10300 60  0001 C CNN
+F 2 "azonenberg_pcb:DFN_8_0.5MM_3x3MM" H 1550 10300 60  0001 C CNN
 F 3 "" H 1550 10300 60  0001 C CNN
 	1    1550 10300
 	1    0    0    -1  
 $EndComp
-Text Label 14850 3550 0    50   ~ 0
+Text Label 14850 3550 0    50   ~ 6
 TRIG_P
-Text Label 14850 3650 0    50   ~ 0
+Text Label 14850 3650 0    50   ~ 6
 TRIG_N
-Text Label 1250 10050 2    50   ~ 0
+Text Label 1250 10050 2    50   ~ 6
 TRIG_P
-Text Label 1250 10150 2    50   ~ 0
+Text Label 1250 10150 2    50   ~ 6
 TRIG_N
-Text Notes 550  11100 0    98   ~ 0
+Text Notes 550  11100 0    98   ~ 6
 CML-to-LVDS buffer for FPGA input
-Text Label 1050 9750 2    50   ~ 0
+Text Label 1050 9750 2    50   ~ 6
 3V3_CLKBUF
-Text Label 1250 9850 2    50   ~ 0
+Text Label 1250 9850 2    50   ~ 6
 GND
 $Comp
 L device:C C311
@@ -1996,18 +1996,18 @@ U 1 1 5D14811F
 P 1050 9600
 F 0 "C311" H 1165 9646 50  0000 L CNN
 F 1 "0.47 uF" H 1165 9555 50  0000 L CNN
-F 2 "" H 1088 9450 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 1088 9450 50  0001 C CNN
 F 3 "" H 1050 9600 50  0001 C CNN
 	1    1050 9600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1050 9750 1250 9750
-Text Label 1050 9450 2    50   ~ 0
+Text Label 1050 9450 2    50   ~ 6
 GND
-Text Label 3800 8050 0    50   ~ 0
+Text Label 3800 8050 0    50   ~ 6
 CLKOUT_AC_P
-Text Label 3800 8150 0    50   ~ 0
+Text Label 3800 8150 0    50   ~ 6
 CLKOUT_AC_N
 $Comp
 L device:C C?
@@ -2017,7 +2017,7 @@ AR Path="/5C267736/5D201188" Ref="C?"  Part="1"
 AR Path="/5C15809A/5D201188" Ref="C313"  Part="1" 
 F 0 "C313" V 4400 8200 50  0000 C CNN
 F 1 "530Z104KT10T" V 4100 8200 50  0000 C CNN
-F 2 "" H 4388 7900 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 7900 50  0001 C CNN
 F 3 "" H 4350 8050 50  0001 C CNN
 	1    4350 8050
 	0    1    -1   0   
@@ -2030,7 +2030,7 @@ AR Path="/5C267736/5D20195B" Ref="C?"  Part="1"
 AR Path="/5C15809A/5D20195B" Ref="C314"  Part="1" 
 F 0 "C314" V 4400 8300 50  0000 C CNN
 F 1 "530Z104KT10T" V 4100 8300 50  0000 C CNN
-F 2 "" H 4388 8000 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0201_CAP_NOSILK" H 4388 8000 50  0001 C CNN
 F 3 "" H 4350 8150 50  0001 C CNN
 	1    4350 8150
 	0    1    -1   0   
@@ -2039,11 +2039,11 @@ Wire Wire Line
 	3800 8050 4200 8050
 Wire Wire Line
 	4200 8150 3800 8150
-Text HLabel 4750 8050 2    50   Input ~ 0
+Text HLabel 4750 8050 2    50   Input ~ 6
 CLKOUT_P
 Wire Wire Line
 	4750 8050 4500 8050
-Text HLabel 4750 8150 2    50   Input ~ 0
+Text HLabel 4750 8150 2    50   Input ~ 6
 CLKOUT_N
 Wire Wire Line
 	4750 8150 4500 8150
@@ -2053,7 +2053,7 @@ U 1 1 5D291477
 P 15100 2800
 F 0 "J18" H 15200 2775 50  0000 L CNN
 F 1 "SMA" H 15200 2684 50  0000 L CNN
-F 2 "" H 15100 2800 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 15100 2800 50  0001 C CNN
 F 3 "" H 15100 2800 50  0001 C CNN
 	1    15100 2800
 	1    0    0    -1  
@@ -2064,7 +2064,7 @@ U 1 1 5D2924E4
 P 15100 2600
 F 0 "J17" H 15200 2482 50  0000 L CNN
 F 1 "SMA" H 15200 2573 50  0000 L CNN
-F 2 "" H 15100 2600 50  0001 C CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 15100 2600 50  0001 C CNN
 F 3 "" H 15100 2600 50  0001 C CNN
 	1    15100 2600
 	1    0    0    1   
@@ -2077,13 +2077,13 @@ Wire Wire Line
 	14700 2650 14950 2650
 Wire Wire Line
 	14950 2650 14950 2600
-Text Label 15100 2400 0    50   ~ 0
+Text Label 15100 2400 0    50   ~ 6
 GND
-Text Label 15100 3000 0    50   ~ 0
+Text Label 15100 3000 0    50   ~ 6
 GND
-Text Label 14700 2650 0    50   ~ 0
+Text Label 14700 2650 0    50   ~ 6
 TRG_P
-Text Label 14700 2750 0    50   ~ 0
+Text Label 14700 2750 0    50   ~ 6
 TRG_N
 $Comp
 L device:C C?
@@ -2093,7 +2093,7 @@ AR Path="/5C267736/5CAE95EE" Ref="C?"  Part="1"
 AR Path="/5C15809A/5CAE95EE" Ref="C187"  Part="1" 
 F 0 "C187" V 6000 7600 50  0000 C CNN
 F 1 "0.01 uF" V 5900 7650 50  0000 C CNN
-F 2 "" H 5988 7300 50  0001 C CNN
+F 2 "azonenberg_pcb:EIA_0402_CAP_NOSILK" H 5988 7300 50  0001 C CNN
 F 3 "" H 5950 7450 50  0001 C CNN
 	1    5950 7450
 	0    1    -1   0   
