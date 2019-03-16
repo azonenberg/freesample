@@ -6,13 +6,13 @@
 off as invalid. *3 ERC errors due to ground and D3V3 being power-out on both INTEGRALSTICK connectors. They're tied
 together on the SoM and are safe to connect on the host as well*
 * [x] Verify pin numbers of all schematic symbols against datasheet (if not yet board proven).
-* [ ] Schematic symbol matches chosen component package
-* [ ] Thermal pads are connected to correct power rail (may not always be ground)
+* [x] Schematic symbol matches chosen component package
+* [x] Thermal pads are connected to correct power rail (may not always be ground)
 * [x] Debug interfaces are not power gated in sleep mode *N/A, no sleep mode implemented*
 
 ## Passive components
-* [ ] Power/voltage/tolerance ratings specified as required
-* [ ] Ceramic capacitors appropriately de-rated for C/V curve
+* [x] Power/voltage/tolerance ratings specified as required
+* [x] Ceramic capacitors appropriately de-rated for C/V curve
 * [x] Polarized components specified in schematic if using electrolytic caps etc *N/A, all capacitors are ceramic*
 
 ## Power supply
