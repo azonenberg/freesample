@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-16"
+Date "2019-03-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -589,4 +589,34 @@ Text Label 6750 2650 0    50   ~ 6
 CLKOUT2_N
 Text Notes 8000 2650 0    50   ~ 6
 Muxed clock/trigger signal for debugging\nor external DAQ hardware
+Text Label 6250 3850 0    50   ~ 0
+SAMPLE_MUXSEL1
+$Comp
+L device:R R128
+U 1 1 5D06BEC1
+P 6100 3850
+F 0 "R128" V 6000 3850 50  0000 C CNN
+F 1 "10K" V 6100 3850 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 6030 3850 50  0001 C CNN
+F 3 "" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	0    1    1    0   
+$EndComp
+Text Label 5950 3850 2    50   ~ 0
+GND
+Text Label 6250 4050 0    50   ~ 0
+SAMPLE_MUXSEL0
+$Comp
+L device:R R129
+U 1 1 5D06DEDA
+P 6100 4050
+F 0 "R129" V 6000 4050 50  0000 C CNN
+F 1 "10K" V 6100 4050 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 6030 4050 50  0001 C CNN
+F 3 "" H 6100 4050 50  0001 C CNN
+	1    6100 4050
+	0    1    1    0   
+$EndComp
+Text Label 5950 4050 2    50   ~ 0
+GND
 $EndSCHEMATC

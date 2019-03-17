@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-16"
+Date "2019-03-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "CDR SERDES"
@@ -1580,7 +1580,7 @@ Wire Notes Line width 20 style solid
 	4450 8800 4450 11150
 Text Notes 550  11150 0    100  ~ 6
 CDR PLL reference clock
-Text HLabel 5300 1150 0    50   Input ~ 6
+Text HLabel 4850 1150 0    50   Input ~ 6
 CDR_POWER_EN
 NoConn ~ 6950 1550
 $Comp
@@ -1754,4 +1754,22 @@ Text Label 1100 9750 2    50   ~ 6
 OSC_VDD
 Text Label 1100 9450 2    50   ~ 6
 OSC_OE
+Wire Wire Line
+	4850 1150 4900 1150
+$Comp
+L device:R R23
+U 1 1 5D06136A
+P 4900 1000
+F 0 "R23" H 4970 1046 50  0000 L CNN
+F 1 "10K" H 4970 955 50  0000 L CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 4830 1000 50  0001 C CNN
+F 3 "" H 4900 1000 50  0001 C CNN
+	1    4900 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 4900 1150
+Wire Wire Line
+	4900 1150 5300 1150
+Text Label 4900 850  2    50   ~ 0
+GND
 $EndSCHEMATC

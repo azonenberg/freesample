@@ -58,7 +58,7 @@ together on the SoM and are safe to connect on the host as well*
 ### Analog
 
 * [x] RC time constant for attenuators sane given ADC sampling frequency *N/A*
-* [ ] Verify frequency response of RF components across entire operating range. Don't assume a "1-100 MHz" amplifier has the
+* [x] Verify frequency response of RF components across entire operating range. Don't assume a "1-100 MHz" amplifier has the
 same gain across the whole range.
 
 ### Clocks
@@ -70,7 +70,7 @@ same gain across the whole range.
 
 ### Strap/init pins
 
-* [ ] Pullup/pulldowns on all signals that need defined state at boot
+* [x] Pullup/pulldowns on all signals that need defined state at boot
 * [ ] Strap pins connected to correct rail for desired state
 * [x] JTAG/ICSP connector provided for all programmable devices
 * [x] Config/boot flash provided for all FPGAs or MPUs without internal flash
@@ -86,7 +86,7 @@ same gain across the whole range.
 * [ ] Use 0-ohm resistors vs direct hard-wiring for strap pins when possible
 * [ ] Provide multiple ground clips/points for scope probes
 * [ ] Dedicated ground in close proximity to analog test points
-* [ ] Test points on all power rails
+* [x] Test points on all power rails
 * [ ] Test points on interesting signals which may need probing for bringup/debug
 
 ## Thermal

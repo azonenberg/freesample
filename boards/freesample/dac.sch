@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-16"
+Date "2019-03-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "DAC for setting sampling point Y position"
@@ -407,4 +407,19 @@ Wire Wire Line
 Wire Wire Line
 	1950 2950 2050 2950
 Connection ~ 2050 2950
+$Comp
+L device:R R137
+U 1 1 5D1127C4
+P 2600 3450
+F 0 "R137" V 2500 3450 50  0000 C CNN
+F 1 "10K" V 2600 3450 50  0000 C CNN
+F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 2530 3450 50  0001 C CNN
+F 3 "" H 2600 3450 50  0001 C CNN
+	1    2600 3450
+	0    1    1    0   
+$EndComp
+Text Label 2450 3450 2    50   ~ 0
+GND
+Text Label 2750 3450 0    50   ~ 0
+RST_N
 $EndSCHEMATC

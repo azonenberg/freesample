@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 10 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-16"
+Date "2019-03-17"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -2400,7 +2400,7 @@ F 3 "" H 12800 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 1200 13100 1200
-Text Label 12650 1200 2    50   ~ 0
+Text Label 12650 1200 2    50   ~ 6
 5V0_N
 Text Notes 12200 1700 0    100  ~ 6
 Test points for low current power rails\nIntegrated 20x low-Z probes
@@ -2768,7 +2768,7 @@ F 3 "" H 14650 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 3500 14950 3500
-Text Label 14500 3500 2    50   ~ 0
+Text Label 14500 3500 2    50   ~ 6
 2V7_INT
 $Comp
 L Connector:Conn_01x02 TP18
