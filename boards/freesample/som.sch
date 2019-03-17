@@ -1022,29 +1022,29 @@ F 3 "" H 9750 2650 60  0001 C CNN
 	1    9750 2650
 	1    0    0    -1  
 $EndComp
-Text Label 9400 1400 2    50   ~ 0
+Text Label 9400 1400 2    50   ~ 6
 D3V3
 Wire Wire Line
 	9400 1400 9550 1400
 Wire Wire Line
 	9550 1400 9550 1500
 Connection ~ 9550 1400
-Text Label 9400 1600 2    50   ~ 0
+Text Label 9400 1600 2    50   ~ 6
 GND
 Wire Wire Line
 	9400 1600 9550 1600
 Wire Wire Line
 	9550 1600 9550 1700
 Connection ~ 9550 1600
-Text Label 9400 1900 2    50   ~ 0
+Text Label 9400 1900 2    50   ~ 6
 GPIO0
 Wire Wire Line
 	9400 1900 9550 1900
-Text Label 9400 2000 2    50   ~ 0
+Text Label 9400 2000 2    50   ~ 6
 GPIO1
-Text Label 9400 2100 2    50   ~ 0
+Text Label 9400 2100 2    50   ~ 6
 GPIO2
-Text Label 9400 2200 2    50   ~ 0
+Text Label 9400 2200 2    50   ~ 6
 GPIO3
 Wire Wire Line
 	9400 2200 9550 2200
@@ -1052,31 +1052,31 @@ Wire Wire Line
 	9550 2100 9400 2100
 Wire Wire Line
 	9400 2000 9550 2000
-Text Label 3800 3450 2    50   ~ 0
+Text Label 3800 3450 2    50   ~ 6
 GPIO0
-Text Label 3800 3550 2    50   ~ 0
+Text Label 3800 3550 2    50   ~ 6
 GPIO1
-Text Label 3800 3650 2    50   ~ 0
+Text Label 3800 3650 2    50   ~ 6
 GPIO2
-Text Label 3800 3750 2    50   ~ 0
+Text Label 3800 3750 2    50   ~ 6
 GPIO3
-Text Label 3800 3850 2    50   ~ 0
+Text Label 3800 3850 2    50   ~ 6
 GPIO4
-Text Label 3800 3950 2    50   ~ 0
+Text Label 3800 3950 2    50   ~ 6
 GPIO5
-Text Label 3800 4050 2    50   ~ 0
+Text Label 3800 4050 2    50   ~ 6
 GPIO6
-Text Label 3800 3050 2    50   ~ 0
+Text Label 3800 3050 2    50   ~ 6
 GPIO7
-Text Label 9400 2300 2    50   ~ 0
+Text Label 9400 2300 2    50   ~ 6
 GPIO4
 Wire Wire Line
 	9400 2300 9550 2300
-Text Label 9400 2400 2    50   ~ 0
+Text Label 9400 2400 2    50   ~ 6
 GPIO5
-Text Label 9400 2500 2    50   ~ 0
+Text Label 9400 2500 2    50   ~ 6
 GPIO6
-Text Label 9400 2600 2    50   ~ 0
+Text Label 9400 2600 2    50   ~ 6
 GPIO7
 Wire Wire Line
 	9400 2600 9550 2600
@@ -1095,7 +1095,7 @@ F 3 "~" H 11250 2050 50  0001 C CNN
 	1    11250 2050
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2050 2    50   ~ 0
+Text Label 11050 2050 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x01 TP33
@@ -1108,7 +1108,7 @@ F 3 "~" H 11250 2300 50  0001 C CNN
 	1    11250 2300
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2300 2    50   ~ 0
+Text Label 11050 2300 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x01 TP34
@@ -1121,7 +1121,7 @@ F 3 "~" H 11250 2550 50  0001 C CNN
 	1    11250 2550
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2550 2    50   ~ 0
+Text Label 11050 2550 2    50   ~ 6
 GND
 $Comp
 L Connector:Conn_01x01 TP35
@@ -1134,6 +1134,6 @@ F 3 "~" H 11250 2800 50  0001 C CNN
 	1    11250 2800
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2800 2    50   ~ 0
+Text Label 11050 2800 2    50   ~ 6
 GND
 $EndSCHEMATC

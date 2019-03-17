@@ -111,7 +111,7 @@ AR Path="/5C158069/5C335B5F" Ref="U?"  Part="1"
 AR Path="/5C15803C/5C335B5F" Ref="U6"  Part="1" 
 F 0 "U6" H 2350 10675 50  0000 C CNN
 F 1 "LMK61PD0A2" H 2350 10584 50  0000 C CNN
-F 2 "" H 2300 9750 50  0001 C CNN
+F 2 "azonenberg_pcb:QFN_8_5x7MM_TI_SIA" H 2300 9750 50  0001 C CNN
 F 3 "" H 2300 9750 50  0001 C CNN
 	1    2050 9800
 	1    0    0    -1  
@@ -1770,6 +1770,6 @@ $EndComp
 Connection ~ 4900 1150
 Wire Wire Line
 	4900 1150 5300 1150
-Text Label 4900 850  2    50   ~ 0
+Text Label 4900 850  2    50   ~ 6
 GND
 $EndSCHEMATC

@@ -1465,9 +1465,9 @@ F 3 "" H 2900 4950 50  0001 C CNN
 	1    2900 4950
 	0    1    1    0   
 $EndComp
-Text Label 2750 4950 2    50   ~ 0
+Text Label 2750 4950 2    50   ~ 6
 RANGE_SEL
-Text Label 3050 4950 0    50   ~ 0
+Text Label 3050 4950 0    50   ~ 6
 GND
 $Comp
 L device:R R131
@@ -1480,17 +1480,17 @@ F 3 "" H 13500 1900 50  0001 C CNN
 	1    13500 1900
 	0    1    1    0   
 $EndComp
-Text Notes 13400 1650 0    50   ~ 0
+Text Notes 13400 1650 0    50   ~ 6
 Weakly pull reset inputs of FFs to "reset"\nto prevent self oscillation before FPGA loads\nWe have 50 ohms to 1V8, need to hit 100 mV differential
-Text Label 13350 1900 2    50   ~ 0
+Text Label 13350 1900 2    50   ~ 6
 RST0_N
-Text Label 13650 1900 0    50   ~ 0
+Text Label 13650 1900 0    50   ~ 6
 GND
-Text Label 7100 2250 2    50   ~ 0
+Text Label 7100 2250 2    50   ~ 6
 1V8
-Text Label 4050 2550 2    50   ~ 0
+Text Label 4050 2550 2    50   ~ 6
 1V8
-Text HLabel 1900 2550 0    50   Input ~ 0
+Text HLabel 1900 2550 0    50   Input ~ 6
 1V8
 $Comp
 L device:C C196
@@ -1503,7 +1503,7 @@ F 3 "" H 850 800 50  0001 C CNN
 	1    850  800 
 	1    0    0    -1  
 $EndComp
-Text Label 750  650  2    50   ~ 0
+Text Label 750  650  2    50   ~ 6
 1V8
 Wire Wire Line
 	750  650  850  650 
@@ -1518,7 +1518,7 @@ F 3 "" H 1350 800 50  0001 C CNN
 	1    1350 800 
 	1    0    0    -1  
 $EndComp
-Text Label 750  950  2    50   ~ 0
+Text Label 750  950  2    50   ~ 6
 GND
 $Comp
 L device:C C203
@@ -1658,9 +1658,9 @@ F 3 "" H 13500 2100 50  0001 C CNN
 	1    13500 2100
 	0    1    1    0   
 $EndComp
-Text Label 13350 2100 2    50   ~ 0
+Text Label 13350 2100 2    50   ~ 6
 RST0_P
-Text Label 13650 2100 0    50   ~ 0
+Text Label 13650 2100 0    50   ~ 6
 1V8
 $Comp
 L device:R R133
@@ -1673,9 +1673,9 @@ F 3 "" H 13500 2300 50  0001 C CNN
 	1    13500 2300
 	0    1    1    0   
 $EndComp
-Text Label 13350 2300 2    50   ~ 0
+Text Label 13350 2300 2    50   ~ 6
 RST1_N
-Text Label 13650 2300 0    50   ~ 0
+Text Label 13650 2300 0    50   ~ 6
 GND
 $Comp
 L device:R R134
@@ -1688,9 +1688,9 @@ F 3 "" H 13500 2500 50  0001 C CNN
 	1    13500 2500
 	0    1    1    0   
 $EndComp
-Text Label 13350 2500 2    50   ~ 0
+Text Label 13350 2500 2    50   ~ 6
 RST1_P
-Text Label 13650 2500 0    50   ~ 0
+Text Label 13650 2500 0    50   ~ 6
 1V8
 $Comp
 L device:R R135
@@ -1703,9 +1703,9 @@ F 3 "" H 14350 1900 50  0001 C CNN
 	1    14350 1900
 	0    1    1    0   
 $EndComp
-Text Label 14200 1900 2    50   ~ 0
+Text Label 14200 1900 2    50   ~ 6
 RST2_N
-Text Label 14500 1900 0    50   ~ 0
+Text Label 14500 1900 0    50   ~ 6
 GND
 $Comp
 L device:R R136
@@ -1718,8 +1718,8 @@ F 3 "" H 14350 2100 50  0001 C CNN
 	1    14350 2100
 	0    1    1    0   
 $EndComp
-Text Label 14200 2100 2    50   ~ 0
+Text Label 14200 2100 2    50   ~ 6
 RST2_P
-Text Label 14500 2100 0    50   ~ 0
+Text Label 14500 2100 0    50   ~ 6
 1V8
 $EndSCHEMATC

@@ -418,8 +418,8 @@ F 3 "" H 2600 3450 50  0001 C CNN
 	1    2600 3450
 	0    1    1    0   
 $EndComp
-Text Label 2450 3450 2    50   ~ 0
+Text Label 2450 3450 2    50   ~ 6
 GND
-Text Label 2750 3450 0    50   ~ 0
+Text Label 2750 3450 0    50   ~ 6
 RST_N
 $EndSCHEMATC

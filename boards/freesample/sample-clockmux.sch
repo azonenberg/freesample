@@ -589,7 +589,7 @@ Text Label 6750 2650 0    50   ~ 6
 CLKOUT2_N
 Text Notes 8000 2650 0    50   ~ 6
 Muxed clock/trigger signal for debugging\nor external DAQ hardware
-Text Label 6250 3850 0    50   ~ 0
+Text Label 6250 3850 0    50   ~ 6
 SAMPLE_MUXSEL1
 $Comp
 L device:R R128
@@ -602,9 +602,9 @@ F 3 "" H 6100 3850 50  0001 C CNN
 	1    6100 3850
 	0    1    1    0   
 $EndComp
-Text Label 5950 3850 2    50   ~ 0
+Text Label 5950 3850 2    50   ~ 6
 GND
-Text Label 6250 4050 0    50   ~ 0
+Text Label 6250 4050 0    50   ~ 6
 SAMPLE_MUXSEL0
 $Comp
 L device:R R129
@@ -617,6 +617,6 @@ F 3 "" H 6100 4050 50  0001 C CNN
 	1    6100 4050
 	0    1    1    0   
 $EndComp
-Text Label 5950 4050 2    50   ~ 0
+Text Label 5950 4050 2    50   ~ 6
 GND
 $EndSCHEMATC
