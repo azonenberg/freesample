@@ -981,13 +981,13 @@ Text Label 9850 6400 2    50   ~ 6
 D3V3
 Text Label 9450 5300 2    50   ~ 6
 MCU_BOOT0
-Text Label 5550 3150 2    50   ~ 0
+Text Label 5550 3150 2    50   ~ 6
 SMA_GPIO_P
-Text Label 5550 3250 2    50   ~ 0
+Text Label 5550 3250 2    50   ~ 6
 SMA_GPIO_N
-Text Label 14800 6100 2    50   ~ 0
+Text Label 14800 6100 2    50   ~ 6
 SMA_GPIO_P
-Text Label 14800 6350 2    50   ~ 0
+Text Label 14800 6350 2    50   ~ 6
 SMA_GPIO_N
 $Comp
 L Connector:Conn_Coaxial J24
@@ -1011,11 +1011,11 @@ F 3 "" H 14950 6350 50  0001 C CNN
 	1    14950 6350
 	1    0    0    -1  
 $EndComp
-Text Label 14850 6550 2    50   ~ 0
+Text Label 14850 6550 2    50   ~ 6
 GND
 Wire Wire Line
 	14850 6550 14950 6550
-Text Label 14850 5900 2    50   ~ 0
+Text Label 14850 5900 2    50   ~ 6
 GND
 Wire Wire Line
 	14850 5900 14950 5900

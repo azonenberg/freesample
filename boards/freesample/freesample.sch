@@ -1121,6 +1121,6 @@ F 3 "~" H 15150 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 NoConn ~ 15350 3600
-Text Label 1250 950  2    50   ~ 0
+Text Label 1250 950  2    50   ~ 6
 GND
 $EndSCHEMATC

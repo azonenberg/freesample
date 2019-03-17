@@ -385,7 +385,7 @@ F 3 "" H 2500 2800 50  0001 C CNN
 	1    2500 2800
 	1    0    0    -1  
 $EndComp
-Text Label 1950 2950 2    50   ~ 0
+Text Label 1950 2950 2    50   ~ 6
 5V0_N
 $Comp
 L device:C C326
