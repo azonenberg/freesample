@@ -45,7 +45,7 @@ together on the SoM and are safe to connect on the host as well*
 
 ### Digital
 
-* [ ] Signals are correct logic level for input pin
+* [x] Signals are correct logic level for input pin
 * [ ] Pullups on all open-drain outputs
 * [ ] Pulldowns on all PECL outputs
 * [ ] Termination on all high-speed signals
@@ -63,10 +63,10 @@ same gain across the whole range.
 
 ### Clocks
 
-* [ ] All oscillators meet required jitter / frequency tolerance. Be extra cautious with MEMS oscillators as these tend to have higher jitter.
+* [x] All oscillators meet required jitter / frequency tolerance. Be extra cautious with MEMS oscillators as these tend to have higher jitter.
 * [x] Correct load caps provided for discrete crystals * N/A *
 * [x] Crystals only used if IC has an integrated crystal driver
-* [ ] Banking / clock capable input rules met for clocks going to FPGAs
+* [x] Banking / clock capable input rules met for clocks going to FPGAs
 
 ### Strap/init pins
 
