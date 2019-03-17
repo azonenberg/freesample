@@ -28,18 +28,18 @@ together on the SoM and are safe to connect on the host as well*
 * [x] Verify estimated power usage per rail against regulator rating
 * [x] Current-sense resistors on power rails after regulator output caps, not in switching loop
 * [x] Remote sense used on low voltage or high current rails
-* [ ] Linear regulators are stable with selected output cap ESR
-* [ ] Confirm power rail sequencing against device datasheets
+* [x] Linear regulators are stable with selected output cap ESR
+* [x] Confirm power rail sequencing against device datasheets
 
 ### Decoupling
-* [ ] Decoupling present for all ICs
-* [ ] Decoupling meets/exceeds vendor recommendations if specified
+* [x] Decoupling present for all ICs
+* [x] Decoupling meets/exceeds vendor recommendations if specified
 * [x] Bulk decoupling present at PSU
 
 ### General
-* [ ] All power inputs fed by correct voltage
-* [ ] Check high-power discrete semiconductors and passives to confirm they can handle expected load
-* [ ] Analog rails filtered/isolated from digital circuitry as needed
+* [x] All power inputs fed by correct voltage
+* [x] Check high-power discrete semiconductors and passives to confirm they can handle expected load
+* [x] Analog rails filtered/isolated from digital circuitry as needed
 
 ## Signals
 
