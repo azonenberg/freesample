@@ -74,7 +74,7 @@ same gain across the whole range.
 * [x] Strap pins connected to correct rail for desired state
 * [x] JTAG/ICSP connector provided for all programmable devices
 * [x] Config/boot flash provided for all FPGAs or MPUs without internal flash
-* [ ] Reference resistors correct value and reference rail
+* [x] Reference resistors correct value and reference rail
 
 ### External interface protection
 
@@ -87,11 +87,11 @@ same gain across the whole range.
 * [x] Provide multiple ground clips/points for scope probes
 * [x] Dedicated ground in close proximity to analog test points
 * [x] Test points on all power rails
-* [ ] Test points on interesting signals which may need probing for bringup/debug
+* [x] Test points on interesting signals which may need probing for bringup/debug
 
 ## Thermal
 
-* [ ] Power estimates for all large / high power ICs
-* [ ] Thermal calculations for all large / high power ICs
-* [ ] Specify heatsinks as needed
+* [x] Power estimates for all large / high power ICs
+* [x] Thermal calculations for all large / high power ICs
+* [x] Specify heatsinks as needed
 

@@ -210,8 +210,8 @@ Text Label 1550 3100 0    50   ~ 6
 GND
 Wire Wire Line
 	1550 3100 1300 3100
-Text Notes 2850 3750 0    50   ~ 6
-5V0_N: estimated 3 mA from 5.25V in\nVout = -1.22 * (R28+R29)/R29\nR29 > 50 kR (use 100K\nUse 309K (ideal 309.836K) for -4.99V\n\nSMPS w/ 3 mA load, no thermal\nanalysis necessary
+Text Notes 2850 3750 0    50   ~ 0
+5V0_N: estimated 3 mA from 5.25V in\nVout = -1.22 * (R28+R29)/R29\nR29 > 50 kR (use 100K)\nUse 309K (ideal 309.836K) for -4.99V\n\nSMPS w/ 3 mA load, no thermal\nanalysis necessary
 Text Notes 1200 9700 0    50   ~ 6
 Vout = 3.0 * (Radj * 50 uA)\nRadj = 1V/(150 uA) = 6.667 kR\nUse 6.65K for 0.9975V\n\nConnect two in parallel to spread out heat generation\n0.15V * 3A = 0.45W total, estimate 0.3W worst case per chip\nAssuming 1cm^2 plane for heatsinking, 30.8C rise.\nBigger planes will improve this\nTypical SERDES power is << 3A which will also help,\nespecially if we power down the unused channel
 $Comp
@@ -1847,7 +1847,7 @@ L device:R R66
 U 1 1 5D3FA6D2
 P 9000 1800
 F 0 "R66" V 9000 1800 50  0000 C CNN
-F 1 "309K 1%" V 9000 1450 50  0000 C CNN
+F 1 "147K 1%" V 9000 1450 50  0000 C CNN
 F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8930 1800 50  0001 C CNN
 F 3 "" H 9000 1800 50  0001 C CNN
 	1    9000 1800
@@ -1881,8 +1881,8 @@ Text Label 9400 1900 0    50   ~ 6
 GND
 Wire Wire Line
 	9400 1900 9150 1900
-Text Notes 9950 2250 0    50   ~ 6
-3V0_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse XX (ideal XX) for -3.0V\n\nThermal analysis TODO
+Text Notes 9950 2250 0    50   ~ 0
+3V0_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse 147k (ideal 145.9k) for -3.0V\n\nThermal analysis TODO
 Text Label 8750 3200 2    50   ~ 6
 3V5_INT1
 $Comp
@@ -1974,7 +1974,7 @@ L device:R R72
 U 1 1 5D43DE0E
 P 9000 4000
 F 0 "R72" V 9000 4000 50  0000 C CNN
-F 1 "309K 1%" V 9000 3650 50  0000 C CNN
+F 1 "174k 1%" V 9000 3650 50  0000 C CNN
 F 2 "azonenberg_pcb:EIA_0402_RES_NOSILK" V 8930 4000 50  0001 C CNN
 F 3 "" H 9000 4000 50  0001 C CNN
 	1    9000 4000
@@ -2008,8 +2008,8 @@ Text Label 9400 4100 0    50   ~ 6
 GND
 Wire Wire Line
 	9400 4100 9150 4100
-Text Notes 9950 4450 0    50   ~ 6
-3V3_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse XX (ideal XX) for -3.3V\n\nThermal analysis TODO
+Text Notes 9950 4450 0    50   ~ 0
+3V3_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse 174k (ideal 170.5k) for -3.3V\n\nThermal analysis TODO
 Wire Notes Line width 20 style solid
 	8250 2650 12000 2650
 Wire Notes Line width 20 style solid

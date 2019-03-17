@@ -647,15 +647,7 @@ F 3 "" H 4000 4100 50  0001 C CNN
 	4    4000 4100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3800 3050
 NoConn ~ 3800 3250
-NoConn ~ 3800 3450
-NoConn ~ 3800 3550
-NoConn ~ 3800 3650
-NoConn ~ 3800 3750
-NoConn ~ 3800 3850
-NoConn ~ 3800 3950
-NoConn ~ 3800 4050
 Text HLabel 3800 3350 0    50   Input ~ 6
 FPGA_CLK_P
 Text HLabel 3800 3150 0    50   Input ~ 6
@@ -1019,4 +1011,129 @@ Text Label 14850 5900 2    50   ~ 6
 GND
 Wire Wire Line
 	14850 5900 14950 5900
+$Comp
+L special-azonenberg:PMOD_HOST J26
+U 1 1 5D13EF9C
+P 9750 2650
+F 0 "J26" H 10128 3358 60  0000 L CNN
+F 1 "PMOD_HOST" H 10128 3252 60  0000 L CNN
+F 2 "azonenberg_pcb:CONN_HEADER_2.54MM_2x6_RA_PMOD_HOST" H 9750 2650 60  0001 C CNN
+F 3 "" H 9750 2650 60  0001 C CNN
+	1    9750 2650
+	1    0    0    -1  
+$EndComp
+Text Label 9400 1400 2    50   ~ 0
+D3V3
+Wire Wire Line
+	9400 1400 9550 1400
+Wire Wire Line
+	9550 1400 9550 1500
+Connection ~ 9550 1400
+Text Label 9400 1600 2    50   ~ 0
+GND
+Wire Wire Line
+	9400 1600 9550 1600
+Wire Wire Line
+	9550 1600 9550 1700
+Connection ~ 9550 1600
+Text Label 9400 1900 2    50   ~ 0
+GPIO0
+Wire Wire Line
+	9400 1900 9550 1900
+Text Label 9400 2000 2    50   ~ 0
+GPIO1
+Text Label 9400 2100 2    50   ~ 0
+GPIO2
+Text Label 9400 2200 2    50   ~ 0
+GPIO3
+Wire Wire Line
+	9400 2200 9550 2200
+Wire Wire Line
+	9550 2100 9400 2100
+Wire Wire Line
+	9400 2000 9550 2000
+Text Label 3800 3450 2    50   ~ 0
+GPIO0
+Text Label 3800 3550 2    50   ~ 0
+GPIO1
+Text Label 3800 3650 2    50   ~ 0
+GPIO2
+Text Label 3800 3750 2    50   ~ 0
+GPIO3
+Text Label 3800 3850 2    50   ~ 0
+GPIO4
+Text Label 3800 3950 2    50   ~ 0
+GPIO5
+Text Label 3800 4050 2    50   ~ 0
+GPIO6
+Text Label 3800 3050 2    50   ~ 0
+GPIO7
+Text Label 9400 2300 2    50   ~ 0
+GPIO4
+Wire Wire Line
+	9400 2300 9550 2300
+Text Label 9400 2400 2    50   ~ 0
+GPIO5
+Text Label 9400 2500 2    50   ~ 0
+GPIO6
+Text Label 9400 2600 2    50   ~ 0
+GPIO7
+Wire Wire Line
+	9400 2600 9550 2600
+Wire Wire Line
+	9550 2500 9400 2500
+Wire Wire Line
+	9400 2400 9550 2400
+$Comp
+L Connector:Conn_01x01 TP32
+U 1 1 5D18E7AD
+P 11250 2050
+F 0 "TP32" H 11330 2092 50  0000 L CNN
+F 1 "GROUNDCLIP" H 11330 2001 50  0000 L CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_KEYSTONE_5016" H 11250 2050 50  0001 C CNN
+F 3 "~" H 11250 2050 50  0001 C CNN
+	1    11250 2050
+	1    0    0    -1  
+$EndComp
+Text Label 11050 2050 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 TP33
+U 1 1 5D190177
+P 11250 2300
+F 0 "TP33" H 11330 2342 50  0000 L CNN
+F 1 "GROUNDCLIP" H 11330 2251 50  0000 L CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_KEYSTONE_5016" H 11250 2300 50  0001 C CNN
+F 3 "~" H 11250 2300 50  0001 C CNN
+	1    11250 2300
+	1    0    0    -1  
+$EndComp
+Text Label 11050 2300 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 TP34
+U 1 1 5D198D70
+P 11250 2550
+F 0 "TP34" H 11330 2592 50  0000 L CNN
+F 1 "GROUNDCLIP" H 11330 2501 50  0000 L CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_KEYSTONE_5016" H 11250 2550 50  0001 C CNN
+F 3 "~" H 11250 2550 50  0001 C CNN
+	1    11250 2550
+	1    0    0    -1  
+$EndComp
+Text Label 11050 2550 2    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x01 TP35
+U 1 1 5D198D7B
+P 11250 2800
+F 0 "TP35" H 11330 2842 50  0000 L CNN
+F 1 "GROUNDCLIP" H 11330 2751 50  0000 L CNN
+F 2 "azonenberg_pcb:TESTPOINT_SMT_KEYSTONE_5016" H 11250 2800 50  0001 C CNN
+F 3 "~" H 11250 2800 50  0001 C CNN
+	1    11250 2800
+	1    0    0    -1  
+$EndComp
+Text Label 11050 2800 2    50   ~ 0
+GND
 $EndSCHEMATC
