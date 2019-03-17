@@ -71,7 +71,7 @@ same gain across the whole range.
 ### Strap/init pins
 
 * [x] Pullup/pulldowns on all signals that need defined state at boot
-* [ ] Strap pins connected to correct rail for desired state
+* [x] Strap pins connected to correct rail for desired state
 * [x] JTAG/ICSP connector provided for all programmable devices
 * [x] Config/boot flash provided for all FPGAs or MPUs without internal flash
 * [ ] Reference resistors correct value and reference rail
@@ -83,9 +83,9 @@ same gain across the whole range.
 
 ### Debugging / reworkability
 
-* [ ] Use 0-ohm resistors vs direct hard-wiring for strap pins when possible
-* [ ] Provide multiple ground clips/points for scope probes
-* [ ] Dedicated ground in close proximity to analog test points
+* [x] Use 0-ohm resistors vs direct hard-wiring for strap pins when possible
+* [x] Provide multiple ground clips/points for scope probes
+* [x] Dedicated ground in close proximity to analog test points
 * [x] Test points on all power rails
 * [ ] Test points on interesting signals which may need probing for bringup/debug
 

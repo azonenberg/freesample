@@ -2969,4 +2969,8 @@ F 3 "~" H 13300 6100 50  0001 C CNN
 	1    13300 6100
 	1    0    0    -1  
 $EndComp
+Text Notes 12100 6400 0    100  ~ 0
+Test points for power-good signals
+Wire Notes Line width 20 style solid
+	12000 6500 16050 6500
 $EndSCHEMATC
