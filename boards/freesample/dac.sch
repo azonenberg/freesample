@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "DAC for setting sampling point Y position"
@@ -25,33 +25,33 @@ F 3 "" H 4150 4450 50  0001 C CNN
 	1    4150 4450
 	1    0    0    -1  
 $EndComp
-Text HLabel 5950 3450 2    50   Output ~ 6
+Text HLabel 5950 3450 2    50   Output ~ 10
 LTRIG_VT
-Text HLabel 6100 3900 2    50   Output ~ 6
+Text HLabel 6100 3900 2    50   Output ~ 10
 REFCLK_SINGLE_VT
-Text HLabel 5950 4000 2    50   Output ~ 6
+Text HLabel 5950 4000 2    50   Output ~ 10
 ADC_VT
-Text HLabel 4050 2200 0    50   Input ~ 6
+Text HLabel 4050 2200 0    50   Input ~ 10
 A5V0
-Text HLabel 4050 2400 0    50   Input ~ 6
+Text HLabel 4050 2400 0    50   Input ~ 10
 5V0_N
-Text HLabel 4050 2600 0    50   Input ~ 6
+Text HLabel 4050 2600 0    50   Input ~ 10
 GND
-Text HLabel 5250 3100 2    50   Output ~ 6
+Text HLabel 5250 3100 2    50   Output ~ 10
 DAC_MUXOUT
-Text HLabel 4050 3600 0    50   Input ~ 6
+Text HLabel 4050 3600 0    50   Input ~ 10
 LDAC_N
-Text HLabel 4050 3700 0    50   Input ~ 6
+Text HLabel 4050 3700 0    50   Input ~ 10
 CS_N
-Text HLabel 4050 3800 0    50   Input ~ 6
+Text HLabel 4050 3800 0    50   Input ~ 10
 SCK
-Text HLabel 4050 4000 0    50   Input ~ 6
+Text HLabel 4050 4000 0    50   Input ~ 10
 MOSI
-Text HLabel 4050 3900 0    50   Output ~ 6
+Text HLabel 4050 3900 0    50   Output ~ 10
 MISO
-Text HLabel 4050 4300 0    50   Input ~ 6
+Text HLabel 4050 4300 0    50   Input ~ 10
 RST_N
-Text HLabel 4050 2100 0    50   Input ~ 6
+Text HLabel 4050 2100 0    50   Input ~ 10
 1V8
 Wire Wire Line
 	4050 2200 4050 2300
@@ -65,7 +65,7 @@ Wire Wire Line
 Connection ~ 4050 2800
 Wire Wire Line
 	4050 2800 4050 2900
-Text Label 4050 3100 2    50   ~ 6
+Text Label 4050 3100 2    50   ~ 10
 GND
 Wire Wire Line
 	4050 3100 4050 3200
@@ -86,9 +86,9 @@ F 3 "" H 2050 2500 50  0001 C CNN
 	1    2050 2500
 	1    0    0    -1  
 $EndComp
-Text Label 1950 2350 2    50   ~ 6
+Text Label 1950 2350 2    50   ~ 10
 A5V0
-Text Label 1950 2650 2    50   ~ 6
+Text Label 1950 2650 2    50   ~ 10
 GND
 Wire Wire Line
 	1950 2350 2050 2350
@@ -105,7 +105,7 @@ F 3 "" H 2950 2500 50  0001 C CNN
 	1    2950 2500
 	1    0    0    -1  
 $EndComp
-Text Label 2950 2350 2    50   ~ 6
+Text Label 2950 2350 2    50   ~ 10
 1V8
 Wire Wire Line
 	2050 2650 2500 2650
@@ -123,7 +123,7 @@ F 3 "" H 5400 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 2100 5250 2100
-Text Label 5250 1800 2    50   ~ 6
+Text Label 5250 1800 2    50   ~ 10
 GND
 Wire Wire Line
 	5250 1800 5400 1800
@@ -140,7 +140,7 @@ F 3 "" H 5850 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 2200 5850 2200
-Text Label 5850 1900 0    50   ~ 6
+Text Label 5850 1900 0    50   ~ 10
 GND
 $Comp
 L device:C C215
@@ -172,9 +172,9 @@ F 3 "" H 5500 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5350 2400 5250 2400
-Text Label 5650 2400 0    50   ~ 6
+Text Label 5650 2400 0    50   ~ 10
 1V8
-Text Label 5750 2700 0    50   ~ 6
+Text Label 5750 2700 0    50   ~ 10
 GND
 $Comp
 L device:R R24
@@ -189,7 +189,7 @@ F 3 "" H 5400 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2700 5750 2700
-Text Label 5750 2900 0    50   ~ 6
+Text Label 5750 2900 0    50   ~ 10
 GND
 $Comp
 L device:R R26
@@ -204,7 +204,7 @@ F 3 "" H 5400 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2900 5750 2900
-Text Label 5750 2800 0    50   ~ 6
+Text Label 5750 2800 0    50   ~ 10
 A5V0
 $Comp
 L device:R R25
@@ -219,11 +219,11 @@ F 3 "" H 5400 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5550 2800 5750 2800
-Text Notes 6000 2700 0    50   ~ 6
+Text Notes 6000 2700 0    50   ~ 10
 +/- 2.5V, start up at zero
-Text Label 4050 4100 2    50   ~ 6
+Text Label 4050 4100 2    50   ~ 10
 GND
-Text Notes 6250 3400 0    50   ~ 6
+Text Notes 6250 3400 0    50   ~ 10
 HMC675 has -2 to +2V absolute max\nDAC has 2.5V range so we need to attenuate by 0.8x\nto safely use the full dynamic range.
 $Comp
 L device:R R106
@@ -236,11 +236,11 @@ F 3 "" H 5700 3600 50  0001 C CNN
 	1    5700 3600
 	0    1    1    0   
 $EndComp
-Text Label 5250 3600 0    50   ~ 6
+Text Label 5250 3600 0    50   ~ 10
 VOUT0
-Text Label 5250 3700 0    50   ~ 6
+Text Label 5250 3700 0    50   ~ 10
 VOUT1
-Text Label 5250 3800 0    50   ~ 6
+Text Label 5250 3800 0    50   ~ 10
 VOUT2
 Wire Wire Line
 	5550 3600 5250 3600
@@ -303,7 +303,7 @@ F 3 "" H 6350 3800 50  0001 C CNN
 	1    6350 3800
 	0    1    1    0   
 $EndComp
-Text Label 6500 3600 0    50   ~ 6
+Text Label 6500 3600 0    50   ~ 10
 GND
 Wire Wire Line
 	6500 3600 6500 3700
@@ -331,7 +331,7 @@ Wire Wire Line
 Connection ~ 5950 3800
 Wire Wire Line
 	5950 3800 6200 3800
-Text Label 5250 3900 0    50   ~ 6
+Text Label 5250 3900 0    50   ~ 10
 VOUT3
 $Comp
 L Connector:Conn_01x02 TP2
@@ -346,7 +346,7 @@ F 3 "~" H 5750 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5250 4250 5550 4250
-Text Label 5550 4350 2    50   ~ 6
+Text Label 5550 4350 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x01 TP1
@@ -385,7 +385,7 @@ F 3 "" H 2500 2800 50  0001 C CNN
 	1    2500 2800
 	1    0    0    -1  
 $EndComp
-Text Label 1950 2950 2    50   ~ 6
+Text Label 1950 2950 2    50   ~ 10
 5V0_N
 $Comp
 L device:C C326
@@ -418,8 +418,8 @@ F 3 "" H 2600 3450 50  0001 C CNN
 	1    2600 3450
 	0    1    1    0   
 $EndComp
-Text Label 2450 3450 2    50   ~ 6
+Text Label 2450 3450 2    50   ~ 10
 GND
-Text Label 2750 3450 0    50   ~ 6
+Text Label 2750 3450 0    50   ~ 10
 RST_N
 $EndSCHEMATC

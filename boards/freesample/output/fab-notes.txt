@@ -33,23 +33,32 @@ Impedances (control to within 10%)
 
 Stackup
 	1	35 μm (1 oz) copper			Signal
-		101 μm RO4350B core (Er=3.66)
+		101 μm RO4350B core
 	2	35 μm (1 oz) copper			Ground
-		101 μm RO4450F prepreg (Er=3.52)
-		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F or RO4350B prepreg
+		101 μm RO4450F or RO4350B prepreg
 	3	35 μm (1 oz) copper			Signal
-		254 μm RO4350B core (Er=3.66)
+		254 μm RO4350B core
 	4	35 μm (1 oz) copper			Power
-		101 μm RO4450F prepreg (Er=3.52)
-		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F or RO4350B prepreg
+		101 μm RO4450F or RO4350B prepreg
 	5	35 μm (1 oz) copper			Power
-		254 μm RO4350B core (Er=3.66)
+		254 μm RO4350B core
 	6	35 μm (1 oz) copper			Signal
-		101 μm RO4450F prepreg (Er=3.52)
-		101 μm RO4450F prepreg (Er=3.52)
+		101 μm RO4450F or RO4350B prepreg
+		101 μm RO4450F or RO4350B prepreg
 	7	35 μm (1 oz) copper			Ground
-		101 μm RO4350B core (Er=3.66)
+		101 μm RO4350B core
 	8	35 μm (1 oz) copper			Signal
+
+Drills
+	1-2 (171 μm)
+		150 μm drill / 350 μm pad	(blind, aspect ratio = 0.87)
+	1-4 (697 μm)
+		150 μm drill / 350 μm pad	(blind, aspect ratio = 4.6)
+	1-8
+		200 μm drill / 500 μm pad	(through board, aspect ratio = 8.0)
+
 
 File naming
 	freesample-Edge_Cuts.gbr		Board outline

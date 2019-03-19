@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Trigger phase alignment from FPGA to recovered clock domain"
@@ -14,21 +14,21 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5550 7750 0    50   Input ~ 6
+Text HLabel 5550 7750 0    50   Input ~ 10
 ONESHOT_RST_P
-Text HLabel 5550 7850 0    50   Input ~ 6
+Text HLabel 5550 7850 0    50   Input ~ 10
 ONESHOT_RST_N
-Text HLabel 1750 8050 0    50   Input ~ 6
+Text HLabel 1750 8050 0    50   Input ~ 10
 ONESHOT_FINEPHASE_P
-Text HLabel 1750 8150 0    50   Input ~ 6
+Text HLabel 1750 8150 0    50   Input ~ 10
 ONESHOT_FINEPHASE_N
-Text HLabel 1850 2150 0    50   Input ~ 6
+Text HLabel 1850 2150 0    50   Input ~ 10
 2V5
-Text HLabel 2550 6750 0    50   Input ~ 6
+Text HLabel 2550 6750 0    50   Input ~ 10
 GND
-Text HLabel 11900 7750 2    50   Output ~ 6
+Text HLabel 11900 7750 2    50   Output ~ 10
 ONESHOT_TRIGGERED_P
-Text HLabel 11900 7850 2    50   Output ~ 6
+Text HLabel 11900 7850 2    50   Output ~ 10
 ONESHOT_TRIGGERED_N
 $Comp
 L special-azonenberg:PI6C59S6005 U7
@@ -41,9 +41,9 @@ F 3 "" H 2800 7950 50  0001 C CNN
 	1    2800 8250
 	1    0    0    -1  
 $EndComp
-Text HLabel 2550 7150 0    50   Input ~ 6
+Text HLabel 2550 7150 0    50   Input ~ 10
 RANGE_SEL
-Text HLabel 2550 6250 0    50   Input ~ 6
+Text HLabel 2550 6250 0    50   Input ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	2550 6250 2700 6250
@@ -106,12 +106,12 @@ Wire Wire Line
 Connection ~ 2250 5850
 Wire Wire Line
 	2250 5850 1750 5850
-Text Label 1550 5550 2    50   ~ 6
+Text Label 1550 5550 2    50   ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	1550 5550 1750 5550
 Connection ~ 1750 5550
-Text Label 1550 5850 2    50   ~ 6
+Text Label 1550 5850 2    50   ~ 10
 GND
 Wire Wire Line
 	1550 5850 1750 5850
@@ -179,7 +179,7 @@ F 3 "" H 2150 7450 50  0001 C CNN
 	1    2150 7450
 	0    1    -1   0   
 $EndComp
-Text Label 2000 7450 2    50   ~ 6
+Text Label 2000 7450 2    50   ~ 10
 3V3
 Wire Wire Line
 	2300 7450 2600 7450
@@ -198,23 +198,23 @@ F 3 "" H 1200 6850 60  0000 C CNN
 	1    1200 6850
 	1    0    0    -1  
 $EndComp
-Text Label 1500 6650 0    50   ~ 6
+Text Label 1500 6650 0    50   ~ 10
 BUF4_IN_SEL
-Text Label 1500 6550 0    50   ~ 6
+Text Label 1500 6550 0    50   ~ 10
 3V3
-Text Label 1500 6750 0    50   ~ 6
+Text Label 1500 6750 0    50   ~ 10
 GND
-Text Label 2550 7050 2    50   ~ 6
+Text Label 2550 7050 2    50   ~ 10
 BUF4_IN_SEL
 Wire Wire Line
 	2550 7050 2700 7050
-Text Label 2550 6950 2    50   ~ 6
+Text Label 2550 6950 2    50   ~ 10
 3V3
 Wire Wire Line
 	2550 6950 2700 6950
 Wire Wire Line
 	2550 7150 2700 7150
-Text Label 2550 7250 2    50   ~ 6
+Text Label 2550 7250 2    50   ~ 10
 GND
 Wire Wire Line
 	2550 7250 2700 7250
@@ -244,9 +244,9 @@ F 3 "" H 1900 7850 50  0001 C CNN
 	1    1900 7850
 	0    1    -1   0   
 $EndComp
-Text Label 2700 7750 2    50   ~ 6
+Text Label 2700 7750 2    50   ~ 10
 CPHASE_P
-Text Label 2700 7850 2    50   ~ 6
+Text Label 2700 7850 2    50   ~ 10
 CPHASE_N
 Wire Wire Line
 	2050 7750 2700 7750
@@ -278,9 +278,9 @@ F 3 "" H 1900 8150 50  0001 C CNN
 	1    1900 8150
 	0    1    -1   0   
 $EndComp
-Text Label 2700 8050 2    50   ~ 6
+Text Label 2700 8050 2    50   ~ 10
 FPHASE_P
-Text Label 2700 8150 2    50   ~ 6
+Text Label 2700 8150 2    50   ~ 10
 FPHASE_N
 Wire Wire Line
 	2050 8050 2700 8050
@@ -338,12 +338,12 @@ Wire Wire Line
 Connection ~ 6300 5900
 Wire Wire Line
 	6300 5900 5800 5900
-Text Label 5600 5600 2    50   ~ 6
+Text Label 5600 5600 2    50   ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	5600 5600 5800 5600
 Connection ~ 5800 5600
-Text Label 5600 5900 2    50   ~ 6
+Text Label 5600 5900 2    50   ~ 10
 GND
 Wire Wire Line
 	5600 5900 5800 5900
@@ -398,7 +398,7 @@ Wire Wire Line
 	6400 7450 6400 7550
 Wire Wire Line
 	6400 7550 6500 7550
-Text Label 5800 7450 2    50   ~ 6
+Text Label 5800 7450 2    50   ~ 10
 3V3
 Wire Wire Line
 	6100 7450 6400 7450
@@ -417,21 +417,21 @@ F 3 "" H 5500 6750 60  0000 C CNN
 	1    5500 6750
 	1    0    0    -1  
 $EndComp
-Text Label 5800 6550 0    50   ~ 6
+Text Label 5800 6550 0    50   ~ 10
 BUF5_IN_SEL
-Text Label 5800 6450 0    50   ~ 6
+Text Label 5800 6450 0    50   ~ 10
 3V3
-Text Label 5800 6650 0    50   ~ 6
+Text Label 5800 6650 0    50   ~ 10
 GND
-Text Label 6350 7050 2    50   ~ 6
+Text Label 6350 7050 2    50   ~ 10
 BUF5_IN_SEL
 Wire Wire Line
 	6350 7050 6500 7050
-Text Label 6350 6950 2    50   ~ 6
+Text Label 6350 6950 2    50   ~ 10
 3V3
 Wire Wire Line
 	6350 6950 6500 6950
-Text Label 6350 7250 2    50   ~ 6
+Text Label 6350 7250 2    50   ~ 10
 GND
 Wire Wire Line
 	6350 7250 6500 7250
@@ -455,9 +455,9 @@ F 3 "" H 6600 7950 50  0001 C CNN
 	1    6600 8250
 	1    0    0    -1  
 $EndComp
-Text Label 6350 6250 2    50   ~ 6
+Text Label 6350 6250 2    50   ~ 10
 3V3_CLKBUF
-Text Label 6350 6750 2    50   ~ 6
+Text Label 6350 6750 2    50   ~ 10
 GND
 $Comp
 L device:R R22
@@ -470,29 +470,29 @@ F 3 "" H 5800 7150 50  0001 C CNN
 	1    5800 7150
 	0    1    1    0   
 $EndComp
-Text Label 5650 7150 2    50   ~ 6
+Text Label 5650 7150 2    50   ~ 10
 GND
 Wire Wire Line
 	5950 7150 6500 7150
 NoConn ~ 6500 8050
 NoConn ~ 6500 8150
-Text Label 8400 6950 0    50   ~ 6
+Text Label 8400 6950 0    50   ~ 10
 RST0_N
-Text Label 8400 6850 0    50   ~ 6
+Text Label 8400 6850 0    50   ~ 10
 RST0_P
-Text Label 8400 7250 0    50   ~ 6
+Text Label 8400 7250 0    50   ~ 10
 RST1_N
-Text Label 8400 7150 0    50   ~ 6
+Text Label 8400 7150 0    50   ~ 10
 RST1_P
-Text Label 8400 7550 0    50   ~ 6
+Text Label 8400 7550 0    50   ~ 10
 RST2_N
-Text Label 8400 7450 0    50   ~ 6
+Text Label 8400 7450 0    50   ~ 10
 RST2_P
 NoConn ~ 7600 8050
 NoConn ~ 7600 8150
 Wire Wire Line
 	1850 2150 2000 2150
-Text Label 1850 2250 2    50   ~ 6
+Text Label 1850 2250 2    50   ~ 10
 GND
 Wire Wire Line
 	1850 2250 2000 2250
@@ -500,29 +500,29 @@ Wire Wire Line
 	2000 2250 2000 2350
 Wire Wire Line
 	1900 2550 2000 2550
-Text Label 2000 3850 2    50   ~ 6
+Text Label 2000 3850 2    50   ~ 10
 RST0_P
-Text Label 2000 3950 2    50   ~ 6
+Text Label 2000 3950 2    50   ~ 10
 RST0_N
-Text Label 4050 2150 2    50   ~ 6
+Text Label 4050 2150 2    50   ~ 10
 2V5
-Text Label 4050 2250 2    50   ~ 6
+Text Label 4050 2250 2    50   ~ 10
 GND
-Text Label 4600 6850 0    50   ~ 6
+Text Label 4600 6850 0    50   ~ 10
 CLK0_P
-Text Label 4600 6950 0    50   ~ 6
+Text Label 4600 6950 0    50   ~ 10
 CLK0_N
-Text Label 2000 3550 2    50   ~ 6
+Text Label 2000 3550 2    50   ~ 10
 CLK0_P
-Text Label 2000 3650 2    50   ~ 6
+Text Label 2000 3650 2    50   ~ 10
 CLK0_N
-Text Label 4050 3550 2    50   ~ 6
+Text Label 4050 3550 2    50   ~ 10
 CLK1_P
-Text Label 4050 3650 2    50   ~ 6
+Text Label 4050 3650 2    50   ~ 10
 CLK1_N
-Text Label 4050 3850 2    50   ~ 6
+Text Label 4050 3850 2    50   ~ 10
 RST1_P
-Text Label 4050 3950 2    50   ~ 6
+Text Label 4050 3950 2    50   ~ 10
 RST1_N
 Wire Wire Line
 	2000 2750 2000 2850
@@ -545,29 +545,29 @@ F 3 "" H 2100 4000 50  0001 C CNN
 	1    2100 4000
 	1    0    0    -1  
 $EndComp
-Text Label 7100 3250 2    50   ~ 6
+Text Label 7100 3250 2    50   ~ 10
 CLK2_P
-Text Label 7100 3350 2    50   ~ 6
+Text Label 7100 3350 2    50   ~ 10
 CLK2_N
-Text Label 7100 3550 2    50   ~ 6
+Text Label 7100 3550 2    50   ~ 10
 RST2_P
-Text Label 7100 3650 2    50   ~ 6
+Text Label 7100 3650 2    50   ~ 10
 RST2_N
-Text Label 3000 3250 0    50   ~ 6
+Text Label 3000 3250 0    50   ~ 10
 SHREG0_P
-Text Label 3000 3350 0    50   ~ 6
+Text Label 3000 3350 0    50   ~ 10
 SHREG0_N
-Text Label 5050 3250 0    50   ~ 6
+Text Label 5050 3250 0    50   ~ 10
 SHREG1_P
-Text Label 5050 3350 0    50   ~ 6
+Text Label 5050 3350 0    50   ~ 10
 SHREG1_N
-Text Label 8100 2950 0    50   ~ 6
+Text Label 8100 2950 0    50   ~ 10
 SHREG2_P
-Text Label 8100 3050 0    50   ~ 6
+Text Label 8100 3050 0    50   ~ 10
 SHREG2_N
-Text Label 7100 1950 2    50   ~ 6
+Text Label 7100 1950 2    50   ~ 10
 GND
-Text Label 7100 1850 2    50   ~ 6
+Text Label 7100 1850 2    50   ~ 10
 2V5
 $Comp
 L device:C C192
@@ -580,9 +580,9 @@ F 3 "" H 2550 1650 50  0001 C CNN
 	1    2550 1650
 	1    0    0    -1  
 $EndComp
-Text Label 2550 1500 2    50   ~ 6
+Text Label 2550 1500 2    50   ~ 10
 2V5
-Text Label 2550 1800 2    50   ~ 6
+Text Label 2550 1800 2    50   ~ 10
 GND
 $Comp
 L device:C C193
@@ -633,7 +633,7 @@ Wire Wire Line
 Connection ~ 3650 1800
 Wire Wire Line
 	3650 1800 4200 1800
-Text Notes 2600 1500 0    50   ~ 6
+Text Notes 2600 1500 0    50   ~ 10
 FF decoupling
 Wire Wire Line
 	7100 1950 7100 2050
@@ -721,12 +721,12 @@ Wire Wire Line
 Connection ~ 9650 1050
 Wire Wire Line
 	9650 1050 9150 1050
-Text Label 8950 750  2    50   ~ 6
+Text Label 8950 750  2    50   ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	8950 750  9150 750 
 Connection ~ 9150 750 
-Text Label 8950 1050 2    50   ~ 6
+Text Label 8950 1050 2    50   ~ 10
 GND
 Wire Wire Line
 	8950 1050 9150 1050
@@ -775,7 +775,7 @@ Connection ~ 10700 750
 Wire Wire Line
 	11300 1050 10700 1050
 Connection ~ 10700 1050
-Text Label 8950 1450 2    50   ~ 6
+Text Label 8950 1450 2    50   ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	8950 1450 9050 1450
@@ -788,11 +788,11 @@ Wire Wire Line
 Connection ~ 9050 1650
 Wire Wire Line
 	9050 1650 9050 1550
-Text Label 8950 1950 2    50   ~ 6
+Text Label 8950 1950 2    50   ~ 10
 GND
 Wire Wire Line
 	8950 1950 9050 1950
-Text Label 8950 2150 2    50   ~ 6
+Text Label 8950 2150 2    50   ~ 10
 3V3
 Wire Wire Line
 	8950 2150 9050 2150
@@ -810,19 +810,19 @@ F 3 "" H 1150 1900 60  0000 C CNN
 	1    1150 1900
 	1    0    0    -1  
 $EndComp
-Text Label 1450 1700 0    50   ~ 6
+Text Label 1450 1700 0    50   ~ 10
 BUF6_IN_SEL
-Text Label 1450 1600 0    50   ~ 6
+Text Label 1450 1600 0    50   ~ 10
 3V3
-Text Label 1450 1800 0    50   ~ 6
+Text Label 1450 1800 0    50   ~ 10
 GND
-Text Label 9050 2250 2    50   ~ 6
+Text Label 9050 2250 2    50   ~ 10
 BUF6_IN_SEL
-Text Label 8950 2350 2    50   ~ 6
+Text Label 8950 2350 2    50   ~ 10
 GND
 Wire Wire Line
 	8950 2350 9050 2350
-Text Label 8950 2450 2    50   ~ 6
+Text Label 8950 2450 2    50   ~ 10
 GND
 Wire Wire Line
 	8950 2450 9050 2450
@@ -831,7 +831,7 @@ NoConn ~ 9050 3250
 NoConn ~ 9050 3350
 NoConn ~ 10150 2650
 NoConn ~ 10150 2750
-Text Label 9050 2750 2    50   ~ 6
+Text Label 9050 2750 2    50   ~ 10
 2V5
 Wire Wire Line
 	4050 2250 4050 2350
@@ -849,15 +849,15 @@ Wire Wire Line
 	4050 2850 4050 2950
 Wire Wire Line
 	4050 2950 4050 3050
-Text Label 6400 2950 2    50   ~ 6
+Text Label 6400 2950 2    50   ~ 10
 SHREG1_P
-Text Label 6400 3050 2    50   ~ 6
+Text Label 6400 3050 2    50   ~ 10
 SHREG1_N
-Text Notes 550  4350 0    98   ~ 6
+Text Notes 550  4350 0    98   ~ 20
 Synchronize one-shot reset to line clock
 Wire Notes Line width 20 style solid
 	550  4450 16050 4450
-Text Notes 6050 4300 0    98   ~ 6
+Text Notes 6050 4300 0    98   ~ 20
 Register and buffer sampling clock
 NoConn ~ 2000 2950
 NoConn ~ 2000 3050
@@ -890,27 +890,27 @@ Wire Wire Line
 Connection ~ 1200 3350
 Wire Wire Line
 	1200 3350 2000 3350
-Text Label 1350 3650 0    50   ~ 6
+Text Label 1350 3650 0    50   ~ 10
 GND
 Wire Wire Line
 	1350 3650 1200 3650
-Text Label 800  3650 2    50   ~ 6
+Text Label 800  3650 2    50   ~ 10
 2V5
 Wire Wire Line
 	800  3650 1000 3650
-Text Label 2000 3350 2    50   ~ 6
+Text Label 2000 3350 2    50   ~ 10
 RST_1V9
-Text Label 2000 3250 2    50   ~ 6
+Text Label 2000 3250 2    50   ~ 10
 2V5
-Text Notes 550  3250 0    50   ~ 6
+Text Notes 550  3250 0    50   ~ 10
 Can't tie D_N to ground to\nget differential 1! Max\nD_P - D_N is 1200 mV
 Wire Notes Line width 20 style solid
 	16050 8950 500  8950
 Wire Notes Line width 20 style solid
 	9550 8950 9550 4450
-Text HLabel 1750 7850 0    50   Input ~ 6
+Text HLabel 1750 7850 0    50   Input ~ 10
 ONESHOT_COARSEPHASE_N
-Text HLabel 1750 7750 0    50   Input ~ 6
+Text HLabel 1750 7750 0    50   Input ~ 10
 ONESHOT_COARSEPHASE_P
 $Comp
 L device:C C?
@@ -942,17 +942,17 @@ Wire Wire Line
 	4600 6850 4500 6850
 Wire Wire Line
 	4600 6950 4500 6950
-Text Label 3800 6850 0    50   ~ 6
+Text Label 3800 6850 0    50   ~ 10
 CLK0_AC_P
 Wire Wire Line
 	3800 6850 4200 6850
 Wire Wire Line
 	4200 6950 3800 6950
-Text Label 3800 6950 0    50   ~ 6
+Text Label 3800 6950 0    50   ~ 10
 CLK0_AC_N
-Text Label 4600 7150 0    50   ~ 6
+Text Label 4600 7150 0    50   ~ 10
 CLK1_P
-Text Label 4600 7250 0    50   ~ 6
+Text Label 4600 7250 0    50   ~ 10
 CLK1_N
 $Comp
 L device:C C?
@@ -984,17 +984,17 @@ Wire Wire Line
 	4600 7150 4500 7150
 Wire Wire Line
 	4600 7250 4500 7250
-Text Label 3800 7150 0    50   ~ 6
+Text Label 3800 7150 0    50   ~ 10
 CLK1_AC_P
 Wire Wire Line
 	3800 7150 4200 7150
 Wire Wire Line
 	4200 7250 3800 7250
-Text Label 3800 7250 0    50   ~ 6
+Text Label 3800 7250 0    50   ~ 10
 CLK1_AC_N
-Text Label 4600 7450 0    50   ~ 6
+Text Label 4600 7450 0    50   ~ 10
 CLK2_P
-Text Label 4600 7550 0    50   ~ 6
+Text Label 4600 7550 0    50   ~ 10
 CLK2_N
 $Comp
 L device:C C?
@@ -1026,13 +1026,13 @@ Wire Wire Line
 	4600 7450 4500 7450
 Wire Wire Line
 	4600 7550 4500 7550
-Text Label 3800 7450 0    50   ~ 6
+Text Label 3800 7450 0    50   ~ 10
 CLK2_AC_P
 Wire Wire Line
 	3800 7450 4200 7450
 Wire Wire Line
 	4200 7550 3800 7550
-Text Label 3800 7550 0    50   ~ 6
+Text Label 3800 7550 0    50   ~ 10
 CLK2_AC_N
 $Comp
 L device:C C?
@@ -1064,13 +1064,13 @@ Wire Wire Line
 	8400 6850 8300 6850
 Wire Wire Line
 	8400 6950 8300 6950
-Text Label 7600 6850 0    50   ~ 6
+Text Label 7600 6850 0    50   ~ 10
 RST0_AC_P
 Wire Wire Line
 	7600 6850 8000 6850
 Wire Wire Line
 	8000 6950 7600 6950
-Text Label 7600 6950 0    50   ~ 6
+Text Label 7600 6950 0    50   ~ 10
 RST0_AC_N
 $Comp
 L device:C C?
@@ -1102,13 +1102,13 @@ Wire Wire Line
 	8400 7150 8300 7150
 Wire Wire Line
 	8400 7250 8300 7250
-Text Label 7600 7150 0    50   ~ 6
+Text Label 7600 7150 0    50   ~ 10
 RST1_AC_P
 Wire Wire Line
 	7600 7150 8000 7150
 Wire Wire Line
 	8000 7250 7600 7250
-Text Label 7600 7250 0    50   ~ 6
+Text Label 7600 7250 0    50   ~ 10
 RST1_AC_N
 $Comp
 L device:C C?
@@ -1140,13 +1140,13 @@ Wire Wire Line
 	8400 7450 8300 7450
 Wire Wire Line
 	8400 7550 8300 7550
-Text Label 7600 7450 0    50   ~ 6
+Text Label 7600 7450 0    50   ~ 10
 RST2_AC_P
 Wire Wire Line
 	7600 7450 8000 7450
 Wire Wire Line
 	8000 7550 7600 7550
-Text Label 7600 7550 0    50   ~ 6
+Text Label 7600 7550 0    50   ~ 10
 RST2_AC_N
 $Comp
 L device:C C?
@@ -1180,9 +1180,9 @@ Wire Wire Line
 	3350 3350 3000 3350
 Wire Wire Line
 	3650 3250 4050 3250
-Text Label 3650 3250 0    50   ~ 6
+Text Label 3650 3250 0    50   ~ 10
 SH0_AC_P
-Text Label 3650 3350 0    50   ~ 6
+Text Label 3650 3350 0    50   ~ 10
 SH0_AC_N
 $Comp
 L device:C C?
@@ -1210,9 +1210,9 @@ F 3 "" H 6550 3050 50  0001 C CNN
 	1    6550 3050
 	0    1    -1   0   
 $EndComp
-Text Label 6700 2950 0    50   ~ 6
+Text Label 6700 2950 0    50   ~ 10
 SH1_AC_P
-Text Label 6700 3050 0    50   ~ 6
+Text Label 6700 3050 0    50   ~ 10
 SH1_AC_N
 Wire Wire Line
 	6700 2950 7100 2950
@@ -1248,11 +1248,11 @@ Wire Wire Line
 	8100 2950 8400 2950
 Wire Wire Line
 	8400 3050 8100 3050
-Text Label 8700 2950 0    50   ~ 6
+Text Label 8700 2950 0    50   ~ 10
 SH2_AC_P
 Wire Wire Line
 	8700 2950 9050 2950
-Text Label 8700 3050 0    50   ~ 6
+Text Label 8700 3050 0    50   ~ 10
 SH2_AC_N
 Wire Wire Line
 	8700 3050 9050 3050
@@ -1286,9 +1286,9 @@ Wire Wire Line
 	5850 7750 6500 7750
 Wire Wire Line
 	6500 7850 5850 7850
-Text Label 6050 7750 0    50   ~ 6
+Text Label 6050 7750 0    50   ~ 10
 ORST_AC_P
-Text Label 6050 7850 0    50   ~ 6
+Text Label 6050 7850 0    50   ~ 10
 ORST_AC_N
 $Comp
 L special-azonenberg:NB7V52MMNG U20
@@ -1314,15 +1314,15 @@ F 3 "" H 10700 8000 60  0001 C CNN
 	1    10700 8000
 	1    0    0    -1  
 $EndComp
-Text Label 10400 7750 2    50   ~ 6
+Text Label 10400 7750 2    50   ~ 10
 TRIG_P
-Text Label 10400 7850 2    50   ~ 6
+Text Label 10400 7850 2    50   ~ 10
 TRIG_N
-Text Notes 9700 8800 0    98   ~ 6
+Text Notes 9700 8800 0    98   ~ 20
 CML-to-LVDS buffer for FPGA input
-Text Label 10200 7450 2    50   ~ 6
+Text Label 10200 7450 2    50   ~ 10
 3V3_CLKBUF
-Text Label 10400 7550 2    50   ~ 6
+Text Label 10400 7550 2    50   ~ 10
 GND
 $Comp
 L device:C C311
@@ -1337,11 +1337,11 @@ F 3 "" H 10200 7300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10200 7450 10400 7450
-Text Label 10200 7150 2    50   ~ 6
+Text Label 10200 7150 2    50   ~ 10
 GND
-Text Label 3800 8050 0    50   ~ 6
+Text Label 3800 8050 0    50   ~ 10
 CLKOUT_AC_P
-Text Label 3800 8150 0    50   ~ 6
+Text Label 3800 8150 0    50   ~ 10
 CLKOUT_AC_N
 $Comp
 L device:C C?
@@ -1373,11 +1373,11 @@ Wire Wire Line
 	3800 8050 4200 8050
 Wire Wire Line
 	4200 8150 3800 8150
-Text HLabel 4750 8050 2    50   Input ~ 6
+Text HLabel 4750 8050 2    50   Input ~ 10
 CLKOUT_P
 Wire Wire Line
 	4750 8050 4500 8050
-Text HLabel 4750 8150 2    50   Input ~ 6
+Text HLabel 4750 8150 2    50   Input ~ 10
 CLKOUT_N
 Wire Wire Line
 	4750 8150 4500 8150
@@ -1394,13 +1394,13 @@ F 3 "" H 5950 7450 50  0001 C CNN
 	1    5950 7450
 	0    1    -1   0   
 $EndComp
-Text Label 10150 2150 0    50   ~ 6
+Text Label 10150 2150 0    50   ~ 10
 TRG_N
-Text Label 10150 2050 0    50   ~ 6
+Text Label 10150 2050 0    50   ~ 10
 TRG_P
-Text Label 10550 2400 0    50   ~ 6
+Text Label 10550 2400 0    50   ~ 10
 GND
-Text Label 10550 1800 0    50   ~ 6
+Text Label 10550 1800 0    50   ~ 10
 GND
 Wire Wire Line
 	10400 2050 10400 2000
@@ -1432,15 +1432,15 @@ F 3 "" H 10550 2200 50  0001 C CNN
 	1    10550 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 10500 3050 0    50   ~ 6
+Text Notes 10500 3050 0    50   ~ 10
 Comparator:\nLE low: track\nLE high: hold\n\nSo we track during reset\nand latch after a couple of clocks
-Text HLabel 10350 3350 2    50   Output ~ 6
+Text HLabel 10350 3350 2    50   Output ~ 10
 ADC_LE_N
-Text HLabel 10350 3250 2    50   Output ~ 6
+Text HLabel 10350 3250 2    50   Output ~ 10
 ADC_LE_P
-Text Label 10150 2350 0    50   ~ 6
+Text Label 10150 2350 0    50   ~ 10
 TRIG_P
-Text Label 10150 2450 0    50   ~ 6
+Text Label 10150 2450 0    50   ~ 10
 TRIG_N
 Wire Wire Line
 	10350 3250 10150 3250
@@ -1450,7 +1450,7 @@ NoConn ~ 7600 7750
 NoConn ~ 7600 7850
 NoConn ~ 3800 7850
 NoConn ~ 3800 7750
-Text Notes 600  8850 0    98   ~ 6
+Text Notes 600  8850 0    98   ~ 20
 Fanout buffers for shift register clock/reset signals
 NoConn ~ 10150 2950
 NoConn ~ 10150 3050
@@ -1465,9 +1465,9 @@ F 3 "" H 2900 4950 50  0001 C CNN
 	1    2900 4950
 	0    1    1    0   
 $EndComp
-Text Label 2750 4950 2    50   ~ 6
+Text Label 2750 4950 2    50   ~ 10
 RANGE_SEL
-Text Label 3050 4950 0    50   ~ 6
+Text Label 3050 4950 0    50   ~ 10
 GND
 $Comp
 L device:R R131
@@ -1480,17 +1480,17 @@ F 3 "" H 13500 1900 50  0001 C CNN
 	1    13500 1900
 	0    1    1    0   
 $EndComp
-Text Notes 13400 1650 0    50   ~ 6
+Text Notes 13400 1650 0    50   ~ 10
 Weakly pull reset inputs of FFs to "reset"\nto prevent self oscillation before FPGA loads\nWe have 50 ohms to 1V8, need to hit 100 mV differential
-Text Label 13350 1900 2    50   ~ 6
+Text Label 13350 1900 2    50   ~ 10
 RST0_N
-Text Label 13650 1900 0    50   ~ 6
+Text Label 13650 1900 0    50   ~ 10
 GND
-Text Label 7100 2250 2    50   ~ 6
+Text Label 7100 2250 2    50   ~ 10
 1V8
-Text Label 4050 2550 2    50   ~ 6
+Text Label 4050 2550 2    50   ~ 10
 1V8
-Text HLabel 1900 2550 0    50   Input ~ 6
+Text HLabel 1900 2550 0    50   Input ~ 10
 1V8
 $Comp
 L device:C C196
@@ -1503,7 +1503,7 @@ F 3 "" H 850 800 50  0001 C CNN
 	1    850  800 
 	1    0    0    -1  
 $EndComp
-Text Label 750  650  2    50   ~ 6
+Text Label 750  650  2    50   ~ 10
 1V8
 Wire Wire Line
 	750  650  850  650 
@@ -1518,7 +1518,7 @@ F 3 "" H 1350 800 50  0001 C CNN
 	1    1350 800 
 	1    0    0    -1  
 $EndComp
-Text Label 750  950  2    50   ~ 6
+Text Label 750  950  2    50   ~ 10
 GND
 $Comp
 L device:C C203
@@ -1658,9 +1658,9 @@ F 3 "" H 13500 2100 50  0001 C CNN
 	1    13500 2100
 	0    1    1    0   
 $EndComp
-Text Label 13350 2100 2    50   ~ 6
+Text Label 13350 2100 2    50   ~ 10
 RST0_P
-Text Label 13650 2100 0    50   ~ 6
+Text Label 13650 2100 0    50   ~ 10
 1V8
 $Comp
 L device:R R133
@@ -1673,9 +1673,9 @@ F 3 "" H 13500 2300 50  0001 C CNN
 	1    13500 2300
 	0    1    1    0   
 $EndComp
-Text Label 13350 2300 2    50   ~ 6
+Text Label 13350 2300 2    50   ~ 10
 RST1_N
-Text Label 13650 2300 0    50   ~ 6
+Text Label 13650 2300 0    50   ~ 10
 GND
 $Comp
 L device:R R134
@@ -1688,9 +1688,9 @@ F 3 "" H 13500 2500 50  0001 C CNN
 	1    13500 2500
 	0    1    1    0   
 $EndComp
-Text Label 13350 2500 2    50   ~ 6
+Text Label 13350 2500 2    50   ~ 10
 RST1_P
-Text Label 13650 2500 0    50   ~ 6
+Text Label 13650 2500 0    50   ~ 10
 1V8
 $Comp
 L device:R R135
@@ -1703,9 +1703,9 @@ F 3 "" H 14350 1900 50  0001 C CNN
 	1    14350 1900
 	0    1    1    0   
 $EndComp
-Text Label 14200 1900 2    50   ~ 6
+Text Label 14200 1900 2    50   ~ 10
 RST2_N
-Text Label 14500 1900 0    50   ~ 6
+Text Label 14500 1900 0    50   ~ 10
 GND
 $Comp
 L device:R R136
@@ -1718,8 +1718,8 @@ F 3 "" H 14350 2100 50  0001 C CNN
 	1    14350 2100
 	0    1    1    0   
 $EndComp
-Text Label 14200 2100 2    50   ~ 6
+Text Label 14200 2100 2    50   ~ 10
 RST2_P
-Text Label 14500 2100 0    50   ~ 6
+Text Label 14500 2100 0    50   ~ 10
 1V8
 $EndSCHEMATC

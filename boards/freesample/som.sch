@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "INTEGRALSTICK SoM connection"
@@ -161,21 +161,21 @@ F 3 "" H 14500 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14650 900  14800 900 
-Text Label 14800 1300 2    50   ~ 6
+Text Label 14800 1300 2    50   ~ 10
 ETH_A_TAP
-Text Label 14800 1700 2    50   ~ 6
+Text Label 14800 1700 2    50   ~ 10
 ETH_B_TAP
-Text Label 14800 2100 2    50   ~ 6
+Text Label 14800 2100 2    50   ~ 10
 ETH_C_TAP
-Text Label 14800 2500 2    50   ~ 6
+Text Label 14800 2500 2    50   ~ 10
 ETH_D_TAP
-Text Label 15300 3250 2    50   ~ 6
+Text Label 15300 3250 2    50   ~ 10
 ETH_A_TAP
-Text Label 15300 3550 2    50   ~ 6
+Text Label 15300 3550 2    50   ~ 10
 ETH_B_TAP
-Text Label 15300 3850 2    50   ~ 6
+Text Label 15300 3850 2    50   ~ 10
 ETH_C_TAP
-Text Label 15300 4150 2    50   ~ 6
+Text Label 15300 4150 2    50   ~ 10
 ETH_D_TAP
 $Comp
 L device:C C129
@@ -237,7 +237,7 @@ Wire Wire Line
 Connection ~ 15900 3850
 Wire Wire Line
 	15900 3850 15900 3550
-Text Label 15900 3250 0    50   ~ 6
+Text Label 15900 3250 0    50   ~ 10
 GND
 Wire Wire Line
 	13700 1800 14800 1800
@@ -277,23 +277,23 @@ Wire Wire Line
 	14400 2400 14400 2600
 Wire Wire Line
 	14400 2600 14800 2600
-Text Label 13800 1400 0    50   ~ 6
+Text Label 13800 1400 0    50   ~ 10
 ETH_A_P
-Text Label 13800 1500 0    50   ~ 6
+Text Label 13800 1500 0    50   ~ 10
 ETH_A_N
-Text Label 13800 1700 0    50   ~ 6
+Text Label 13800 1700 0    50   ~ 10
 ETH_B_P
-Text Label 13800 1800 0    50   ~ 6
+Text Label 13800 1800 0    50   ~ 10
 ETH_B_N
-Text Label 13800 2000 0    50   ~ 6
+Text Label 13800 2000 0    50   ~ 10
 ETH_C_P
-Text Label 13800 2100 0    50   ~ 6
+Text Label 13800 2100 0    50   ~ 10
 ETH_C_N
-Text Label 13800 2300 0    50   ~ 6
+Text Label 13800 2300 0    50   ~ 10
 ETH_D_P
-Text Label 13800 2400 0    50   ~ 6
+Text Label 13800 2400 0    50   ~ 10
 ETH_D_N
-Text HLabel 800  750  0    50   Input ~ 6
+Text HLabel 800  750  0    50   Input ~ 10
 5V25
 Wire Wire Line
 	800  750  1000 750 
@@ -312,7 +312,7 @@ Wire Wire Line
 Connection ~ 1000 1150
 Wire Wire Line
 	1000 1150 1000 1250
-Text HLabel 2450 750  2    50   Input ~ 6
+Text HLabel 2450 750  2    50   Input ~ 10
 GND
 Wire Wire Line
 	2450 750  2350 750 
@@ -465,7 +465,7 @@ Wire Wire Line
 Connection ~ 2200 4850
 Wire Wire Line
 	2200 4850 2200 4950
-Text Label 2300 4250 0    50   ~ 6
+Text Label 2300 4250 0    50   ~ 10
 GND
 Wire Wire Line
 	2300 4250 2200 4250
@@ -586,55 +586,55 @@ Wire Wire Line
 Connection ~ 1100 7550
 Wire Wire Line
 	1100 7550 1100 7450
-Text HLabel 1100 4250 0    50   Output ~ 6
+Text HLabel 1100 4250 0    50   Output ~ 10
 D3V3
-Text HLabel 1000 2550 0    50   Output ~ 6
+Text HLabel 1000 2550 0    50   Output ~ 10
 D2V5
-Text HLabel 1000 1450 0    50   Output ~ 6
+Text HLabel 1000 1450 0    50   Output ~ 10
 D1V8
-Text HLabel 2350 1650 2    50   Output ~ 6
+Text HLabel 2350 1650 2    50   Output ~ 10
 D3V3
-Text HLabel 3800 950  0    50   Output ~ 6
+Text HLabel 3800 950  0    50   Output ~ 10
 EXT_CLK_SEL
-Text HLabel 3800 1050 0    50   Output ~ 6
+Text HLabel 3800 1050 0    50   Output ~ 10
 OSC_OE
-Text HLabel 3800 1150 0    50   Output ~ 6
+Text HLabel 3800 1150 0    50   Output ~ 10
 OSC_OS
-Text HLabel 3800 1250 0    50   Output ~ 6
+Text HLabel 3800 1250 0    50   Output ~ 10
 OSC_FS1
-Text HLabel 3800 1350 0    50   Output ~ 6
+Text HLabel 3800 1350 0    50   Output ~ 10
 OSC_FS0
-Text HLabel 3800 1450 0    50   Output ~ 6
+Text HLabel 3800 1450 0    50   Output ~ 10
 PLL_SYNC
-Text HLabel 3800 1550 0    50   Input ~ 6
+Text HLabel 3800 1550 0    50   Input ~ 10
 PLL_HOLDOVER
-Text HLabel 3800 1650 0    50   Input ~ 6
+Text HLabel 3800 1650 0    50   Input ~ 10
 PLL_LD
-Text HLabel 3800 1750 0    50   Output ~ 6
+Text HLabel 3800 1750 0    50   Output ~ 10
 PLL_LE
-Text HLabel 3800 1850 0    50   Output ~ 6
+Text HLabel 3800 1850 0    50   Output ~ 10
 PLL_CLK
-Text HLabel 3800 1950 0    50   BiDi ~ 6
+Text HLabel 3800 1950 0    50   BiDi ~ 10
 PLL_DATA
-Text HLabel 3800 2050 0    50   Output ~ 6
+Text HLabel 3800 2050 0    50   Output ~ 10
 PLL_CLKIN0
-Text HLabel 3800 2150 0    50   Output ~ 6
+Text HLabel 3800 2150 0    50   Output ~ 10
 PLL_CLKIN1
-Text HLabel 3800 2250 0    50   Output ~ 6
+Text HLabel 3800 2250 0    50   Output ~ 10
 SAMP_MUXSEL0
-Text HLabel 3800 2350 0    50   Output ~ 6
+Text HLabel 3800 2350 0    50   Output ~ 10
 SAMP_MUXSEL1
-Text HLabel 3800 2450 0    50   Output ~ 6
+Text HLabel 3800 2450 0    50   Output ~ 10
 RANGE_SEL
-Text HLabel 3800 2550 0    50   Output ~ 6
+Text HLabel 3800 2550 0    50   Output ~ 10
 COARSE_EN
-Text HLabel 3800 2650 0    50   Output ~ 6
+Text HLabel 3800 2650 0    50   Output ~ 10
 COARSE_SLOAD
-Text HLabel 3800 2750 0    50   Output ~ 6
+Text HLabel 3800 2750 0    50   Output ~ 10
 COARSE_SDIN
-Text HLabel 3800 2850 0    50   Output ~ 6
+Text HLabel 3800 2850 0    50   Output ~ 10
 COARSE_SCLK
-Text HLabel 3800 2950 0    50   Output ~ 6
+Text HLabel 3800 2950 0    50   Output ~ 10
 OSC_PWR_EN
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_FPGA_HOST J7
@@ -648,65 +648,65 @@ F 3 "" H 4000 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3800 3250
-Text HLabel 3800 3350 0    50   Input ~ 6
+Text HLabel 3800 3350 0    50   Input ~ 10
 FPGA_CLK_P
-Text HLabel 3800 3150 0    50   Input ~ 6
+Text HLabel 3800 3150 0    50   Input ~ 10
 FPGA_CLK_N
 NoConn ~ 3800 850 
 NoConn ~ 3800 750 
-Text HLabel 5550 750  0    50   Output ~ 6
+Text HLabel 5550 750  0    50   Output ~ 10
 FINE_SEL_0_P
-Text HLabel 5550 850  0    50   Output ~ 6
+Text HLabel 5550 850  0    50   Output ~ 10
 FINE_SEL_0_N
 NoConn ~ 5550 3450
 NoConn ~ 5550 3550
-Text HLabel 5550 1050 0    50   Output ~ 6
+Text HLabel 5550 1050 0    50   Output ~ 10
 FINE_SEL_1_P
-Text HLabel 5550 1150 0    50   Output ~ 6
+Text HLabel 5550 1150 0    50   Output ~ 10
 FINE_SEL_1_N
-Text HLabel 5550 1350 0    50   Output ~ 6
+Text HLabel 5550 1350 0    50   Output ~ 10
 FINE_SEL_2_P
-Text HLabel 5550 1450 0    50   Output ~ 6
+Text HLabel 5550 1450 0    50   Output ~ 10
 FINE_SEL_2_N
-Text HLabel 5550 1650 0    50   Output ~ 6
+Text HLabel 5550 1650 0    50   Output ~ 10
 FINE_SEL_3_P
-Text HLabel 5550 1750 0    50   Output ~ 6
+Text HLabel 5550 1750 0    50   Output ~ 10
 FINE_SEL_3_N
-Text HLabel 5550 1950 0    50   Output ~ 6
+Text HLabel 5550 1950 0    50   Output ~ 10
 FINE_SEL_4_P
-Text HLabel 5550 2050 0    50   Output ~ 6
+Text HLabel 5550 2050 0    50   Output ~ 10
 FINE_SEL_4_N
-Text HLabel 5550 2250 0    50   Output ~ 6
+Text HLabel 5550 2250 0    50   Output ~ 10
 ONESHOT_RST_P
-Text HLabel 5550 2350 0    50   Output ~ 6
+Text HLabel 5550 2350 0    50   Output ~ 10
 ONESHOT_RST_N
-Text HLabel 5550 2550 0    50   Output ~ 6
+Text HLabel 5550 2550 0    50   Output ~ 10
 ADC_OUT_P
-Text HLabel 5550 2650 0    50   Output ~ 6
+Text HLabel 5550 2650 0    50   Output ~ 10
 ADC_OUT_N
-Text HLabel 5550 2850 0    50   Output ~ 6
+Text HLabel 5550 2850 0    50   Output ~ 10
 TRIGGERED_P
-Text HLabel 5550 2950 0    50   Output ~ 6
+Text HLabel 5550 2950 0    50   Output ~ 10
 TRIGGERED_N
-Text HLabel 7250 750  0    50   Output ~ 6
+Text HLabel 7250 750  0    50   Output ~ 10
 LDAC_N
-Text HLabel 7250 850  0    50   Output ~ 6
+Text HLabel 7250 850  0    50   Output ~ 10
 DAC_CS_N
-Text HLabel 7250 950  0    50   Output ~ 6
+Text HLabel 7250 950  0    50   Output ~ 10
 DAC_SCK
-Text HLabel 7250 1050 0    50   Output ~ 6
+Text HLabel 7250 1050 0    50   Output ~ 10
 DAC_MOSI
-Text HLabel 7250 1150 0    50   Input ~ 6
+Text HLabel 7250 1150 0    50   Input ~ 10
 DAC_MISO
-Text HLabel 7250 1250 0    50   Output ~ 6
+Text HLabel 7250 1250 0    50   Output ~ 10
 DAC_RST_N
-Text HLabel 7250 1350 0    50   Output ~ 6
+Text HLabel 7250 1350 0    50   Output ~ 10
 SERDES_MODE_SEL
-Text HLabel 7250 1450 0    50   Output ~ 6
+Text HLabel 7250 1450 0    50   Output ~ 10
 SERDES_RST_N
-Text HLabel 7250 1550 0    50   Output ~ 6
+Text HLabel 7250 1550 0    50   Output ~ 10
 SERDES_MDC
-Text HLabel 7250 1650 0    50   BiDi ~ 6
+Text HLabel 7250 1650 0    50   BiDi ~ 10
 SERDES_MDIO
 NoConn ~ 7250 2650
 NoConn ~ 7250 2550
@@ -726,7 +726,7 @@ F 3 "" H 7450 2700 50  0001 C CNN
 	2    7450 2700
 	1    0    0    -1  
 $EndComp
-Text HLabel 4000 6700 0    50   Input ~ 6
+Text HLabel 4000 6700 0    50   Input ~ 10
 DAC_MUXOUT
 NoConn ~ 4000 6000
 NoConn ~ 4000 5900
@@ -802,7 +802,7 @@ F 3 "" H 8300 5800 60  0000 C CNN
 	1    8300 5800
 	-1   0    0    -1  
 $EndComp
-Text Label 8300 4700 0    50   ~ 6
+Text Label 8300 4700 0    50   ~ 10
 D3V3
 Wire Wire Line
 	8300 4800 8300 4900
@@ -816,24 +816,24 @@ Connection ~ 8300 5100
 Wire Wire Line
 	8300 5100 8300 5200
 NoConn ~ 8300 5300
-Text Label 8300 4800 0    50   ~ 6
+Text Label 8300 4800 0    50   ~ 10
 GND
-Text Label 8300 5400 0    50   ~ 6
+Text Label 8300 5400 0    50   ~ 10
 JTAG_TMS
-Text Label 8300 5500 0    50   ~ 6
+Text Label 8300 5500 0    50   ~ 10
 JTAG_TCK
-Text Label 8300 5600 0    50   ~ 6
+Text Label 8300 5600 0    50   ~ 10
 JTAG_TDO
-Text Label 8300 5700 0    50   ~ 6
+Text Label 8300 5700 0    50   ~ 10
 JTAG_TDI
 NoConn ~ 8300 5800
-Text Label 9450 4500 2    50   ~ 6
+Text Label 9450 4500 2    50   ~ 10
 JTAG_TDI
-Text Label 9450 4600 2    50   ~ 6
+Text Label 9450 4600 2    50   ~ 10
 JTAG_TMS
-Text Label 9450 4700 2    50   ~ 6
+Text Label 9450 4700 2    50   ~ 10
 JTAG_TCK
-Text Label 9450 4800 2    50   ~ 6
+Text Label 9450 4800 2    50   ~ 10
 JTAG_TDO
 $Comp
 L special-azonenberg:CONN_INTEGRALSTICK_MCU_HOST J8
@@ -846,21 +846,21 @@ F 3 "" H 9550 5350 50  0001 C CNN
 	2    9550 5350
 	1    0    0    -1  
 $EndComp
-Text HLabel 7250 1750 0    50   Output ~ 6
+Text HLabel 7250 1750 0    50   Output ~ 10
 SERDES_POWER_EN
-Text Label 14150 800  2    50   ~ 6
+Text Label 14150 800  2    50   ~ 10
 ETH_LED1_N
-Text Label 14150 1000 2    50   ~ 6
+Text Label 14150 1000 2    50   ~ 10
 ETH_LED2_N
-Text Label 14350 700  2    50   ~ 6
+Text Label 14350 700  2    50   ~ 10
 D3V3
 Wire Wire Line
 	14150 800  14800 800 
 Wire Wire Line
 	14150 1000 14800 1000
-Text Label 14350 900  2    50   ~ 6
+Text Label 14350 900  2    50   ~ 10
 D3V3
-Text Label 14950 4500 0    50   ~ 6
+Text Label 14950 4500 0    50   ~ 10
 ETH_LED2_N
 $Comp
 L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
@@ -873,13 +873,13 @@ F 3 "transistors/mos/*.*" H 14994 4594 60  0000 L CNN
 	1    14850 4700
 	1    0    0    -1  
 $EndComp
-Text Label 14950 5000 0    50   ~ 6
+Text Label 14950 5000 0    50   ~ 10
 GND
 Wire Wire Line
 	14950 5000 14950 4900
-Text Label 14650 4700 2    50   ~ 6
+Text Label 14650 4700 2    50   ~ 10
 ETH_LED2_EN
-Text Label 14950 5200 0    50   ~ 6
+Text Label 14950 5200 0    50   ~ 10
 ETH_LED1_N
 $Comp
 L special-azonenberg:SSM6N58NU_DUAL_NMOS Q1
@@ -892,15 +892,15 @@ F 3 "transistors/mos/*.*" H 14994 5294 60  0000 L CNN
 	2    14850 5400
 	1    0    0    -1  
 $EndComp
-Text Label 14950 5700 0    50   ~ 6
+Text Label 14950 5700 0    50   ~ 10
 GND
 Wire Wire Line
 	14950 5700 14950 5600
-Text Label 14650 5400 2    50   ~ 6
+Text Label 14650 5400 2    50   ~ 10
 ETH_LED1_EN
-Text Label 7250 1850 2    50   ~ 6
+Text Label 7250 1850 2    50   ~ 10
 ETH_LED2_EN
-Text Label 7250 1950 2    50   ~ 6
+Text Label 7250 1950 2    50   ~ 10
 ETH_LED1_EN
 $Comp
 L device:C C321
@@ -913,11 +913,11 @@ F 3 "" H 14100 2800 50  0001 C CNN
 	1    14100 2800
 	0    1    1    0   
 $EndComp
-Text Label 14450 2800 0    50   ~ 6
+Text Label 14450 2800 0    50   ~ 10
 ETH_GND
 Wire Wire Line
 	14250 2800 14800 2800
-Text Label 13850 2800 2    50   ~ 6
+Text Label 13850 2800 2    50   ~ 10
 GND
 Wire Wire Line
 	13850 2800 13950 2800
@@ -933,13 +933,13 @@ F 3 "~" H 10050 5650 50  0001 C CNN
 	1    10050 5650
 	1    0    0    -1  
 $EndComp
-Text Label 9450 5000 2    50   ~ 6
+Text Label 9450 5000 2    50   ~ 10
 MCU_RST_N
-Text Label 9450 5100 2    50   ~ 6
+Text Label 9450 5100 2    50   ~ 10
 FPGA_RST_N
-Text Label 9850 5650 2    50   ~ 6
+Text Label 9850 5650 2    50   ~ 10
 FPGA_RST_N
-Text Label 9850 5750 2    50   ~ 6
+Text Label 9850 5750 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x02 J20
@@ -952,9 +952,9 @@ F 3 "~" H 10050 6000 50  0001 C CNN
 	1    10050 6000
 	1    0    0    -1  
 $EndComp
-Text Label 9850 6000 2    50   ~ 6
+Text Label 9850 6000 2    50   ~ 10
 MCU_RST_N
-Text Label 9850 6100 2    50   ~ 6
+Text Label 9850 6100 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x02 J21
@@ -967,19 +967,19 @@ F 3 "~" H 10050 6300 50  0001 C CNN
 	1    10050 6300
 	1    0    0    -1  
 $EndComp
-Text Label 9850 6300 2    50   ~ 6
+Text Label 9850 6300 2    50   ~ 10
 MCU_BOOT0
-Text Label 9850 6400 2    50   ~ 6
+Text Label 9850 6400 2    50   ~ 10
 D3V3
-Text Label 9450 5300 2    50   ~ 6
+Text Label 9450 5300 2    50   ~ 10
 MCU_BOOT0
-Text Label 5550 3150 2    50   ~ 6
+Text Label 5550 3150 2    50   ~ 10
 SMA_GPIO_P
-Text Label 5550 3250 2    50   ~ 6
+Text Label 5550 3250 2    50   ~ 10
 SMA_GPIO_N
-Text Label 14800 6100 2    50   ~ 6
+Text Label 14800 6100 2    50   ~ 10
 SMA_GPIO_P
-Text Label 14800 6350 2    50   ~ 6
+Text Label 14800 6350 2    50   ~ 10
 SMA_GPIO_N
 $Comp
 L Connector:Conn_Coaxial J24
@@ -1003,11 +1003,11 @@ F 3 "" H 14950 6350 50  0001 C CNN
 	1    14950 6350
 	1    0    0    -1  
 $EndComp
-Text Label 14850 6550 2    50   ~ 6
+Text Label 14850 6550 2    50   ~ 10
 GND
 Wire Wire Line
 	14850 6550 14950 6550
-Text Label 14850 5900 2    50   ~ 6
+Text Label 14850 5900 2    50   ~ 10
 GND
 Wire Wire Line
 	14850 5900 14950 5900
@@ -1022,29 +1022,29 @@ F 3 "" H 9750 2650 60  0001 C CNN
 	1    9750 2650
 	1    0    0    -1  
 $EndComp
-Text Label 9400 1400 2    50   ~ 6
+Text Label 9400 1400 2    50   ~ 10
 D3V3
 Wire Wire Line
 	9400 1400 9550 1400
 Wire Wire Line
 	9550 1400 9550 1500
 Connection ~ 9550 1400
-Text Label 9400 1600 2    50   ~ 6
+Text Label 9400 1600 2    50   ~ 10
 GND
 Wire Wire Line
 	9400 1600 9550 1600
 Wire Wire Line
 	9550 1600 9550 1700
 Connection ~ 9550 1600
-Text Label 9400 1900 2    50   ~ 6
+Text Label 9400 1900 2    50   ~ 10
 GPIO0
 Wire Wire Line
 	9400 1900 9550 1900
-Text Label 9400 2000 2    50   ~ 6
+Text Label 9400 2000 2    50   ~ 10
 GPIO1
-Text Label 9400 2100 2    50   ~ 6
+Text Label 9400 2100 2    50   ~ 10
 GPIO2
-Text Label 9400 2200 2    50   ~ 6
+Text Label 9400 2200 2    50   ~ 10
 GPIO3
 Wire Wire Line
 	9400 2200 9550 2200
@@ -1052,31 +1052,31 @@ Wire Wire Line
 	9550 2100 9400 2100
 Wire Wire Line
 	9400 2000 9550 2000
-Text Label 3800 3450 2    50   ~ 6
+Text Label 3800 3450 2    50   ~ 10
 GPIO0
-Text Label 3800 3550 2    50   ~ 6
+Text Label 3800 3550 2    50   ~ 10
 GPIO1
-Text Label 3800 3650 2    50   ~ 6
+Text Label 3800 3650 2    50   ~ 10
 GPIO2
-Text Label 3800 3750 2    50   ~ 6
+Text Label 3800 3750 2    50   ~ 10
 GPIO3
-Text Label 3800 3850 2    50   ~ 6
+Text Label 3800 3850 2    50   ~ 10
 GPIO4
-Text Label 3800 3950 2    50   ~ 6
+Text Label 3800 3950 2    50   ~ 10
 GPIO5
-Text Label 3800 4050 2    50   ~ 6
+Text Label 3800 4050 2    50   ~ 10
 GPIO6
-Text Label 3800 3050 2    50   ~ 6
+Text Label 3800 3050 2    50   ~ 10
 GPIO7
-Text Label 9400 2300 2    50   ~ 6
+Text Label 9400 2300 2    50   ~ 10
 GPIO4
 Wire Wire Line
 	9400 2300 9550 2300
-Text Label 9400 2400 2    50   ~ 6
+Text Label 9400 2400 2    50   ~ 10
 GPIO5
-Text Label 9400 2500 2    50   ~ 6
+Text Label 9400 2500 2    50   ~ 10
 GPIO6
-Text Label 9400 2600 2    50   ~ 6
+Text Label 9400 2600 2    50   ~ 10
 GPIO7
 Wire Wire Line
 	9400 2600 9550 2600
@@ -1095,7 +1095,7 @@ F 3 "~" H 11250 2050 50  0001 C CNN
 	1    11250 2050
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2050 2    50   ~ 6
+Text Label 11050 2050 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x01 TP33
@@ -1108,7 +1108,7 @@ F 3 "~" H 11250 2300 50  0001 C CNN
 	1    11250 2300
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2300 2    50   ~ 6
+Text Label 11050 2300 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x01 TP34
@@ -1121,7 +1121,7 @@ F 3 "~" H 11250 2550 50  0001 C CNN
 	1    11250 2550
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2550 2    50   ~ 6
+Text Label 11050 2550 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x01 TP35
@@ -1134,6 +1134,6 @@ F 3 "~" H 11250 2800 50  0001 C CNN
 	1    11250 2800
 	1    0    0    -1  
 $EndComp
-Text Label 11050 2800 2    50   ~ 6
+Text Label 11050 2800 2    50   ~ 10
 GND
 $EndSCHEMATC

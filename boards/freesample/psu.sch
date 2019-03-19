@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 10 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -14,29 +14,29 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 7750 1050 2    50   Output ~ 6
+Text HLabel 7750 1050 2    50   Output ~ 10
 5V25
-Text HLabel 7050 6550 2    50   Output ~ 6
+Text HLabel 7050 6550 2    50   Output ~ 10
 3V3
-Text HLabel 11050 1100 2    50   Output ~ 6
+Text HLabel 11050 1100 2    50   Output ~ 10
 3V0_N
-Text HLabel 10700 7600 2    50   Output ~ 6
+Text HLabel 10700 7600 2    50   Output ~ 10
 1V8
-Text HLabel 850  1150 0    50   Input ~ 6
+Text HLabel 850  1150 0    50   Input ~ 10
 GND
-Text HLabel 3650 6100 2    50   Output ~ 6
+Text HLabel 3650 6100 2    50   Output ~ 10
 1V0
-Text HLabel 3200 2300 2    50   Output ~ 6
+Text HLabel 3200 2300 2    50   Output ~ 10
 5V0_N
-Text HLabel 850  850  0    50   Input ~ 6
+Text HLabel 850  850  0    50   Input ~ 10
 12V0
-Text HLabel 11050 3300 2    50   Output ~ 6
+Text HLabel 11050 3300 2    50   Output ~ 10
 3V3_N
-Text HLabel 10700 5300 2    50   Output ~ 6
+Text HLabel 10700 5300 2    50   Output ~ 10
 2V5
-Text HLabel 2750 850  2    50   Output ~ 6
+Text HLabel 2750 850  2    50   Output ~ 10
 A5V0
-Text Notes 2650 1450 0    50   ~ 6
+Text Notes 2650 1450 0    50   ~ 10
 A5V0: estimated 3 mA from 12V in\nConservatively: 4.9C rise (70 mW) at 10 mA
 $Comp
 L power-azonenberg:MCP1755S-DFN U26
@@ -62,7 +62,7 @@ F 3 "" H 2350 1000 50  0001 C CNN
 	1    2350 1000
 	1    0    0    -1  
 $EndComp
-Text Label 2350 1150 2    50   ~ 6
+Text Label 2350 1150 2    50   ~ 10
 GND
 Wire Wire Line
 	2750 850  2350 850 
@@ -96,9 +96,9 @@ F 3 "" H 1600 2850 50  0001 C CNN
 	1    1600 2850
 	1    0    0    -1  
 $EndComp
-Text Label 900  2200 2    50   ~ 6
+Text Label 900  2200 2    50   ~ 10
 5V25
-Text Label 900  2500 2    50   ~ 6
+Text Label 900  2500 2    50   ~ 10
 GND
 Wire Wire Line
 	1400 2300 1400 2400
@@ -119,7 +119,7 @@ Wire Wire Line
 	2600 2600 2600 2800
 Wire Wire Line
 	2600 2800 3200 2800
-Text Label 1250 2800 2    50   ~ 6
+Text Label 1250 2800 2    50   ~ 10
 5V25
 $Comp
 L device:C C221
@@ -154,7 +154,7 @@ F 3 "" H 2600 2050 50  0001 C CNN
 	1    2600 2050
 	1    0    0    -1  
 $EndComp
-Text Label 2600 1900 0    50   ~ 6
+Text Label 2600 1900 0    50   ~ 10
 GND
 $Comp
 L device:C C223
@@ -186,7 +186,7 @@ Wire Wire Line
 	1400 2600 1000 2600
 Wire Wire Line
 	1000 2600 1000 3000
-Text Label 1000 2600 0    50   ~ 6
+Text Label 1000 2600 0    50   ~ 10
 5V0_N_FB
 $Comp
 L device:R R29
@@ -202,17 +202,17 @@ $EndComp
 Wire Wire Line
 	1000 3000 1000 3100
 Connection ~ 1000 3000
-Text Label 1550 3000 0    50   ~ 6
+Text Label 1550 3000 0    50   ~ 10
 5V0_N
 Wire Wire Line
 	1550 3000 1300 3000
-Text Label 1550 3100 0    50   ~ 6
+Text Label 1550 3100 0    50   ~ 10
 GND
 Wire Wire Line
 	1550 3100 1300 3100
-Text Notes 2850 3750 0    50   ~ 6
+Text Notes 2850 3750 0    50   ~ 10
 5V0_N: estimated 3 mA from 5.25V in\nVout = -1.22 * (R28+R29)/R29\nR29 > 50 kR (use 100K)\nUse 309K (ideal 309.836K) for -4.99V\n\nSMPS w/ 3 mA load, no thermal\nanalysis necessary
-Text Notes 1200 9700 0    50   ~ 6
+Text Notes 1200 9700 0    50   ~ 10
 Vout = 3.0 * (Radj * 50 uA)\nRadj = 1V/(150 uA) = 6.667 kR\nUse 6.65K for 0.9975V\n\nConnect two in parallel to spread out heat generation\n0.15V * 3A = 0.45W total, estimate 0.3W worst case per chip\nAssuming 1cm^2 plane for heatsinking, 30.8C rise.\nBigger planes will improve this\nTypical SERDES power is << 3A which will also help,\nespecially if we power down the unused channel
 $Comp
 L power-azonenberg:ADP1763 U28
@@ -225,7 +225,7 @@ F 3 "" H 1900 7200 50  0001 C CNN
 	1    1900 7250
 	1    0    0    -1  
 $EndComp
-Text Label 1700 6100 2    50   ~ 6
+Text Label 1700 6100 2    50   ~ 10
 1V15_INT
 Wire Wire Line
 	1700 6100 1700 6200
@@ -243,7 +243,7 @@ Wire Wire Line
 Connection ~ 2850 6300
 Wire Wire Line
 	2850 6300 2850 6400
-Text Label 2850 6600 0    50   ~ 6
+Text Label 2850 6600 0    50   ~ 10
 1V0_SENSE
 $Comp
 L device:R R31
@@ -271,12 +271,12 @@ F 3 "" H 2850 7050 50  0001 C CNN
 	1    2850 7050
 	1    0    0    -1  
 $EndComp
-Text Label 3100 6900 0    50   ~ 6
+Text Label 3100 6900 0    50   ~ 10
 1V0_PGOOD
 Wire Wire Line
 	3100 6900 2850 6900
 Connection ~ 2850 6900
-Text Label 3100 7200 0    50   ~ 6
+Text Label 3100 7200 0    50   ~ 10
 D3V3
 Wire Wire Line
 	3100 7200 2850 7200
@@ -293,7 +293,7 @@ F 3 "" H 1400 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 6600 1700 6600
-Text Label 1400 6300 0    50   ~ 6
+Text Label 1400 6300 0    50   ~ 10
 GND
 $Comp
 L device:C C226
@@ -323,7 +323,7 @@ F 3 "" H 1000 6950 50  0001 C CNN
 	1    1000 6950
 	-1   0    0    1   
 $EndComp
-Text Label 1000 7100 2    50   ~ 6
+Text Label 1000 7100 2    50   ~ 10
 GND
 Wire Wire Line
 	1000 7100 1700 7100
@@ -332,7 +332,7 @@ Wire Wire Line
 Connection ~ 1700 7100
 Wire Wire Line
 	1000 6800 1700 6800
-Text Label 1700 6900 2    50   ~ 6
+Text Label 1700 6900 2    50   ~ 10
 1V15_INT
 $Comp
 L device:C C228
@@ -364,7 +364,7 @@ Wire Wire Line
 	1300 6100 1700 6100
 Wire Wire Line
 	850  5800 1300 5800
-Text Label 1300 5800 0    50   ~ 6
+Text Label 1300 5800 0    50   ~ 10
 GND
 $Comp
 L device:C C233
@@ -377,11 +377,11 @@ F 3 "" H 3650 5950 50  0001 C CNN
 	1    3650 5950
 	-1   0    0    1   
 $EndComp
-Text Label 3650 5800 0    50   ~ 6
+Text Label 3650 5800 0    50   ~ 10
 GND
-Text Label 1700 7700 2    50   ~ 6
+Text Label 1700 7700 2    50   ~ 10
 1V15_INT
-Text Label 2850 8200 0    50   ~ 6
+Text Label 2850 8200 0    50   ~ 10
 1V0_SENSE
 $Comp
 L device:R R35
@@ -398,7 +398,7 @@ Wire Wire Line
 	2850 8200 3350 8200
 Wire Wire Line
 	3650 7700 3650 8200
-Text Label 1700 8700 2    50   ~ 6
+Text Label 1700 8700 2    50   ~ 10
 GND
 Wire Wire Line
 	1700 8700 1700 8800
@@ -431,7 +431,7 @@ Wire Wire Line
 	1300 7700 1700 7700
 Wire Wire Line
 	850  7400 1300 7400
-Text Label 1300 7400 0    50   ~ 6
+Text Label 1300 7400 0    50   ~ 10
 GND
 $Comp
 L device:C C234
@@ -444,9 +444,9 @@ F 3 "" H 3650 7550 50  0001 C CNN
 	1    3650 7550
 	-1   0    0    1   
 $EndComp
-Text Label 3650 7400 0    50   ~ 6
+Text Label 3650 7400 0    50   ~ 10
 GND
-Text Label 3650 7700 0    50   ~ 6
+Text Label 3650 7700 0    50   ~ 10
 1V0
 $Comp
 L passive-azonenberg:R_PWR R33
@@ -481,9 +481,9 @@ Wire Wire Line
 Wire Wire Line
 	3350 7700 3650 7700
 Connection ~ 3650 7700
-Text Label 1700 6800 2    50   ~ 6
+Text Label 1700 6800 2    50   ~ 10
 1V0_SS
-Text Label 1700 8400 2    50   ~ 6
+Text Label 1700 8400 2    50   ~ 10
 1V0_SS
 Wire Wire Line
 	1000 8300 1700 8300
@@ -498,11 +498,11 @@ F 3 "" H 1000 8450 50  0001 C CNN
 	1    1000 8450
 	-1   0    0    1   
 $EndComp
-Text Label 1000 8600 2    50   ~ 6
+Text Label 1000 8600 2    50   ~ 10
 GND
-Text Label 1700 6600 2    50   ~ 6
+Text Label 1700 6600 2    50   ~ 10
 1V0_REF
-Text Label 1700 8200 2    50   ~ 6
+Text Label 1700 8200 2    50   ~ 10
 1V0_REF
 Connection ~ 2850 7700
 Wire Wire Line
@@ -537,21 +537,21 @@ Wire Notes Line width 20 style solid
 	500  1700 4400 1700
 Wire Notes Line width 20 style solid
 	600  3850 4400 3850
-Text Notes 550  3800 0    100  ~ 6
+Text Notes 550  3800 0    100  ~ 20
 -5V analog supply (3 mA)
-Text Notes 500  1650 0    100  ~ 6
+Text Notes 500  1650 0    100  ~ 20
 +5V analog supply (<10 mA)
-Text Notes 550  5450 0    100  ~ 6
+Text Notes 550  5450 0    100  ~ 20
 1.15V intermediate rail (2.6A)
-Text Label 3700 4500 0    50   ~ 6
+Text Label 3700 4500 0    50   ~ 10
 1V15_INT
 Wire Notes Line width 20 style solid
 	500  5550 4400 5550
-Text Notes 700  10100 0    100  ~ 6
+Text Notes 700  10100 0    100  ~ 20
 1.0V CDR SERDES supply (2.6A)
 Wire Notes Line width 20 style solid
 	4400 500  4400 11200
-Text Notes 4500 2050 0    100  ~ 6
+Text Notes 4500 2050 0    100  ~ 20
 +5.25V supply for INTEGRALSTICK (<1A typ)
 $Comp
 L device:R R41
@@ -566,7 +566,7 @@ F 3 "" H 5600 1600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 1450 5600 1450
-Text Label 5500 1750 2    50   ~ 6
+Text Label 5500 1750 2    50   ~ 10
 GND
 Wire Wire Line
 	5500 1750 5600 1750
@@ -585,12 +585,12 @@ Wire Wire Line
 	5000 1150 5800 1150
 Wire Wire Line
 	5800 1150 5800 1050
-Text Label 4850 1150 2    50   ~ 6
+Text Label 4850 1150 2    50   ~ 10
 GND
 Wire Wire Line
 	4850 1150 5000 1150
 Connection ~ 5000 1150
-Text Label 4850 850  2    50   ~ 6
+Text Label 4850 850  2    50   ~ 10
 12V0
 Wire Wire Line
 	4850 850  5000 850 
@@ -607,7 +607,7 @@ F 3 "" H 7100 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6950 1050 7100 1050
-Text Label 7000 1350 2    50   ~ 6
+Text Label 7000 1350 2    50   ~ 10
 GND
 Wire Wire Line
 	7000 1350 7100 1350
@@ -622,9 +622,9 @@ F 3 "" H 7600 850 50  0001 C CNN
 	1    7600 850 
 	0    1    1    0   
 $EndComp
-Text Label 7750 850  0    50   ~ 6
+Text Label 7750 850  0    50   ~ 10
 D3V3
-Text Label 6950 850  0    50   ~ 6
+Text Label 6950 850  0    50   ~ 10
 5V0_PGOOD
 Wire Wire Line
 	7450 850  6950 850 
@@ -672,7 +672,7 @@ F 3 "" H 7600 950 50  0001 C CNN
 	1    7600 950 
 	0    1    1    0   
 $EndComp
-Text Label 6950 950  0    50   ~ 6
+Text Label 6950 950  0    50   ~ 10
 5V0_SENSE
 Wire Wire Line
 	7450 950  6950 950 
@@ -682,15 +682,15 @@ Wire Wire Line
 	7750 1050 7100 1050
 Connection ~ 7100 1050
 NoConn ~ 5800 1350
-Text Notes 4500 4050 0    100  ~ 6
+Text Notes 4500 4050 0    100  ~ 20
 +3.3V supply for clock buffers (1.4A)
-Text HLabel 7000 4600 2    50   Output ~ 6
+Text HLabel 7000 4600 2    50   Output ~ 10
 3V3_PLL
-Text HLabel 7000 2550 2    50   Output ~ 6
+Text HLabel 7000 2550 2    50   Output ~ 10
 3V3_CLKBUF
-Text Notes 4500 6000 0    100  ~ 6
+Text Notes 4500 6000 0    100  ~ 20
 +3.3V supply for PLL and VCO (0.85A)
-Text Notes 4500 7900 0    100  ~ 6
+Text Notes 4500 7900 0    100  ~ 20
 +3.3V supply for other loads (0.25A)
 $Comp
 L power-azonenberg:ADP1741 U31
@@ -703,9 +703,9 @@ F 3 "" H 5650 3550 50  0001 C CNN
 	1    5650 3600
 	1    0    0    -1  
 $EndComp
-Text Notes 4450 9450 0    100  ~ 6
+Text Notes 4450 9450 0    100  ~ 20
 +3.5V intermediate rail 1 (1.4A)
-Text Label 7800 8550 0    50   ~ 6
+Text Label 7800 8550 0    50   ~ 10
 3V5_INT1
 Wire Wire Line
 	5450 2850 5450 2750
@@ -732,11 +732,11 @@ Connection ~ 5450 2850
 Wire Wire Line
 	5450 2550 5000 2550
 Connection ~ 5450 2550
-Text Label 4900 2850 2    50   ~ 6
+Text Label 4900 2850 2    50   ~ 10
 GND
 Wire Wire Line
 	4900 2850 5000 2850
-Text Label 5000 2550 2    50   ~ 6
+Text Label 5000 2550 2    50   ~ 10
 3V5_INT2
 $Comp
 L device:C C239
@@ -749,7 +749,7 @@ F 3 "" H 4850 3300 50  0001 C CNN
 	1    4850 3300
 	1    0    0    -1  
 $EndComp
-Text Label 5450 3250 2    50   ~ 6
+Text Label 5450 3250 2    50   ~ 10
 3V5_INT1
 Wire Wire Line
 	5450 3150 4850 3150
@@ -760,7 +760,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 3550 5450 3450
 Connection ~ 5450 3550
-Text Label 4850 3550 2    50   ~ 6
+Text Label 4850 3550 2    50   ~ 10
 GND
 $Comp
 L device:R R40
@@ -775,13 +775,13 @@ F 3 "" H 3650 6850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2850 6700 3650 6700
-Text Label 3650 7200 0    50   ~ 6
+Text Label 3650 7200 0    50   ~ 10
 GND
 Wire Wire Line
 	3650 7200 3650 7000
-Text Label 2850 6700 0    50   ~ 6
+Text Label 2850 6700 0    50   ~ 10
 1V0_VADJ
-Text Label 2850 8300 0    50   ~ 6
+Text Label 2850 8300 0    50   ~ 10
 1V0_VADJ
 $Comp
 L device:R R44
@@ -836,9 +836,9 @@ Wire Wire Line
 	6600 2850 6600 2750
 Wire Wire Line
 	6600 2750 7100 2750
-Text Label 7400 2750 0    50   ~ 6
+Text Label 7400 2750 0    50   ~ 10
 3V3_CLKBUF_SENSE
-Text Label 7900 3150 0    50   ~ 6
+Text Label 7900 3150 0    50   ~ 10
 GND
 $Comp
 L device:C C242
@@ -857,7 +857,7 @@ Connection ~ 6600 2550
 Connection ~ 6800 2550
 Wire Wire Line
 	6800 2550 6600 2550
-Text Label 6800 2250 0    50   ~ 6
+Text Label 6800 2250 0    50   ~ 10
 GND
 $Comp
 L device:R R45
@@ -870,9 +870,9 @@ F 3 "" H 7550 3350 50  0001 C CNN
 	1    7550 3350
 	0    1    1    0   
 $EndComp
-Text Label 7700 3350 0    50   ~ 6
+Text Label 7700 3350 0    50   ~ 10
 D3V3
-Text Label 6600 3350 0    50   ~ 6
+Text Label 6600 3350 0    50   ~ 10
 3V3_CLKBUF_PGOOD
 Wire Wire Line
 	7400 3350 6600 3350
@@ -916,11 +916,11 @@ Connection ~ 5450 4900
 Wire Wire Line
 	5450 4600 5000 4600
 Connection ~ 5450 4600
-Text Label 4900 4900 2    50   ~ 6
+Text Label 4900 4900 2    50   ~ 10
 GND
 Wire Wire Line
 	4900 4900 5000 4900
-Text Label 5000 4600 2    50   ~ 6
+Text Label 5000 4600 2    50   ~ 10
 3V5_INT1
 $Comp
 L device:C C244
@@ -933,7 +933,7 @@ F 3 "" H 4850 5350 50  0001 C CNN
 	1    4850 5350
 	1    0    0    -1  
 $EndComp
-Text Label 5450 5300 2    50   ~ 6
+Text Label 5450 5300 2    50   ~ 10
 3V5_INT1
 Wire Wire Line
 	5450 5200 4850 5200
@@ -944,7 +944,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 5600 5450 5500
 Connection ~ 5450 5600
-Text Label 4850 5600 2    50   ~ 6
+Text Label 4850 5600 2    50   ~ 10
 GND
 $Comp
 L device:R R51
@@ -999,9 +999,9 @@ Wire Wire Line
 	6600 4900 6600 4800
 Wire Wire Line
 	6600 4800 7100 4800
-Text Label 7400 4800 0    50   ~ 6
+Text Label 7400 4800 0    50   ~ 10
 3V3_PLL_SENSE
-Text Label 7900 5200 0    50   ~ 6
+Text Label 7900 5200 0    50   ~ 10
 GND
 $Comp
 L device:C C248
@@ -1020,7 +1020,7 @@ Connection ~ 6600 4600
 Connection ~ 6800 4600
 Wire Wire Line
 	6800 4600 6600 4600
-Text Label 6800 4300 0    50   ~ 6
+Text Label 6800 4300 0    50   ~ 10
 GND
 $Comp
 L device:R R53
@@ -1033,15 +1033,15 @@ F 3 "" H 7550 5400 50  0001 C CNN
 	1    7550 5400
 	0    1    1    0   
 $EndComp
-Text Label 7700 5400 0    50   ~ 6
+Text Label 7700 5400 0    50   ~ 10
 D3V3
-Text Label 6600 5400 0    50   ~ 6
+Text Label 6600 5400 0    50   ~ 10
 3V3_PLL_PGOOD
 Wire Wire Line
 	7400 5400 6600 5400
-Text Notes 6450 5650 0    50   ~ 6
+Text Notes 6450 5650 0    50   ~ 10
 0.2V drop * 0.85A = 0.17W\n7.14C rise
-Text Notes 6500 3800 0    50   ~ 6
+Text Notes 6500 3800 0    50   ~ 10
 0.2V drop * 2A = 0.4W\n16.8C rise\n\nVout = 0.5*(1 + R44/R48), R48 < 60 kR\nR44=113K gives 3.325V
 Wire Notes Line width 20 style solid
 	8250 6100 4400 6100
@@ -1081,11 +1081,11 @@ Connection ~ 5500 6850
 Wire Wire Line
 	5500 6550 5050 6550
 Connection ~ 5500 6550
-Text Label 4950 6850 2    50   ~ 6
+Text Label 4950 6850 2    50   ~ 10
 GND
 Wire Wire Line
 	4950 6850 5050 6850
-Text Label 5050 6550 2    50   ~ 6
+Text Label 5050 6550 2    50   ~ 10
 3V5_INT1
 $Comp
 L device:C C245
@@ -1098,7 +1098,7 @@ F 3 "" H 4900 7300 50  0001 C CNN
 	1    4900 7300
 	1    0    0    -1  
 $EndComp
-Text Label 5500 7250 2    50   ~ 6
+Text Label 5500 7250 2    50   ~ 10
 3V5_INT1
 Wire Wire Line
 	5500 7150 4900 7150
@@ -1109,7 +1109,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 7550 5500 7450
 Connection ~ 5500 7550
-Text Label 4900 7550 2    50   ~ 6
+Text Label 4900 7550 2    50   ~ 10
 GND
 $Comp
 L device:R R52
@@ -1164,9 +1164,9 @@ Wire Wire Line
 	6650 6850 6650 6750
 Wire Wire Line
 	6650 6750 7150 6750
-Text Label 7450 6750 0    50   ~ 6
+Text Label 7450 6750 0    50   ~ 10
 3V3_SENSE
-Text Label 7950 7150 0    50   ~ 6
+Text Label 7950 7150 0    50   ~ 10
 GND
 $Comp
 L device:C C249
@@ -1185,7 +1185,7 @@ Connection ~ 6650 6550
 Connection ~ 6850 6550
 Wire Wire Line
 	6850 6550 6650 6550
-Text Label 6850 6250 0    50   ~ 6
+Text Label 6850 6250 0    50   ~ 10
 GND
 $Comp
 L device:R R54
@@ -1198,17 +1198,17 @@ F 3 "" H 7600 7350 50  0001 C CNN
 	1    7600 7350
 	0    1    1    0   
 $EndComp
-Text Label 7750 7350 0    50   ~ 6
+Text Label 7750 7350 0    50   ~ 10
 D3V3
-Text Label 6650 7350 0    50   ~ 6
+Text Label 6650 7350 0    50   ~ 10
 3V3_PGOOD
 Wire Wire Line
 	7450 7350 6650 7350
-Text Notes 6500 7600 0    50   ~ 6
+Text Notes 6500 7600 0    50   ~ 10
 0.2V drop * 0.25A = 0.05W\n2.1C rise
 Wire Notes Line width 20 style solid
 	8250 8000 4400 8000
-Text Notes 6300 1650 0    50   ~ 6
+Text Notes 6300 1650 0    50   ~ 10
 Rtrim(k) = 5.91 / (5.25 - 0.591) = 1.27K
 $Comp
 L device:R R58
@@ -1223,7 +1223,7 @@ F 3 "" H 5650 9100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 8950 5650 8950
-Text Label 5550 9250 2    50   ~ 6
+Text Label 5550 9250 2    50   ~ 10
 GND
 Wire Wire Line
 	5550 9250 5650 9250
@@ -1242,12 +1242,12 @@ Wire Wire Line
 	5050 8650 5850 8650
 Wire Wire Line
 	5850 8650 5850 8550
-Text Label 4900 8650 2    50   ~ 6
+Text Label 4900 8650 2    50   ~ 10
 GND
 Wire Wire Line
 	4900 8650 5050 8650
 Connection ~ 5050 8650
-Text Label 4900 8350 2    50   ~ 6
+Text Label 4900 8350 2    50   ~ 10
 12V0
 Wire Wire Line
 	4900 8350 5050 8350
@@ -1264,7 +1264,7 @@ F 3 "" H 7150 8700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 8550 7150 8550
-Text Label 7050 8850 2    50   ~ 6
+Text Label 7050 8850 2    50   ~ 10
 GND
 Wire Wire Line
 	7050 8850 7150 8850
@@ -1279,9 +1279,9 @@ F 3 "" H 7650 8350 50  0001 C CNN
 	1    7650 8350
 	0    1    1    0   
 $EndComp
-Text Label 7800 8350 0    50   ~ 6
+Text Label 7800 8350 0    50   ~ 10
 D3V3
-Text Label 7000 8350 0    50   ~ 6
+Text Label 7000 8350 0    50   ~ 10
 3V5_PGOOD
 Wire Wire Line
 	7500 8350 7000 8350
@@ -1329,7 +1329,7 @@ F 3 "" H 7650 8450 50  0001 C CNN
 	1    7650 8450
 	0    1    1    0   
 $EndComp
-Text Label 7000 8450 0    50   ~ 6
+Text Label 7000 8450 0    50   ~ 10
 3V5_SENSE
 Wire Wire Line
 	7500 8450 7000 8450
@@ -1339,7 +1339,7 @@ Wire Wire Line
 	7800 8550 7150 8550
 Connection ~ 7150 8550
 NoConn ~ 5850 8850
-Text Notes 6050 9150 0    50   ~ 6
+Text Notes 6050 9150 0    50   ~ 10
 Rtrim(k) = 5.91 / (3.5 - 0.591) = 2.03K nominal
 $Comp
 L device:R R37
@@ -1354,7 +1354,7 @@ F 3 "" H 1550 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1750 4900 1550 4900
-Text Label 1450 5200 2    50   ~ 6
+Text Label 1450 5200 2    50   ~ 10
 GND
 Wire Wire Line
 	1450 5200 1550 5200
@@ -1373,12 +1373,12 @@ Wire Wire Line
 	950  4600 1750 4600
 Wire Wire Line
 	1750 4600 1750 4500
-Text Label 800  4600 2    50   ~ 6
+Text Label 800  4600 2    50   ~ 10
 GND
 Wire Wire Line
 	800  4600 950  4600
 Connection ~ 950  4600
-Text Label 800  4300 2    50   ~ 6
+Text Label 800  4300 2    50   ~ 10
 12V0
 Wire Wire Line
 	800  4300 950  4300
@@ -1395,7 +1395,7 @@ F 3 "" H 3050 4650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 4500 3050 4500
-Text Label 2950 4800 2    50   ~ 6
+Text Label 2950 4800 2    50   ~ 10
 GND
 Wire Wire Line
 	2950 4800 3050 4800
@@ -1410,7 +1410,7 @@ F 3 "" H 3550 4300 50  0001 C CNN
 	1    3550 4300
 	0    1    1    0   
 $EndComp
-Text Label 2900 4300 0    50   ~ 6
+Text Label 2900 4300 0    50   ~ 10
 1V1_PGOOD
 Wire Wire Line
 	3400 4300 2900 4300
@@ -1458,7 +1458,7 @@ F 3 "" H 3550 4400 50  0001 C CNN
 	1    3550 4400
 	0    1    1    0   
 $EndComp
-Text Label 2900 4400 0    50   ~ 6
+Text Label 2900 4400 0    50   ~ 10
 1V1_SENSE
 Wire Wire Line
 	3400 4400 2900 4400
@@ -1468,11 +1468,11 @@ Wire Wire Line
 	3700 4500 3050 4500
 Connection ~ 3050 4500
 NoConn ~ 1750 4800
-Text Notes 1950 5100 0    50   ~ 6
+Text Notes 1950 5100 0    50   ~ 10
 Rtrim(k) = 5.91 / (1.15 - 0.591) = 10.57K nominal
-Text Notes 8300 11050 0    100  ~ 6
+Text Notes 8300 11050 0    100  ~ 20
 +2.7V intermediate rail (0.7A)
-Text Label 11450 10050 0    50   ~ 6
+Text Label 11450 10050 0    50   ~ 10
 2V7_INT
 $Comp
 L device:R R68
@@ -1487,7 +1487,7 @@ F 3 "" H 9300 10600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 10450 9300 10450
-Text Label 9200 10750 2    50   ~ 6
+Text Label 9200 10750 2    50   ~ 10
 GND
 Wire Wire Line
 	9200 10750 9300 10750
@@ -1506,12 +1506,12 @@ Wire Wire Line
 	8700 10150 9500 10150
 Wire Wire Line
 	9500 10150 9500 10050
-Text Label 8550 10150 2    50   ~ 6
+Text Label 8550 10150 2    50   ~ 10
 GND
 Wire Wire Line
 	8550 10150 8700 10150
 Connection ~ 8700 10150
-Text Label 8550 9850 2    50   ~ 6
+Text Label 8550 9850 2    50   ~ 10
 12V0
 Wire Wire Line
 	8550 9850 8700 9850
@@ -1528,7 +1528,7 @@ F 3 "" H 10800 10200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10650 10050 10800 10050
-Text Label 10700 10350 2    50   ~ 6
+Text Label 10700 10350 2    50   ~ 10
 GND
 Wire Wire Line
 	10700 10350 10800 10350
@@ -1543,9 +1543,9 @@ F 3 "" H 11300 9850 50  0001 C CNN
 	1    11300 9850
 	0    1    1    0   
 $EndComp
-Text Label 11450 9850 0    50   ~ 6
+Text Label 11450 9850 0    50   ~ 10
 D3V3
-Text Label 10650 9850 0    50   ~ 6
+Text Label 10650 9850 0    50   ~ 10
 2V7_PGOOD
 Wire Wire Line
 	11150 9850 10650 9850
@@ -1593,7 +1593,7 @@ F 3 "" H 11300 9950 50  0001 C CNN
 	1    11300 9950
 	0    1    1    0   
 $EndComp
-Text Label 10650 9950 0    50   ~ 6
+Text Label 10650 9950 0    50   ~ 10
 2V7_SENSE
 Wire Wire Line
 	11150 9950 10650 9950
@@ -1603,23 +1603,23 @@ Wire Wire Line
 	11450 10050 10800 10050
 Connection ~ 10800 10050
 NoConn ~ 9500 10350
-Text Notes 9700 10650 0    50   ~ 6
+Text Notes 9700 10650 0    50   ~ 10
 Rtrim(k) = 5.91 / (2.7 - 0.591) = 2.80K nominal
 Wire Notes Line width 20 style solid
 	8250 500  8250 11200
-Text Notes 8450 6700 0    100  ~ 6
+Text Notes 8450 6700 0    100  ~ 20
 +2.5V supply for flipflops (0.5A)
-Text Notes 8250 9200 0    100  ~ 6
+Text Notes 8250 9200 0    100  ~ 20
 +1.8V supply for SERDES/comparators (0.2A)
-Text Notes 8450 2500 0    100  ~ 6
+Text Notes 8450 2500 0    100  ~ 20
 -3.0V supply for comparators (0.1A)
-Text Notes 8350 4700 0    100  ~ 6
+Text Notes 8350 4700 0    100  ~ 20
 -3.3V supply for delay line (0.2A)
 Wire Notes Line width 20 style solid
 	4400 9500 12000 9500
-Text Label 8750 1000 2    50   ~ 6
+Text Label 8750 1000 2    50   ~ 10
 3V5_INT1
-Text Label 7800 10100 0    50   ~ 6
+Text Label 7800 10100 0    50   ~ 10
 3V5_INT2
 $Comp
 L device:R R62
@@ -1634,7 +1634,7 @@ F 3 "" H 5650 10650 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 10500 5650 10500
-Text Label 5550 10800 2    50   ~ 6
+Text Label 5550 10800 2    50   ~ 10
 GND
 Wire Wire Line
 	5550 10800 5650 10800
@@ -1653,12 +1653,12 @@ Wire Wire Line
 	5050 10200 5850 10200
 Wire Wire Line
 	5850 10200 5850 10100
-Text Label 4900 10200 2    50   ~ 6
+Text Label 4900 10200 2    50   ~ 10
 GND
 Wire Wire Line
 	4900 10200 5050 10200
 Connection ~ 5050 10200
-Text Label 4900 9900 2    50   ~ 6
+Text Label 4900 9900 2    50   ~ 10
 12V0
 Wire Wire Line
 	4900 9900 5050 9900
@@ -1675,7 +1675,7 @@ F 3 "" H 7150 10250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 10100 7150 10100
-Text Label 7050 10400 2    50   ~ 6
+Text Label 7050 10400 2    50   ~ 10
 GND
 Wire Wire Line
 	7050 10400 7150 10400
@@ -1690,9 +1690,9 @@ F 3 "" H 7650 9900 50  0001 C CNN
 	1    7650 9900
 	0    1    1    0   
 $EndComp
-Text Label 7800 9900 0    50   ~ 6
+Text Label 7800 9900 0    50   ~ 10
 D3V3
-Text Label 7000 9900 0    50   ~ 6
+Text Label 7000 9900 0    50   ~ 10
 3V5_PGOOD2
 Wire Wire Line
 	7500 9900 7000 9900
@@ -1740,7 +1740,7 @@ F 3 "" H 7650 10000 50  0001 C CNN
 	1    7650 10000
 	0    1    1    0   
 $EndComp
-Text Label 7000 10000 0    50   ~ 6
+Text Label 7000 10000 0    50   ~ 10
 3V5_SENSE2
 Wire Wire Line
 	7500 10000 7000 10000
@@ -1750,13 +1750,13 @@ Wire Wire Line
 	7800 10100 7150 10100
 Connection ~ 7150 10100
 NoConn ~ 5850 10400
-Text Notes 6050 10700 0    50   ~ 6
+Text Notes 6050 10700 0    50   ~ 10
 Rtrim(k) = 5.91 / (3.5 - 0.591) = 2.03K nominal
-Text Notes 4450 11050 0    100  ~ 6
+Text Notes 4450 11050 0    100  ~ 20
 +3.5V intermediate rail 2 (1.4A)
 Wire Notes Line width 20 style solid
 	12000 500  12000 9950
-Text Label 8700 5300 2    50   ~ 6
+Text Label 8700 5300 2    50   ~ 10
 2V7_INT
 $Comp
 L power-azonenberg:LM27761 U37
@@ -1769,7 +1769,7 @@ F 3 "" H 9450 1650 50  0001 C CNN
 	1    9450 1650
 	1    0    0    -1  
 $EndComp
-Text Label 8750 1300 2    50   ~ 6
+Text Label 8750 1300 2    50   ~ 10
 GND
 Wire Wire Line
 	9250 1100 9250 1200
@@ -1790,7 +1790,7 @@ Wire Wire Line
 	10450 1400 10450 1600
 Wire Wire Line
 	10450 1600 11050 1600
-Text Label 9100 1600 2    50   ~ 6
+Text Label 9100 1600 2    50   ~ 10
 3V5_INT1
 $Comp
 L device:C C253
@@ -1825,7 +1825,7 @@ F 3 "" H 10450 850 50  0001 C CNN
 	1    10450 850 
 	1    0    0    -1  
 $EndComp
-Text Label 10450 700  0    50   ~ 6
+Text Label 10450 700  0    50   ~ 10
 GND
 $Comp
 L device:C C256
@@ -1857,7 +1857,7 @@ Wire Wire Line
 	9250 1400 8850 1400
 Wire Wire Line
 	8850 1400 8850 1800
-Text Label 8850 1400 0    50   ~ 6
+Text Label 8850 1400 0    50   ~ 10
 3V0_N_FB
 $Comp
 L device:R R67
@@ -1873,17 +1873,17 @@ $EndComp
 Wire Wire Line
 	8850 1800 8850 1900
 Connection ~ 8850 1800
-Text Label 9400 1800 0    50   ~ 6
+Text Label 9400 1800 0    50   ~ 10
 5V0_N
 Wire Wire Line
 	9400 1800 9150 1800
-Text Label 9400 1900 0    50   ~ 6
+Text Label 9400 1900 0    50   ~ 10
 GND
 Wire Wire Line
 	9400 1900 9150 1900
-Text Notes 9950 2250 0    50   ~ 6
+Text Notes 9950 2250 0    50   ~ 10
 3V0_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse 147k (ideal 145.9k) for -3.0V\n\nThermal analysis TODO
-Text Label 8750 3200 2    50   ~ 6
+Text Label 8750 3200 2    50   ~ 10
 3V5_INT1
 $Comp
 L power-azonenberg:LM27761 U39
@@ -1896,7 +1896,7 @@ F 3 "" H 9450 3850 50  0001 C CNN
 	1    9450 3850
 	1    0    0    -1  
 $EndComp
-Text Label 8750 3500 2    50   ~ 6
+Text Label 8750 3500 2    50   ~ 10
 GND
 Wire Wire Line
 	9250 3300 9250 3400
@@ -1917,7 +1917,7 @@ Wire Wire Line
 	10450 3600 10450 3800
 Wire Wire Line
 	10450 3800 11050 3800
-Text Label 9100 3800 2    50   ~ 6
+Text Label 9100 3800 2    50   ~ 10
 3V5_INT1
 $Comp
 L device:C C258
@@ -1952,7 +1952,7 @@ F 3 "" H 10450 3050 50  0001 C CNN
 	1    10450 3050
 	1    0    0    -1  
 $EndComp
-Text Label 10450 2900 0    50   ~ 6
+Text Label 10450 2900 0    50   ~ 10
 GND
 $Comp
 L device:C C260
@@ -1984,7 +1984,7 @@ Wire Wire Line
 	9250 3600 8850 3600
 Wire Wire Line
 	8850 3600 8850 4000
-Text Label 8850 3600 0    50   ~ 6
+Text Label 8850 3600 0    50   ~ 10
 3V3_N_FB
 $Comp
 L device:R R73
@@ -2000,23 +2000,23 @@ $EndComp
 Wire Wire Line
 	8850 4000 8850 4100
 Connection ~ 8850 4000
-Text Label 9400 4000 0    50   ~ 6
+Text Label 9400 4000 0    50   ~ 10
 5V0_N
 Wire Wire Line
 	9400 4000 9150 4000
-Text Label 9400 4100 0    50   ~ 6
+Text Label 9400 4100 0    50   ~ 10
 GND
 Wire Wire Line
 	9400 4100 9150 4100
-Text Notes 9950 4450 0    50   ~ 6
+Text Notes 9950 4450 0    50   ~ 10
 3V3_N: estimated 100 mA from 3.5V in\nVout = -1.22 * (R66+R67)/R67\nR67 > 50 kR (use 100K)\nUse 174k (ideal 170.5k) for -3.3V\n\nThermal analysis TODO
 Wire Notes Line width 20 style solid
 	8250 2650 12000 2650
 Wire Notes Line width 20 style solid
 	8250 4800 12000 4800
-Text HLabel 3700 4300 2    50   Input ~ 6
+Text HLabel 3700 4300 2    50   Input ~ 10
 D3V3
-Text Label 1700 8500 2    50   ~ 6
+Text Label 1700 8500 2    50   ~ 10
 1V15_INT
 $Comp
 L power-azonenberg:ADP1741 U42
@@ -2054,7 +2054,7 @@ Connection ~ 9150 5600
 Wire Wire Line
 	9150 5300 8700 5300
 Connection ~ 9150 5300
-Text Label 8600 5600 2    50   ~ 6
+Text Label 8600 5600 2    50   ~ 10
 GND
 Wire Wire Line
 	8600 5600 8700 5600
@@ -2078,7 +2078,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 6300 9150 6200
 Connection ~ 9150 6300
-Text Label 8550 6300 2    50   ~ 6
+Text Label 8550 6300 2    50   ~ 10
 GND
 $Comp
 L device:R R89
@@ -2133,9 +2133,9 @@ Wire Wire Line
 	10300 5600 10300 5500
 Wire Wire Line
 	10300 5500 10800 5500
-Text Label 11100 5500 0    50   ~ 6
+Text Label 11100 5500 0    50   ~ 10
 2V5_SENSE
-Text Label 11600 5900 0    50   ~ 6
+Text Label 11600 5900 0    50   ~ 10
 GND
 $Comp
 L device:C C319
@@ -2154,7 +2154,7 @@ Connection ~ 10300 5300
 Connection ~ 10500 5300
 Wire Wire Line
 	10500 5300 10300 5300
-Text Label 10500 5000 0    50   ~ 6
+Text Label 10500 5000 0    50   ~ 10
 GND
 $Comp
 L device:R R91
@@ -2167,19 +2167,19 @@ F 3 "" H 11250 6100 50  0001 C CNN
 	1    11250 6100
 	0    1    1    0   
 $EndComp
-Text Label 11400 6100 0    50   ~ 6
+Text Label 11400 6100 0    50   ~ 10
 D3V3
-Text Label 10300 6100 0    50   ~ 6
+Text Label 10300 6100 0    50   ~ 10
 2V5_PGOOD
 Wire Wire Line
 	11100 6100 10300 6100
-Text Notes 10150 6350 0    50   ~ 6
+Text Notes 10150 6350 0    50   ~ 10
 0.2V drop * 0.5A = 0.1W\n4.2C rise
-Text Label 9150 6000 2    50   ~ 6
+Text Label 9150 6000 2    50   ~ 10
 2V7_INT
 Wire Notes Line width 20 style solid
 	8250 6800 12000 6800
-Text Label 8700 7600 2    50   ~ 6
+Text Label 8700 7600 2    50   ~ 10
 2V7_INT
 $Comp
 L power-azonenberg:ADP1741 U43
@@ -2217,7 +2217,7 @@ Connection ~ 9150 7900
 Wire Wire Line
 	9150 7600 8700 7600
 Connection ~ 9150 7600
-Text Label 8600 7900 2    50   ~ 6
+Text Label 8600 7900 2    50   ~ 10
 GND
 Wire Wire Line
 	8600 7900 8700 7900
@@ -2241,7 +2241,7 @@ Wire Wire Line
 Wire Wire Line
 	9150 8600 9150 8500
 Connection ~ 9150 8600
-Text Label 8550 8600 2    50   ~ 6
+Text Label 8550 8600 2    50   ~ 10
 GND
 $Comp
 L device:R R90
@@ -2296,9 +2296,9 @@ Wire Wire Line
 	10300 7900 10300 7800
 Wire Wire Line
 	10300 7800 10800 7800
-Text Label 11100 7800 0    50   ~ 6
+Text Label 11100 7800 0    50   ~ 10
 1V8_SENSE
-Text Label 11600 8200 0    50   ~ 6
+Text Label 11600 8200 0    50   ~ 10
 GND
 $Comp
 L device:C C320
@@ -2317,7 +2317,7 @@ Connection ~ 10300 7600
 Connection ~ 10500 7600
 Wire Wire Line
 	10500 7600 10300 7600
-Text Label 10500 7300 0    50   ~ 6
+Text Label 10500 7300 0    50   ~ 10
 GND
 $Comp
 L device:R R92
@@ -2330,21 +2330,21 @@ F 3 "" H 11250 8400 50  0001 C CNN
 	1    11250 8400
 	0    1    1    0   
 $EndComp
-Text Label 11400 8400 0    50   ~ 6
+Text Label 11400 8400 0    50   ~ 10
 D3V3
-Text Label 10300 8400 0    50   ~ 6
+Text Label 10300 8400 0    50   ~ 10
 1V8_PGOOD
 Wire Wire Line
 	11100 8400 10300 8400
-Text Notes 10150 8650 0    50   ~ 6
+Text Notes 10150 8650 0    50   ~ 10
 0.9V drop * 0.2A = 0.18W\n7.6C rise
-Text Label 9150 8300 2    50   ~ 6
+Text Label 9150 8300 2    50   ~ 10
 2V7_INT
-Text Label 3100 8500 0    50   ~ 6
+Text Label 3100 8500 0    50   ~ 10
 1V0_PGOOD
 Wire Wire Line
 	3100 8500 2850 8500
-Text Notes 12100 4300 0    100  ~ 6
+Text Notes 12100 4300 0    100  ~ 20
 Test points for power rails\nIntegrated 10x low-Z probes
 $Comp
 L Connector:Conn_01x02 TP3
@@ -2357,7 +2357,7 @@ F 3 "~" H 13300 850 50  0001 C CNN
 	1    13300 850 
 	1    0    0    -1  
 $EndComp
-Text Label 13100 950  2    50   ~ 6
+Text Label 13100 950  2    50   ~ 10
 GND
 $Comp
 L device:R R112
@@ -2372,7 +2372,7 @@ F 3 "" H 12800 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 850  13100 850 
-Text Label 12650 850  2    50   ~ 6
+Text Label 12650 850  2    50   ~ 10
 A5V0
 $Comp
 L Connector:Conn_01x02 TP4
@@ -2385,7 +2385,7 @@ F 3 "~" H 13300 1200 50  0001 C CNN
 	1    13300 1200
 	1    0    0    -1  
 $EndComp
-Text Label 13100 1300 2    50   ~ 6
+Text Label 13100 1300 2    50   ~ 10
 GND
 $Comp
 L device:R R113
@@ -2400,9 +2400,9 @@ F 3 "" H 12800 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 1200 13100 1200
-Text Label 12650 1200 2    50   ~ 6
+Text Label 12650 1200 2    50   ~ 10
 5V0_N
-Text Notes 12200 1700 0    100  ~ 6
+Text Notes 12200 1700 0    100  ~ 20
 Test points for low current power rails\nIntegrated 20x low-Z probes
 $Comp
 L Connector:Conn_01x02 TP5
@@ -2415,7 +2415,7 @@ F 3 "~" H 13300 2000 50  0001 C CNN
 	1    13300 2000
 	1    0    0    -1  
 $EndComp
-Text Label 13100 2100 2    50   ~ 6
+Text Label 13100 2100 2    50   ~ 10
 GND
 $Comp
 L device:R R114
@@ -2430,7 +2430,7 @@ F 3 "" H 12800 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 2000 13100 2000
-Text Label 12650 2000 2    50   ~ 6
+Text Label 12650 2000 2    50   ~ 10
 1V15_INT
 $Comp
 L Connector:Conn_01x02 TP6
@@ -2443,7 +2443,7 @@ F 3 "~" H 13300 2300 50  0001 C CNN
 	1    13300 2300
 	1    0    0    -1  
 $EndComp
-Text Label 13100 2400 2    50   ~ 6
+Text Label 13100 2400 2    50   ~ 10
 GND
 $Comp
 L device:R R115
@@ -2458,7 +2458,7 @@ F 3 "" H 12800 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 2300 13100 2300
-Text Label 12650 2300 2    50   ~ 6
+Text Label 12650 2300 2    50   ~ 10
 1V0
 $Comp
 L Connector:Conn_01x02 TP7
@@ -2471,7 +2471,7 @@ F 3 "~" H 13300 2600 50  0001 C CNN
 	1    13300 2600
 	1    0    0    -1  
 $EndComp
-Text Label 13100 2700 2    50   ~ 6
+Text Label 13100 2700 2    50   ~ 10
 GND
 $Comp
 L device:R R116
@@ -2486,7 +2486,7 @@ F 3 "" H 12800 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 2600 13100 2600
-Text Label 12650 2600 2    50   ~ 6
+Text Label 12650 2600 2    50   ~ 10
 5V25
 $Comp
 L Connector:Conn_01x02 TP8
@@ -2499,7 +2499,7 @@ F 3 "~" H 13300 2900 50  0001 C CNN
 	1    13300 2900
 	1    0    0    -1  
 $EndComp
-Text Label 13100 3000 2    50   ~ 6
+Text Label 13100 3000 2    50   ~ 10
 GND
 $Comp
 L device:R R117
@@ -2514,7 +2514,7 @@ F 3 "" H 12800 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 2900 13100 2900
-Text Label 12650 2900 2    50   ~ 6
+Text Label 12650 2900 2    50   ~ 10
 3V3_CLKBUF
 Wire Notes Line width 20 style solid
 	16050 1800 12000 1800
@@ -2529,7 +2529,7 @@ F 3 "~" H 13300 3200 50  0001 C CNN
 	1    13300 3200
 	1    0    0    -1  
 $EndComp
-Text Label 13100 3300 2    50   ~ 6
+Text Label 13100 3300 2    50   ~ 10
 GND
 $Comp
 L device:R R118
@@ -2544,7 +2544,7 @@ F 3 "" H 12800 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 3200 13100 3200
-Text Label 12650 3200 2    50   ~ 6
+Text Label 12650 3200 2    50   ~ 10
 3V3_PLL
 $Comp
 L Connector:Conn_01x02 TP10
@@ -2557,7 +2557,7 @@ F 3 "~" H 13300 3500 50  0001 C CNN
 	1    13300 3500
 	1    0    0    -1  
 $EndComp
-Text Label 13100 3600 2    50   ~ 6
+Text Label 13100 3600 2    50   ~ 10
 GND
 $Comp
 L device:R R119
@@ -2572,7 +2572,7 @@ F 3 "" H 12800 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 3500 13100 3500
-Text Label 12650 3500 2    50   ~ 6
+Text Label 12650 3500 2    50   ~ 10
 3V3
 $Comp
 L Connector:Conn_01x02 TP11
@@ -2585,7 +2585,7 @@ F 3 "~" H 13300 3800 50  0001 C CNN
 	1    13300 3800
 	1    0    0    -1  
 $EndComp
-Text Label 13100 3900 2    50   ~ 6
+Text Label 13100 3900 2    50   ~ 10
 GND
 $Comp
 L device:R R120
@@ -2600,7 +2600,7 @@ F 3 "" H 12800 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	12950 3800 13100 3800
-Text Label 12650 3800 2    50   ~ 6
+Text Label 12650 3800 2    50   ~ 10
 3V5_INT1
 $Comp
 L Connector:Conn_01x02 TP12
@@ -2613,7 +2613,7 @@ F 3 "~" H 15150 2000 50  0001 C CNN
 	1    15150 2000
 	1    0    0    -1  
 $EndComp
-Text Label 14950 2100 2    50   ~ 6
+Text Label 14950 2100 2    50   ~ 10
 GND
 $Comp
 L device:R R121
@@ -2628,7 +2628,7 @@ F 3 "" H 14650 2000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 2000 14950 2000
-Text Label 14500 2000 2    50   ~ 6
+Text Label 14500 2000 2    50   ~ 10
 3V5_INT2
 $Comp
 L Connector:Conn_01x02 TP13
@@ -2641,7 +2641,7 @@ F 3 "~" H 15150 2300 50  0001 C CNN
 	1    15150 2300
 	1    0    0    -1  
 $EndComp
-Text Label 14950 2400 2    50   ~ 6
+Text Label 14950 2400 2    50   ~ 10
 GND
 $Comp
 L device:R R122
@@ -2656,7 +2656,7 @@ F 3 "" H 14650 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 2300 14950 2300
-Text Label 14500 2300 2    50   ~ 6
+Text Label 14500 2300 2    50   ~ 10
 3V0_N
 $Comp
 L Connector:Conn_01x02 TP14
@@ -2669,7 +2669,7 @@ F 3 "~" H 15150 2600 50  0001 C CNN
 	1    15150 2600
 	1    0    0    -1  
 $EndComp
-Text Label 14950 2700 2    50   ~ 6
+Text Label 14950 2700 2    50   ~ 10
 GND
 $Comp
 L device:R R123
@@ -2684,7 +2684,7 @@ F 3 "" H 14650 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 2600 14950 2600
-Text Label 14500 2600 2    50   ~ 6
+Text Label 14500 2600 2    50   ~ 10
 3V3_N
 $Comp
 L Connector:Conn_01x02 TP15
@@ -2697,7 +2697,7 @@ F 3 "~" H 15150 2900 50  0001 C CNN
 	1    15150 2900
 	1    0    0    -1  
 $EndComp
-Text Label 14950 3000 2    50   ~ 6
+Text Label 14950 3000 2    50   ~ 10
 GND
 $Comp
 L device:R R124
@@ -2712,7 +2712,7 @@ F 3 "" H 14650 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 2900 14950 2900
-Text Label 14500 2900 2    50   ~ 6
+Text Label 14500 2900 2    50   ~ 10
 2V5
 $Comp
 L Connector:Conn_01x02 TP16
@@ -2725,7 +2725,7 @@ F 3 "~" H 15150 3200 50  0001 C CNN
 	1    15150 3200
 	1    0    0    -1  
 $EndComp
-Text Label 14950 3300 2    50   ~ 6
+Text Label 14950 3300 2    50   ~ 10
 GND
 $Comp
 L device:R R125
@@ -2740,7 +2740,7 @@ F 3 "" H 14650 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 3200 14950 3200
-Text Label 14500 3200 2    50   ~ 6
+Text Label 14500 3200 2    50   ~ 10
 1V8
 $Comp
 L Connector:Conn_01x02 TP17
@@ -2753,7 +2753,7 @@ F 3 "~" H 15150 3500 50  0001 C CNN
 	1    15150 3500
 	1    0    0    -1  
 $EndComp
-Text Label 14950 3600 2    50   ~ 6
+Text Label 14950 3600 2    50   ~ 10
 GND
 $Comp
 L device:R R126
@@ -2768,7 +2768,7 @@ F 3 "" H 14650 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 3500 14950 3500
-Text Label 14500 3500 2    50   ~ 6
+Text Label 14500 3500 2    50   ~ 10
 2V7_INT
 $Comp
 L Connector:Conn_01x02 TP18
@@ -2781,7 +2781,7 @@ F 3 "~" H 15150 3800 50  0001 C CNN
 	1    15150 3800
 	1    0    0    -1  
 $EndComp
-Text Label 14950 3900 2    50   ~ 6
+Text Label 14950 3900 2    50   ~ 10
 GND
 $Comp
 L device:R R127
@@ -2796,7 +2796,7 @@ F 3 "" H 14650 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	14800 3800 14950 3800
-Text Label 14500 3800 2    50   ~ 6
+Text Label 14500 3800 2    50   ~ 10
 12V0
 Wire Notes Line width 20 style solid
 	12000 4400 16050 4400
@@ -2811,7 +2811,7 @@ F 3 "~" H 13300 4600 50  0001 C CNN
 	1    13300 4600
 	1    0    0    -1  
 $EndComp
-Text Label 13100 4600 2    50   ~ 6
+Text Label 13100 4600 2    50   ~ 10
 GND
 $Comp
 L Connector:Conn_01x01 TP20
@@ -2824,29 +2824,29 @@ F 3 "~" H 13300 4850 50  0001 C CNN
 	1    13300 4850
 	1    0    0    -1  
 $EndComp
-Text Label 13100 4850 2    50   ~ 6
+Text Label 13100 4850 2    50   ~ 10
 GND
-Text Label 13100 5100 2    50   ~ 6
+Text Label 13100 5100 2    50   ~ 10
 1V1_PGOOD
-Text Label 13100 5350 2    50   ~ 6
+Text Label 13100 5350 2    50   ~ 10
 1V0_PGOOD
-Text Label 14750 4600 2    50   ~ 6
+Text Label 14750 4600 2    50   ~ 10
 5V0_PGOOD
-Text Label 14750 4850 2    50   ~ 6
+Text Label 14750 4850 2    50   ~ 10
 3V3_CLKBUF_PGOOD
-Text Label 14750 5100 2    50   ~ 6
+Text Label 14750 5100 2    50   ~ 10
 3V3_PLL_PGOOD
-Text Label 14750 5350 2    50   ~ 6
+Text Label 14750 5350 2    50   ~ 10
 3V3_PGOOD
-Text Label 13100 5600 2    50   ~ 6
+Text Label 13100 5600 2    50   ~ 10
 3V5_PGOOD
-Text Label 14750 5600 2    50   ~ 6
+Text Label 14750 5600 2    50   ~ 10
 3V5_PGOOD2
-Text Label 14750 5850 2    50   ~ 6
+Text Label 14750 5850 2    50   ~ 10
 2V7_PGOOD
-Text Label 13100 5850 2    50   ~ 6
+Text Label 13100 5850 2    50   ~ 10
 1V8_PGOOD
-Text Label 13100 6100 2    50   ~ 6
+Text Label 13100 6100 2    50   ~ 10
 2V5_PGOOD
 $Comp
 L Connector:Conn_01x01 TP21
@@ -2969,7 +2969,7 @@ F 3 "~" H 13300 6100 50  0001 C CNN
 	1    13300 6100
 	1    0    0    -1  
 $EndComp
-Text Notes 12100 6400 0    100  ~ 6
+Text Notes 12100 6400 0    100  ~ 20
 Test points for power-good signals
 Wire Notes Line width 20 style solid
 	12000 6500 16050 6500

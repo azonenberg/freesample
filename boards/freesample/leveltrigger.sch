@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Level triggering"
@@ -14,25 +14,25 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3750 3000 0    50   Input ~ 6
+Text HLabel 3750 3000 0    50   Input ~ 10
 LTRIG_DIN
-Text HLabel 8850 2350 2    50   Output ~ 6
+Text HLabel 8850 2350 2    50   Output ~ 10
 LTRIG_CDROUT_P
-Text HLabel 8850 2450 2    50   Output ~ 6
+Text HLabel 8850 2450 2    50   Output ~ 10
 LTRIG_CDROUT_N
-Text HLabel 3750 1800 0    50   Input ~ 6
+Text HLabel 3750 1800 0    50   Input ~ 10
 3V3
-Text HLabel 3750 2200 0    50   Input ~ 6
+Text HLabel 3750 2200 0    50   Input ~ 10
 3V0_N
-Text HLabel 3750 2400 0    50   Input ~ 6
+Text HLabel 3750 2400 0    50   Input ~ 10
 GND
-Text HLabel 3750 2000 0    50   Input ~ 6
+Text HLabel 3750 2000 0    50   Input ~ 10
 1V8
-Text HLabel 3750 3100 0    50   Input ~ 6
+Text HLabel 3750 3100 0    50   Input ~ 10
 LTRIG_VT
-Text HLabel 8850 2050 2    50   Output ~ 6
+Text HLabel 8850 2050 2    50   Output ~ 10
 LTRIG_SAMPOUT_P
-Text HLabel 8850 2150 2    50   Output ~ 6
+Text HLabel 8850 2150 2    50   Output ~ 10
 LTRIG_SAMPOUT_N
 $Comp
 L analog-azonenberg:HMC675LP3E U9
@@ -84,9 +84,9 @@ F 3 "" H 1050 1000 50  0001 C CNN
 	1    1050 1000
 	1    0    0    -1  
 $EndComp
-Text Label 1050 1150 2    50   ~ 6
+Text Label 1050 1150 2    50   ~ 10
 GND
-Text Label 1050 850  2    50   ~ 6
+Text Label 1050 850  2    50   ~ 10
 3V3
 $Comp
 L device:C C?
@@ -175,9 +175,9 @@ F 3 "" H 1050 1500 50  0001 C CNN
 	1    1050 1500
 	1    0    0    -1  
 $EndComp
-Text Label 1050 1650 2    50   ~ 6
+Text Label 1050 1650 2    50   ~ 10
 GND
-Text Label 1050 1350 2    50   ~ 6
+Text Label 1050 1350 2    50   ~ 10
 1V8
 $Comp
 L device:C C?
@@ -208,7 +208,7 @@ Wire Wire Line
 Connection ~ 2050 1650
 Wire Wire Line
 	2050 1650 2600 1650
-Text Label 1050 1850 2    50   ~ 6
+Text Label 1050 1850 2    50   ~ 10
 3V0_N
 $Comp
 L device:C C?
@@ -259,7 +259,7 @@ Wire Wire Line
 Connection ~ 1550 2150
 Wire Wire Line
 	1550 2150 1050 2150
-Text Label 1050 2150 2    50   ~ 6
+Text Label 1050 2150 2    50   ~ 10
 GND
 Wire Wire Line
 	3750 2400 3900 2400
@@ -291,7 +291,7 @@ Connection ~ 3800 2000
 Wire Wire Line
 	3800 2000 3900 2000
 NoConn ~ 4950 1800
-Text Label 5050 2000 0    50   ~ 6
+Text Label 5050 2000 0    50   ~ 10
 GND
 Wire Wire Line
 	5050 2000 4950 2000
@@ -347,12 +347,12 @@ Wire Wire Line
 Connection ~ 8600 950 
 Wire Wire Line
 	8600 950  8100 950 
-Text Label 7900 650  2    50   ~ 6
+Text Label 7900 650  2    50   ~ 10
 3V3_CLKBUF
 Wire Wire Line
 	7900 650  8100 650 
 Connection ~ 8100 650 
-Text Label 7900 950  2    50   ~ 6
+Text Label 7900 950  2    50   ~ 10
 GND
 Wire Wire Line
 	7900 950  8100 950 
@@ -399,7 +399,7 @@ Wire Wire Line
 	3750 3100 3900 3100
 Wire Wire Line
 	3900 3000 3750 3000
-Text Label 3750 2900 2    50   ~ 6
+Text Label 3750 2900 2    50   ~ 10
 GND
 Wire Wire Line
 	3750 2900 3900 2900
@@ -467,7 +467,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 1750 7550 1750
 Connection ~ 7450 1650
-Text Label 7400 1950 2    50   ~ 6
+Text Label 7400 1950 2    50   ~ 10
 GND
 Wire Wire Line
 	7400 1950 7550 1950
@@ -485,17 +485,17 @@ Wire Wire Line
 	8850 2350 8650 2350
 Wire Wire Line
 	8650 2450 8850 2450
-Text Notes 4950 2600 0    50   ~ 6
+Text Notes 4950 2600 0    50   ~ 10
 Common mode is VCCO-0.15 = 1.65V\nVout = 1.8 to 1.5, 300 mV differential
-Text HLabel 7400 1450 0    50   Input ~ 6
+Text HLabel 7400 1450 0    50   Input ~ 10
 3V3_CLKBUF
-Text Label 7550 2150 2    50   ~ 6
+Text Label 7550 2150 2    50   ~ 10
 3V3_CLKBUF
 NoConn ~ 7550 3250
 NoConn ~ 7550 3350
-Text Label 7550 2350 2    50   ~ 6
+Text Label 7550 2350 2    50   ~ 10
 GND
-Text Label 7550 2450 2    50   ~ 6
+Text Label 7550 2450 2    50   ~ 10
 GND
 Wire Wire Line
 	7550 2650 7450 2650
@@ -517,7 +517,7 @@ $EndComp
 Wire Wire Line
 	7300 2650 7450 2650
 Connection ~ 7450 2650
-Text Label 7000 2650 2    50   ~ 6
+Text Label 7000 2650 2    50   ~ 10
 3V3_CLKBUF
 $Comp
 L special-azonenberg:JUMPER_0402_SPDT JP?
@@ -532,12 +532,12 @@ F 3 "" H 8000 4100 60  0000 C CNN
 	1    8000 4100
 	1    0    0    -1  
 $EndComp
-Text Label 8300 3900 0    50   ~ 6
+Text Label 8300 3900 0    50   ~ 10
 BUF8_IN_SEL
-Text Label 8300 3800 0    50   ~ 6
+Text Label 8300 3800 0    50   ~ 10
 3V3_CLKBUF
-Text Label 8300 4000 0    50   ~ 6
+Text Label 8300 4000 0    50   ~ 10
 GND
-Text Label 7550 2250 2    50   ~ 6
+Text Label 7550 2250 2    50   ~ 10
 BUF8_IN_SEL
 $EndSCHEMATC

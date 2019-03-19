@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Ready for review"
@@ -14,25 +14,25 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5250 2550 0    50   Input ~ 6
+Text HLabel 5250 2550 0    50   Input ~ 10
 ADC_DIN
-Text HLabel 5250 2650 0    50   Input ~ 6
+Text HLabel 5250 2650 0    50   Input ~ 10
 ADC_VT
-Text HLabel 5100 1350 0    50   Input ~ 6
+Text HLabel 5100 1350 0    50   Input ~ 10
 3V3
-Text HLabel 5100 1750 0    50   Input ~ 6
+Text HLabel 5100 1750 0    50   Input ~ 10
 3V0_N
-Text HLabel 5100 1950 0    50   Input ~ 6
+Text HLabel 5100 1950 0    50   Input ~ 10
 GND
-Text HLabel 5100 1550 0    50   Input ~ 6
+Text HLabel 5100 1550 0    50   Input ~ 10
 1V8
-Text HLabel 8500 2500 2    50   Output ~ 6
+Text HLabel 8500 2500 2    50   Output ~ 10
 ADC_OUT_P
-Text HLabel 8500 2600 2    50   Output ~ 6
+Text HLabel 8500 2600 2    50   Output ~ 10
 ADC_OUT_N
-Text HLabel 3450 2250 0    50   Input ~ 6
+Text HLabel 3450 2250 0    50   Input ~ 10
 ADC_LE_P
-Text HLabel 3450 2150 0    50   Input ~ 6
+Text HLabel 3450 2150 0    50   Input ~ 10
 ADC_LE_N
 $Comp
 L analog-azonenberg:HMC675LP3E U8
@@ -87,9 +87,9 @@ F 3 "" H 950 1000 50  0001 C CNN
 	1    950  1000
 	1    0    0    -1  
 $EndComp
-Text Label 950  1150 2    50   ~ 6
+Text Label 950  1150 2    50   ~ 10
 GND
-Text Label 950  850  2    50   ~ 6
+Text Label 950  850  2    50   ~ 10
 3V3
 $Comp
 L device:C C?
@@ -183,9 +183,9 @@ F 3 "" H 950 1500 50  0001 C CNN
 	1    950  1500
 	1    0    0    -1  
 $EndComp
-Text Label 950  1650 2    50   ~ 6
+Text Label 950  1650 2    50   ~ 10
 GND
-Text Label 950  1350 2    50   ~ 6
+Text Label 950  1350 2    50   ~ 10
 1V8
 $Comp
 L device:C C?
@@ -217,7 +217,7 @@ Wire Wire Line
 Connection ~ 1950 1650
 Wire Wire Line
 	1950 1650 2500 1650
-Text Label 950  1850 2    50   ~ 6
+Text Label 950  1850 2    50   ~ 10
 3V0_N
 $Comp
 L device:C C?
@@ -271,7 +271,7 @@ Wire Wire Line
 Connection ~ 1450 2150
 Wire Wire Line
 	1450 2150 950  2150
-Text Label 950  2150 2    50   ~ 6
+Text Label 950  2150 2    50   ~ 10
 GND
 Wire Wire Line
 	5100 1350 5150 1350
@@ -302,9 +302,9 @@ Wire Wire Line
 Connection ~ 5150 1550
 Wire Wire Line
 	5150 1550 5250 1550
-Text Label 5250 2450 2    50   ~ 6
+Text Label 5250 2450 2    50   ~ 10
 GND
-Text Label 4950 2750 2    50   ~ 6
+Text Label 4950 2750 2    50   ~ 10
 GND
 $Comp
 L device:R R18
@@ -318,7 +318,7 @@ F 3 "" H 5100 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 6300 1350
-Text Label 6300 1550 0    50   ~ 6
+Text Label 6300 1550 0    50   ~ 10
 GND
 $Comp
 L device:C C?
@@ -350,9 +350,9 @@ F 3 "" H 3600 2250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4550 2150 3750 2150
-Text Label 3850 2150 0    50   ~ 6
+Text Label 3850 2150 0    50   ~ 10
 ADC_LE_AC_N
-Text Label 3850 2250 0    50   ~ 6
+Text Label 3850 2250 0    50   ~ 10
 ADC_LE_AC_P
 $Comp
 L device:R R85
@@ -370,7 +370,7 @@ Wire Wire Line
 Connection ~ 4550 2150
 Wire Wire Line
 	3750 2250 4550 2250
-Text Label 4550 1850 2    50   ~ 6
+Text Label 4550 1850 2    50   ~ 10
 GND
 $Comp
 L device:R R86
@@ -386,7 +386,7 @@ $EndComp
 Connection ~ 4550 2250
 Wire Wire Line
 	4550 2250 5250 2250
-Text Label 4550 2550 2    50   ~ 6
+Text Label 4550 2550 2    50   ~ 10
 GND
 $Comp
 L special-azonenberg:DS25BR150 U?
@@ -401,9 +401,9 @@ F 3 "" H 7300 2750 60  0001 C CNN
 	1    7300 2750
 	1    0    0    -1  
 $EndComp
-Text Label 6800 2200 2    50   ~ 6
+Text Label 6800 2200 2    50   ~ 10
 3V3
-Text Label 7000 2300 2    50   ~ 6
+Text Label 7000 2300 2    50   ~ 10
 GND
 $Comp
 L device:C C?
@@ -420,14 +420,14 @@ F 3 "" H 6800 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 2200 7000 2200
-Text Label 6800 1900 2    50   ~ 6
+Text Label 6800 1900 2    50   ~ 10
 GND
 Wire Wire Line
 	6300 2500 7000 2500
 Wire Wire Line
 	7000 2600 6300 2600
-Text Label 6450 2500 0    50   ~ 6
+Text Label 6450 2500 0    50   ~ 10
 ADC_CML_P
-Text Label 6450 2600 0    50   ~ 6
+Text Label 6450 2600 0    50   ~ 10
 ADC_CML_N
 $EndSCHEMATC

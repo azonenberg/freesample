@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "CDR SERDES"
@@ -58,39 +58,39 @@ F 3 "" H 14850 4750 60  0000 C CNN
 	5    14850 4750
 	1    0    0    -1  
 $EndComp
-Text Label 5300 1650 2    50   ~ 6
+Text Label 5300 1650 2    50   ~ 10
 GND
-Text Notes 2300 2200 0    50   ~ 6
+Text Notes 2300 2200 0    50   ~ 10
 Channel B not used
-Text Label 5300 1450 2    50   ~ 6
+Text Label 5300 1450 2    50   ~ 10
 GND
 NoConn ~ 5300 1550
 NoConn ~ 5300 1350
-Text HLabel 4300 2150 0    50   Input ~ 6
+Text HLabel 4300 2150 0    50   Input ~ 10
 CDR_EXTCLK_P
-Text HLabel 4300 2250 0    50   Input ~ 6
+Text HLabel 4300 2250 0    50   Input ~ 10
 CDR_EXTCLK_N
-Text HLabel 4300 2450 0    50   Output ~ 6
+Text HLabel 4300 2450 0    50   Output ~ 10
 PLL_CDRCLK_P
-Text HLabel 4300 2550 0    50   Output ~ 6
+Text HLabel 4300 2550 0    50   Output ~ 10
 PLL_CDRCLK_N
-Text HLabel 1050 1100 0    50   Input ~ 6
+Text HLabel 1050 1100 0    50   Input ~ 10
 CDR_DIN_P
-Text HLabel 1050 1300 0    50   Input ~ 6
+Text HLabel 1050 1300 0    50   Input ~ 10
 CDR_DIN_N
-Text HLabel 13300 1800 0    50   Input ~ 6
+Text HLabel 13300 1800 0    50   Input ~ 10
 1V0
-Text HLabel 1950 9250 0    50   Input ~ 6
+Text HLabel 1950 9250 0    50   Input ~ 10
 GND
-Text HLabel 13300 3600 0    50   Input ~ 6
+Text HLabel 13300 3600 0    50   Input ~ 10
 1V8
-Text HLabel 5150 3450 0    50   Input ~ 6
+Text HLabel 5150 3450 0    50   Input ~ 10
 SERDES_MODE_SEL
-Text HLabel 4200 3650 0    50   Input ~ 6
+Text HLabel 4200 3650 0    50   Input ~ 10
 SERDES_RST_N
-Text HLabel 5150 3850 0    50   Input ~ 6
+Text HLabel 5150 3850 0    50   Input ~ 10
 SERDES_MDC
-Text HLabel 4200 3950 0    50   BiDi ~ 6
+Text HLabel 4200 3950 0    50   BiDi ~ 10
 SERDES_MDIO
 $Comp
 L xilinx-azonenberg:XILINX_JTAG J6
@@ -116,19 +116,19 @@ F 3 "" H 2300 9750 50  0001 C CNN
 	1    2050 9800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1850 10750 0    50   Input ~ 6
+Text HLabel 1850 10750 0    50   Input ~ 10
 OSC_PWR_EN
-Text Notes 2050 10900 0    50   ~ 6
+Text Notes 2050 10900 0    50   ~ 10
 Need to power cycle osc to change frequency
-Text HLabel 1950 9450 0    50   Input ~ 6
+Text HLabel 1950 9450 0    50   Input ~ 10
 OSC_OE
-Text HLabel 1950 9550 0    50   Input ~ 6
+Text HLabel 1950 9550 0    50   Input ~ 10
 OSC_OS
-Text HLabel 1950 9650 0    50   Input ~ 6
+Text HLabel 1950 9650 0    50   Input ~ 10
 OSC_FS1
-Text HLabel 1950 9750 0    50   Input ~ 6
+Text HLabel 1950 9750 0    50   Input ~ 10
 OSC_FS0
-Text HLabel 1100 10250 0    50   Input ~ 6
+Text HLabel 1100 10250 0    50   Input ~ 10
 3V3
 $Comp
 L device:C C56
@@ -160,9 +160,9 @@ Wire Wire Line
 	1350 1100 2050 1100
 Wire Wire Line
 	1350 1300 2050 1300
-Text Label 1550 1100 0    50   ~ 6
+Text Label 1550 1100 0    50   ~ 10
 CDR_DIN_AC_P
-Text Label 1550 1300 0    50   ~ 6
+Text Label 1550 1300 0    50   ~ 10
 CDR_DIN_AC_N
 NoConn ~ 2050 850 
 NoConn ~ 2050 950 
@@ -186,7 +186,7 @@ F 3 "" H 1800 1850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 1950 1850
-Text Label 1650 1850 2    50   ~ 6
+Text Label 1650 1850 2    50   ~ 10
 GND
 $Comp
 L special-azonenberg:TLK10232 U5
@@ -270,7 +270,7 @@ Wire Wire Line
 Connection ~ 2050 3100
 Wire Wire Line
 	2050 3100 2150 3100
-Text Label 1550 2500 2    50   ~ 6
+Text Label 1550 2500 2    50   ~ 10
 GND
 Wire Wire Line
 	1550 2500 1650 2500
@@ -399,7 +399,7 @@ Wire Wire Line
 Connection ~ 1650 5800
 Wire Wire Line
 	1650 5800 1650 5500
-Text Label 1650 5200 2    50   ~ 6
+Text Label 1650 5200 2    50   ~ 10
 GND
 NoConn ~ 2150 6500
 NoConn ~ 2150 6600
@@ -411,11 +411,11 @@ NoConn ~ 2150 7400
 NoConn ~ 2150 7500
 NoConn ~ 5300 850 
 NoConn ~ 5300 1050
-Text Label 5300 950  2    50   ~ 6
+Text Label 5300 950  2    50   ~ 10
 1V8
-Text Label 4300 1850 2    50   ~ 6
+Text Label 4300 1850 2    50   ~ 10
 SERDES_REFCLK0_P
-Text Label 4300 1950 2    50   ~ 6
+Text Label 4300 1950 2    50   ~ 10
 SERDES_REFCLK0_N
 $Comp
 L device:C C61
@@ -439,9 +439,9 @@ F 3 "" H 4450 1950 50  0001 C CNN
 	1    4450 1950
 	0    1    1    0   
 $EndComp
-Text Label 5300 1850 2    50   ~ 6
+Text Label 5300 1850 2    50   ~ 10
 SRC0_AC_P
-Text Label 5300 1950 2    50   ~ 6
+Text Label 5300 1950 2    50   ~ 10
 SRC0_AC_N
 $Comp
 L device:C C63
@@ -465,9 +465,9 @@ F 3 "" H 4450 2250 50  0001 C CNN
 	1    4450 2250
 	0    1    1    0   
 $EndComp
-Text Label 5300 2150 2    50   ~ 6
+Text Label 5300 2150 2    50   ~ 10
 SRC1_AC_P
-Text Label 5300 2250 2    50   ~ 6
+Text Label 5300 2250 2    50   ~ 10
 SRC1_AC_N
 Wire Wire Line
 	4600 2250 5300 2250
@@ -505,11 +505,11 @@ Wire Wire Line
 	4600 2450 5300 2450
 Wire Wire Line
 	5300 2550 4600 2550
-Text Label 5300 2450 2    50   ~ 6
+Text Label 5300 2450 2    50   ~ 10
 SCLKO_DC_P
-Text Label 5300 2550 2    50   ~ 6
+Text Label 5300 2550 2    50   ~ 10
 SCLKO_DC_N
-Text Label 5300 3050 2    50   ~ 6
+Text Label 5300 3050 2    50   ~ 10
 GND
 NoConn ~ 5300 3150
 $Comp
@@ -525,25 +525,25 @@ F 3 "" H 5000 3350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5150 3350 5300 3350
-Text Label 4850 3350 2    50   ~ 6
+Text Label 4850 3350 2    50   ~ 10
 1V8
 Wire Wire Line
 	5150 3450 5300 3450
 Wire Wire Line
 	5150 3850 5300 3850
-Text Label 5150 4150 2    50   ~ 6
+Text Label 5150 4150 2    50   ~ 10
 SERDES_TDI
 Wire Wire Line
 	5150 4150 5300 4150
-Text Label 4850 4250 2    50   ~ 6
+Text Label 4850 4250 2    50   ~ 10
 SERDES_TDO
 Wire Wire Line
 	5150 4250 5300 4250
-Text Label 5150 4350 2    50   ~ 6
+Text Label 5150 4350 2    50   ~ 10
 SERDES_TMS
 Wire Wire Line
 	5150 4350 5300 4350
-Text Label 5150 4450 2    50   ~ 6
+Text Label 5150 4450 2    50   ~ 10
 SERDES_TCK
 Wire Wire Line
 	5150 4450 5300 4450
@@ -569,13 +569,13 @@ F 3 "" H 5000 4550 50  0001 C CNN
 	1    5000 4550
 	0    1    1    0   
 $EndComp
-Text Label 4850 4550 2    50   ~ 6
+Text Label 4850 4550 2    50   ~ 10
 1V8
 Wire Wire Line
 	5150 4550 5300 4550
-Text Label 5200 5000 2    50   ~ 6
+Text Label 5200 5000 2    50   ~ 10
 1V8
-Text Label 5200 5100 2    50   ~ 6
+Text Label 5200 5100 2    50   ~ 10
 GND
 Wire Wire Line
 	5200 5100 5200 5200
@@ -589,22 +589,22 @@ Connection ~ 5200 5400
 Wire Wire Line
 	5200 5400 5200 5500
 NoConn ~ 5200 5600
-Text Label 5200 5700 2    50   ~ 6
+Text Label 5200 5700 2    50   ~ 10
 SERDES_TMS
-Text Label 5200 5800 2    50   ~ 6
+Text Label 5200 5800 2    50   ~ 10
 SERDES_TCK
-Text Label 5200 5900 2    50   ~ 6
+Text Label 5200 5900 2    50   ~ 10
 SERDES_TDO
-Text Label 5200 6000 2    50   ~ 6
+Text Label 5200 6000 2    50   ~ 10
 SERDES_TDI
 NoConn ~ 5200 6100
-Text Label 1950 9150 2    50   ~ 6
+Text Label 1950 9150 2    50   ~ 10
 OSC_VDD
-Text Label 2750 9450 0    50   ~ 6
+Text Label 2750 9450 0    50   ~ 10
 SERDES_REFCLK0_P
-Text Label 2750 9550 0    50   ~ 6
+Text Label 2750 9550 0    50   ~ 10
 SERDES_REFCLK0_N
-Text Label 14650 600  2    50   ~ 6
+Text Label 14650 600  2    50   ~ 10
 GND
 Wire Wire Line
 	14650 600  14650 700 
@@ -728,7 +728,7 @@ Wire Wire Line
 Connection ~ 14650 4600
 Wire Wire Line
 	14650 4600 14650 4700
-Text Label 13300 700  2    50   ~ 6
+Text Label 13300 700  2    50   ~ 10
 A1V0_SERDES
 Wire Wire Line
 	13300 700  13450 700 
@@ -747,7 +747,7 @@ Wire Wire Line
 Connection ~ 13450 1100
 Wire Wire Line
 	13450 1100 13450 1200
-Text Label 13300 1400 2    50   ~ 6
+Text Label 13300 1400 2    50   ~ 10
 A1V0T_SERDES
 Wire Wire Line
 	13300 1400 13450 1400
@@ -789,7 +789,7 @@ Wire Wire Line
 Connection ~ 13450 2800
 Wire Wire Line
 	13450 2800 13450 2900
-Text Label 13300 3100 2    50   ~ 6
+Text Label 13300 3100 2    50   ~ 10
 A1V8_PLL_SERDES
 Wire Wire Line
 	13300 3100 13450 3100
@@ -807,7 +807,7 @@ Wire Wire Line
 Wire Wire Line
 	13450 3600 13450 3700
 Connection ~ 13450 3600
-Text Notes 5500 6250 0    50   ~ 6
+Text Notes 5500 6250 0    50   ~ 10
 Max 15 MHz JTAG
 $Comp
 L device:C C72
@@ -842,7 +842,7 @@ F 3 "" H 10100 4900 50  0001 C CNN
 	1    10100 4900
 	1    0    0    -1  
 $EndComp
-Text Label 8900 4750 2    50   ~ 6
+Text Label 8900 4750 2    50   ~ 10
 1V8
 Wire Wire Line
 	8900 4750 9050 4750
@@ -852,7 +852,7 @@ Wire Wire Line
 Connection ~ 9550 4750
 Wire Wire Line
 	9550 4750 10100 4750
-Text Label 8900 5050 2    50   ~ 6
+Text Label 8900 5050 2    50   ~ 10
 GND
 Wire Wire Line
 	8900 5050 9050 5050
@@ -862,9 +862,9 @@ Wire Wire Line
 Connection ~ 9550 5050
 Wire Wire Line
 	9550 5050 10100 5050
-Text Notes 9050 5150 0    50   ~ 6
+Text Notes 9050 5150 0    50   ~ 10
 VDDO decoupling
-Text Label 8900 4250 2    50   ~ 6
+Text Label 8900 4250 2    50   ~ 10
 1V8
 $Comp
 L passive-azonenberg:INDUCTOR_PWROUT FB4
@@ -899,7 +899,7 @@ F 3 "" H 9850 4400 50  0001 C CNN
 	1    9850 4400
 	1    0    0    -1  
 $EndComp
-Text Label 12150 4250 0    50   ~ 6
+Text Label 12150 4250 0    50   ~ 10
 A1V8_PLL_SERDES
 $Comp
 L device:C C85
@@ -967,7 +967,7 @@ Wire Wire Line
 Connection ~ 9050 4250
 Wire Wire Line
 	9050 4250 9150 4250
-Text Label 8900 4550 2    50   ~ 6
+Text Label 8900 4550 2    50   ~ 10
 GND
 Wire Wire Line
 	8900 4550 9050 4550
@@ -986,11 +986,11 @@ Wire Wire Line
 Connection ~ 11400 4550
 Wire Wire Line
 	11400 4550 11950 4550
-Text Notes 9050 4650 0    50   ~ 6
+Text Notes 9050 4650 0    50   ~ 10
 PLL decoupling
-Text Label 8900 3900 2    50   ~ 6
+Text Label 8900 3900 2    50   ~ 10
 GND
-Text Label 8900 3600 2    50   ~ 6
+Text Label 8900 3600 2    50   ~ 10
 1V0
 $Comp
 L device:C C102
@@ -1109,11 +1109,11 @@ F 3 "" H 9050 3750 50  0001 C CNN
 	1    9050 3750
 	1    0    0    -1  
 $EndComp
-Text Notes 9050 4050 0    50   ~ 6
+Text Notes 9050 4050 0    50   ~ 10
 Digital SERDES decoupling
-Text Label 8900 3300 2    50   ~ 6
+Text Label 8900 3300 2    50   ~ 10
 GND
-Text Label 8900 3000 2    50   ~ 6
+Text Label 8900 3000 2    50   ~ 10
 1V0
 $Comp
 L device:C C101
@@ -1232,9 +1232,9 @@ F 3 "" H 9050 3150 50  0001 C CNN
 	1    9050 3150
 	1    0    0    -1  
 $EndComp
-Text Notes 9050 3450 0    50   ~ 6
+Text Notes 9050 3450 0    50   ~ 10
 Digital core decoupling
-Text Label 8900 2400 2    50   ~ 6
+Text Label 8900 2400 2    50   ~ 10
 1V0
 $Comp
 L passive-azonenberg:INDUCTOR_PWROUT FB3
@@ -1318,7 +1318,7 @@ Wire Wire Line
 Connection ~ 9050 2400
 Wire Wire Line
 	9050 2400 9150 2400
-Text Label 8900 2700 2    50   ~ 6
+Text Label 8900 2700 2    50   ~ 10
 GND
 Wire Wire Line
 	8900 2700 9050 2700
@@ -1334,14 +1334,14 @@ Wire Wire Line
 Connection ~ 10850 2700
 Wire Wire Line
 	10850 2700 11400 2700
-Text Notes 9050 2800 0    50   ~ 6
+Text Notes 9050 2800 0    50   ~ 10
 Termination decoupling
-Text Label 11600 2400 0    50   ~ 6
+Text Label 11600 2400 0    50   ~ 10
 A1V0T_SERDES
 Wire Wire Line
 	11600 2400 11400 2400
 Connection ~ 11400 2400
-Text Label 8900 1700 2    50   ~ 6
+Text Label 8900 1700 2    50   ~ 10
 1V0
 $Comp
 L passive-azonenberg:INDUCTOR_PWROUT FB2
@@ -1425,7 +1425,7 @@ Wire Wire Line
 Connection ~ 9050 1700
 Wire Wire Line
 	9050 1700 9150 1700
-Text Label 8900 2000 2    50   ~ 6
+Text Label 8900 2000 2    50   ~ 10
 GND
 Wire Wire Line
 	8900 2000 9050 2000
@@ -1441,12 +1441,12 @@ Wire Wire Line
 Connection ~ 10850 2000
 Wire Wire Line
 	10850 2000 11400 2000
-Text Notes 9050 2100 0    50   ~ 6
+Text Notes 9050 2100 0    50   ~ 10
 SERDES analog decoupling
 Connection ~ 11400 1700
 Wire Wire Line
 	11600 1700 11400 1700
-Text Label 11600 1700 0    50   ~ 6
+Text Label 11600 1700 0    50   ~ 10
 A1V0_SERDES
 $Comp
 L device:C C94
@@ -1459,7 +1459,7 @@ F 3 "" H 11400 1350 50  0001 C CNN
 	1    11400 1350
 	1    0    0    -1  
 $EndComp
-Text Label 11600 1200 0    50   ~ 6
+Text Label 11600 1200 0    50   ~ 10
 A1V0_SERDES
 $Comp
 L device:C C88
@@ -1496,7 +1496,7 @@ Wire Wire Line
 Wire Wire Line
 	11600 1200 11400 1200
 Connection ~ 11400 1200
-Text Label 11600 1500 0    50   ~ 6
+Text Label 11600 1500 0    50   ~ 10
 GND
 Wire Wire Line
 	11600 1500 11400 1500
@@ -1534,11 +1534,11 @@ F 3 "" H 2050 10800 60  0000 C CNN
 	1    2050 10800
 	1    0    0    -1  
 $EndComp
-Text Label 1000 10550 2    50   ~ 6
+Text Label 1000 10550 2    50   ~ 10
 GND
 Wire Wire Line
 	1850 10450 1850 10550
-Text Label 3750 10250 0    50   ~ 6
+Text Label 3750 10250 0    50   ~ 10
 OSC_VDD
 Wire Wire Line
 	3750 10250 3450 10250
@@ -1548,7 +1548,7 @@ Wire Wire Line
 Connection ~ 3450 10250
 Wire Wire Line
 	3450 10250 2950 10250
-Text Label 2850 10550 2    50   ~ 6
+Text Label 2850 10550 2    50   ~ 10
 GND
 Wire Wire Line
 	2850 10550 2950 10550
@@ -1578,9 +1578,9 @@ Wire Notes Line width 20 style solid
 	550  8800 4450 8800
 Wire Notes Line width 20 style solid
 	4450 8800 4450 11150
-Text Notes 550  11150 0    100  ~ 6
+Text Notes 550  11150 0    100  ~ 20
 CDR PLL reference clock
-Text HLabel 4850 1150 0    50   Input ~ 6
+Text HLabel 4850 1150 0    50   Input ~ 10
 CDR_POWER_EN
 NoConn ~ 6950 1550
 $Comp
@@ -1594,7 +1594,7 @@ F 3 "" H 7250 1650 50  0001 C CNN
 	1    7250 1650
 	0    1    1    0   
 $EndComp
-Text Label 7600 1650 0    50   ~ 6
+Text Label 7600 1650 0    50   ~ 10
 GND
 Wire Wire Line
 	7600 1650 7400 1650
@@ -1628,7 +1628,7 @@ Wire Wire Line
 Connection ~ 6950 1150
 Wire Wire Line
 	6950 1150 6950 1050
-Text Label 7100 850  0    50   ~ 6
+Text Label 7100 850  0    50   ~ 10
 GND
 Connection ~ 6950 850 
 Wire Wire Line
@@ -1645,7 +1645,7 @@ F 3 "" H 4200 3500 50  0001 C CNN
 	1    4200 3500
 	-1   0    0    1   
 $EndComp
-Text Label 4200 3350 2    50   ~ 6
+Text Label 4200 3350 2    50   ~ 10
 GND
 Wire Wire Line
 	4200 3650 5300 3650
@@ -1662,7 +1662,7 @@ F 3 "" H 4200 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 3950 5300 3950
-Text Label 4200 4350 2    50   ~ 6
+Text Label 4200 4350 2    50   ~ 10
 1V8
 Wire Wire Line
 	4200 4250 4200 4350
@@ -1680,7 +1680,7 @@ $EndComp
 Wire Wire Line
 	5150 4650 5150 4550
 Connection ~ 5150 4550
-Text Label 4850 4650 2    50   ~ 6
+Text Label 4850 4650 2    50   ~ 10
 GND
 $Comp
 L device:R R101
@@ -1696,7 +1696,7 @@ $EndComp
 Wire Wire Line
 	7100 1750 7100 1850
 Connection ~ 7100 1750
-Text Label 7600 1850 0    50   ~ 6
+Text Label 7600 1850 0    50   ~ 10
 1V8
 Wire Wire Line
 	7600 1850 7400 1850
@@ -1714,13 +1714,13 @@ $EndComp
 Wire Wire Line
 	7100 1500 7100 1650
 Connection ~ 7100 1650
-Text Label 7600 1500 0    50   ~ 6
+Text Label 7600 1500 0    50   ~ 10
 1V8
 Wire Wire Line
 	7600 1500 7400 1500
-Text Notes 2850 9250 0    50   ~ 6
+Text Notes 2850 9250 0    50   ~ 10
 DO NOT use external pull resistors\non OSC_FS* since they are 3-level\nstraps. Default with FS0/FS1 floating\nis 156.25 MHz.
-Text Notes 2850 9750 0    50   ~ 6
+Text Notes 2850 9750 0    50   ~ 10
 OS floating = LVDS output\nOE pulled high = output active
 $Comp
 L device:R R102
@@ -1733,11 +1733,11 @@ F 3 "" H 1100 9100 50  0001 C CNN
 	1    1100 9100
 	1    0    0    -1  
 $EndComp
-Text Label 950  9250 2    50   ~ 6
+Text Label 950  9250 2    50   ~ 10
 GND
 Wire Wire Line
 	950  9250 1100 9250
-Text Label 1100 8950 2    50   ~ 6
+Text Label 1100 8950 2    50   ~ 10
 OSC_PWR_EN
 $Comp
 L device:R R103
@@ -1750,9 +1750,9 @@ F 3 "" H 1100 9600 50  0001 C CNN
 	1    1100 9600
 	1    0    0    -1  
 $EndComp
-Text Label 1100 9750 2    50   ~ 6
+Text Label 1100 9750 2    50   ~ 10
 OSC_VDD
-Text Label 1100 9450 2    50   ~ 6
+Text Label 1100 9450 2    50   ~ 10
 OSC_OE
 Wire Wire Line
 	4850 1150 4900 1150
@@ -1770,6 +1770,6 @@ $EndComp
 Connection ~ 4900 1150
 Wire Wire Line
 	4900 1150 5300 1150
-Text Label 4900 850  2    50   ~ 6
+Text Label 4900 850  2    50   ~ 10
 GND
 $EndSCHEMATC

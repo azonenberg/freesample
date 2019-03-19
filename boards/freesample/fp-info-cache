@@ -1,4 +1,4 @@
-320729520334118
+323898660181118
 azonenberg_pcb
 ATC_AT_0603
 
@@ -1085,6 +1085,13 @@ PUI_AST-01532MR-R_SPEAKER
 2
 2
 azonenberg_pcb
+QFN_8_5x7MM_TI_SIA
+
+
+0
+8
+8
+azonenberg_pcb
 QFN_10_0.4MM_1.8x1.5MM
 
 
@@ -1469,6 +1476,13 @@ TSSOP_24_0.65MM_5MM_EPAD_5x3p2
 0
 25
 25
+azonenberg_pcb
+VCXO_5x7MM_ASG_D
+
+
+0
+6
+6
 azonenberg_pcb
 VICOR_PI34XX
 

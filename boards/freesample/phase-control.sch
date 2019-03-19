@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-17"
+Date "2019-03-19"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Fine phase shifting for sampling point X position"
@@ -14,47 +14,47 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4850 2250 2    50   Output ~ 6
+Text HLabel 4850 2250 2    50   Output ~ 10
 FINEPHASE_P
-Text HLabel 4850 2350 2    50   Output ~ 6
+Text HLabel 4850 2350 2    50   Output ~ 10
 FINEPHASE_N
-Text HLabel 2750 2200 0    50   Input ~ 6
+Text HLabel 2750 2200 0    50   Input ~ 10
 CLKIN0_P
-Text HLabel 2750 2400 0    50   Input ~ 6
+Text HLabel 2750 2400 0    50   Input ~ 10
 CLKIN0_N
-Text HLabel 3400 5100 0    50   Input ~ 6
+Text HLabel 3400 5100 0    50   Input ~ 10
 3V3
-Text HLabel 4800 2550 2    50   Input ~ 6
+Text HLabel 4800 2550 2    50   Input ~ 10
 GND
-Text HLabel 4650 6200 2    50   Input ~ 6
+Text HLabel 4650 6200 2    50   Input ~ 10
 COARSE_EN
-Text HLabel 4650 6300 2    50   Input ~ 6
+Text HLabel 4650 6300 2    50   Input ~ 10
 COARSE_SLOAD
-Text HLabel 4650 6400 2    50   Input ~ 6
+Text HLabel 4650 6400 2    50   Input ~ 10
 COARSE_SDIN
-Text HLabel 4650 6500 2    50   Input ~ 6
+Text HLabel 4650 6500 2    50   Input ~ 10
 COARSE_SCLK
-Text HLabel 3500 1850 0    50   Input ~ 6
+Text HLabel 3500 1850 0    50   Input ~ 10
 3V3_N
-Text HLabel 1900 2550 0    50   Input ~ 6
+Text HLabel 1900 2550 0    50   Input ~ 10
 FINE_SEL0_P
-Text HLabel 1900 2650 0    50   Input ~ 6
+Text HLabel 1900 2650 0    50   Input ~ 10
 FINE_SEL0_N
-Text HLabel 2750 2850 0    50   Input ~ 6
+Text HLabel 2750 2850 0    50   Input ~ 10
 FINE_SEL1_P
-Text HLabel 2750 2950 0    50   Input ~ 6
+Text HLabel 2750 2950 0    50   Input ~ 10
 FINE_SEL1_N
-Text HLabel 1900 3150 0    50   Input ~ 6
+Text HLabel 1900 3150 0    50   Input ~ 10
 FINE_SEL2_P
-Text HLabel 1900 3250 0    50   Input ~ 6
+Text HLabel 1900 3250 0    50   Input ~ 10
 FINE_SEL2_N
-Text HLabel 2750 3450 0    50   Input ~ 6
+Text HLabel 2750 3450 0    50   Input ~ 10
 FINE_SEL3_P
-Text HLabel 2750 3550 0    50   Input ~ 6
+Text HLabel 2750 3550 0    50   Input ~ 10
 FINE_SEL3_N
-Text HLabel 1900 3750 0    50   Input ~ 6
+Text HLabel 1900 3750 0    50   Input ~ 10
 FINE_SEL4_P
-Text HLabel 1900 3850 0    50   Input ~ 6
+Text HLabel 1900 3850 0    50   Input ~ 10
 FINE_SEL4_N
 $Comp
 L special-azonenberg:HMC856 U16
@@ -129,12 +129,12 @@ F 3 "" H 1650 950 50  0001 C CNN
 	1    1650 950 
 	1    0    0    -1  
 $EndComp
-Text Label 950  800  2    50   ~ 6
+Text Label 950  800  2    50   ~ 10
 3V3_N
 Wire Wire Line
 	950  800  1200 800 
 Connection ~ 1200 800 
-Text Label 950  1100 2    50   ~ 6
+Text Label 950  1100 2    50   ~ 10
 GND
 Wire Wire Line
 	950  1100 1200 1100
@@ -160,7 +160,7 @@ Wire Wire Line
 	1650 800  2150 800 
 Wire Wire Line
 	1650 1100 2150 1100
-Text Label 950  1400 2    50   ~ 6
+Text Label 950  1400 2    50   ~ 10
 3V3
 $Comp
 L device:R R19
@@ -175,7 +175,7 @@ F 3 "" H 1200 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1050 1400 950  1400
-Text Label 1350 1550 0    50   ~ 6
+Text Label 1350 1550 0    50   ~ 10
 DELAY_VR
 Wire Wire Line
 	1350 1400 1350 1650
@@ -195,11 +195,11 @@ $EndComp
 Wire Wire Line
 	1500 1400 1350 1400
 Connection ~ 1350 1400
-Text Label 1800 1400 0    50   ~ 6
+Text Label 1800 1400 0    50   ~ 10
 3V3_N
-Text Notes 1350 1650 0    50   ~ 6
+Text Notes 1350 1650 0    50   ~ 10
 -1200 to +400 mV -> 500 to 1350 mV p-p
-Text Notes 1400 1750 0    50   ~ 6
+Text Notes 1400 1750 0    50   ~ 10
 -800 mV gives 700 mV p-p output
 $Comp
 L device:C C173
@@ -250,7 +250,7 @@ Wire Wire Line
 Connection ~ 3250 1650
 Wire Wire Line
 	3250 1650 3600 1650
-Text Label 3250 800  2    50   ~ 6
+Text Label 3250 800  2    50   ~ 10
 GND
 $Comp
 L device:R R21
@@ -263,7 +263,7 @@ F 3 "" H 4950 3550 50  0001 C CNN
 	1    4950 3550
 	0    1    1    0   
 $EndComp
-Text Label 5100 3550 0    50   ~ 6
+Text Label 5100 3550 0    50   ~ 10
 GND
 Wire Wire Line
 	4850 2250 4700 2250
@@ -297,7 +297,7 @@ Wire Wire Line
 Connection ~ 3650 5500
 Wire Wire Line
 	3650 5500 3650 5600
-Text Label 3400 5800 2    50   ~ 6
+Text Label 3400 5800 2    50   ~ 10
 GND
 Wire Wire Line
 	3400 5800 3650 5800
@@ -311,9 +311,9 @@ Wire Wire Line
 	3650 6400 3650 6500
 NoConn ~ 4650 7000
 NoConn ~ 4650 7100
-Text HLabel 2000 6800 0    50   Input ~ 6
+Text HLabel 2000 6800 0    50   Input ~ 10
 CLKIN1_N
-Text HLabel 2000 6700 0    50   Input ~ 6
+Text HLabel 2000 6700 0    50   Input ~ 10
 CLKIN1_P
 $Comp
 L device:C C163
@@ -326,9 +326,9 @@ F 3 "" H 1200 4850 50  0001 C CNN
 	1    1200 4850
 	1    0    0    -1  
 $EndComp
-Text Label 1050 4700 2    50   ~ 6
+Text Label 1050 4700 2    50   ~ 10
 3V3
-Text Label 1050 5000 2    50   ~ 6
+Text Label 1050 5000 2    50   ~ 10
 GND
 $Comp
 L device:C C166
@@ -428,28 +428,28 @@ Wire Wire Line
 Connection ~ 2300 5400
 Wire Wire Line
 	2300 5400 1750 5400
-Text Label 1750 5100 2    50   ~ 6
+Text Label 1750 5100 2    50   ~ 10
 3V3
-Text Label 1750 5400 2    50   ~ 6
+Text Label 1750 5400 2    50   ~ 10
 GND
-Text Label 3500 7000 2    50   ~ 6
+Text Label 3500 7000 2    50   ~ 10
 3V3
 Wire Wire Line
 	3500 7000 3650 7000
 NoConn ~ 3650 6000
 NoConn ~ 3650 6100
-Text Label 3400 6300 2    50   ~ 6
+Text Label 3400 6300 2    50   ~ 10
 GND
 Wire Wire Line
 	3400 6300 3650 6300
 Connection ~ 3650 6300
-Text Notes 2750 7450 0    50   ~ 6
+Text Notes 2750 7450 0    50   ~ 10
 Need nonzero differential on IN1 per datasheet\nfootnote 1 on page 3. IN1_N must be 1050 to\n3150 mV so we can't just ground it.
 Wire Notes Line width 20 style solid
 	500  4200 11200 4200
-Text Notes 550  4150 0    98   ~ 6
+Text Notes 550  4150 0    98   ~ 20
 Fine delay line for PLL/CDR mode (1 Tsps max when combined w/ LMK04806)
-Text Notes 550  7700 0    98   ~ 6
+Text Notes 550  7700 0    98   ~ 20
 Coarse delay line for non-repetitive triggers (90 GSa/s max)
 $Comp
 L device:C C269
@@ -481,9 +481,9 @@ Wire Wire Line
 	3050 2400 3600 2400
 Wire Wire Line
 	3600 2400 3600 2350
-Text Label 3050 2200 0    50   ~ 6
+Text Label 3050 2200 0    50   ~ 10
 CLKIN0_AC_P
-Text Label 3050 2400 0    50   ~ 6
+Text Label 3050 2400 0    50   ~ 10
 CLKIN0_AC_N
 $Comp
 L device:C C263
@@ -615,27 +615,27 @@ Wire Wire Line
 	2200 3750 3600 3750
 Wire Wire Line
 	3600 3850 2200 3850
-Text Label 3150 2550 0    50   ~ 6
+Text Label 3150 2550 0    50   ~ 10
 FS0_AC_P
-Text Label 3150 2650 0    50   ~ 6
+Text Label 3150 2650 0    50   ~ 10
 FS0_AC_N
-Text Label 3250 2850 0    50   ~ 6
+Text Label 3250 2850 0    50   ~ 10
 FS1_AC_P
-Text Label 3250 2950 0    50   ~ 6
+Text Label 3250 2950 0    50   ~ 10
 FS1_AC_N
-Text Label 3150 3150 0    50   ~ 6
+Text Label 3150 3150 0    50   ~ 10
 FS2_AC_P
-Text Label 3150 3250 0    50   ~ 6
+Text Label 3150 3250 0    50   ~ 10
 FS2_AC_N
-Text Label 3250 3450 0    50   ~ 6
+Text Label 3250 3450 0    50   ~ 10
 FS3_AC_P
-Text Label 3250 3550 0    50   ~ 6
+Text Label 3250 3550 0    50   ~ 10
 FS3_AC_N
-Text Label 3150 3750 0    50   ~ 6
+Text Label 3150 3750 0    50   ~ 10
 FS4_AC_P
-Text Label 3150 3850 0    50   ~ 6
+Text Label 3150 3850 0    50   ~ 10
 FS4_AC_N
-Text Notes 5650 2900 0    50   ~ 6
+Text Notes 5650 2900 0    50   ~ 10
 NOTE: FINE_SEL inputs are AC coupled despite being slow.\nThis effectively makes them dynamic logic.\nTo prevent invalid states from appearing on on the input buffers,\nthe FPGA must periodically invert the delay value and return to\nthe desired value, during the dead time in between acquisitions.\nCalculations suggest 75 us to discharge coupling cap.\nEnforcing 1 MHz min toggle rate should be conservative.
 $Comp
 L device:R R76
@@ -648,11 +648,11 @@ F 3 "" H 6450 1300 50  0001 C CNN
 	1    6450 1300
 	0    1    1    0   
 $EndComp
-Text Label 6300 1300 2    50   ~ 6
+Text Label 6300 1300 2    50   ~ 10
 FS0_AC_N
-Text Label 6600 1300 0    50   ~ 6
+Text Label 6600 1300 0    50   ~ 10
 3V3_N
-Text Notes 7050 850  0    50   ~ 6
+Text Notes 7050 850  0    50   ~ 10
 We want FS* to default to 5'b11111 at power up.\nTerminator is 600R to ground on both sides.\nP side is left floating so terminator pulls it high.\n10K gives us -186 mV at the N side.
 $Comp
 L device:R R77
@@ -665,7 +665,7 @@ F 3 "" H 6450 1500 50  0001 C CNN
 	1    6450 1500
 	0    1    1    0   
 $EndComp
-Text Label 6300 1500 2    50   ~ 6
+Text Label 6300 1500 2    50   ~ 10
 FS1_AC_N
 $Comp
 L device:R R78
@@ -678,7 +678,7 @@ F 3 "" H 6450 1700 50  0001 C CNN
 	1    6450 1700
 	0    1    1    0   
 $EndComp
-Text Label 6300 1700 2    50   ~ 6
+Text Label 6300 1700 2    50   ~ 10
 FS2_AC_N
 $Comp
 L device:R R79
@@ -691,7 +691,7 @@ F 3 "" H 6450 1900 50  0001 C CNN
 	1    6450 1900
 	0    1    1    0   
 $EndComp
-Text Label 6300 1900 2    50   ~ 6
+Text Label 6300 1900 2    50   ~ 10
 FS3_AC_N
 $Comp
 L device:R R80
@@ -704,7 +704,7 @@ F 3 "" H 6450 2100 50  0001 C CNN
 	1    6450 2100
 	0    1    1    0   
 $EndComp
-Text Label 6300 2100 2    50   ~ 6
+Text Label 6300 2100 2    50   ~ 10
 FS4_AC_N
 Wire Wire Line
 	6600 2100 6600 1900
@@ -748,9 +748,9 @@ Wire Wire Line
 Wire Wire Line
 	2900 7100 3650 7100
 Connection ~ 2900 7100
-Text Label 2500 7000 2    50   ~ 6
+Text Label 2500 7000 2    50   ~ 10
 3V3
-Text Label 2500 7100 2    50   ~ 6
+Text Label 2500 7100 2    50   ~ 10
 GND
 $Comp
 L device:C C291
@@ -778,13 +778,13 @@ Wire Wire Line
 	2300 6700 3650 6700
 Wire Wire Line
 	2300 6800 3650 6800
-Text Label 2900 6700 0    50   ~ 6
+Text Label 2900 6700 0    50   ~ 10
 CLKIN1_AC_P
-Text Label 2900 6800 0    50   ~ 6
+Text Label 2900 6800 0    50   ~ 10
 CLKIN1_AC_N
-Text HLabel 4650 6800 2    50   Output ~ 6
+Text HLabel 4650 6800 2    50   Output ~ 10
 COARSEPHASE_N
-Text HLabel 4650 6700 2    50   Output ~ 6
+Text HLabel 4650 6700 2    50   Output ~ 10
 COARSEPHASE_P
 $Comp
 L device:R R83
@@ -797,9 +797,9 @@ F 3 "" H 5800 5300 50  0001 C CNN
 	1    5800 5300
 	0    1    1    0   
 $EndComp
-Text Label 5950 5300 0    50   ~ 6
+Text Label 5950 5300 0    50   ~ 10
 COARSEPHASE_P
-Text Label 5650 5300 2    50   ~ 6
+Text Label 5650 5300 2    50   ~ 10
 3V3
 $Comp
 L device:R R84
@@ -812,11 +812,11 @@ F 3 "" H 5800 5500 50  0001 C CNN
 	1    5800 5500
 	0    1    1    0   
 $EndComp
-Text Label 5650 5500 2    50   ~ 6
+Text Label 5650 5500 2    50   ~ 10
 GND
 Wire Wire Line
 	5950 5500 5950 5300
-Text Notes 5500 5100 0    50   ~ 6
+Text Notes 5500 5100 0    50   ~ 10
 LVPECL Thevenin load resistors
 Wire Wire Line
 	4800 3550 4700 3550
@@ -831,9 +831,9 @@ F 3 "" H 5800 5750 50  0001 C CNN
 	1    5800 5750
 	0    1    1    0   
 $EndComp
-Text Label 5950 5750 0    50   ~ 6
+Text Label 5950 5750 0    50   ~ 10
 COARSEPHASE_N
-Text Label 5650 5750 2    50   ~ 6
+Text Label 5650 5750 2    50   ~ 10
 3V3
 $Comp
 L device:R R96
@@ -846,7 +846,7 @@ F 3 "" H 5800 5950 50  0001 C CNN
 	1    5800 5950
 	0    1    1    0   
 $EndComp
-Text Label 5650 5950 2    50   ~ 6
+Text Label 5650 5950 2    50   ~ 10
 GND
 Wire Wire Line
 	5950 5950 5950 5750
@@ -861,9 +861,9 @@ F 3 "" H 5800 6200 50  0001 C CNN
 	1    5800 6200
 	0    1    1    0   
 $EndComp
-Text Label 5650 6200 2    50   ~ 6
+Text Label 5650 6200 2    50   ~ 10
 GND
-Text Label 5950 6200 0    50   ~ 6
+Text Label 5950 6200 0    50   ~ 10
 COARSE_EN
 $Comp
 L device:R R105
@@ -878,6 +878,6 @@ F 3 "" H 5800 6400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5650 6200 5650 6400
-Text Label 5950 6400 0    50   ~ 6
+Text Label 5950 6400 0    50   ~ 10
 COARSE_SLOAD
 $EndSCHEMATC
