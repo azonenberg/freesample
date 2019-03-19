@@ -14,15 +14,15 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8850 950  0    50   Input ~ 10
+Text HLabel 8850 950  0    50   Input ~ 0
 CDRCLK_P
-Text HLabel 8850 1050 0    50   Input ~ 10
+Text HLabel 8850 1050 0    50   Input ~ 0
 CDRCLK_N
-Text HLabel 8850 1250 0    50   Input ~ 10
+Text HLabel 8850 1250 0    50   Input ~ 0
 EXTCLK_P
-Text HLabel 8850 1350 0    50   Input ~ 10
+Text HLabel 8850 1350 0    50   Input ~ 0
 EXTCLK_N
-Text HLabel 1050 2350 0    50   Input ~ 10
+Text HLabel 1050 2350 0    50   Input ~ 0
 3V3
 Text HLabel 1350 3750 0    50   Input ~ 10
 GND
@@ -30,21 +30,21 @@ Text HLabel 10250 950  2    50   Output ~ 10
 SAMPCLK_P
 Text HLabel 10250 1050 2    50   Output ~ 10
 SAMPCLK_N
-Text HLabel 1600 1000 0    50   Input ~ 10
+Text HLabel 1600 1000 0    50   Input ~ 0
 SYNC
-Text HLabel 1600 1600 0    50   Output ~ 10
+Text HLabel 1600 1600 0    50   Output ~ 0
 STATUS_HOLDOVER
-Text HLabel 1600 1700 0    50   Output ~ 10
+Text HLabel 1600 1700 0    50   Output ~ 0
 STATUS_LD
-Text HLabel 1600 1200 0    50   Input ~ 10
+Text HLabel 1600 1200 0    50   Input ~ 0
 UWIRE_LE
-Text HLabel 1600 1300 0    50   Input ~ 10
+Text HLabel 1600 1300 0    50   Input ~ 0
 UWIRE_CLK
-Text HLabel 1600 1400 0    50   BiDi ~ 10
+Text HLabel 1600 1400 0    50   BiDi ~ 0
 UWIRE_DATA
-Text HLabel 1600 1800 0    50   Output ~ 10
+Text HLabel 1600 1800 0    50   Output ~ 0
 STATUS_CLKIN0
-Text HLabel 1600 1900 0    50   Output ~ 10
+Text HLabel 1600 1900 0    50   Output ~ 0
 STATUS_CLKIN1
 $Comp
 L special-azonenberg:LMK04806 U14
@@ -112,19 +112,19 @@ Wire Wire Line
 Connection ~ 1500 2450
 Wire Wire Line
 	1500 2450 1500 2550
-Text Label 1500 2850 2    50   ~ 10
+Text Label 1500 2850 2    50   ~ 0
 VCC_CP1
 Wire Wire Line
 	1500 2850 1600 2850
-Text Label 1500 3050 2    50   ~ 10
+Text Label 1500 3050 2    50   ~ 0
 VCC_CP2
 Wire Wire Line
 	1500 3050 1600 3050
-Text Label 1500 2950 2    50   ~ 10
+Text Label 1500 2950 2    50   ~ 0
 3V3
 Wire Wire Line
 	1500 2950 1600 2950
-Text Label 1500 3150 2    50   ~ 10
+Text Label 1500 3150 2    50   ~ 0
 3V3
 Wire Wire Line
 	1500 3150 1600 3150
@@ -532,13 +532,11 @@ NoConn ~ 10250 4250
 NoConn ~ 10250 4350
 NoConn ~ 10250 4550
 NoConn ~ 10250 4650
-Text Label 3100 2650 0    50   ~ 10
+Text Label 3100 2650 0    50   ~ 0
 PLL_CP1
 Wire Wire Line
 	3100 2650 2950 2650
-Text Label 3550 3100 2    50   ~ 10
-PLL_CP1
-Text Label 3550 3700 2    50   ~ 10
+Text Label 3550 3700 2    50   ~ 0
 GND
 $Comp
 L device:C C116
@@ -568,8 +566,6 @@ Wire Wire Line
 	3550 3700 3550 3400
 Wire Wire Line
 	3550 3100 4250 3100
-Text Notes 3550 3800 0    50   ~ 10
-PLL1 loop filter
 $Comp
 L device:C C119
 U 1 1 5C948463
@@ -581,10 +577,6 @@ F 3 "" H 5150 3250 50  0001 C CNN
 	1    5150 3250
 	1    0    0    -1  
 $EndComp
-Text Label 5150 3100 2    50   ~ 10
-PLL_CP2
-Text Label 5150 3700 2    50   ~ 10
-GND
 $Comp
 L device:C C121
 U 1 1 5C94846F
@@ -613,8 +605,6 @@ Wire Wire Line
 	5150 3700 5150 3400
 Wire Wire Line
 	5150 3100 5850 3100
-Text Notes 5150 3800 0    50   ~ 10
-PLL2 loop filter
 $Comp
 L osc-azonenberg:OSC_LVDS_VCXO U15
 U 1 1 5C94EDE7
@@ -663,7 +653,7 @@ Wire Wire Line
 	6800 1350 6900 1350
 Text Label 6800 1050 2    50   ~ 10
 GND
-Text Label 3100 2750 0    50   ~ 10
+Text Label 3100 2750 0    50   ~ 0
 PLL_CP2
 Wire Wire Line
 	3100 2750 2950 2750
@@ -680,8 +670,6 @@ F 3 "" H 3100 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 2350 3100 2350
-Text Label 3100 2050 2    50   ~ 10
-GND
 $Comp
 L device:C C128
 U 1 1 5C96F480
@@ -699,7 +687,7 @@ Wire Wire Line
 	3100 2050 3600 2050
 Wire Wire Line
 	3600 2050 3600 2150
-Text Notes 4650 1650 0    50   ~ 10
+Text Notes 4650 1650 0    50   ~ 0
 PLL CONFIGURATION\nLoop 1\n  1.6 mA charge pump gain\n  25 MHz phase det\nLoop 2\n  3.2 mA charge pump gain\n  2.5 GHz Fvco\n  50 MHz PFD\n  C3/C4 = 0.01 nF\n  R3/R4 = 0.2K
 $Comp
 L device:C C114
@@ -796,4 +784,16 @@ Text Label 10250 4950 0    50   ~ 10
 OSCOUT_N
 Text Notes 10350 5300 0    50   ~ 10
 Debug test point
+Text Label 5150 3700 2    50   ~ 0
+GND
+Text Label 5150 3100 2    50   ~ 0
+PLL_CP2
+Text Notes 5150 3800 0    50   ~ 0
+PLL2 loop filter
+Text Notes 3550 3800 0    50   ~ 0
+PLL1 loop filter
+Text Label 3100 2050 2    50   ~ 0
+GND
+Text Label 3550 3100 2    50   ~ 0
+PLL_CP1
 $EndSCHEMATC

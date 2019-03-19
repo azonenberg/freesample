@@ -193,15 +193,15 @@ F10 "LTRIG_SAMPOUT_P" O R 4300 1450 50
 F11 "LTRIG_SAMPOUT_N" O R 4300 1550 50 
 F12 "3V3_CLKBUF" I L 2750 1150 50 
 $EndSheet
-Text Label 5550 1250 2    50   ~ 10
+Text Label 5550 1250 2    50   ~ 0
 1V8
 Wire Wire Line
 	5550 1250 5650 1250
-Text Label 5550 1350 2    50   ~ 10
+Text Label 5550 1350 2    50   ~ 0
 1V0
 Wire Wire Line
 	5550 1350 5650 1350
-Text Label 5550 1450 2    50   ~ 10
+Text Label 5550 1450 2    50   ~ 0
 GND
 Wire Wire Line
 	5550 1450 5650 1450
@@ -339,11 +339,11 @@ F13 "3V3_CLKBUF" O R 1700 2300 50
 F14 "5V25" O R 1700 2100 50 
 F15 "D3V3" I L 850 2100 50 
 $EndSheet
-Text Label 8300 1100 2    50   ~ 10
+Text Label 8300 1100 2    50   ~ 0
 3V3_PLL
 Wire Wire Line
 	8300 1100 8400 1100
-Text Label 8300 1200 2    50   ~ 10
+Text Label 8300 1200 2    50   ~ 0
 GND
 Wire Wire Line
 	8300 1200 8400 1200
@@ -379,27 +379,27 @@ Text Label 750  3900 2    50   ~ 10
 5V0_N
 Wire Wire Line
 	750  3900 850  3900
-Text Label 5550 2350 2    50   ~ 10
+Text Label 5550 2350 2    50   ~ 0
 3V3
 Wire Wire Line
 	5650 2350 5550 2350
-Text Label 5550 2550 2    50   ~ 10
+Text Label 5550 2550 2    50   ~ 0
 1V8
 Wire Wire Line
 	5550 2550 5650 2550
-Text Label 5550 2650 2    50   ~ 10
+Text Label 5550 2650 2    50   ~ 0
 GND
 Wire Wire Line
 	5550 2650 5650 2650
-Text Label 5550 2750 2    50   ~ 10
+Text Label 5550 2750 2    50   ~ 0
 3V0_N
 Wire Wire Line
 	5550 2750 5650 2750
-Text Label 5550 2950 2    50   ~ 10
+Text Label 5550 2950 2    50   ~ 0
 REFCLK_SINGLE_VT
 Wire Wire Line
 	5550 2950 5650 2950
-Text Label 5550 3050 2    50   ~ 10
+Text Label 5550 3050 2    50   ~ 0
 EXT_CLK_SEL
 Wire Wire Line
 	5550 3050 5650 3050
@@ -503,19 +503,19 @@ Wire Wire Line
 	1950 4400 2100 4400
 Wire Wire Line
 	2100 4500 1950 4500
-Text Label 5550 1750 2    50   ~ 10
+Text Label 5550 1750 2    50   ~ 0
 SERDES_MODE_SEL
 Wire Wire Line
 	5550 1750 5650 1750
-Text Label 5550 1850 2    50   ~ 10
+Text Label 5550 1850 2    50   ~ 0
 SERDES_RST_N
 Wire Wire Line
 	5550 1850 5650 1850
-Text Label 5550 1950 2    50   ~ 10
+Text Label 5550 1950 2    50   ~ 0
 SERDES_MDC
 Wire Wire Line
 	5550 1950 5650 1950
-Text Label 5550 2050 2    50   ~ 10
+Text Label 5550 2050 2    50   ~ 0
 SERDES_MDIO
 Wire Wire Line
 	5550 2050 5650 2050
@@ -527,13 +527,13 @@ Text Label 1950 10250 0    50   ~ 10
 SERDES_MDC
 Text Label 1950 10350 0    50   ~ 10
 SERDES_MDIO
-Text Label 7400 1100 0    50   ~ 10
+Text Label 7400 1100 0    50   ~ 0
 OSC_PWR_EN
-Text Label 7400 1300 0    50   ~ 10
+Text Label 7400 1300 0    50   ~ 0
 OSC_OS
-Text Label 7400 1400 0    50   ~ 10
+Text Label 7400 1400 0    50   ~ 0
 OSC_FS1
-Text Label 7400 1500 0    50   ~ 10
+Text Label 7400 1500 0    50   ~ 0
 OSC_FS0
 Text Label 1950 7100 0    50   ~ 10
 OSC_PWR_EN
@@ -545,9 +545,9 @@ Text Label 1950 5400 0    50   ~ 10
 OSC_FS1
 Text Label 1950 5500 0    50   ~ 10
 OSC_FS0
-Text Label 7400 1200 0    50   ~ 10
+Text Label 7400 1200 0    50   ~ 0
 OSC_OE
-Text Label 5550 1150 2    50   ~ 10
+Text Label 5550 1150 2    50   ~ 0
 3V3_PLL
 Wire Wire Line
 	5550 1150 5650 1150
@@ -573,21 +573,21 @@ Wire Wire Line
 	7250 900  8400 900 
 Wire Wire Line
 	7250 800  8400 800 
-Text Label 8300 1400 2    50   ~ 10
+Text Label 8300 1400 2    50   ~ 0
 PLL_SYNC
-Text Label 8300 1500 2    50   ~ 10
+Text Label 8300 1500 2    50   ~ 0
 PLL_HOLDOVER
-Text Label 8300 1600 2    50   ~ 10
+Text Label 8300 1600 2    50   ~ 0
 PLL_LD
-Text Label 8300 1700 2    50   ~ 10
+Text Label 8300 1700 2    50   ~ 0
 PLL_LE
-Text Label 8300 1800 2    50   ~ 10
+Text Label 8300 1800 2    50   ~ 0
 PLL_CLK
-Text Label 8300 1900 2    50   ~ 10
+Text Label 8300 1900 2    50   ~ 0
 PLL_DATA
-Text Label 8300 2000 2    50   ~ 10
+Text Label 8300 2000 2    50   ~ 0
 PLL_CLKIN0
-Text Label 8300 2100 2    50   ~ 10
+Text Label 8300 2100 2    50   ~ 0
 PLL_CLKIN1
 Text Label 1950 5600 0    50   ~ 10
 PLL_SYNC
@@ -956,7 +956,7 @@ Text Label 1800 2400 0    50   ~ 10
 3V3_PLL
 Wire Wire Line
 	1800 2400 1700 2400
-Text Label 5550 2450 2    50   ~ 10
+Text Label 5550 2450 2    50   ~ 0
 3V3_CLKBUF
 Wire Wire Line
 	5550 2450 5650 2450
@@ -972,15 +972,15 @@ Wire Wire Line
 	4300 1450 4650 1450
 Wire Wire Line
 	4650 1450 4650 3250
-Text Label 5550 1650 2    50   ~ 10
+Text Label 5550 1650 2    50   ~ 0
 SERDES_POWER_EN
 Wire Wire Line
 	5550 1650 5650 1650
 Text Notes 600  1350 0    50   ~ 10
 MAX -2V to +2V INPUT
-Text Label 9800 2300 0    50   ~ 10
+Text Label 9800 2300 0    50   ~ 0
 FPGACLK_P
-Text Label 9800 2400 0    50   ~ 10
+Text Label 9800 2400 0    50   ~ 0
 FPGACLK_N
 Text Label 1950 7300 0    50   ~ 10
 FPGACLK_P
