@@ -397,7 +397,7 @@ Wire Wire Line
 Connection ~ 1650 5800
 Wire Wire Line
 	1650 5800 1650 5500
-Text Label 1650 5200 2    50   ~ 10
+Text Label 1650 5200 2    50   ~ 0
 GND
 NoConn ~ 2150 6500
 NoConn ~ 2150 6600
