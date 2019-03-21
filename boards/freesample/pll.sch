@@ -10,7 +10,7 @@ Date "2019-03-21"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "PLL for clock synthesis and coarse phasing for X sampling point position"
-Comment2 "Ready for review"
+Comment2 "Initial layout complete"
 Comment3 ""
 Comment4 ""
 $EndDescr

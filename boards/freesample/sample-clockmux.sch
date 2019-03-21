@@ -14,19 +14,19 @@ Comment2 "Ready for review"
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4400 3150 0    50   Input ~ 10
+Text HLabel 4400 3150 0    50   Input ~ 0
 PLL_SAMPCLK_P
-Text HLabel 4400 3250 0    50   Input ~ 10
+Text HLabel 4400 3250 0    50   Input ~ 0
 PLL_SAMPCLK_N
-Text HLabel 1350 3200 0    50   Input ~ 10
+Text HLabel 1350 3200 0    50   Input ~ 0
 EXT_SAMPCLK_N
-Text HLabel 1350 2800 0    50   Input ~ 10
+Text HLabel 1350 2800 0    50   Input ~ 0
 LVL_SAMPCLK_P
-Text HLabel 1350 2900 0    50   Input ~ 10
+Text HLabel 1350 2900 0    50   Input ~ 0
 LVL_SAMPCLK_N
-Text HLabel 2350 2200 0    50   Input ~ 10
+Text HLabel 2350 2200 0    50   Input ~ 0
 SAMPLE_MUXSEL0
-Text HLabel 5600 2250 0    50   Input ~ 10
+Text HLabel 5600 2250 0    50   Input ~ 0
 SAMPLE_MUXSEL1
 $Comp
 L special-azonenberg:PI6C59S6005 U11
@@ -50,17 +50,17 @@ F 3 "" H 5700 3050 50  0001 C CNN
 	1    5700 3350
 	1    0    0    -1  
 $EndComp
-Text HLabel 6700 1950 2    50   Output ~ 10
+Text HLabel 6700 1950 2    50   Output ~ 0
 CLKOUT0_P
-Text HLabel 6700 2050 2    50   Output ~ 10
+Text HLabel 6700 2050 2    50   Output ~ 0
 CLKOUT0_N
-Text HLabel 6700 2250 2    50   Output ~ 10
+Text HLabel 6700 2250 2    50   Output ~ 0
 CLKOUT1_P
-Text HLabel 6700 2350 2    50   Output ~ 10
+Text HLabel 6700 2350 2    50   Output ~ 0
 CLKOUT1_N
-Text HLabel 2350 1300 0    50   Input ~ 10
+Text HLabel 2350 1300 0    50   Input ~ 0
 3V3
-Text HLabel 2200 1800 0    50   Input ~ 10
+Text HLabel 2200 1800 0    50   Input ~ 0
 GND
 Wire Wire Line
 	2200 1800 2350 1800
@@ -117,12 +117,12 @@ Wire Wire Line
 Connection ~ 1600 950 
 Wire Wire Line
 	1600 950  1100 950 
-Text Label 900  650  2    50   ~ 10
+Text Label 900  650  2    50   ~ 0
 3V3
 Wire Wire Line
 	900  650  1100 650 
 Connection ~ 1100 650 
-Text Label 900  950  2    50   ~ 10
+Text Label 900  950  2    50   ~ 0
 GND
 Wire Wire Line
 	900  950  1100 950 
@@ -169,11 +169,11 @@ Connection ~ 2650 650
 Wire Wire Line
 	3250 950  2650 950 
 Connection ~ 2650 950 
-Text Label 2200 2000 2    50   ~ 10
+Text Label 2200 2000 2    50   ~ 0
 3V3
 Wire Wire Line
 	2200 2000 2350 2000
-Text Label 2200 2100 2    50   ~ 10
+Text Label 2200 2100 2    50   ~ 0
 BUF2_IN_SEL
 Wire Wire Line
 	2200 2100 2350 2100
@@ -190,13 +190,13 @@ F 3 "" H 1850 4000 60  0000 C CNN
 	1    1850 4000
 	1    0    0    -1  
 $EndComp
-Text Label 2150 3800 0    50   ~ 10
+Text Label 2150 3800 0    50   ~ 0
 BUF2_IN_SEL
-Text Label 2150 3700 0    50   ~ 10
+Text Label 2150 3700 0    50   ~ 0
 3V3
-Text Label 2150 3900 0    50   ~ 10
+Text Label 2150 3900 0    50   ~ 0
 GND
-Text Label 2200 2300 2    50   ~ 10
+Text Label 2200 2300 2    50   ~ 0
 GND
 Wire Wire Line
 	2200 2300 2350 2300
@@ -211,15 +211,15 @@ F 3 "" H 1500 3200 50  0001 C CNN
 	1    1500 3200
 	0    1    -1   0   
 $EndComp
-Text Label 1800 3100 0    50   ~ 10
+Text Label 1800 3100 0    50   ~ 0
 EXT_CLK_AC_P
-Text Label 1800 3200 0    50   ~ 10
+Text Label 1800 3200 0    50   ~ 0
 EXT_CLK_AC_N
 Wire Wire Line
 	1650 3100 2350 3100
 Wire Wire Line
 	2350 3200 1650 3200
-Text Label 1800 2800 0    50   ~ 10
+Text Label 1800 2800 0    50   ~ 0
 LVL_CLK_AC_P
 $Comp
 L device:C C146
@@ -232,13 +232,13 @@ F 3 "" H 1500 2800 50  0001 C CNN
 	1    1500 2800
 	0    1    -1   0   
 $EndComp
-Text Label 1800 2900 0    50   ~ 10
+Text Label 1800 2900 0    50   ~ 0
 LVL_CLK_AC_N
 Wire Wire Line
 	1650 2800 2350 2800
 Wire Wire Line
 	2350 2900 1650 2900
-Text HLabel 1350 3100 0    50   Input ~ 10
+Text HLabel 1350 3100 0    50   Input ~ 0
 EXT_SAMPCLK_P
 $Comp
 L device:C C148
@@ -279,12 +279,12 @@ F 3 "" H 1800 2500 50  0001 C CNN
 	1    1800 2500
 	0    1    -1   0   
 $EndComp
-Text Label 1650 2500 2    50   ~ 10
+Text Label 1650 2500 2    50   ~ 0
 3V3
 Wire Wire Line
 	1950 2500 2250 2500
 Connection ~ 2250 2500
-Text Label 5400 1350 2    50   ~ 10
+Text Label 5400 1350 2    50   ~ 0
 3V3
 Wire Wire Line
 	5400 1350 5600 1350
@@ -297,7 +297,7 @@ Wire Wire Line
 Connection ~ 5600 1550
 Wire Wire Line
 	5600 1550 5600 1650
-Text Label 5400 1850 2    50   ~ 10
+Text Label 5400 1850 2    50   ~ 0
 GND
 Wire Wire Line
 	5400 1850 5600 1850
@@ -346,12 +346,12 @@ Wire Wire Line
 Connection ~ 6200 1000
 Wire Wire Line
 	6200 1000 5700 1000
-Text Label 5500 700  2    50   ~ 10
+Text Label 5500 700  2    50   ~ 0
 3V3
 Wire Wire Line
 	5500 700  5700 700 
 Connection ~ 5700 700 
-Text Label 5500 1000 2    50   ~ 10
+Text Label 5500 1000 2    50   ~ 0
 GND
 Wire Wire Line
 	5500 1000 5700 1000
@@ -398,9 +398,9 @@ Connection ~ 7250 700
 Wire Wire Line
 	7850 1000 7250 1000
 Connection ~ 7250 1000
-Text Label 5600 2050 2    50   ~ 10
+Text Label 5600 2050 2    50   ~ 0
 3V3
-Text Label 5600 2150 2    50   ~ 10
+Text Label 5600 2150 2    50   ~ 0
 BUF3_IN_SEL
 $Comp
 L special-azonenberg:JUMPER_0402_SPDT JP?
@@ -415,13 +415,13 @@ F 3 "" H 1850 4650 60  0000 C CNN
 	1    1850 4650
 	1    0    0    -1  
 $EndComp
-Text Label 2150 4450 0    50   ~ 10
+Text Label 2150 4450 0    50   ~ 0
 BUF3_IN_SEL
-Text Label 2150 4350 0    50   ~ 10
+Text Label 2150 4350 0    50   ~ 0
 3V3
-Text Label 2150 4550 0    50   ~ 10
+Text Label 2150 4550 0    50   ~ 0
 GND
-Text Label 5600 2350 2    50   ~ 10
+Text Label 5600 2350 2    50   ~ 0
 GND
 NoConn ~ 6700 2850
 NoConn ~ 6700 2950
@@ -469,9 +469,9 @@ Wire Wire Line
 	4600 2050 4600 2950
 Wire Wire Line
 	4600 2950 5600 2950
-Text Label 4800 2850 0    50   ~ 10
+Text Label 4800 2850 0    50   ~ 0
 MUXCLK0_AC_P
-Text Label 4800 2950 0    50   ~ 10
+Text Label 4800 2950 0    50   ~ 0
 MUXCLK0_AC_N
 Wire Wire Line
 	4500 2050 4600 2050
@@ -481,9 +481,9 @@ Wire Wire Line
 	3450 1800 4200 1800
 Wire Wire Line
 	3450 2050 4200 2050
-Text Label 3550 1800 0    50   ~ 10
+Text Label 3550 1800 0    50   ~ 0
 MUXCLK0_P
-Text Label 3550 2050 0    50   ~ 10
+Text Label 3550 2050 0    50   ~ 0
 MUXCLK0_N
 Wire Wire Line
 	5600 2550 5500 2550
@@ -502,7 +502,7 @@ F 3 "" H 5050 2550 50  0001 C CNN
 	1    5050 2550
 	0    1    -1   0   
 $EndComp
-Text Label 4900 2550 2    50   ~ 10
+Text Label 4900 2550 2    50   ~ 0
 3V3
 Wire Wire Line
 	5200 2550 5500 2550
@@ -545,9 +545,9 @@ Wire Wire Line
 	4800 3300 5600 3300
 Wire Wire Line
 	5600 3300 5600 3250
-Text Label 4950 3100 0    50   ~ 10
+Text Label 4950 3100 0    50   ~ 0
 MUXCLK1_AC_P
-Text Label 4950 3300 0    50   ~ 10
+Text Label 4950 3300 0    50   ~ 0
 MUXCLK1_AC_N
 $Comp
 L Connector:Conn_Coaxial J16
@@ -579,17 +579,17 @@ Wire Wire Line
 	6700 2650 7500 2650
 Wire Wire Line
 	7500 2650 7500 2700
-Text Label 7650 2300 0    50   ~ 10
+Text Label 7650 2300 0    50   ~ 0
 GND
-Text Label 7650 2900 0    50   ~ 10
+Text Label 7650 2900 0    50   ~ 0
 GND
-Text Label 6750 2550 0    50   ~ 10
+Text Label 6750 2550 0    50   ~ 0
 CLKOUT2_P
-Text Label 6750 2650 0    50   ~ 10
+Text Label 6750 2650 0    50   ~ 0
 CLKOUT2_N
-Text Notes 8000 2650 0    50   ~ 10
+Text Notes 8000 2650 0    50   ~ 0
 Muxed clock/trigger signal for debugging\nor external DAQ hardware
-Text Label 6250 3850 0    50   ~ 10
+Text Label 6250 3850 0    50   ~ 0
 SAMPLE_MUXSEL1
 $Comp
 L device:R R128
@@ -602,9 +602,9 @@ F 3 "" H 6100 3850 50  0001 C CNN
 	1    6100 3850
 	0    1    1    0   
 $EndComp
-Text Label 5950 3850 2    50   ~ 10
+Text Label 5950 3850 2    50   ~ 0
 GND
-Text Label 6250 4050 0    50   ~ 10
+Text Label 6250 4050 0    50   ~ 0
 SAMPLE_MUXSEL0
 $Comp
 L device:R R129
@@ -617,6 +617,6 @@ F 3 "" H 6100 4050 50  0001 C CNN
 	1    6100 4050
 	0    1    1    0   
 $EndComp
-Text Label 5950 4050 2    50   ~ 10
+Text Label 5950 4050 2    50   ~ 0
 GND
 $EndSCHEMATC

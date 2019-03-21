@@ -732,12 +732,10 @@ Text Label 5600 4800 2    50   ~ 0
 GND
 Wire Wire Line
 	6600 4600 6800 4600
-Text HLabel 7900 4700 2    50   Output ~ 0
+Text HLabel 7900 5600 2    50   Output ~ 0
 SAMPLE_EXTCLK_P
-Text HLabel 7900 4600 2    50   Output ~ 0
+Text HLabel 7900 5500 2    50   Output ~ 0
 SAMPLE_EXTCLK_N
-NoConn ~ 7900 5500
-NoConn ~ 7900 5600
 Text Notes 8650 5250 0    50   ~ 0
 Unused outputs left floating\nper datasheet page 8
 Wire Wire Line
@@ -895,4 +893,6 @@ Text Label 5600 5800 2    50   ~ 0
 REFCLK1_P
 NoConn ~ 7900 4400
 NoConn ~ 7900 4300
+NoConn ~ 7900 4700
+NoConn ~ 7900 4600
 $EndSCHEMATC
