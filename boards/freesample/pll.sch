@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-20"
+Date "2019-03-21"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "PLL for clock synthesis and coarse phasing for X sampling point position"
@@ -24,11 +24,9 @@ Text HLabel 8850 1350 0    50   Input ~ 0
 EXTCLK_N
 Text HLabel 1050 2350 0    50   Input ~ 0
 3V3
-Text HLabel 1350 3750 0    50   Input ~ 10
-GND
-Text HLabel 10250 950  2    50   Output ~ 10
+Text HLabel 10250 3050 2    50   Output ~ 0
 SAMPCLK_P
-Text HLabel 10250 1050 2    50   Output ~ 10
+Text HLabel 10250 3150 2    50   Output ~ 0
 SAMPCLK_N
 Text HLabel 1600 1000 0    50   Input ~ 0
 SYNC
@@ -147,7 +145,7 @@ Wire Wire Line
 Connection ~ 1500 3250
 Wire Wire Line
 	1500 3250 1500 3350
-Text Label 3000 4250 0    50   ~ 10
+Text Label 3000 4250 0    50   ~ 0
 VCC_CP1
 $Comp
 L passive-azonenberg:INDUCTOR_PWROUT FB5
@@ -173,12 +171,12 @@ F 3 "" H 1100 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 4250 1350 4250
-Text Label 1000 4250 2    50   ~ 10
+Text Label 1000 4250 2    50   ~ 0
 3V3
 Wire Wire Line
 	1000 4250 1100 4250
 Connection ~ 1100 4250
-Text Label 1000 4550 2    50   ~ 10
+Text Label 1000 4550 2    50   ~ 0
 GND
 Wire Wire Line
 	1000 4550 1100 4550
@@ -218,7 +216,7 @@ Connection ~ 1100 4550
 Connection ~ 2100 4550
 Wire Wire Line
 	2100 4550 1100 4550
-Text Label 3000 4800 0    50   ~ 10
+Text Label 3000 4800 0    50   ~ 0
 VCC_CP2
 $Comp
 L passive-azonenberg:INDUCTOR_PWROUT FB6
@@ -244,12 +242,12 @@ F 3 "" H 1100 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1100 4800 1350 4800
-Text Label 1000 4800 2    50   ~ 10
+Text Label 1000 4800 2    50   ~ 0
 3V3
 Wire Wire Line
 	1000 4800 1100 4800
 Connection ~ 1100 4800
-Text Label 1000 5100 2    50   ~ 10
+Text Label 1000 5100 2    50   ~ 0
 GND
 Wire Wire Line
 	1000 5100 1100 5100
@@ -300,11 +298,11 @@ F 3 "" H 1100 5400 50  0001 C CNN
 	1    1100 5400
 	1    0    0    -1  
 $EndComp
-Text Label 1000 5250 2    50   ~ 10
+Text Label 1000 5250 2    50   ~ 0
 3V3
 Wire Wire Line
 	1000 5250 1100 5250
-Text Label 1000 5550 2    50   ~ 10
+Text Label 1000 5550 2    50   ~ 0
 GND
 Wire Wire Line
 	1000 5550 1100 5550
@@ -512,24 +510,18 @@ Wire Wire Line
 Connection ~ 7050 5550
 Wire Wire Line
 	7050 5550 7600 5550
-NoConn ~ 10250 1250
-NoConn ~ 10250 1350
 NoConn ~ 10250 1850
 NoConn ~ 10250 1950
 NoConn ~ 10250 2450
 NoConn ~ 10250 2550
 NoConn ~ 10250 2750
 NoConn ~ 10250 2850
-NoConn ~ 10250 3050
-NoConn ~ 10250 3150
 NoConn ~ 10250 3350
 NoConn ~ 10250 3450
 NoConn ~ 10250 3650
 NoConn ~ 10250 3750
 NoConn ~ 10250 3950
 NoConn ~ 10250 4050
-NoConn ~ 10250 4250
-NoConn ~ 10250 4350
 NoConn ~ 10250 4550
 NoConn ~ 10250 4650
 Text Label 3100 2650 0    50   ~ 0
@@ -620,23 +612,23 @@ Wire Wire Line
 	8100 1550 8850 1550
 Wire Wire Line
 	8850 1650 8100 1650
-Text Label 8150 1550 0    50   ~ 10
+Text Label 8150 1550 0    50   ~ 0
 PLL1_CLK_P
-Text Label 8150 1650 0    50   ~ 10
+Text Label 8150 1650 0    50   ~ 0
 PLL1_CLK_N
-Text Label 6800 1450 2    50   ~ 10
+Text Label 6800 1450 2    50   ~ 0
 GND
 Wire Wire Line
 	6800 1450 6900 1450
-Text Label 6800 1750 2    50   ~ 10
+Text Label 6800 1750 2    50   ~ 0
 PLL_CP1
 Wire Wire Line
 	6800 1750 6900 1750
-Text Label 6800 1850 2    50   ~ 10
+Text Label 6800 1850 2    50   ~ 0
 3V3
 Wire Wire Line
 	6800 1850 6900 1850
-Text Label 6800 1350 2    50   ~ 10
+Text Label 6800 1350 2    50   ~ 0
 3V3
 $Comp
 L device:C C124
@@ -651,7 +643,7 @@ F 3 "" H 6800 1200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 1350 6900 1350
-Text Label 6800 1050 2    50   ~ 10
+Text Label 6800 1050 2    50   ~ 0
 GND
 Text Label 3100 2750 0    50   ~ 0
 PLL_CP2
@@ -700,49 +692,49 @@ F 3 "" H 3550 3250 50  0001 C CNN
 	1    3550 3250
 	1    0    0    -1  
 $EndComp
-Text HLabel 10250 1550 2    50   Output ~ 10
+Text HLabel 10250 4250 2    50   Output ~ 0
 FPGACLK_P
-Text HLabel 10250 1650 2    50   Output ~ 10
+Text HLabel 10250 4350 2    50   Output ~ 0
 FPGACLK_N
 $Comp
 L Connector:Conn_Coaxial J14
 U 1 1 5D284EDA
-P 10900 2300
-F 0 "J14" H 11000 2275 50  0000 L CNN
-F 1 "SMA" H 11000 2184 50  0000 L CNN
-F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 10900 2300 50  0001 C CNN
-F 3 "" H 10900 2300 50  0001 C CNN
-	1    10900 2300
+P 10900 1100
+F 0 "J14" H 11000 1075 50  0000 L CNN
+F 1 "SMA" H 11000 984 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 10900 1100 50  0001 C CNN
+F 3 "" H 10900 1100 50  0001 C CNN
+	1    10900 1100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial J13
 U 1 1 5D286A97
-P 10900 2100
-F 0 "J13" H 11000 1982 50  0000 L CNN
-F 1 "SMA" H 11000 2073 50  0000 L CNN
-F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 10900 2100 50  0001 C CNN
-F 3 "" H 10900 2100 50  0001 C CNN
-	1    10900 2100
+P 10900 900
+F 0 "J13" H 11000 782 50  0000 L CNN
+F 1 "SMA" H 11000 873 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 10900 900 50  0001 C CNN
+F 3 "" H 10900 900 50  0001 C CNN
+	1    10900 900 
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	10250 2150 10750 2150
+	10250 950  10750 950 
 Wire Wire Line
-	10750 2150 10750 2100
+	10750 950  10750 900 
 Wire Wire Line
-	10250 2250 10750 2250
+	10250 1050 10750 1050
 Wire Wire Line
-	10750 2250 10750 2300
-Text Label 10900 1900 0    50   ~ 10
+	10750 1050 10750 1100
+Text Label 10900 700  0    50   ~ 0
 GND
-Text Label 10900 2500 0    50   ~ 10
+Text Label 10900 1300 0    50   ~ 0
 GND
-Text Label 10250 2150 0    50   ~ 10
+Text Label 10250 950  0    50   ~ 0
 PLLOUT_P
-Text Label 10250 2250 0    50   ~ 10
+Text Label 10250 1050 0    50   ~ 0
 PLLOUT_N
-Text Notes 10600 2700 0    50   ~ 10
+Text Notes 10200 800  0    50   ~ 0
 PLL clock out\nfor debugging
 $Comp
 L Connector:Conn_Coaxial J23
@@ -774,15 +766,15 @@ Wire Wire Line
 	10250 4950 10750 4950
 Wire Wire Line
 	10750 4950 10750 5000
-Text Label 10900 4600 0    50   ~ 10
+Text Label 10900 4600 0    50   ~ 0
 GND
-Text Label 10900 5200 0    50   ~ 10
+Text Label 10900 5200 0    50   ~ 0
 GND
-Text Label 10250 4850 0    50   ~ 10
+Text Label 10250 4850 0    50   ~ 0
 OSCOUT_P
-Text Label 10250 4950 0    50   ~ 10
+Text Label 10250 4950 0    50   ~ 0
 OSCOUT_N
-Text Notes 10350 5300 0    50   ~ 10
+Text Notes 10350 5300 0    50   ~ 0
 Debug test point
 Text Label 5150 3700 2    50   ~ 0
 GND
@@ -796,4 +788,12 @@ Text Label 3100 2050 2    50   ~ 0
 GND
 Text Label 3550 3100 2    50   ~ 0
 PLL_CP1
+Text HLabel 1350 3750 0    50   Input ~ 0
+GND
+NoConn ~ 10250 1350
+NoConn ~ 10250 1250
+NoConn ~ 10250 1650
+NoConn ~ 10250 1550
+NoConn ~ 10250 2150
+NoConn ~ 10250 2250
 $EndSCHEMATC
