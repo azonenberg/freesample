@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-19"
+Date "2019-03-20"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "External reference clocks"
@@ -615,9 +615,9 @@ Text HLabel 2700 6450 0    50   Input ~ 0
 REFCLK_SINGLE_VT
 Text HLabel 6600 4600 0    50   Input ~ 0
 EXT_CLK_SEL
-Text HLabel 7900 5000 2    50   Output ~ 0
+Text HLabel 7900 5300 2    50   Output ~ 0
 PLL_EXTCLK_P
-Text HLabel 7900 4900 2    50   Output ~ 0
+Text HLabel 7900 5200 2    50   Output ~ 0
 PLL_EXTCLK_N
 $Comp
 L device:C C32
@@ -801,9 +801,9 @@ Text Label 9500 6050 0    50   ~ 0
 GND
 Text Notes 8850 6450 0    50   ~ 0
 Unclear from datasheet what the point of the TS pin is.\nWhy do we care about bias voltage if AC coupling?\nLeave this jumper so we can debug in hardware as needed
-Text HLabel 7900 5300 2    50   Output ~ 0
+Text HLabel 7900 5000 2    50   Output ~ 0
 CDR_EXTCLK_P
-Text HLabel 7900 5200 2    50   Output ~ 0
+Text HLabel 7900 4900 2    50   Output ~ 0
 CDR_EXTCLK_N
 Text HLabel 5950 2750 0    50   Input ~ 0
 3V3_CLKBUF

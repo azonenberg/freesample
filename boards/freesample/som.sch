@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-19"
+Date "2019-03-20"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "INTEGRALSTICK SoM connection"
