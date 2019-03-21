@@ -16,10 +16,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 3750 3000 0    50   Input ~ 0
 LTRIG_DIN
-Text HLabel 8850 2450 2    50   Output ~ 0
-LTRIG_CDROUT_P
-Text HLabel 8850 2350 2    50   Output ~ 0
-LTRIG_CDROUT_N
 Text HLabel 3750 1800 0    50   Input ~ 0
 3V3
 Text HLabel 3750 2200 0    50   Input ~ 0
@@ -30,9 +26,9 @@ Text HLabel 3750 2000 0    50   Input ~ 0
 1V8
 Text HLabel 3750 3100 0    50   Input ~ 0
 LTRIG_VT
-Text HLabel 8850 2150 2    50   Output ~ 0
+Text HLabel 8850 2750 2    50   Output ~ 0
 LTRIG_SAMPOUT_P
-Text HLabel 8850 2050 2    50   Output ~ 0
+Text HLabel 8850 2650 2    50   Output ~ 0
 LTRIG_SAMPOUT_N
 $Comp
 L analog-azonenberg:HMC675LP3E U9
@@ -464,19 +460,13 @@ GND
 Wire Wire Line
 	7400 1950 7550 1950
 Wire Wire Line
-	8850 2050 8650 2050
+	8850 2650 8650 2650
 Wire Wire Line
-	8650 2150 8850 2150
-NoConn ~ 8650 2650
-NoConn ~ 8650 2750
+	8650 2750 8850 2750
 NoConn ~ 8650 2950
 NoConn ~ 8650 3050
 NoConn ~ 8650 3250
 NoConn ~ 8650 3350
-Wire Wire Line
-	8850 2350 8650 2350
-Wire Wire Line
-	8650 2450 8850 2450
 Text Notes 4950 2600 0    50   ~ 0
 Common mode is VCCO-0.15 = 1.65V\nVout = 1.8 to 1.5, 300 mV differential
 Text HLabel 7400 1450 0    50   Input ~ 0
@@ -544,6 +534,16 @@ Text Label 7550 2950 2    50   ~ 0
 LTRIG_AC_N
 Text Label 7550 3050 2    50   ~ 0
 LTRIG_AC_P
-Text Notes 8900 2650 0    50   ~ 0
+Text Notes 9700 2500 0    50   ~ 0
 Swap P/N at both ends for routability
+Wire Wire Line
+	8650 2450 8850 2450
+Wire Wire Line
+	8850 2350 8650 2350
+Text HLabel 8850 2350 2    50   Output ~ 0
+LTRIG_CDROUT_N
+Text HLabel 8850 2450 2    50   Output ~ 0
+LTRIG_CDROUT_P
+NoConn ~ 8650 2150
+NoConn ~ 8650 2050
 $EndSCHEMATC
