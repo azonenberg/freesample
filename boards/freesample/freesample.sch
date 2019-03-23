@@ -225,13 +225,13 @@ Text Label 1850 850  0    50   ~ 0
 ADC_DIN
 Text Label 1850 950  0    50   ~ 0
 LTRIG_DIN
-Text Label 2650 2200 2    50   ~ 10
+Text Label 2650 2200 2    50   ~ 0
 3V3
-Text Label 2650 2400 2    50   ~ 10
+Text Label 2650 2400 2    50   ~ 0
 GND
-Text Label 2650 2500 2    50   ~ 10
+Text Label 2650 2500 2    50   ~ 0
 3V0_N
-Text Label 2650 2300 2    50   ~ 10
+Text Label 2650 2300 2    50   ~ 0
 1V8
 Wire Wire Line
 	2650 2200 2750 2200
@@ -339,11 +339,11 @@ Text Label 8300 1200 2    50   ~ 0
 GND
 Wire Wire Line
 	8300 1200 8400 1200
-Text Label 4000 1900 0    50   ~ 10
+Text Label 4000 1900 0    50   ~ 0
 ADC_OUT_P
 Wire Wire Line
 	4000 1900 3850 1900
-Text Label 4000 2000 0    50   ~ 10
+Text Label 4000 2000 0    50   ~ 0
 ADC_OUT_N
 Wire Wire Line
 	4000 2000 3850 2000

@@ -26,9 +26,9 @@ Text HLabel 3750 2000 0    50   Input ~ 0
 1V8
 Text HLabel 3750 3100 0    50   Input ~ 0
 LTRIG_VT
-Text HLabel 8850 2750 2    50   Output ~ 0
+Text HLabel 8850 2450 2    50   Output ~ 0
 LTRIG_SAMPOUT_P
-Text HLabel 8850 2650 2    50   Output ~ 0
+Text HLabel 8850 2350 2    50   Output ~ 0
 LTRIG_SAMPOUT_N
 $Comp
 L analog-azonenberg:HMC675LP3E U9
@@ -540,9 +540,9 @@ Wire Wire Line
 	8650 2450 8850 2450
 Wire Wire Line
 	8850 2350 8650 2350
-Text HLabel 8850 2350 2    50   Output ~ 0
+Text HLabel 8850 2650 2    50   Output ~ 0
 LTRIG_CDROUT_N
-Text HLabel 8850 2450 2    50   Output ~ 0
+Text HLabel 8850 2750 2    50   Output ~ 0
 LTRIG_CDROUT_P
 NoConn ~ 8650 2150
 NoConn ~ 8650 2050
