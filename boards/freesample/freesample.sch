@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-23"
+Date "2019-03-25"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Top Level"
@@ -728,71 +728,71 @@ Text Label 10400 1500 2    50   ~ 0
 GND
 Wire Wire Line
 	10400 1500 10450 1500
-Text Label 7850 4700 2    50   ~ 10
+Text Label 7850 4700 2    50   ~ 0
 3V3
 Wire Wire Line
 	7850 4700 7950 4700
-Text Label 7850 4800 2    50   ~ 10
+Text Label 7850 4800 2    50   ~ 0
 GND
 Wire Wire Line
 	7850 4800 7950 4800
-Text Label 7850 4900 2    50   ~ 10
+Text Label 7850 4900 2    50   ~ 0
 3V3_N
 Wire Wire Line
 	7850 4900 7950 4900
-Text Label 7850 5300 2    50   ~ 10
+Text Label 7850 5300 2    50   ~ 0
 COARSE_EN
 Wire Wire Line
 	7850 5300 7950 5300
-Text Label 7850 5400 2    50   ~ 10
+Text Label 7850 5400 2    50   ~ 0
 COARSE_SLOAD
 Wire Wire Line
 	7850 5400 7950 5400
-Text Label 7850 5500 2    50   ~ 10
+Text Label 7850 5500 2    50   ~ 0
 COARSE_SDIN
 Wire Wire Line
 	7850 5500 7950 5500
-Text Label 7850 5600 2    50   ~ 10
+Text Label 7850 5600 2    50   ~ 0
 COARSE_SCLK
 Wire Wire Line
 	7850 5600 7950 5600
-Text Label 7850 5800 2    50   ~ 10
+Text Label 7850 5800 2    50   ~ 0
 FINE_SEL0_P
 Wire Wire Line
 	7850 5800 7950 5800
-Text Label 7850 5900 2    50   ~ 10
+Text Label 7850 5900 2    50   ~ 0
 FINE_SEL0_N
 Wire Wire Line
 	7850 5900 7950 5900
-Text Label 7850 6100 2    50   ~ 10
+Text Label 7850 6100 2    50   ~ 0
 FINE_SEL1_P
 Wire Wire Line
 	7850 6100 7950 6100
-Text Label 7850 6200 2    50   ~ 10
+Text Label 7850 6200 2    50   ~ 0
 FINE_SEL1_N
 Wire Wire Line
 	7850 6200 7950 6200
-Text Label 7850 6400 2    50   ~ 10
+Text Label 7850 6400 2    50   ~ 0
 FINE_SEL2_P
 Wire Wire Line
 	7850 6400 7950 6400
-Text Label 7850 6500 2    50   ~ 10
+Text Label 7850 6500 2    50   ~ 0
 FINE_SEL2_N
 Wire Wire Line
 	7850 6500 7950 6500
-Text Label 7850 6700 2    50   ~ 10
+Text Label 7850 6700 2    50   ~ 0
 FINE_SEL3_P
 Wire Wire Line
 	7850 6700 7950 6700
-Text Label 7850 6800 2    50   ~ 10
+Text Label 7850 6800 2    50   ~ 0
 FINE_SEL3_N
 Wire Wire Line
 	7850 6800 7950 6800
-Text Label 7850 7000 2    50   ~ 10
+Text Label 7850 7000 2    50   ~ 0
 FINE_SEL4_P
 Wire Wire Line
 	7850 7000 7950 7000
-Text Label 7850 7100 2    50   ~ 10
+Text Label 7850 7100 2    50   ~ 0
 FINE_SEL4_N
 Wire Wire Line
 	7850 7100 7950 7100

@@ -6,11 +6,11 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-24"
+Date "2019-03-25"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Sample clock muxing"
-Comment2 "Initial layout in progress"
+Comment2 "Initial layout complete"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -42,9 +42,9 @@ Text HLabel 3450 2000 2    50   Output ~ 0
 CLKOUT0_P
 Text HLabel 3450 1900 2    50   Output ~ 0
 CLKOUT0_N
-Text HLabel 3450 2600 2    50   Output ~ 0
+Text HLabel 3450 3200 2    50   Output ~ 0
 CLKOUT1_P
-Text HLabel 3450 2500 2    50   Output ~ 0
+Text HLabel 3450 3100 2    50   Output ~ 0
 CLKOUT1_N
 Text HLabel 2350 1300 0    50   Input ~ 0
 3V3
@@ -363,8 +363,6 @@ NoConn ~ 7850 2850
 NoConn ~ 7850 2950
 NoConn ~ 7850 3150
 NoConn ~ 7850 3250
-NoConn ~ 3450 2800
-NoConn ~ 3450 2900
 Text Label 2350 2900 2    50   ~ 0
 MUXCLK0_AC_P
 Text Label 2350 2800 2    50   ~ 0
@@ -444,40 +442,40 @@ MUXCLK1_AC_N
 $Comp
 L Connector:Conn_Coaxial J16
 U 1 1 5D26866A
-P 4400 3250
-F 0 "J16" H 4500 3225 50  0000 L CNN
-F 1 "SMA" H 4500 3134 50  0000 L CNN
-F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4400 3250 50  0001 C CNN
-F 3 "" H 4400 3250 50  0001 C CNN
-	1    4400 3250
+P 4400 2950
+F 0 "J16" H 4500 2925 50  0000 L CNN
+F 1 "SMA" H 4500 2834 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4400 2950 50  0001 C CNN
+F 3 "" H 4400 2950 50  0001 C CNN
+	1    4400 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial J15
 U 1 1 5D268D26
-P 4400 3050
-F 0 "J15" H 4500 2932 50  0000 L CNN
-F 1 "SMA" H 4500 3023 50  0000 L CNN
-F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4400 3050 50  0001 C CNN
-F 3 "" H 4400 3050 50  0001 C CNN
-	1    4400 3050
+P 4400 2750
+F 0 "J15" H 4500 2632 50  0000 L CNN
+F 1 "SMA" H 4500 2723 50  0000 L CNN
+F 2 "azonenberg_pcb:CONN_SMA_EDGE_SAMTEC_SMA_J_P_H_ST_EM1" H 4400 2750 50  0001 C CNN
+F 3 "" H 4400 2750 50  0001 C CNN
+	1    4400 2750
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3450 3100 4250 3100
+	3450 2800 4250 2800
 Wire Wire Line
-	4250 3100 4250 3050
+	4250 2800 4250 2750
 Wire Wire Line
-	3450 3200 4250 3200
+	3450 2900 4250 2900
 Wire Wire Line
-	4250 3200 4250 3250
-Text Label 4400 2850 0    50   ~ 0
+	4250 2900 4250 2950
+Text Label 4400 2550 0    50   ~ 0
 GND
-Text Label 4400 3450 0    50   ~ 0
+Text Label 4400 3150 0    50   ~ 0
 GND
-Text Label 3500 3200 0    50   ~ 0
+Text Label 3500 2900 0    50   ~ 0
 CLKOUT2_P
-Text Label 3500 3100 0    50   ~ 0
+Text Label 3500 2800 0    50   ~ 0
 CLKOUT2_N
 Text Notes 4150 2000 0    50   ~ 0
 Muxed clock/trigger signal for debugging\nor external DAQ hardware
@@ -611,4 +609,6 @@ NoConn ~ 7850 2650
 NoConn ~ 7850 2550
 Text Notes 6850 3550 0    50   ~ 0
 Swap P/N for easier layout\non input and output
+NoConn ~ 3450 2500
+NoConn ~ 3450 2600
 $EndSCHEMATC
