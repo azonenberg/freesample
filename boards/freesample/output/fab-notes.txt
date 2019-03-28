@@ -62,7 +62,9 @@ Drills
 
 File naming
 	freesample-Edge_Cuts.gbr		Board outline
-	freesample.drl					Through-board plated holes
+	freesample-PTH.drl				Through-board plated holes
+	freesample-front-in1.drl		Blind vias from layer 1 to 2
+	freesample-front-in3.drl		Blind vias from layer 1 to 4
 	freesample-NPTH.drl				Through-board unplated holes
 	freesample-F_Fab.gbr			Location of UL marking and date code
 	freesample-F_Paste.gbr			Front solder paste

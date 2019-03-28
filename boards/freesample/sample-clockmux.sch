@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 11 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-25"
+Date "2019-03-28"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Sample clock muxing"
@@ -38,9 +38,9 @@ F 3 "" H 6850 3050 50  0001 C CNN
 	1    6850 3350
 	1    0    0    -1  
 $EndComp
-Text HLabel 3450 2000 2    50   Output ~ 0
+Text HLabel 3450 2600 2    50   Output ~ 0
 CLKOUT0_P
-Text HLabel 3450 1900 2    50   Output ~ 0
+Text HLabel 3450 2500 2    50   Output ~ 0
 CLKOUT0_N
 Text HLabel 3450 3200 2    50   Output ~ 0
 CLKOUT1_P
@@ -609,6 +609,6 @@ NoConn ~ 7850 2650
 NoConn ~ 7850 2550
 Text Notes 6850 3550 0    50   ~ 0
 Swap P/N for easier layout\non input and output
-NoConn ~ 3450 2500
-NoConn ~ 3450 2600
+NoConn ~ 3450 2000
+NoConn ~ 3450 1900
 $EndSCHEMATC

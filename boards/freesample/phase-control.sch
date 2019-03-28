@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 12 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-25"
+Date "2019-03-28"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Fine phase shifting for sampling point X position"
@@ -650,9 +650,7 @@ F 3 "" H 6450 1300 50  0001 C CNN
 $EndComp
 Text Label 6300 1300 2    50   ~ 0
 FS0_AC_N
-Text Label 6600 1300 0    50   ~ 0
-3V3_N
-Text Notes 7050 850  0    50   ~ 0
+Text Notes 5950 1150 0    50   ~ 0
 We want FS* to default to 5'b11111 at power up.\nTerminator is 600R to ground on both sides.\nP side is left floating so terminator pulls it high.\n10K gives us -186 mV at the N side.
 $Comp
 L device:R R77
@@ -882,4 +880,6 @@ Text Label 5950 6900 0    50   ~ 0
 COARSE_SLOAD
 Text Notes 1450 6400 0    50   ~ 0
 P/N swap input and output\nfor routability
+Text Label 6600 1300 0    50   ~ 0
+3V3_N
 $EndSCHEMATC

@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-25"
+Date "2019-03-28"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Trigger phase alignment from FPGA to recovered clock domain"
