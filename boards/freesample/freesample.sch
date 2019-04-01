@@ -6,7 +6,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-28"
+Date "2019-03-31"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "Top Level"
@@ -417,17 +417,17 @@ F15 "GND" I L 10450 1500 50
 $EndSheet
 Wire Wire Line
 	7300 2950 10450 2950
-Text Label 4750 4100 2    50   ~ 10
+Text Label 4750 4100 2    50   ~ 0
 ONESHOT_RST_P
-Text Label 4750 4200 2    50   ~ 10
+Text Label 4750 4200 2    50   ~ 0
 ONESHOT_RST_N
 Wire Wire Line
 	4850 4200 4750 4200
-Text Label 6800 4700 0    50   ~ 10
+Text Label 6800 4700 0    50   ~ 0
 TRIGGERED_P
 Wire Wire Line
 	6800 4700 6650 4700
-Text Label 6800 4800 0    50   ~ 10
+Text Label 6800 4800 0    50   ~ 0
 TRIGGERED_N
 Wire Wire Line
 	6800 4800 6650 4800
@@ -912,15 +912,15 @@ F 3 "" H 14500 800 60  0000 C CNN
 $EndComp
 Text Label 14800 800  0    50   ~ 0
 12V0
-Text Label 6800 5000 0    50   ~ 10
+Text Label 6800 5000 0    50   ~ 0
 RANGE_SEL
 Wire Wire Line
 	6800 5000 6650 5000
 Wire Wire Line
 	4750 4900 4850 4900
-Text Label 4750 5000 2    50   ~ 10
+Text Label 4750 5000 2    50   ~ 0
 GND
-Text Label 4750 4800 2    50   ~ 10
+Text Label 4750 4800 2    50   ~ 0
 2V5
 Wire Wire Line
 	4750 4800 4850 4800
@@ -982,7 +982,7 @@ Text Notes 1950 7250 0    50   ~ 10
 LVDS
 Text Label 1950 10450 0    50   ~ 10
 SERDES_POWER_EN
-Text Label 4750 4700 2    50   ~ 10
+Text Label 4750 4700 2    50   ~ 0
 3V3_CLKBUF
 Wire Wire Line
 	4750 4700 4850 4700
@@ -1022,13 +1022,13 @@ F 3 "" H 4100 5200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 5350 4250 5350
-Text Label 4100 5000 2    50   ~ 10
+Text Label 4100 5000 2    50   ~ 0
 GND
-Text Label 4100 5550 2    50   ~ 10
+Text Label 4100 5550 2    50   ~ 0
 GND
 Wire Wire Line
 	4250 5200 4850 5200
-Text Notes 4100 5750 0    50   ~ 10
+Text Notes 4100 5750 0    50   ~ 0
 Phase shifted sampling clock out\nfor debugging or external logic
 $Comp
 L special-azonenberg:MECHANICAL M1
@@ -1109,7 +1109,7 @@ F 3 "~" H 15150 3600 50  0001 C CNN
 $EndComp
 Text Label 1150 950  2    50   ~ 0
 GND
-Text Label 4750 4900 2    50   ~ 10
+Text Label 4750 4900 2    50   ~ 0
 1V8
 Wire Wire Line
 	4750 5000 4850 5000

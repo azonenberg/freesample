@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 12
 Title "FREESAMPLE Oscilloscope"
-Date "2019-03-28"
+Date "2019-03-31"
 Rev "0.1"
 Comp "Andrew D. Zonenberg / Antikernel Labs"
 Comment1 "DAC for setting sampling point Y position"
